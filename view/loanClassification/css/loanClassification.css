@@ -1,0 +1,101 @@
+html,
+body {
+  overflow: hidden;
+}
+html header,
+body header {
+  height: 1.87733333rem;
+  background-color: #22a4e6;
+}
+html header div,
+body header div {
+  float: left;
+  line-height: 1.87733333rem;
+}
+html header div.left,
+body header div.left {
+  width: 10%;
+  padding-left: 0.74666667rem;
+}
+html header div.left img,
+body header div.left img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+html header div.center,
+body header div.center {
+  margin-left: -0.74666667rem;
+  width: 80%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.68266667rem;
+}
+html header div.right,
+body header div.right {
+  width: 10%;
+}
+html header div.right img,
+body header div.right img {
+  width: 0.85333333rem;
+  height: 0.81066667rem;
+}
+html #wrapper,
+body #wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 1.87733333rem;
+  bottom: 0.42666667rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+html #wrapper .iScrollVerticalScrollbar,
+body #wrapper .iScrollVerticalScrollbar {
+  display: none;
+}
+html #wrapper #scroller,
+body #wrapper #scroller {
+  position: absolute;
+  z-index: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none;
+}
+html #wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide img,
+body #wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+html #wrapper #scroller section .banner .swiper-container .swiper-pagination,
+body #wrapper #scroller section .banner .swiper-container .swiper-pagination {
+  text-align: right;
+}
+html #wrapper #scroller section .line,
+body #wrapper #scroller section .line {
+  height: 0.42666667rem;
+  background-color: #eeeeee;
+}
+html #wrapper #scroller section .loan,
+body #wrapper #scroller section .loan {
+  padding: 0.42666667rem 0.74666667rem 0;
+  border-radius: 0.21333333rem;
+  overflow: hidden;
+}
+html #wrapper #scroller section .loan img,
+body #wrapper #scroller section .loan img {
+  border-radius: 0.21333333rem;
+  width: 100%;
+}

@@ -1,0 +1,193 @@
+@rem: 750/16rem; 
+
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+header{
+    position: absolute;
+    width: 750/@rem;
+    height: 88/@rem;
+    background: #1c9ee1;
+    div{
+        float: left;
+        height: 88/@rem;
+        &.left{
+            width: 75/@rem;
+            line-height: 88/@rem;
+            a{
+                display: inline-block;
+                .sweep{
+                    width: 75/@rem;
+                    margin-left: 35/@rem;
+                    img{
+                        width: 19/@rem;
+                        height: 35/@rem;
+                    }
+                }
+            }
+        }
+        &.center{
+            text-align: center;
+            width: 600/@rem;
+            h1{
+                width: 600/@rem;
+                color: #ffffff;
+                font-size: 30/@rem;
+                line-height: 88/@rem;
+                text-align: center;
+            }
+        }
+        &.right{
+            float: right;
+            width: 75/@rem;
+            line-height: 88/@rem;
+            .alarm{
+                margin-right: 35/@rem;
+                float: right;
+                width: 29/@rem;
+                height: 35/@rem;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}
+#wrapper{
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    #scroller{
+        section{
+            .line{
+                width: 100%;
+                height: 20/@rem;
+                background-color: #eeeeee;
+            }
+            .inline_banner{
+                .swiper-container{
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .recommend{
+                .header{
+                    height: 106/@rem;
+                    line-height: 106/@rem;
+                    padding: 0 35/@rem;
+                    .left{
+                        float: left;
+                        .left_left{
+                            img{
+                                vertical-align: middle;
+                                width: 42/@rem;
+                                height: 42/@rem;
+                                padding-right: 10/@rem;
+                                padding-top: 2/@rem;
+                            }
+                        }
+                        .left_right{
+                            font-family:'PingFang SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            font-size: 28/@rem;
+                            color: #333333;
+                        }
+                    }
+                    .right{
+                        float: right;
+                        .right_left{
+                            font-family:'PingFang SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;                        
+                            font-size: 28/@rem;
+                            color: #666666;
+                            padding-right: 10/@rem;
+                        }
+                        .right_right{
+                            img{
+                                vertical-align: middle;
+                                width: 14/@rem;
+                                height: 30/@rem;
+                                padding-top: 2/@rem;
+                            }
+                        }
+                    }
+                }
+                .produce{
+                    padding: 0 35/@rem;
+                    margin-top: -30/@rem;
+                    .insurance{
+                        margin-top: 30/@rem;
+                    font-family:'PingFang SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;                                    
+                        .insurance_img{
+                            img{
+                                width: 680/@rem;
+                                height: 257/@rem;
+                            }
+                        }
+                        .insurance_title{
+                            margin-top: 30/@rem;
+                            h3{
+                                font-size: 28/@rem;
+                                color: #333333;
+                                span{
+                                    margin: 0;
+                                    img{
+                                        margin-left: 10px;
+                                        margin-top: -3px;
+                                        width: 50/@rem;
+                                        height: 25/@rem;
+                                        vertical-align: middle;
+                                    }
+                                }
+                            }
+                            .insurance_title_p{
+                                overflow: hidden;
+                                p{
+                                    padding-top: 15/@rem;
+                                    float: left;
+                                    font-size: 24/@rem;
+                                    color: #999999;
+                                }
+                                .insurance_title_span{
+                                    font-size: 0;
+                                    float: right;
+                                    span{
+                                        color: #333333;
+                                        &#span01{
+                                            font-size: 34/@rem;
+                                            color: #f70101;
+                                        }
+                                        &#span02{
+                                            font-size: 28/@rem;
+                                        }
+                                        &#span03{
+                                            font-size: 26/@rem;
+                                        }
+                                        &#span04{
+                                            font-size: 24/@rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+    .iScrollVerticalScrollbar {
+        .iScrollIndicator{
+            opacity: 0;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+body {
+  background-color: #eeeeee;
+}
+body header {
+  height: 1.87733333rem;
+  background-color: #1c9ee1;
+}
+body header div {
+  line-height: 1.87733333rem;
+}
+body header div.left {
+  padding-left: 0.74666667rem;
+  width: 10%;
+  float: left;
+}
+body header div.left img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+body header div.center {
+  margin-left: -0.74666667rem;
+  float: left;
+  width: 80%;
+  font-size: 0.68266667rem;
+  text-align: center;
+  color: #ffffff;
+}
+body header a {
+  overflow: hidden;
+}
+body section .top {
+  width: 100%;
+  border-bottom: solid 1px #eeeeee;
+  background-color: #ffffff;
+}
+body section .top ul {
+  height: 1.728rem;
+  overflow: hidden;
+  margin: 0 0.74666667rem;
+  width: 90%;
+}
+body section .top ul li {
+  line-height: 1.70666667rem;
+  text-align: center;
+  width: 20%;
+  float: left;
+  font-size: 0.512rem;
+  color: #999999;
+}
+body section .top ul li.active span {
+  display: inline-block;
+  color: #22a3e5;
+  border-bottom: solid 2px #22a3e5;
+  line-height: 1.70666667rem;
+}
+body section .bottom .list {
+  display: none;
+}
+body section .bottom .list .line {
+  width: 100%;
+  height: 0.42666667rem;
+}
+body section .bottom .list .lis {
+  background-color: #ffffff;
+  padding: 0 0.74666667rem;
+  height: 3.712rem;
+  overflow: hidden;
+  padding: 0.64rem 0.74666667rem;
+}
+body section .bottom .list .lis .left {
+  float: left;
+  width: 5.54666667rem;
+  height: 3.712rem;
+}
+body section .bottom .list .lis .left img {
+  width: 5.54666667rem;
+  height: 3.712rem;
+}
+body section .bottom .list .lis .right {
+  width: 56%;
+  margin-left: 0.64rem;
+  float: left;
+}
+body section .bottom .list .lis .right h2 {
+  font-size: 0.59733333rem;
+}
+body section .bottom .list .lis .right p {
+  width: 100%;
+  font-size: 0.46933333rem;
+  color: #999999;
+  line-height: 0.78933333rem;
+}
+body section .bottom .list .lis .right p.maxRight {
+  text-align: right;
+  font-size: 0.512rem;
+}
+body section .bottom .list .lis .right p.maxRight span {
+  font-size: 0.64rem;
+  color: #ff0000;
+}
+body section .bottom .list .lis .right p span.minRight {
+  float: right;
+  font-size: 0.512rem;
+}
+body section .bottom .list .lis .right p span.blue {
+  color: #1d9fe2;
+}
+body section .bottom .list .lis .right p span.gray {
+  color: #999999;
+}
+body section .bottom .list .lis .right p span.red {
+  color: #ff4e00;
+}
+body section .bottom .list1 {
+  display: block;
+}
