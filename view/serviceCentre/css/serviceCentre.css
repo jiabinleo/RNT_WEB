@@ -1,0 +1,84 @@
+body {
+  background-color: #ffffff;
+}
+body header {
+  height: 1.87733333rem;
+  background-color: #1c9ee1;
+}
+body header div {
+  line-height: 1.87733333rem;
+}
+body header div.left {
+  padding-left: 0.74666667rem;
+  width: 10%;
+  float: left;
+}
+body header div.left img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+body header div.center {
+  margin-left: -0.74666667rem;
+  float: left;
+  width: 80%;
+  font-size: 0.68266667rem;
+  text-align: center;
+  color: #ffffff;
+}
+body header a {
+  overflow: hidden;
+}
+body menu {
+  padding: 0 1.06666667rem;
+  font-size: 0.512rem;
+  border-bottom: #d3d3d3 solid 0.02133333rem;
+}
+body menu span {
+  margin: 0 1.17333333rem;
+  height: 1.70666667rem;
+  display: inline-block;
+  line-height: 1.70666667rem;
+  margin-bottom: -0.02133333rem;
+  color: #999999;
+}
+body menu span.active {
+  color: #22a3e5;
+  border-bottom: #22a3e5 solid 0.08533333rem;
+}
+body section {
+  padding: 0 0.74666667rem;
+}
+body section h3 {
+  font-size: 0.59733333rem;
+  line-height: 1.92rem;
+}
+body section h3 img {
+  width: 0.49066667rem;
+  height: 0.576rem;
+  vertical-align: -0.064rem;
+}
+body section .menus {
+  overflow: hidden;
+  border-bottom: solid 1px #eeeeee;
+}
+body section .menus div {
+  margin: 0 0.53333333rem 0.53333333rem 0;
+  float: left;
+  color: #666666;
+  font-size: 0.512rem;
+  padding: 0.27733333rem 0.32rem;
+  border: solid 1px #d3d3d3;
+  border-radius: 5px;
+}
+body section h4 {
+  font-size: 0.55466667rem;
+  color: #333333;
+  line-height: 1.81333333rem;
+  border-bottom: solid 1px #eeeeee;
+}
+body section ul li {
+  color: #999999;
+  font-size: 0.55466667rem;
+  line-height: 1.6rem;
+  border-bottom: solid 1px #eeeeee;
+}
