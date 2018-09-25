@@ -1,0 +1,118 @@
+@rem: 750/16rem;
+body {
+  background-color: #eeeeee;
+  header {
+    height: 88 / @rem;
+    background-color: #1c9ee1;
+    div {
+      line-height: 88 / @rem;
+      &.left {
+        padding-left: 35 / @rem;
+        width: 20%;
+        float: left;
+        img {
+          width: 19 / @rem;
+          height: 35 / @rem;
+        }
+      }
+      &.center {
+        margin-left: -35 / @rem;
+        float: left;
+        width: 60%;
+        font-size: 32 / @rem;
+        text-align: center;
+        color: #ffffff;
+      }
+      &.right {
+        width: 20%;
+        float: left;
+        .toolImg {
+          float: right;
+          padding-right: 35 / @rem;
+          span {
+            margin-left: 10 / @rem;
+            &.add {
+              img {
+                width: 28 / @rem;
+                height: 28 / @rem;
+              }
+            }
+            &.del {
+              img {
+                width: 25 / @rem;
+                height: 30 / @rem;
+                vertical-align: -1 / @rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    a {
+      overflow: hidden;
+    }
+  }
+  section {
+    ul {
+      li {
+        padding: 30 / @rem 0;
+        margin: 35 / @rem;
+        background-color: #ffffff;
+        overflow: hidden;
+        height: 127 / @rem;
+        border-radius: 5px;
+        box-shadow: 4 / @rem 4 / @rem 10 / @rem RGBA(51, 51, 51, 0.1);
+        div {
+          float: left;
+          &.nameIcon {
+            width: 108 / @rem;
+            height: 127 / @rem;
+            line-height: 127 / @rem;
+            text-align: center;
+            img {
+              width: 46 / @rem;
+              height: 50 / @rem;
+              vertical-align: middle;
+            }
+          }
+          &.farmName {
+            width: 385 / @rem;
+            padding: 0 30 / @rem;
+            border-left: solid #eeeeee 1 / @rem;
+            line-height: 1.2;
+            div {
+              font-size: 24 / @rem;
+              color: #999999;
+              &.title {
+                p {
+                  color: #333333;
+                  font-size: 28 / @rem;
+                }
+              }
+              &.content {
+                padding: 10 / @rem 0;
+              }
+            }
+          }
+          &.right {
+            width: 108 / @rem;
+            height: 127 / @rem;
+            line-height: 127 / @rem;
+            text-align: center;
+            img {
+              width: 69 / @rem;
+              height: 69 / @rem;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+    .addMoreFarm {
+      padding: 0 35 / @rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
