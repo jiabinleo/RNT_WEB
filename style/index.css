@@ -99,21 +99,29 @@ header div.center input::placeholder {
   color: #ffffff;
   font-size: 0.21333333rem;
 }
-header div.center input::-webkit-input-placeholder { /* WebKit browsers */ 
-  color: #ffffff;
-  font-size: 0.21333333rem; 
-} 
-header div.center input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+
+header div.center input::-webkit-input-placeholder {
+  /* WebKit browsers */
   color: #ffffff;
   font-size: 0.21333333rem;
-} 
-header div.center input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+}
+
+header div.center input::-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
   color: #ffffff;
   font-size: 0.21333333rem;
-} 
-header div.center input::-ms-input-placeholder { /* Internet Explorer 10+ */ 
+}
+
+header div.center input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
   color: #ffffff;
-  font-size: 0.21333333rem; 
+  font-size: 0.21333333rem;
+}
+
+header div.center input::-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #ffffff;
+  font-size: 0.21333333rem;
 }
 
 header div.right {
@@ -207,6 +215,49 @@ header div.right .alarm .message span {
   background-color: #eeeeee;
 }
 
+#scroller section .weather {
+  font-size: 0.412rem;
+  padding: 0 0.74666667rem;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  padding: 0.76666667rem;
+}
+
+#scroller section .weather .left {
+  float: left;
+}
+
+#scroller section .weather .left img {
+  width: 1.5rem;
+  padding: 0 0.3rem 0 0;
+}
+
+#scroller section .weather .left p {
+  color: #666666;
+  line-height: 0.75rem;
+}
+
+#scroller section .weather .left p:last-of-type {
+  color: #999999;
+}
+
+#scroller section .weather .left p img {
+  width: 1.2rem;
+  margin-left: 0.2rem;
+  vertical-align: -0.11rem;
+}
+
+#scroller section .weather .right {
+  float: right;
+  color: #999999;
+}
+
+#scroller section .weather .right img {
+  width: 0.25rem;
+  padding-left: 0.2rem;
+  vertical-align: -0.04rem;
+}
+
 #scroller section .new {
   padding: 0 0.74666667rem;
 }
@@ -251,6 +302,7 @@ header div.right .alarm .message span {
   width: 8.27733333rem;
   margin-left: 0.64rem;
 }
+
 /*  */
 #scroller section .new .inner .new_top .new_top_right1 {
   width: 5.54666667rem;
@@ -268,15 +320,16 @@ header div.right .alarm .message span {
   float: left;
   width: 8.27733333rem;
   margin-right: 0.64rem;
-  
+
 }
+
 #scroller section .new .inner .new_top .new_top_left1 h3 {
   font-size: 0.59733333rem;
   color: #333333;
   font-weight: bold;
   overflow: hidden;
   line-height: 0.99733333rem;
-  text-overflow:ellipsis;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -290,8 +343,8 @@ header div.right .alarm .message span {
   -webkit-line-clamp: 3;
   overflow: hidden;
   letter-spacing: 0px;
-  text-align:justify;
-  text-align-last:justify;
+  text-align: justify;
+  text-align-last: justify;
 }
 
 #scroller section .new .inner .new_top .new_top_left1 .datatime {
@@ -315,6 +368,7 @@ header div.right .alarm .message span {
   float: right;
   margin-right: 0.42666667rem;
 }
+
 /*  */
 
 #scroller section .new .inner .new_top .new_top_right h3 {
@@ -323,7 +377,7 @@ header div.right .alarm .message span {
   font-weight: bold;
   overflow: hidden;
   line-height: 0.99733333rem;
-  text-overflow:ellipsis;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -337,8 +391,8 @@ header div.right .alarm .message span {
   -webkit-line-clamp: 3;
   overflow: hidden;
   letter-spacing: 0px;
-  text-align:justify;
-  text-align-last:justify;
+  text-align: justify;
+  text-align-last: justify;
 }
 
 #scroller section .new .inner .new_top .new_top_right .datatime {
@@ -436,9 +490,11 @@ footer .foot {
   text-align: center;
   padding: 5px 0;
 }
-footer .foot a{
+
+footer .foot a {
   display: inline-block;
 }
+
 footer .foot a .ft {
   width: 1.13066667rem;
   height: 1.024rem;
@@ -446,6 +502,7 @@ footer .foot a .ft {
 }
 
 footer .foot a .ft img {
+  /* width: 1.13066667rem; */
   width: 1.13066667rem;
   height: 1.024rem;
 }
@@ -573,7 +630,7 @@ footer .foot a p {
 .personalCente .personalCente_content ul li .me .top .tp img {
   width: 0.59733333rem;
   height: 0.576rem;
-  vertical-align: middle;
+  vertical-align: -0.03rem;
 }
 
 .personalCente .personalCente_content ul li .me .top span {
@@ -588,6 +645,7 @@ footer .foot a p {
   padding-top: 0.32rem;
   margin-left: 1.06666667rem;
 }
-.iScrollVerticalScrollbar{
+
+.iScrollVerticalScrollbar {
   display: none;
 }
