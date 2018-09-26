@@ -1,0 +1,133 @@
+@rem: 750/16rem;
+
+html {
+  overflow: hidden;
+}
+body {
+  background-color: #eeeeee;
+  overflow: hidden;
+  header {
+    height: 88 / @rem;
+    background-color: #1c9ee1;
+    div {
+      line-height: 88 / @rem;
+      &.left {
+        padding-left: 35 / @rem;
+        width: 20%;
+        float: left;
+        img {
+          width: 19 / @rem;
+          height: 35 / @rem;
+        }
+      }
+      &.center {
+        margin-left: -35 / @rem;
+        float: left;
+        width: 60%;
+        font-size: 32 / @rem;
+        text-align: center;
+        color: #ffffff;
+      }
+      &.right {
+        width: 20%;
+        float: left;
+        text-align: right;
+        img {
+          margin-right: 35 / @rem;
+          width: 40 / @rem;
+          height: 40 / @rem;
+        }
+      }
+    }
+    a {
+      overflow: hidden;
+    }
+  }
+  #wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 90 / @rem;
+    bottom: 0 / @rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    #scroller {
+      padding-bottom: 100 / @rem;
+      section {
+        ul {
+          margin-top: 20 / @rem;
+          background-color: #ffffff;
+          padding: 0 35 / @rem;
+          li {
+            padding: 30 / @rem 0;
+            border-bottom: solid 1px #eeeeee;
+            &:last-of-type {
+              border-bottom: none;
+            }
+            div {
+              &.user-logo {
+                height: 80 / @rem;
+                line-height: 80 / @rem;
+                overflow: hidden;
+              }
+              &.dataText {
+                height: 28 / @rem;
+                line-height: 28 / @rem;
+                overflow: hidden;
+              }
+              &.dataTextP {
+                height: 28 / @rem;
+                line-height: 28 / @rem;
+                overflow: hidden;
+                padding-bottom: 50 / @rem;
+                p {
+                  font-size: 28 / @rem;
+                  color: #999999;
+                }
+              }
+              .left {
+                float: left;
+                p {
+                  font-size: 28 / @rem;
+                  color: #666666;
+                }
+              }
+              .right {
+                float: right;
+                .userLogo {
+                  float: left;
+                  width: 80 / @rem;
+                  height: 80 / @rem;
+                  overflow: hidden;
+                  img {
+                    line-height: 80 / @rem;
+                    width: 80 / @rem;
+                  }
+                }
+                .right-text {
+                  float: left;
+                  font-size: 28 / @rem;
+                  color: #999999;
+                  img {
+                    width: 22 / @rem;
+                    height: 22 / @rem;
+                    padding-right: 10 / @rem;
+                  }
+                }
+                .arr {
+                  float: left;
+                  margin-left: 15 / @rem;
+                  img {
+                    vertical-align: 4.5 / @rem;
+                    width: 13 / @rem;
+                    height: 25 / @rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
