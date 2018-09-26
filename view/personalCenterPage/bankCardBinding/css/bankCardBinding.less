@@ -1,6 +1,11 @@
 @rem: 750/16rem;
+
+html {
+  overflow: hidden;
+}
 body {
-  background-color: #eeeeee;
+  background-color: #ffffff;
+  overflow: hidden;
   header {
     height: 88 / @rem;
     background-color: #1c9ee1;
@@ -26,10 +31,57 @@ body {
       &.right {
         width: 20%;
         float: left;
+        text-align: right;
+        img {
+          margin-right: 35 / @rem;
+          width: 40 / @rem;
+          height: 40 / @rem;
+        }
       }
     }
     a {
       overflow: hidden;
+    }
+  }
+  #wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 90 / @rem;
+    bottom: 0 / @rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    #scroller {
+      padding-bottom: 100 / @rem;
+      section {
+        ul {
+          li {
+            padding: 5 / @rem 30 / @rem;
+            .bg {
+              position: relative;
+              height: 235 / @rem;
+              background-image: url("../img/bank.png");
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+              .bankId {
+                position: absolute;
+                top: 98 / @rem;
+                right: 50 / @rem;
+                color: #ffffff;
+                font-size: 42 / @rem;
+              }
+            }
+          }
+        }
+        .add {
+          margin: 0 auto;
+          width: 685 / @rem;
+          height: 185 / @rem;
+          background-image: url("../img/addNewBank.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+      }
     }
   }
 }

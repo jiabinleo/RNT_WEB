@@ -52,66 +52,78 @@ body {
       overflow: hidden;
     }
   }
-  section {
-    ul {
-      li {
-        padding: 30 / @rem 0;
-        margin: 35 / @rem;
-        background-color: #ffffff;
-        overflow: hidden;
-        height: 127 / @rem;
-        border-radius: 5px;
-        box-shadow: 4 / @rem 4 / @rem 10 / @rem RGBA(51, 51, 51, 0.1);
-        div {
-          float: left;
-          &.nameIcon {
-            width: 108 / @rem;
+  #wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 90 / @rem;
+    bottom: 0 / @rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    #scroller {
+      padding-bottom: 100 / @rem;
+      section {
+        ul {
+          li {
+            padding: 30 / @rem 0;
+            margin: 35 / @rem;
+            background-color: #ffffff;
+            overflow: hidden;
             height: 127 / @rem;
-            line-height: 127 / @rem;
-            text-align: center;
-            img {
-              width: 46 / @rem;
-              height: 50 / @rem;
-              vertical-align: middle;
-            }
-          }
-          &.farmName {
-            width: 385 / @rem;
-            padding: 0 30 / @rem;
-            border-left: solid #eeeeee 1 / @rem;
-            line-height: 1.2;
+            border-radius: 5px;
+            box-shadow: 4 / @rem 4 / @rem 10 / @rem RGBA(51, 51, 51, 0.1);
             div {
-              font-size: 24 / @rem;
-              color: #999999;
-              &.title {
-                p {
-                  color: #333333;
-                  font-size: 28 / @rem;
+              float: left;
+              &.nameIcon {
+                width: 108 / @rem;
+                height: 127 / @rem;
+                line-height: 127 / @rem;
+                text-align: center;
+                img {
+                  width: 46 / @rem;
+                  height: 50 / @rem;
+                  vertical-align: middle;
                 }
               }
-              &.content {
-                padding: 10 / @rem 0;
+              &.farmName {
+                width: 385 / @rem;
+                padding: 0 30 / @rem;
+                border-left: solid #eeeeee 1 / @rem;
+                line-height: 1.2;
+                div {
+                  font-size: 24 / @rem;
+                  color: #999999;
+                  &.title {
+                    p {
+                      color: #333333;
+                      font-size: 28 / @rem;
+                    }
+                  }
+                  &.content {
+                    padding: 10 / @rem 0;
+                  }
+                }
               }
-            }
-          }
-          &.right {
-            width: 108 / @rem;
-            height: 127 / @rem;
-            line-height: 127 / @rem;
-            text-align: center;
-            img {
-              width: 69 / @rem;
-              height: 69 / @rem;
-              vertical-align: middle;
+              &.right {
+                width: 108 / @rem;
+                height: 127 / @rem;
+                line-height: 127 / @rem;
+                text-align: center;
+                img {
+                  width: 69 / @rem;
+                  height: 69 / @rem;
+                  vertical-align: middle;
+                }
+              }
             }
           }
         }
-      }
-    }
-    .addMoreFarm {
-      padding: 0 35 / @rem;
-      img {
-        width: 100%;
+        .addMoreFarm {
+          padding: 0 35 / @rem;
+          img {
+            width: 100%;
+          }
+        }
       }
     }
   }

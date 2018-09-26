@@ -48,7 +48,19 @@ body header div.right .toolImg span.del img {
 body header a {
   overflow: hidden;
 }
-body section ul li {
+body #wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 1.92rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+body #wrapper #scroller {
+  padding-bottom: 2.13333333rem;
+}
+body #wrapper #scroller section ul li {
   padding: 0.64rem 0;
   margin: 0.74666667rem;
   background-color: #ffffff;
@@ -57,51 +69,51 @@ body section ul li {
   border-radius: 5px;
   box-shadow: 0.08533333rem 0.08533333rem 0.21333333rem rgba(51, 51, 51, 0.1);
 }
-body section ul li div {
+body #wrapper #scroller section ul li div {
   float: left;
 }
-body section ul li div.nameIcon {
+body #wrapper #scroller section ul li div.nameIcon {
   width: 2.304rem;
   height: 2.70933333rem;
   line-height: 2.70933333rem;
   text-align: center;
 }
-body section ul li div.nameIcon img {
+body #wrapper #scroller section ul li div.nameIcon img {
   width: 0.98133333rem;
   height: 1.06666667rem;
   vertical-align: middle;
 }
-body section ul li div.farmName {
+body #wrapper #scroller section ul li div.farmName {
   width: 8.21333333rem;
   padding: 0 0.64rem;
   border-left: solid #eeeeee 0.02133333rem;
   line-height: 1.2;
 }
-body section ul li div.farmName div {
+body #wrapper #scroller section ul li div.farmName div {
   font-size: 0.512rem;
   color: #999999;
 }
-body section ul li div.farmName div.title p {
+body #wrapper #scroller section ul li div.farmName div.title p {
   color: #333333;
   font-size: 0.59733333rem;
 }
-body section ul li div.farmName div.content {
+body #wrapper #scroller section ul li div.farmName div.content {
   padding: 0.21333333rem 0;
 }
-body section ul li div.right {
+body #wrapper #scroller section ul li div.right {
   width: 2.304rem;
   height: 2.70933333rem;
   line-height: 2.70933333rem;
   text-align: center;
 }
-body section ul li div.right img {
+body #wrapper #scroller section ul li div.right img {
   width: 1.472rem;
   height: 1.472rem;
   vertical-align: middle;
 }
-body section .addMoreFarm {
+body #wrapper #scroller section .addMoreFarm {
   padding: 0 0.74666667rem;
 }
-body section .addMoreFarm img {
+body #wrapper #scroller section .addMoreFarm img {
   width: 100%;
 }

@@ -43,7 +43,20 @@ body {
         line-height: 85 / @rem;
         background-color: #ffffff;
         color: #666666;
-        border-bottom: solid 1px #eeeeee;
+        a {
+          p {
+            border-bottom: solid 1px #eeeeee;
+            overflow: hidden;
+            i {
+              display: block;
+              float: right;
+              img {
+                width: 16 / @rem;
+                height: 27 / @rem;
+              }
+            }
+          }
+        }
       }
     }
   }

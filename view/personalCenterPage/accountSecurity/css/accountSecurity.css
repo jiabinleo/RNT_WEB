@@ -43,5 +43,16 @@ body section ul li {
   line-height: 1.81333333rem;
   background-color: #ffffff;
   color: #666666;
+}
+body section ul li a p {
   border-bottom: solid 1px #eeeeee;
+  overflow: hidden;
+}
+body section ul li a p i {
+  display: block;
+  float: right;
+}
+body section ul li a p i img {
+  width: 0.34133333rem;
+  height: 0.576rem;
 }
