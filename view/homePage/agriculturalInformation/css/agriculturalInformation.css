@@ -1,0 +1,164 @@
+html {
+  overflow: hidden;
+}
+body {
+  background-color: #eeeeee;
+  overflow: hidden;
+}
+body header {
+  height: 1.87733333rem;
+  background-color: #1c9ee1;
+}
+body header div {
+  line-height: 1.87733333rem;
+}
+body header div.left {
+  padding-left: 0.74666667rem;
+  width: 20%;
+  float: left;
+}
+body header div.left img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+body header div.center {
+  margin-left: -0.74666667rem;
+  float: left;
+  width: 60%;
+  font-size: 0.68266667rem;
+  text-align: center;
+  color: #ffffff;
+}
+body header a {
+  overflow: hidden;
+}
+body menu {
+  background-color: #ffffff;
+}
+body menu ul {
+  overflow: hidden;
+  font-size: 0.512rem;
+  padding: 0 0.64rem;
+  border-bottom: solid #eeeeee 0.04266667rem;
+}
+body menu ul li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  color: #999999;
+  height: 1.70666667rem;
+  line-height: 1.70666667rem;
+}
+body menu ul li span.active {
+  color: #22a3e5;
+  border-bottom: solid 0.04266667rem #22a3e5;
+  padding: 0.53333333rem 0;
+}
+body #wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 3.62666667rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+body #wrapper #scroller section .banner-wrap {
+  background-color: #ffffff;
+}
+body #wrapper #scroller section .banner-wrap .banner {
+  padding: 0.64rem 0;
+  width: 14.50666667rem;
+}
+body #wrapper #scroller section .banner-wrap .banner .swiper-container {
+  overflow: inherit;
+}
+body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap {
+  margin-right: 0.21333333rem;
+  position: relative;
+}
+body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap img {
+  width: 100%;
+  border-radius: 0.17066667rem;
+  overflow: hidden;
+}
+body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap .mask {
+  position: absolute;
+  bottom: 0.10666667rem;
+  left: 0;
+  padding: 0.21333333rem 0.64rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 0.17066667rem 0.17066667rem;
+  overflow: hidden;
+}
+body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap .mask p {
+  color: #ffffff;
+}
+body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap .mask p:first-of-type {
+  font-size: 0.55466667rem;
+  line-height: 0.85333333rem;
+}
+body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap .mask p:last-of-type {
+  font-size: 0.46933333rem;
+  text-align: right;
+}
+body #wrapper #scroller section .information-list {
+  margin-top: 0.64rem;
+  padding: 0 0.74666667rem;
+  background-color: #ffffff;
+}
+body #wrapper #scroller section .information-list li:last-of-type .information-list-text {
+  border-bottom: none;
+}
+body #wrapper #scroller section .information-list li .information-list-text {
+  overflow: hidden;
+  padding: 0.64rem 0;
+  border-bottom: solid 0.02133333rem #eeeeee;
+}
+body #wrapper #scroller section .information-list li .information-list-text div {
+  float: left;
+}
+body #wrapper #scroller section .information-list li .information-list-text div.left {
+  width: 9.06666667rem;
+}
+body #wrapper #scroller section .information-list li .information-list-text div.left p.list-title {
+  color: #333333;
+  font-size: 0.59733333rem;
+  line-height: 0.81066667rem;
+  font-weight: 700;
+  margin-top: -0.10666667rem;
+}
+body #wrapper #scroller section .information-list li .information-list-text div.left p.list-content {
+  color: #999999;
+  font-size: 0.512rem;
+  line-height: 0.72533333rem;
+  padding-top: 0.23466667rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  letter-spacing: 0px;
+  text-align: justify;
+  text-align-last: justify;
+}
+body #wrapper #scroller section .information-list li .information-list-text div.left p.list-time {
+  color: #999999;
+  font-size: 0.42666667rem;
+  overflow: hidden;
+  padding-top: 0.23466667rem;
+}
+body #wrapper #scroller section .information-list li .information-list-text div.left p.list-time span:first-of-type {
+  float: left;
+}
+body #wrapper #scroller section .information-list li .information-list-text div.left p.list-time span:last-of-type {
+  float: right;
+}
+body #wrapper #scroller section .information-list li .information-list-text div.right {
+  width: 4.39466667rem;
+  height: 4.39466667rem;
+  margin-left: 0.96rem;
+  overflow: hidden;
+}
+body #wrapper #scroller section .information-list li .information-list-text div.right img {
+  width: 100%;
+}

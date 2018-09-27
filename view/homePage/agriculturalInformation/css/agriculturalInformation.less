@@ -1,0 +1,188 @@
+@rem: 750/16rem;
+
+html {
+  overflow: hidden;
+}
+body {
+  background-color: #eeeeee;
+  overflow: hidden;
+  header {
+    height: 88 / @rem;
+    background-color: #1c9ee1;
+    div {
+      line-height: 88 / @rem;
+      &.left {
+        padding-left: 35 / @rem;
+        width: 20%;
+        float: left;
+        img {
+          width: 19 / @rem;
+          height: 35 / @rem;
+        }
+      }
+      &.center {
+        margin-left: -35 / @rem;
+        float: left;
+        width: 60%;
+        font-size: 32 / @rem;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+    a {
+      overflow: hidden;
+    }
+  }
+  menu {
+    background-color: #ffffff;
+    ul {
+      overflow: hidden;
+      font-size: 24 / @rem;
+      padding: 0 30 / @rem;
+      border-bottom: solid #eeeeee 2 / @rem;
+      li {
+        float: left;
+        width: 20%;
+        text-align: center;
+        color: #999999;
+        height: 80 / @rem;
+        line-height: 80 / @rem;
+        span {
+          &.active {
+            color: #22a3e5;
+            border-bottom: solid 2 / @rem #22a3e5;
+            padding: 25 / @rem 0;
+          }
+        }
+      }
+    }
+  }
+  #wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 170 / @rem;
+    bottom: 0 / @rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    #scroller {
+      // padding-bottom: 100 / @rem;
+      section {
+        .banner-wrap {
+          background-color: #ffffff;
+          .banner {
+            padding: 30 / @rem 0;
+            width: 680 / @rem;
+
+            .swiper-container {
+              overflow: inherit;
+              .swiper-wrapper {
+                .swiper-slide {
+                  .img-wrap {
+                    margin-right: 10 / @rem;
+                    position: relative;
+                    img {
+                      width: 100%;
+                      border-radius: 8 / @rem;
+                      overflow: hidden;
+                    }
+                    .mask {
+                      position: absolute;
+                      bottom: 5 / @rem;
+                      left: 0;
+                      padding: 10 / @rem 30 / @rem;
+                      // height: 120 / @rem;
+                      background: rgba(0, 0, 0, 0.5);
+                      border-radius: 0 0 8 / @rem 8 / @rem;
+                      overflow: hidden;
+                      p {
+                        color: #ffffff;
+                        &:first-of-type {
+                          font-size: 26 / @rem;
+                          line-height: 40 / @rem;
+                        }
+                        &:last-of-type {
+                          font-size: 22 / @rem;
+                          text-align: right;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .information-list {
+          margin-top: 30 / @rem;
+          padding: 0 35 / @rem;
+          background-color: #ffffff;
+          li {
+            &:last-of-type {
+              .information-list-text {
+                border-bottom: none;
+              }
+            }
+            .information-list-text {
+              overflow: hidden;
+              padding: 30 / @rem 0;
+              border-bottom: solid 1 / @rem #eeeeee;
+              div {
+                float: left;
+                &.left {
+                  width: 425 / @rem;
+                  p {
+                    &.list-title {
+                      color: #333333;
+                      font-size: 28 / @rem;
+                      line-height: 38 / @rem;
+                      font-weight: 700;
+                      margin-top: -5 / @rem;
+                    }
+                    &.list-content {
+                      color: #999999;
+                      font-size: 24 / @rem;
+                      line-height: 34 / @rem;
+                      padding-top: 11 / @rem;
+
+                      display: -webkit-box;
+                      -webkit-box-orient: vertical;
+                      -webkit-line-clamp: 3;
+                      overflow: hidden;
+                      letter-spacing: 0px;
+                      text-align: justify;
+                      text-align-last: justify;
+                    }
+                    &.list-time {
+                      color: #999999;
+                      font-size: 20 / @rem;
+                      overflow: hidden;
+                      padding-top: 11 / @rem;
+                      span {
+                        &:first-of-type {
+                          float: left;
+                        }
+                        &:last-of-type {
+                          float: right;
+                        }
+                      }
+                    }
+                  }
+                }
+                &.right {
+                  width: 206 / @rem;
+                  height: 206 / @rem;
+                  margin-left: 45 / @rem;
+                  overflow: hidden;
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
