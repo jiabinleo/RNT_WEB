@@ -1,0 +1,247 @@
+@rem: 750/16rem;
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+header {
+  position: absolute;
+  width: 750 / @rem;
+  height: 88 / @rem;
+  background: #1c9ee1;
+  div {
+    float: left;
+    height: 88 / @rem;
+    &.left {
+      width: 75 / @rem;
+      line-height: 88 / @rem;
+      a {
+        display: inline-block;
+        .sweep {
+          width: 75 / @rem;
+          margin-left: 35 / @rem;
+          img {
+            width: 19 / @rem;
+            height: 35 / @rem;
+          }
+        }
+      }
+    }
+    &.center {
+      text-align: center;
+      width: 600 / @rem;
+      h1 {
+        width: 600 / @rem;
+        color: #ffffff;
+        font-size: 30 / @rem;
+        line-height: 88 / @rem;
+        text-align: center;
+      }
+    }
+    &.right {
+      float: right;
+      width: 75 / @rem;
+      line-height: 88 / @rem;
+      .alarm {
+        margin-right: 35 / @rem;
+        float: right;
+        width: 29 / @rem;
+        height: 35 / @rem;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 88 / @rem;
+  bottom: 0 / @rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  #scroller {
+    padding-bottom: 90 / @rem;
+    section {
+      .banner {
+        .swiper-container {
+          .swiper-wrapper {
+            .swiper-slide {
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .menu {
+        padding: 18 / @rem 55 / @rem;
+        background-color: #ffffff;
+        margin-top: -4 / @rem;
+        ul {
+          overflow: hidden;
+          li {
+            float: left;
+            width: 25%;
+            a {
+              div {
+                text-align: center;
+                img {
+                  width: 115 / @rem;
+                  height: 115 / @rem;
+                }
+                p {
+                  font-size: 24 / @rem;
+                  color: #666666;
+                }
+              }
+            }
+          }
+        }
+      }
+      .line {
+        height: 20 / @rem;
+      }
+      .supplyAndDemand {
+        .supplyAndDemand-title {
+          border-bottom: solid 1 / @rem #eeeeee;
+          background-color: #ffffff;
+          div {
+            display: inline-block;
+            width: 48%;
+            text-align: center;
+            span {
+              line-height: 85 / @rem;
+              padding: 24 / @rem 0;
+              font-size: 24 / @rem;
+              color: #999999;
+              &.active {
+                border-bottom: solid 2 / @rem #22a3e5;
+                color: #22a3e5;
+              }
+            }
+          }
+        }
+        .supplyAndDemand-list {
+          .supplyAndDemand-text {
+            padding: 30 / @rem 35 / @rem 0 35 / @rem;
+            margin-top: 20 / @rem;
+            background-color: #ffffff;
+            &:first-of-type {
+              margin-top: 0;
+            }
+            .supplyAndDemand-text-title {
+              overflow: hidden;
+              div {
+                float: left;
+                &.left {
+                  width: 68 / @rem;
+                  height: 68 / @rem;
+                  img {
+                    width: 68 / @rem;
+                  }
+                }
+                &.center {
+                  padding-left: 16 / @rem;
+                  p {
+                    font-size: 26 / @rem;
+                    color: #333333;
+                    font-weight: 500;
+                    line-height: 30 / @rem;
+                    span {
+                      display: inline-block;
+                      font-size: 16 / @rem;
+                      color: #ffffff;
+                      background-color: #1c9ee1;
+                      transform: scale(0.8) translateX(-12%);
+                      border-radius: 24 / @rem;
+                      padding: 6 / @rem 16 / @rem;
+                      letter-spacing: 3 / @rem;
+                    }
+                  }
+                }
+                &.right {
+                  float: right;
+                  font-size: 16 / @rem;
+                  color: #999999;
+                }
+              }
+            }
+            .supplyAndDemand-text-content {
+              font-size: 26 / @rem;
+              padding: 15 / @rem 0;
+              p {
+                line-height: 36 / @rem;
+                color: #666666;
+                &:last-of-type {
+                  color: #999999;
+                }
+              }
+            }
+            .supplyAndDemand-text-img {
+              ul {
+                overflow: hidden;
+                li {
+                  width: 220 / @rem;
+                  height: 140 / @rem;
+                  float: left;
+                  overflow: hidden;
+                  margin-right: 10 / @rem;
+                  &:last-of-type {
+                    margin-right: 0;
+                  }
+                  img {
+                    width: 220 / @rem;
+                  }
+                }
+              }
+            }
+            .count {
+              p {
+                font-size: 24 / @rem;
+                text-align: right;
+                padding: 22 / @rem 0;
+                span {
+                  color: #999999;
+                  margin-left: 19 / @rem;
+                  &:first-of-type {
+                    img {
+                      width: 36 / @rem;
+                      height: 20 / @rem;
+                      vertical-align: -0 / @rem;
+                      margin-right: 8 / @rem;
+                    }
+                  }
+                  &:last-of-type {
+                    img {
+                      width: 30 / @rem;
+                      height: 26 / @rem;
+                      vertical-align: -4 / @rem;
+                      margin-right: 8 / @rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .iScrollVerticalScrollbar {
+    .iScrollIndicator {
+      opacity: 0;
+    }
+  }
+}
+footer {
+  height: 98 / @rem;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

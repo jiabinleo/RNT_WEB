@@ -1,0 +1,219 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+header {
+  position: absolute;
+  width: 16rem;
+  height: 1.87733333rem;
+  background: #1c9ee1;
+}
+header div {
+  float: left;
+  height: 1.87733333rem;
+}
+header div.left {
+  width: 1.6rem;
+  line-height: 1.87733333rem;
+}
+header div.left a {
+  display: inline-block;
+}
+header div.left a .sweep {
+  width: 1.6rem;
+  margin-left: 0.74666667rem;
+}
+header div.left a .sweep img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+header div.center {
+  text-align: center;
+  width: 12.8rem;
+}
+header div.center h1 {
+  width: 12.8rem;
+  color: #ffffff;
+  font-size: 0.64rem;
+  line-height: 1.87733333rem;
+  text-align: center;
+}
+header div.right {
+  float: right;
+  width: 1.6rem;
+  line-height: 1.87733333rem;
+}
+header div.right .alarm {
+  margin-right: 0.74666667rem;
+  float: right;
+  width: 0.61866667rem;
+  height: 0.74666667rem;
+}
+header div.right .alarm img {
+  width: 100%;
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 1.87733333rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#wrapper #scroller {
+  padding-bottom: 1.92rem;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+#wrapper #scroller section .menu {
+  padding: 0.384rem 1.17333333rem;
+  background-color: #ffffff;
+  margin-top: -0.08533333rem;
+}
+#wrapper #scroller section .menu ul {
+  overflow: hidden;
+}
+#wrapper #scroller section .menu ul li {
+  float: left;
+  width: 25%;
+}
+#wrapper #scroller section .menu ul li a div {
+  text-align: center;
+}
+#wrapper #scroller section .menu ul li a div img {
+  width: 2.45333333rem;
+  height: 2.45333333rem;
+}
+#wrapper #scroller section .menu ul li a div p {
+  font-size: 0.512rem;
+  color: #666666;
+}
+#wrapper #scroller section .line {
+  height: 0.42666667rem;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-title {
+  border-bottom: solid 0.02133333rem #eeeeee;
+  background-color: #ffffff;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-title div {
+  display: inline-block;
+  width: 48%;
+  text-align: center;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-title div span {
+  line-height: 1.81333333rem;
+  padding: 0.512rem 0;
+  font-size: 0.512rem;
+  color: #999999;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-title div span.active {
+  border-bottom: solid 0.04266667rem #22a3e5;
+  color: #22a3e5;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text {
+  padding: 0.64rem 0.74666667rem 0 0.74666667rem;
+  margin-top: 0.42666667rem;
+  background-color: #ffffff;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text:first-of-type {
+  margin-top: 0;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title {
+  overflow: hidden;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title div {
+  float: left;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title div.left {
+  width: 1.45066667rem;
+  height: 1.45066667rem;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title div.left img {
+  width: 1.45066667rem;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title div.center {
+  padding-left: 0.34133333rem;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title div.center p {
+  font-size: 0.55466667rem;
+  color: #333333;
+  font-weight: 500;
+  line-height: 0.64rem;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title div.center p span {
+  display: inline-block;
+  font-size: 0.34133333rem;
+  color: #ffffff;
+  background-color: #1c9ee1;
+  transform: scale(0.8) translateX(-12%);
+  border-radius: 0.512rem;
+  padding: 0.128rem 0.34133333rem;
+  letter-spacing: 0.064rem;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title div.right {
+  float: right;
+  font-size: 0.34133333rem;
+  color: #999999;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-content {
+  font-size: 0.55466667rem;
+  padding: 0.32rem 0;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-content p {
+  line-height: 0.768rem;
+  color: #666666;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-content p:last-of-type {
+  color: #999999;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-img ul {
+  overflow: hidden;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-img ul li {
+  width: 4.69333333rem;
+  height: 2.98666667rem;
+  float: left;
+  overflow: hidden;
+  margin-right: 0.21333333rem;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-img ul li:last-of-type {
+  margin-right: 0;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-img ul li img {
+  width: 4.69333333rem;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .count p {
+  font-size: 0.512rem;
+  text-align: right;
+  padding: 0.46933333rem 0;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .count p span {
+  color: #999999;
+  margin-left: 0.40533333rem;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .count p span:first-of-type img {
+  width: 0.768rem;
+  height: 0.42666667rem;
+  vertical-align: 0rem;
+  margin-right: 0.17066667rem;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list .supplyAndDemand-text .count p span:last-of-type img {
+  width: 0.64rem;
+  height: 0.55466667rem;
+  vertical-align: -0.08533333rem;
+  margin-right: 0.17066667rem;
+}
+#wrapper .iScrollVerticalScrollbar .iScrollIndicator {
+  opacity: 0;
+}
+footer {
+  height: 2.09066667rem;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
