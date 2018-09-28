@@ -65,7 +65,7 @@ header {
   width: 100%;
   overflow: hidden;
   #scroller {
-    padding-bottom: 90 / @rem;
+    padding-bottom: 142 / @rem;
     section {
       .banner {
         .swiper-container {
@@ -239,9 +239,65 @@ header {
   }
 }
 footer {
-  height: 98 / @rem;
-  background-color: #ffffff;
+  height: 142 / @rem;
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 666;
+  width: 100%;
+
+  overflow: hidden;
+  .menu {
+    height: 98 / @rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: solid 1 / @rem #d3d3d3;
+    background-color: #ffffff;
+    padding: 0 30 / @rem;
+    div {
+      float: left;
+      font-size: 20 / @rem;
+      color: #1ea0e3;
+      &.left {
+        width: 287 / @rem;
+        div {
+          width: 50%;
+          text-align: center;
+          img {
+            width: 66 / @rem;
+            height: 66 / @rem;
+          }
+        }
+      }
+      &.center {
+        width: 114 / @rem;
+        height: 114 / @rem;
+      }
+      &.right {
+        width: 287 / @rem;
+        div {
+          width: 50%;
+          text-align: center;
+          img {
+            width: 66 / @rem;
+            height: 66 / @rem;
+          }
+        }
+      }
+    }
+  }
+  .center-add {
+    position: absolute;
+    left: 50%;
+    bottom: 9 / @rem;
+    transform: translate(-50%, 0);
+    text-align: center;
+    font-size: 20 / @rem;
+    color: #1ea0e3;
+    img {
+      width: 114 / @rem;
+      height: 114 / @rem;
+    }
+  }
 }
