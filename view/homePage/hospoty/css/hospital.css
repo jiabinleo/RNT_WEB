@@ -1,0 +1,236 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+header {
+  width: 16rem;
+  height: 1.87733333rem;
+  background: #1c9ee1;
+  overflow: hidden;
+}
+header div {
+  float: left;
+  height: 1.87733333rem;
+}
+header div.left {
+  width: 1.6rem;
+  line-height: 1.87733333rem;
+}
+header div.left a {
+  display: inline-block;
+}
+header div.left a .sweep {
+  width: 1.6rem;
+  margin-left: 0.74666667rem;
+}
+header div.left a .sweep img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+header div.center {
+  text-align: center;
+  width: 12.8rem;
+}
+header div.center h1 {
+  width: 12.8rem;
+  color: #ffffff;
+  font-size: 0.64rem;
+  line-height: 1.87733333rem;
+  text-align: center;
+}
+menu {
+  background-color: #ffffff;
+}
+menu ul {
+  overflow: hidden;
+}
+menu ul li {
+  float: left;
+  width: 25%;
+}
+menu ul li.active div span {
+  border-bottom: solid 0.21333333rem #22a3e5;
+  color: #22a3e5;
+}
+menu ul li div {
+  text-align: center;
+}
+menu ul li div span {
+  line-height: 1.81333333rem;
+  padding: 0.46933333rem 0;
+  font-size: 0.512rem;
+  color: #999999;
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 3.62666667rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#wrapper #scroller {
+  transition: 0s;
+  overflow: hidden;
+  width: 64rem;
+}
+#wrapper #scroller section {
+  width: 16rem;
+  float: left;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide {
+  position: relative;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide .banner-msg {
+  width: 100%;
+  position: absolute;
+  z-index: 666;
+  bottom: 0.10666667rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.21333333rem 0.78933333rem;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide .banner-msg p {
+  color: #ffffff;
+  line-height: 0.85333333rem;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide .banner-msg p:first-of-type {
+  font-size: 0.59733333rem;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide .banner-msg p:last-of-type {
+  font-size: 0.46933333rem;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-pagination {
+  text-align: right;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-pagination span.swiper-pagination-bullet-active {
+  width: 0.64rem;
+  border-radius: 0.14933333rem;
+}
+#wrapper #scroller section .line {
+  height: 0.42666667rem;
+}
+#wrapper #scroller section .content {
+  background-color: #ffffff;
+  padding: 0 0.74666667rem;
+}
+#wrapper #scroller section .content .content-title {
+  height: 1.83466667rem;
+  line-height: 1.83466667rem;
+  position: relative;
+}
+#wrapper #scroller section .content .content-title .blue-line {
+  position: absolute;
+  left: -0.74666667rem;
+  top: 0.768rem;
+  width: 0rem;
+  height: 0rem;
+  padding: 0.27733333rem 0.04266667rem;
+  background-color: #1d9fe2;
+}
+#wrapper #scroller section .content .content-title .title {
+  border-bottom: solid 0.04266667rem #eeeeee;
+}
+#wrapper #scroller section .content .content-title .title span {
+  font-size: 0.59733333rem;
+  color: #333333;
+  font-weight: 500;
+}
+#wrapper #scroller section .content .content-title .title span:last-of-type {
+  float: right;
+  padding: 0rem 0.64rem;
+}
+#wrapper #scroller section .content .content-title .title span:last-of-type img {
+  width: 0.256rem;
+  height: 0.46933333rem;
+  vertical-align: middle;
+}
+#wrapper #scroller section .content .content-top .content-top-title {
+  font-size: 0.59733333rem;
+  font-weight: Heavy;
+  line-height: 0.85333333rem;
+  padding-top: 0.53333333rem;
+}
+#wrapper #scroller section .content .content-top ul {
+  overflow: hidden;
+  margin-top: 0.53333333rem;
+}
+#wrapper #scroller section .content .content-top ul li {
+  float: left;
+  padding-right: 0.10666667rem;
+}
+#wrapper #scroller section .content .content-top ul li img {
+  width: 4.69333333rem;
+}
+#wrapper #scroller section .content .content-top .timer {
+  overflow: hidden;
+  border-bottom: solid 0.04266667rem #eeeeee;
+}
+#wrapper #scroller section .content .content-top .timer span {
+  font-size: 0.42666667rem;
+  color: #999999;
+  padding: 0.42666667rem 0 0.64rem 0;
+}
+#wrapper #scroller section .content .content-top .timer span:first-of-type {
+  float: left;
+}
+#wrapper #scroller section .content .content-top .timer span:last-of-type {
+  float: right;
+}
+#wrapper #scroller section .content .content-bottom ul li {
+  overflow: hidden;
+  border-bottom: solid 0.04266667rem #eeeeee;
+  padding: 0.64rem 0;
+}
+#wrapper #scroller section .content .content-bottom ul li:last-of-type {
+  border-bottom: none;
+}
+#wrapper #scroller section .content .content-bottom ul li .left {
+  float: left;
+  width: 4.39466667rem;
+  height: 4.39466667rem;
+}
+#wrapper #scroller section .content .content-bottom ul li .left img {
+  width: 4.39466667rem;
+}
+#wrapper #scroller section .content .content-bottom ul li .right {
+  float: right;
+  width: 8.896rem;
+}
+#wrapper #scroller section .content .content-bottom ul li .right p.content-bottom-title {
+  color: #333333;
+  font-size: 0.59733333rem;
+  line-height: 0.85333333rem;
+}
+#wrapper #scroller section .content .content-bottom ul li .right p.content-bottom-content {
+  color: #999999;
+  font-size: 0.512rem;
+  line-height: 0.64rem;
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  letter-spacing: 0px;
+  text-align: justify;
+  text-align-last: justify;
+}
+#wrapper #scroller section .content .content-bottom ul li .right p.content-bottom-timer span {
+  font-size: 0.42666667rem;
+  color: #999999;
+  padding-top: 0.29866667rem;
+}
+#wrapper #scroller section .content .content-bottom ul li .right p.content-bottom-timer span:first-of-type {
+  float: left;
+}
+#wrapper #scroller section .content .content-bottom ul li .right p.content-bottom-timer span:last-of-type {
+  float: right;
+}
+#wrapper .iScrollVerticalScrollbar .iScrollIndicator {
+  opacity: 0;
+}
