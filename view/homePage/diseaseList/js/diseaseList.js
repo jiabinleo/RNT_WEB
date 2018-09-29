@@ -1,6 +1,7 @@
 $(function () {
     var diseaseAndInsectBank = {
         init: function () {
+            $("#diseaseListTitle").html(localStorage.getItem("diseaseListTitle"))
             diseaseAndInsectBank.listen()
         },
         listen: function () {
@@ -98,6 +99,7 @@ $(function () {
                 },
 
             ]
+
             var diseaseList = ""
             for (let i = 0; i < data.length; i++) {
                 diseaseList +=

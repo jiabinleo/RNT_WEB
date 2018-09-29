@@ -170,6 +170,7 @@ $(function () {
             }
             $("#diseaseList").html(diseaseList)
             $(document).on("click", ".diseaseListTitle", function () {
+                localStorage.setItem("diseaseListTitle", $(this).attr("data-id"))
             })
         }
     }
