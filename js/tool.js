@@ -4,3 +4,9 @@
     style.innerHTML = "html{font-size: " + width / 16 + "px !important;}"
     document.head.appendChild(style)
 })();
+
+var publicData = {
+    homePage: {
+        diseaseListTitle: 123
+    }
+}
