@@ -4,8 +4,7 @@ $(function () {
             supDem.listen()
         },
         listen: function () {
-            var menu = [
-                {
+            var menu = [{
                     title: "水果",
                     link: "#",
                     imgUrl: "img/fruits.png"
@@ -26,8 +25,7 @@ $(function () {
                     imgUrl: "img/specialty.png"
                 }
             ]
-            var contentData = [
-                {
+            var contentData = [{
                 user: "赣南脐橙专业合作社",
                 userImgUrl: "img/userLogo.png",
                 iden: "江西赣州赣南县",
