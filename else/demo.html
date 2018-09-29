@@ -24,7 +24,7 @@
 		}
 
 		.active {
-			color: red;
+			color: skyblue;
 		}
 
 		.Area {
@@ -45,8 +45,9 @@
 		.AreaLeft {
 			width: 30%;
 			float: left;
-			padding-left: 10px;
-			border-right: 1px solid #ebebeb;
+			/* padding-left: 10px; */
+			text-align: center;
+			/* border-right: 1px solid #ebebeb; */
 		}
 
 		.AreaLeft ul li {
@@ -57,11 +58,12 @@
 		}
 
 		.AreaCenter {
-			background: #fafafa;
+			background: #fff;
 			width: 70%;
 			float: left;
-			padding-left: 10px;
-			border-right: 1px solid #e7e7e7;
+			/* padding-left: 10px; */
+			text-align: center;
+			/* border-right: 1px solid #e7e7e7; */
 		}
 
 		.AreaCenter ul li {
@@ -72,17 +74,18 @@
 		}
 
 		.AreaRight {
-			background: #f0f0f0;
+			background: #fff;
 			width: 40%;
 			float: left;
-			padding-left: 10px;
+			/* padding-left: 10px; */
+			text-align: center;
 			display: none;
 		}
 
 		.AreaRight ul li {
 			width: 100%;
 			border-bottom: 1px solid #e7e7e7;
-			padding: 12px 0px;
+			padding: 15px 0px;
 			line-height: 200%;
 		}
 	</style>
@@ -91,15 +94,16 @@
 <body>
 	<div class="Area">
 		<div class="block AreaLeft">
-			<ul>
-				<li class="active">不限</li>
+			<ul id="ulList">
+
+				<!-- <li class="active">不限</li>
 				<li>水果</li>
 				<li>蔬菜</li>
 				<li>梁作</li>
 				<li>茶叶</li>
 				<li>中药材</li>
 				<li>坚果干果</li>
-				<li>其他</li>
+				<li>其他</li> -->
 			</ul>
 		</div>
 		<div class="block AreaCenter">
@@ -114,7 +118,7 @@
 </html>
 
 <script>
-	address(fruits[0].city);
+	address(fruits[0].list);
 
 	function address(data) {
 		$(".AreaCenter ul").html('');
@@ -124,11 +128,12 @@
 		$('.AreaCenter ul li').on('click', {
 			data: data
 		}, Areas)
+		$(".AreaCenter ul li").eq(0).trigger("click");
 	}
 
 	function Prompt() {
 		var c = $(".AreaLeft .active").text() + '--' + $(".AreaCenter .active").text() + '--' + $(this).text();
-		alert('您选择了：' + c);
+		console.log(c);
 	}
 
 	function Areas(data) {
@@ -141,33 +146,89 @@
 		$(".AreaRight").show();
 		var id = $(this).attr('data-id');
 		$(".AreaRight ul").html('');
-		$.each(data[id].area, function (index, item) {
+		$.each(data[id].list2, function (index, item) {
 			$(".AreaRight ul").append('<li data-cid=' + index + '>' + item + '</li>')
 		})
 		$(".AreaRight ul li").on('click', Prompt)
 	}
 
-	$(".AreaLeft ul li").on('click', function () {
+	$(document).on("click", ".AreaLeft ul li", function () {
 		$(".AreaLeft ul li").removeClass('active')
 		$(this).addClass('active');
-		if ($(this).index() == 0) {
-			address(fruits[0].city);
-			$(".AreaCenter").css({
-				"width": "70%"
-			});
-			$(".AreaRight").hide();
-		} else if ($(this).index() == 1) {
-			address(fruits[1].city);
-			$(".AreaCenter").css({
-				"width": "70%"
-			});
-			$(".AreaRight").hide();
-		} else if ($(this).index() == 2) {
-			address(fruits[2].city);
-			$(".AreaCenter").css({
-				"width": "70%"
-			});
-			$(".AreaRight").hide();
+		for (let i = 0; i < fruits.length; i++) {
+			if ($(this).index() == i) {
+				address(fruits[i].list);
+				$(".AreaCenter").css({
+					"width": "30%"
+				});
+				// $(".AreaRight").hide();
+			}
 		}
+		// $(".AreaCenter ul li").eq(0).trigger("click");
+		// if ($(this).index() == 0) {
+		// 	address(fruits[0].list);
+		// 	$(".AreaCenter").css({
+		// 		"width": "70%"
+		// 	});
+		// 	$(".AreaRight").hide();
+		// } else if ($(this).index() == 1) {
+		// 	address(fruits[1].list);
+		// 	$(".AreaCenter").css({
+		// 		"width": "70%"
+		// 	});
+		// 	$(".AreaRight").hide();
+		// } else if ($(this).index() == 2) {
+		// 	address(fruits[2].list);
+		// 	$(".AreaCenter").css({
+		// 		"width": "70%"
+		// 	});
+		// 	$(".AreaRight").hide();
+		// }else if ($(this).index() == 3) {
+		// 	address(fruits[3].list);
+		// 	$(".AreaCenter").css({
+		// 		"width": "70%"
+		// 	});
+		// 	$(".AreaRight").hide();
+		// }else if ($(this).index() == 4) {
+		// 	address(fruits[4].list);
+		// 	$(".AreaCenter").css({
+		// 		"width": "70%"
+		// 	});
+		// 	$(".AreaRight").hide();
+		// }else if ($(this).index() == 5) {
+		// 	address(fruits[5].list);
+		// 	$(".AreaCenter").css({
+		// 		"width": "70%"
+		// 	});
+		// 	$(".AreaRight").hide();
+		// }else if ($(this).index() == 6) {
+		// 	address(fruits[6].list);
+		// 	$(".AreaCenter").css({
+		// 		"width": "70%"
+		// 	});
+		// 	$(".AreaRight").hide();
+		// }else if ($(this).index() == 7) {
+		// 	address(fruits[7].list);
+		// 	$(".AreaCenter").css({
+		// 		"width": "70%"
+		// 	});
+		// 	$(".AreaRight").hide();
+		// }else if ($(this).index() == 8) {
+		// 	address(fruits[8].list);
+		// 	$(".AreaCenter").css({
+		// 		"width": "70%"
+		// 	});
+		// 	$(".AreaRight").hide();
+		// }
 	})
+
+	var ulListHTML = "";
+	for (var i = 0; i < fruits.length; i++) {
+		if (i === 0) {
+			ulListHTML += `<li class="active">${fruits[i].name}</li>`
+		} else {
+			ulListHTML += `<li>${fruits[i].name}</li>`
+		}
+	}
+	$("#ulList").html(ulListHTML)
 </script>
