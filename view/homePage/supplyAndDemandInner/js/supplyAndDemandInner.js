@@ -1,6 +1,12 @@
 $(function () {
     var supDem = {
         init: function () {
+            console.log(localStorage.getItem("fenlei"))
+            try {
+                $("#fenlei").html(localStorage.getItem("fenlei"))
+            } catch (error) {
+                $("#fenlei").html("选择分类")
+            }
             supDem.listen()
         },
         listen: function () {
@@ -175,26 +181,6 @@ $(function () {
         </div></a>`
             }
             $("#contentHTML").html(contentHTML)
-
-            $(document).on("click", ".menu ul li", function () {
-                if ($(this).attr("id") === "fenlei") {
-                    if ($(".listtt").css("display") === "none") {
-                        $(".Area").show()
-                        $(".listtt").show()
-                        $(".mask").show()
-                    } else {
-                        $(".listtt").hide()
-                        $(".Area").hide()
-                        $(".mask").hide()
-                    }
-                }
-            })
-            $(document).on("click", ".mask", function () {
-                $(".listtt").hide()
-                $(".Area").hide()
-                $(".mask").hide()
-            })
-
         }
     }
     supDem.init()
@@ -208,70 +194,4 @@ $(function () {
         autoplayDisableOnInteraction: false,
         centeredSlides: true
     })
-
-
-
-    address(fruits[0].list);
-
-    function address(data) {
-        $(".AreaCenter ul").html('');
-        $.each(data, function (i, v) {
-            $(".AreaCenter ul").append('<li data-id=' + i + '><span>' + v.name + '</span></li>');
-        });
-        $('.AreaCenter ul li').on('click', {
-            data: data
-        }, Areas)
-        $(".AreaCenter ul li").eq(0).trigger("click");
-    }
-
-    function Prompt() {
-        var c = $(".AreaLeft .active").text() + '--' + $(".AreaCenter .active").text() + '--' + $(this).text();
-        console.log(c);
-        $(".listtt").hide()
-        $(".Area").hide()
-        $(".mask").hide()
-    }
-
-    function Areas(data) {
-        $('.AreaCenter ul li').removeClass('active')
-        $(this).addClass('active');
-        var data = data.data.data
-        $(".AreaCenter").css({
-            "width": "33%"
-        });
-        $(".AreaRight").show();
-        var id = $(this).attr('data-id');
-        $(".AreaRight ul").html('');
-        $.each(data[id].list2, function (index, item) {
-            $(".AreaRight ul").append('<li data-cid=' + index + '><span>' + item + '</span</li>')
-        })
-        $(".AreaRight ul li").on('click', Prompt)
-    }
-
-    $(document).on("click", ".AreaLeft ul li", function () {
-        $(".AreaLeft ul li").removeClass('active')
-        $(this).addClass('active');
-        for (let i = 0; i < fruits.length; i++) {
-            if ($(this).index() == i) {
-                address(fruits[i].list);
-                $(".AreaCenter").css({
-                    "width": "33%"
-                });
-            }
-        }
-    })
-
-    var ulListHTML = "";
-    for (var i = 0; i < fruits.length; i++) {
-        if (i === 0) {
-            ulListHTML += `<li class="active"><span>${fruits[i].name}</span></li>`
-        } else {
-            ulListHTML += `<li><span>${fruits[i].name}</span></li>`
-        }
-    }
-    $("#ulList").html(ulListHTML)
-
-
-
-
 })

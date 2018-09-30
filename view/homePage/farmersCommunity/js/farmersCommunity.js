@@ -225,7 +225,7 @@ $(function () {
             $("#contentHTML_left").html(contentHTML)
             $("#contentHTML_right").html(contentHTML)
 
-            $(document).on("click",".supplyAndDemand-title div",function(){
+            $(document).on("click", ".supplyAndDemand-title div", function () {
                 $(".supplyAndDemand-title span").removeClass("active")
                 $(this).find("span").addClass("active")
                 var $eleWidth = $(window).width()
