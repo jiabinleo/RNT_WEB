@@ -7,7 +7,8 @@
 	<meta name="format-detection" content="telephone=no" />
 	<title></title>
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="js/sy.js"></script>
+	<script src="js/json.js"></script>
+
 	<style>
 		* {
 			margin: 0px;
@@ -18,7 +19,7 @@
 		html,
 		body {
 			background: #666;
-			height: 100%;
+			height: 600px;
 			font-family: "microsoft yahei";
 			font-size: 12px;
 		}
@@ -31,7 +32,7 @@
 			width: 100%;
 			overflow: hidden;
 			background: #fff;
-			height: 40%;
+			height: 400px;
 		}
 
 		.Area .block {
@@ -116,119 +117,4 @@
 </body>
 
 </html>
-
-<script>
-	address(fruits[0].list);
-
-	function address(data) {
-		$(".AreaCenter ul").html('');
-		$.each(data, function (i, v) {
-			$(".AreaCenter ul").append('<li data-id=' + i + '>' + v.name + '</li>');
-		});
-		$('.AreaCenter ul li').on('click', {
-			data: data
-		}, Areas)
-		$(".AreaCenter ul li").eq(0).trigger("click");
-	}
-
-	function Prompt() {
-		var c = $(".AreaLeft .active").text() + '--' + $(".AreaCenter .active").text() + '--' + $(this).text();
-		console.log(c);
-	}
-
-	function Areas(data) {
-		$('.AreaCenter ul li').removeClass('active')
-		$(this).addClass('active');
-		var data = data.data.data
-		$(".AreaCenter").css({
-			"width": "30%"
-		});
-		$(".AreaRight").show();
-		var id = $(this).attr('data-id');
-		$(".AreaRight ul").html('');
-		$.each(data[id].list2, function (index, item) {
-			$(".AreaRight ul").append('<li data-cid=' + index + '>' + item + '</li>')
-		})
-		$(".AreaRight ul li").on('click', Prompt)
-	}
-
-	$(document).on("click", ".AreaLeft ul li", function () {
-		$(".AreaLeft ul li").removeClass('active')
-		$(this).addClass('active');
-		for (let i = 0; i < fruits.length; i++) {
-			if ($(this).index() == i) {
-				address(fruits[i].list);
-				$(".AreaCenter").css({
-					"width": "30%"
-				});
-				// $(".AreaRight").hide();
-			}
-		}
-		// $(".AreaCenter ul li").eq(0).trigger("click");
-		// if ($(this).index() == 0) {
-		// 	address(fruits[0].list);
-		// 	$(".AreaCenter").css({
-		// 		"width": "70%"
-		// 	});
-		// 	$(".AreaRight").hide();
-		// } else if ($(this).index() == 1) {
-		// 	address(fruits[1].list);
-		// 	$(".AreaCenter").css({
-		// 		"width": "70%"
-		// 	});
-		// 	$(".AreaRight").hide();
-		// } else if ($(this).index() == 2) {
-		// 	address(fruits[2].list);
-		// 	$(".AreaCenter").css({
-		// 		"width": "70%"
-		// 	});
-		// 	$(".AreaRight").hide();
-		// }else if ($(this).index() == 3) {
-		// 	address(fruits[3].list);
-		// 	$(".AreaCenter").css({
-		// 		"width": "70%"
-		// 	});
-		// 	$(".AreaRight").hide();
-		// }else if ($(this).index() == 4) {
-		// 	address(fruits[4].list);
-		// 	$(".AreaCenter").css({
-		// 		"width": "70%"
-		// 	});
-		// 	$(".AreaRight").hide();
-		// }else if ($(this).index() == 5) {
-		// 	address(fruits[5].list);
-		// 	$(".AreaCenter").css({
-		// 		"width": "70%"
-		// 	});
-		// 	$(".AreaRight").hide();
-		// }else if ($(this).index() == 6) {
-		// 	address(fruits[6].list);
-		// 	$(".AreaCenter").css({
-		// 		"width": "70%"
-		// 	});
-		// 	$(".AreaRight").hide();
-		// }else if ($(this).index() == 7) {
-		// 	address(fruits[7].list);
-		// 	$(".AreaCenter").css({
-		// 		"width": "70%"
-		// 	});
-		// 	$(".AreaRight").hide();
-		// }else if ($(this).index() == 8) {
-		// 	address(fruits[8].list);
-		// 	$(".AreaCenter").css({
-		// 		"width": "70%"
-		// 	});
-		// 	$(".AreaRight").hide();
-		// }
-	})
-
-	var ulListHTML = "";
-	for (var i = 0; i < fruits.length; i++) {
-		if (i === 0) {
-			ulListHTML += `<li class="active">${fruits[i].name}</li>`
-		} else {
-			ulListHTML += `<li>${fruits[i].name}</li>`
-		}
-	}
-	$("#ulList").html(ulListHTML)
-</script>
+<script type="text/javascript" src="js/sy.js"></script>

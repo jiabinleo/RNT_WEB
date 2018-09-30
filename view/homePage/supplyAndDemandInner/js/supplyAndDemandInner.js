@@ -5,6 +5,7 @@ $(function () {
         },
         listen: function () {
             var contentData = [{
+                link: "../../supplyInformation/supplyInformation.html",
                 user: "赣南脐橙专业合作社",
                 userImgUrl: "img/userLogo.png",
                 iden: "江西赣州赣南县",
@@ -17,6 +18,7 @@ $(function () {
                     "img/new.png", "img/new.png", "img/new.png", "img/new.png"
                 ]
             }, {
+                link: "../../supplyInformation/supplyInformation.html",
                 user: "赣南脐橙专业合作社",
                 userImgUrl: "img/userLogo.png",
                 iden: "江西赣州赣南县",
@@ -29,6 +31,7 @@ $(function () {
                     "img/new.png", "img/new.png", "img/new.png", "img/new.png"
                 ]
             }, {
+                link: "../../supplyInformation/supplyInformation.html",
                 user: "赣南脐橙专业合作社",
                 userImgUrl: "img/userLogo.png",
                 iden: "江西赣州赣南县",
@@ -41,6 +44,7 @@ $(function () {
                     "img/new.png", "img/new.png", "img/new.png", "img/new.png"
                 ]
             }, {
+                link: "../../supplyInformation/supplyInformation.html",
                 user: "赣南脐橙专业合作社",
                 userImgUrl: "img/userLogo.png",
                 iden: "江西赣州赣南县",
@@ -53,6 +57,7 @@ $(function () {
                     "img/new.png", "img/new.png", "img/new.png", "img/new.png"
                 ]
             }, {
+                link: "../../supplyInformation/supplyInformation.html",
                 user: "赣南脐橙专业合作社",
                 userImgUrl: "img/userLogo.png",
                 iden: "江西赣州赣南县",
@@ -65,6 +70,7 @@ $(function () {
                     "img/new.png", "img/new.png", "img/new.png", "img/new.png"
                 ]
             }, {
+                link: "../../supplyInformation/supplyInformation.html",
                 user: "赣南脐橙专业合作社",
                 userImgUrl: "img/userLogo.png",
                 iden: "江西赣州赣南县",
@@ -77,6 +83,7 @@ $(function () {
                     "img/new.png", "img/new.png", "img/new.png", "img/new.png"
                 ]
             }, {
+                link: "../../supplyInformation/supplyInformation.html",
                 user: "赣南脐橙专业合作社",
                 userImgUrl: "img/userLogo.png",
                 iden: "江西赣州赣南县",
@@ -89,6 +96,7 @@ $(function () {
                     "img/new.png", "img/new.png", "img/new.png", "img/new.png"
                 ]
             }, {
+                link: "../../supplyInformation/supplyInformation.html",
                 user: "赣南脐橙专业合作社",
                 userImgUrl: "img/userLogo.png",
                 iden: "江西赣州赣南县",
@@ -101,6 +109,7 @@ $(function () {
                     "img/new.png", "img/new.png", "img/new.png", "img/new.png"
                 ]
             }, {
+                link: "../../supplyInformation/supplyInformation.html",
                 user: "赣南脐橙专业合作社",
                 userImgUrl: "img/userLogo.png",
                 iden: "江西赣州赣南县",
@@ -113,6 +122,7 @@ $(function () {
                     "img/new.png", "img/new.png", "img/new.png", "img/new.png"
                 ]
             }, {
+                link: "../../supplyInformation/supplyInformation.html",
                 user: "赣南脐橙专业合作社",
                 userImgUrl: "img/userLogo.png",
                 iden: "江西赣州赣南县",
@@ -124,31 +134,7 @@ $(function () {
                 img: [
                     "img/new.png", "img/new.png", "img/new.png", "img/new.png"
                 ]
-            }, {
-                user: "赣南脐橙专业合作社",
-                userImgUrl: "img/userLogo.png",
-                iden: "江西赣州赣南县",
-                title: "出售赣南脐橙",
-                time: "1小时前",
-                text: "本合作社种植赣南脐橙50亩地，产量约20万斤，现出售，有需要的请联系电话18889878888。",
-                read: "888",
-                heart: "666",
-                img: [
-                    "img/new.png", "img/new.png", "img/new.png", "img/new.png"
-                ]
-            }, {
-                user: "赣南脐橙专业合作社",
-                userImgUrl: "img/userLogo.png",
-                iden: "江西赣州赣南县",
-                title: "出售赣南脐橙",
-                time: "1小时前",
-                text: "本合作社种植赣南脐橙50亩地，产量约20万斤，现出售，有需要的请联系电话18889878888。",
-                read: "888",
-                heart: "666",
-                img: [
-                    "img/new.png", "img/new.png", "img/new.png", "img/new.png"
-                ]
-            }]
+            }, ]
 
             var contentHTML = "";
             for (let i = 0; i < contentData.length; i++) {
@@ -157,7 +143,7 @@ $(function () {
                 for (let j = 0; j < imgLength; j++) {
                     imgList += `<li><img src="${contentData[i].img[j]}" alt=""></li>`
                 }
-                contentHTML += `<div class="supplyAndDemand-text">
+                contentHTML += `<a href = ${contentData[i].link}><div class="supplyAndDemand-text">
                 <div class="supplyAndDemand-text-title">
                     <div class="left">
                         <img src="${contentData[i].userImgUrl}" alt="">
@@ -186,9 +172,29 @@ $(function () {
                     </p>
                 </div>
             </div>
-        </div>`
+        </div></a>`
             }
             $("#contentHTML").html(contentHTML)
+
+            $(document).on("click", ".menu ul li", function () {
+                if ($(this).attr("id") === "fenlei") {
+                    if ($(".listtt").css("display") === "none") {
+                        $(".Area").show()
+                        $(".listtt").show()
+                        $(".mask").show()
+                    } else {
+                        $(".listtt").hide()
+                        $(".Area").hide()
+                        $(".mask").hide()
+                    }
+                }
+            })
+            $(document).on("click", ".mask", function () {
+                $(".listtt").hide()
+                $(".Area").hide()
+                $(".mask").hide()
+            })
+
         }
     }
     supDem.init()
@@ -204,133 +210,66 @@ $(function () {
     })
 
 
-    var nameEl = document.getElementById('picker');
 
-    var first = []; /* 省，直辖市 */
-    var second = []; /* 市 */
-    var third = []; /* 镇 */
+    address(fruits[0].list);
 
-    var selectedIndex = [0, 0, 0]; /* 默认选中的地区 */
+    function address(data) {
+        $(".AreaCenter ul").html('');
+        $.each(data, function (i, v) {
+            $(".AreaCenter ul").append('<li data-id=' + i + '><span>' + v.name + '</span></li>');
+        });
+        $('.AreaCenter ul li').on('click', {
+            data: data
+        }, Areas)
+        $(".AreaCenter ul li").eq(0).trigger("click");
+    }
 
-    var checked = [0, 0, 0]; /* 已选选项 */
+    function Prompt() {
+        var c = $(".AreaLeft .active").text() + '--' + $(".AreaCenter .active").text() + '--' + $(this).text();
+        console.log(c);
+        $(".listtt").hide()
+        $(".Area").hide()
+        $(".mask").hide()
+    }
 
-    function creatList(obj, list) {
-        obj.forEach(function (item, index, arr) {
-            var temp = new Object();
-            temp.text = item.name;
-            temp.value = index;
-            list.push(temp);
+    function Areas(data) {
+        $('.AreaCenter ul li').removeClass('active')
+        $(this).addClass('active');
+        var data = data.data.data
+        $(".AreaCenter").css({
+            "width": "33%"
+        });
+        $(".AreaRight").show();
+        var id = $(this).attr('data-id');
+        $(".AreaRight ul").html('');
+        $.each(data[id].list2, function (index, item) {
+            $(".AreaRight ul").append('<li data-cid=' + index + '><span>' + item + '</span</li>')
         })
+        $(".AreaRight ul li").on('click', Prompt)
     }
 
-    creatList(city, first);
-
-    if (city[selectedIndex[0]].hasOwnProperty('sub')) {
-        creatList(city[selectedIndex[0]].sub, second);
-    } else {
-        second = [{
-            text: '',
-            value: 0
-        }];
-    }
-
-    if (city[selectedIndex[0]].sub[selectedIndex[1]].hasOwnProperty('sub')) {
-        creatList(city[selectedIndex[0]].sub[selectedIndex[1]].sub, third);
-    } else {
-        third = [{
-            text: '',
-            value: 0
-        }];
-    }
-
-    var picker = new Picker({
-        data: [first, second, third],
-        selectedIndex: selectedIndex,
-        title: ''
-    });
-
-    picker.on('picker.select', function (selectedVal, selectedIndex) {
-        var text1 = first[selectedIndex[0]].text;
-        var text2 = second[selectedIndex[1]].text;
-        var text3 = third[selectedIndex[2]] ? third[selectedIndex[2]].text : '';
-        nameEl.value = text1 + ' ' + text2 + ' ' + text3;
-    });
-
-    picker.on('picker.change', function (index, selectedIndex) {
-        if (index === 0) {
-            firstChange();
-        } else if (index === 1) {
-            secondChange();
-        }
-
-        function firstChange() {
-            second = [];
-            third = [];
-            checked[0] = selectedIndex;
-            var firstCity = city[selectedIndex];
-            if (firstCity.hasOwnProperty('sub')) {
-                creatList(firstCity.sub, second);
-
-                var secondCity = city[selectedIndex].sub[0]
-                if (secondCity.hasOwnProperty('sub')) {
-                    creatList(secondCity.sub, third);
-                } else {
-                    third = [{
-                        text: '',
-                        value: 0
-                    }];
-                    checked[2] = 0;
-                }
-            } else {
-                second = [{
-                    text: '',
-                    value: 0
-                }];
-                third = [{
-                    text: '',
-                    value: 0
-                }];
-                checked[1] = 0;
-                checked[2] = 0;
-            }
-
-            picker.refillColumn(1, second);
-            picker.refillColumn(2, third);
-            picker.scrollColumn(1, 0)
-            picker.scrollColumn(2, 0)
-        }
-
-        function secondChange() {
-            third = [];
-            checked[1] = selectedIndex;
-            var first_index = checked[0];
-            if (city[first_index].sub[selectedIndex].hasOwnProperty('sub')) {
-                var secondCity = city[first_index].sub[selectedIndex];
-                creatList(secondCity.sub, third);
-                picker.refillColumn(2, third);
-                picker.scrollColumn(2, 0)
-            } else {
-                third = [{
-                    text: '',
-                    value: 0
-                }];
-                checked[2] = 0;
-                picker.refillColumn(2, third);
-                picker.scrollColumn(2, 0)
+    $(document).on("click", ".AreaLeft ul li", function () {
+        $(".AreaLeft ul li").removeClass('active')
+        $(this).addClass('active');
+        for (let i = 0; i < fruits.length; i++) {
+            if ($(this).index() == i) {
+                address(fruits[i].list);
+                $(".AreaCenter").css({
+                    "width": "33%"
+                });
             }
         }
+    })
 
-    });
-
-    picker.on('picker.valuechange', function (selectedVal, selectedIndex) {
-        console.log(selectedVal);
-        console.log(selectedIndex);
-    });
-
-    nameEl.addEventListener('click', function () {
-        picker.show();
-    });
-
+    var ulListHTML = "";
+    for (var i = 0; i < fruits.length; i++) {
+        if (i === 0) {
+            ulListHTML += `<li class="active"><span>${fruits[i].name}</span></li>`
+        } else {
+            ulListHTML += `<li><span>${fruits[i].name}</span></li>`
+        }
+    }
+    $("#ulList").html(ulListHTML)
 
 
 

@@ -1,98 +1,58 @@
-var fruits = [
-	{
-		"name": "不限1",
-		"list": [{
-			"name": "不限1",
-			"list2": ["不限1"]
+
+
+address(fruits[0].list);
+
+function address(data) {
+	$(".AreaCenter ul").html('');
+	$.each(data, function (i, v) {
+		$(".AreaCenter ul").append('<li data-id=' + i + '>' + v.name + '</li>');
+	});
+	$('.AreaCenter ul li').on('click', {
+		data: data
+	}, Areas)
+	$(".AreaCenter ul li").eq(0).trigger("click");
+}
+
+function Prompt() {
+	var c = $(".AreaLeft .active").text() + '--' + $(".AreaCenter .active").text() + '--' + $(this).text();
+	console.log(c);
+}
+
+function Areas(data) {
+	$('.AreaCenter ul li').removeClass('active')
+	$(this).addClass('active');
+	var data = data.data.data
+	$(".AreaCenter").css({
+		"width": "30%"
+	});
+	$(".AreaRight").show();
+	var id = $(this).attr('data-id');
+	$(".AreaRight ul").html('');
+	$.each(data[id].list2, function (index, item) {
+		$(".AreaRight ul").append('<li data-cid=' + index + '>' + item + '</li>')
+	})
+	$(".AreaRight ul li").on('click', Prompt)
+}
+
+$(document).on("click", ".AreaLeft ul li", function () {
+	$(".AreaLeft ul li").removeClass('active')
+	$(this).addClass('active');
+	for (let i = 0; i < fruits.length; i++) {
+		if ($(this).index() == i) {
+			address(fruits[i].list);
+			$(".AreaCenter").css({
+				"width": "30%"
+			});
 		}
-		]
-	},
-	{
-		"name": "水果2",
-		"list": [{
-			"name": "不限2",
-			"list2": ["不限2"]
-		},
-		{
-			"name": "果树类2",
-			"list2": ["不限2", "橙子", "柑橘", "沙糖桔", "金桔", "其他", "不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他"]
-		},
-		{
-			"name": "浆果类22",
-			"list2": ["不限22", "橙子", "柑橘", "沙糖桔", "金桔", "其他", "不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他"]
-		}
-		]
-	},
-	{
-		"name": "蔬菜3",
-		"list": [{
-			"name": "蔬菜3",
-			"list2": ["不限3", "橙子", "柑橘", "沙糖桔", "金桔", "其他", "不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他"]
-		},
-		{
-			"name": "浆果33",
-			"list2": ["不限33", "橙子", "柑橘", "沙糖桔", "金桔", "其他", "不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他"]
-		}
-		]
-	},
-	{
-		"name": "梁作",
-		"list": [{
-			"name": "梁作4",
-			"list2": ["不限4", "橙子", "柑橘", "沙糖桔", "金桔", "其他", "不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他"]
-		},
-		{
-			"name": "梁作44",
-			"list2": ["不限44", "橙子", "柑橘", "沙糖桔", "金桔", "其他", "不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他"]
-		}
-		]
-	},
-	{
-		"name": "茶叶",
-		"list": [{
-			"name": "茶叶5",
-			"list2": ["不限5", "橙子", "柑橘", "沙糖桔", "金桔", "其他", "不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他"]
-		},
-		{
-			"name": "茶叶55",
-			"list2": ["不限55", "橙子", "柑橘", "沙糖桔", "金桔", "其他", "不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他"]
-		}
-		]
-	},
-	{
-		"name": "中草药",
-		"list": [{
-			"name": "中草药6",
-			"list2": ["不限6", "橙子", "柑橘", "沙糖桔", "金桔", "其他", "不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他"]
-		},
-		{
-			"name": "中草药66",
-			"list2": ["不限66", "橙子", "柑橘", "沙糖桔", "金桔", "其他", "不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他"]
-		}
-		]
-	},
-	{
-		"name": "坚果干果",
-		"list": [{
-			"name": "坚果干果1",
-			"list2": ["不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他", "不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他"]
-		},
-		{
-			"name": "坚果干果2",
-			"list2": ["不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他", "不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他"]
-		}
-		]
-	},
-	{
-		"name": "其他",
-		"list": [{
-			"name": "其他1",
-			"list2": ["不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他", "不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他"]
-		},
-		{
-			"name": "其他2",
-			"list2": ["不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他", "不限", "橙子", "柑橘", "沙糖桔", "金桔", "其他"]
-		}
-		]
 	}
-]
+})
+
+var ulListHTML = "";
+for (var i = 0; i < fruits.length; i++) {
+	if (i === 0) {
+		ulListHTML += `<li class="active">${fruits[i].name}</li>`
+	} else {
+		ulListHTML += `<li>${fruits[i].name}</li>`
+	}
+}
+$("#ulList").html(ulListHTML)
