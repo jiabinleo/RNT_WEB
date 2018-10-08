@@ -42,6 +42,56 @@ $(function () {
             }
             $("#menuHTML").html(menuHTML)
 
+            var recommendData = [{
+                link: "#",
+                imgUrl: "img/banner.png",
+                text: "大鹏种植的奥秘"
+            }, {
+                link: "#",
+                imgUrl: "img/banner.png",
+                text: "农业自动化"
+            }, {
+                link: "#",
+                imgUrl: "img/banner.png",
+                text: "充分的利用徒弟资源"
+            }, {
+                link: "#",
+                imgUrl: "img/banner.png",
+                text: "大鹏种植的奥秘"
+            }, {
+                link: "#",
+                imgUrl: "img/banner.png",
+                text: "农业自动化"
+            }, {
+                link: "#",
+                imgUrl: "img/banner.png",
+                text: "充分的利用徒弟资源"
+            }, {
+                link: "#",
+                imgUrl: "img/banner.png",
+                text: "大鹏种植的奥秘"
+            }, {
+                link: "#",
+                imgUrl: "img/banner.png",
+                text: "农业自动化"
+            }, {
+                link: "#",
+                imgUrl: "img/banner.png",
+                text: "充分的利用徒弟资源"
+            }]
+            var swiper_menuHTML = "";
+            for (let i = 0; i < recommendData.length; i++) {
+                swiper_menuHTML +=
+                    `<div class="swiper-slide">
+                    <a href="${recommendData[i].link}">
+                        <div class="img-wrap">
+                            <img src="${recommendData[i].imgUrl}" alt="">
+                            <p>${recommendData[i].text}</p>
+                        </div>
+                    </a>
+                </div>`
+            }
+            $("#swiper_menu").html(swiper_menuHTML)
         }
     }
     supDem.init()
@@ -54,6 +104,14 @@ $(function () {
         pagination: '.swiper-pagination',
         autoplayDisableOnInteraction: false,
         centeredSlides: true
+    })
+
+    var mySwiper1 = new Swiper('.swiper-menu', {
+        slidesPerView: 3.8,
+        centeredSlides: true,
+        freeMode: true,
+        // freeModeMomentum: false,
+        // freeModeMomentum: false,
     })
 
 })

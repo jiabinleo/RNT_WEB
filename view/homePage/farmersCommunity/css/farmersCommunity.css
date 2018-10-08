@@ -106,6 +106,61 @@ header div.right .alarm img {
 #wrapper #scroller section .line {
   height: 0.42666667rem;
 }
+#wrapper #scroller section .content {
+  background-color: #ffffff;
+}
+#wrapper #scroller section .content .top {
+  margin: 0 0.74666667rem;
+  height: 1.83466667rem;
+  line-height: 1.83466667rem;
+  border-bottom: solid 0.04266667rem #eeeeee;
+}
+#wrapper #scroller section .content .top div {
+  font-size: 0.59733333rem;
+}
+#wrapper #scroller section .content .top div.title {
+  float: left;
+  color: #333333;
+}
+#wrapper #scroller section .content .top div.title img {
+  width: 0.08533333rem;
+  height: 0.55466667rem;
+  vertical-align: -0.08533333rem;
+  margin-left: -0.74666667rem;
+  margin-right: 0.66133333rem;
+}
+#wrapper #scroller section .content .top div.right {
+  float: right;
+  color: #999999;
+}
+#wrapper #scroller section .content .top div.right img {
+  width: 0.256rem;
+  height: 0.46933333rem;
+}
+#wrapper #scroller section .content .bottom .swiper-menu {
+  margin-left: -8.10666667rem;
+}
+#wrapper #scroller section .content .bottom .swiper-menu .swiper-wrapper .swiper-slide {
+  padding: 0.64rem 0rem 1.06666667rem;
+}
+#wrapper #scroller section .content .bottom .swiper-menu .swiper-wrapper .swiper-slide a .img-wrap {
+  width: 5.54666667rem;
+  height: 3.712rem;
+  overflow: hidden;
+  position: relative;
+}
+#wrapper #scroller section .content .bottom .swiper-menu .swiper-wrapper .swiper-slide a .img-wrap img {
+  width: 100%;
+  border-radius: 0.21333333rem;
+}
+#wrapper #scroller section .content .bottom .swiper-menu .swiper-wrapper .swiper-slide a .img-wrap p {
+  position: absolute;
+  bottom: 0%;
+  z-index: 10;
+  font-size: 0.42666667rem;
+  color: #ffffff;
+  padding: 0.29866667rem;
+}
 #wrapper #scroller section .supplyAndDemand .supplyAndDemand-title {
   border-bottom: solid 0.02133333rem #eeeeee;
   background-color: #ffffff;

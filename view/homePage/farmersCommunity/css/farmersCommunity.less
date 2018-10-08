@@ -117,6 +117,67 @@ header {
       .line {
         height: 20 / @rem;
       }
+      .content {
+        background-color: #ffffff;
+        .top {
+          margin: 0 35 / @rem;
+          height: 86 / @rem;
+          line-height: 86 / @rem;
+          border-bottom: solid 2 / @rem #eeeeee;
+          div {
+            font-size: 28 / @rem;
+            &.title {
+              float: left;
+              color: #333333;
+              img {
+                width: 4 / @rem;
+                height: 26 / @rem;
+                vertical-align: -4 / @rem;
+                margin-left: -35 / @rem;
+                margin-right: 31 / @rem;
+              }
+            }
+            &.right {
+              float: right;
+              color: #999999;
+              img {
+                width: 12 / @rem;
+                height: 22 / @rem;
+              }
+            }
+          }
+        }
+        .bottom {
+          .swiper-menu {
+            margin-left: -380 / @rem;
+            .swiper-wrapper {
+              .swiper-slide {
+                padding: 30 / @rem 0 / @rem 50 / @rem;
+                a {
+                  .img-wrap {
+                    width: 260 / @rem;
+                    height: 174 / @rem;
+                    overflow: hidden;
+                    position: relative;
+                    img {
+                      width: 100%;
+                      border-radius: 10 / @rem;
+                    }
+                    p {
+                      position: absolute;
+                      bottom: 0%;
+                      z-index: 10;
+                      font-size: 20 / @rem;
+                      color: #ffffff;
+                      padding: 14 / @rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
       .supplyAndDemand {
         .supplyAndDemand-title {
           border-bottom: solid 1 / @rem #eeeeee;
