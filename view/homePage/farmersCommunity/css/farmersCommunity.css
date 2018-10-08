@@ -12,6 +12,7 @@ body {
   left: 0;
   z-index: 999;
   background-color: #1c9ee1;
+  opacity: 0;
 }
 header {
   position: absolute;
@@ -39,31 +40,52 @@ header div.left a .sweep {
 header div.left a .sweep img {
   width: 0.40533333rem;
   height: 0.74666667rem;
+  vertical-align: -0.08533333rem;
 }
 header div.center {
-  text-align: center;
   width: 12.8rem;
-}
-header div.center h1 {
-  width: 12.8rem;
-  color: #ffffff;
-  font-size: 0.64rem;
+  height: 1.87733333rem;
   line-height: 1.87733333rem;
-  text-align: center;
+  position: relative;
+}
+header div.center img {
+  position: absolute;
+  width: 0.66133333rem;
+  height: 0.66133333rem;
+  left: 1.17333333rem;
+  top: 0.64rem;
+}
+header div.center input {
+  width: 11.52rem;
+  height: 1.19466667rem;
+  margin: 0 0.64rem;
+  color: #ffffff;
+  font-size: 0.59733333rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 0.59733333rem;
+  text-indent: 1.49333333rem;
+  outline: none;
+  vertical-align: 0.128rem;
+}
+header div.center input::placeholder {
+  color: #ffffff;
+  font-size: 0.59733333rem;
+  line-height: 1.19466667rem;
 }
 header div.right {
   float: right;
   width: 1.6rem;
   line-height: 1.87733333rem;
 }
-header div.right .alarm {
+header div.right .msg {
   margin-right: 0.74666667rem;
   float: right;
-  width: 0.61866667rem;
-  height: 0.74666667rem;
+  width: 0.85333333rem;
+  height: 0.85333333rem;
 }
-header div.right .alarm img {
+header div.right .msg img {
   width: 100%;
+  vertical-align: -0.08533333rem;
 }
 #wrapper {
   position: absolute;
@@ -106,54 +128,54 @@ header div.right .alarm img {
 #wrapper #scroller section .line {
   height: 0.42666667rem;
 }
-#wrapper #scroller section .content {
+#wrapper #scroller section .recommendData {
   background-color: #ffffff;
 }
-#wrapper #scroller section .content .top {
+#wrapper #scroller section .recommendData .top {
   margin: 0 0.74666667rem;
   height: 1.83466667rem;
   line-height: 1.83466667rem;
-  border-bottom: solid 0.04266667rem #eeeeee;
+  border-bottom: solid 0.02133333rem #eeeeee;
 }
-#wrapper #scroller section .content .top div {
+#wrapper #scroller section .recommendData .top div {
   font-size: 0.59733333rem;
 }
-#wrapper #scroller section .content .top div.title {
+#wrapper #scroller section .recommendData .top div.title {
   float: left;
   color: #333333;
 }
-#wrapper #scroller section .content .top div.title img {
+#wrapper #scroller section .recommendData .top div.title img {
   width: 0.08533333rem;
   height: 0.55466667rem;
   vertical-align: -0.08533333rem;
   margin-left: -0.74666667rem;
   margin-right: 0.66133333rem;
 }
-#wrapper #scroller section .content .top div.right {
+#wrapper #scroller section .recommendData .top div.right {
   float: right;
   color: #999999;
 }
-#wrapper #scroller section .content .top div.right img {
+#wrapper #scroller section .recommendData .top div.right img {
   width: 0.256rem;
   height: 0.46933333rem;
 }
-#wrapper #scroller section .content .bottom .swiper-menu {
+#wrapper #scroller section .recommendData .bottom .swiper-menu {
   margin-left: -8.10666667rem;
 }
-#wrapper #scroller section .content .bottom .swiper-menu .swiper-wrapper .swiper-slide {
+#wrapper #scroller section .recommendData .bottom .swiper-menu .swiper-wrapper .swiper-slide {
   padding: 0.64rem 0rem 1.06666667rem;
 }
-#wrapper #scroller section .content .bottom .swiper-menu .swiper-wrapper .swiper-slide a .img-wrap {
+#wrapper #scroller section .recommendData .bottom .swiper-menu .swiper-wrapper .swiper-slide a .img-wrap {
   width: 5.54666667rem;
   height: 3.712rem;
   overflow: hidden;
   position: relative;
 }
-#wrapper #scroller section .content .bottom .swiper-menu .swiper-wrapper .swiper-slide a .img-wrap img {
+#wrapper #scroller section .recommendData .bottom .swiper-menu .swiper-wrapper .swiper-slide a .img-wrap img {
   width: 100%;
   border-radius: 0.21333333rem;
 }
-#wrapper #scroller section .content .bottom .swiper-menu .swiper-wrapper .swiper-slide a .img-wrap p {
+#wrapper #scroller section .recommendData .bottom .swiper-menu .swiper-wrapper .swiper-slide a .img-wrap p {
   position: absolute;
   bottom: 0%;
   z-index: 10;
@@ -161,125 +183,99 @@ header div.right .alarm img {
   color: #ffffff;
   padding: 0.29866667rem;
 }
-#wrapper #scroller section .supplyAndDemand .supplyAndDemand-title {
-  border-bottom: solid 0.02133333rem #eeeeee;
+#wrapper #scroller section .enterprise {
   background-color: #ffffff;
 }
-#wrapper #scroller section .supplyAndDemand .supplyAndDemand-title div {
-  display: inline-block;
-  width: 48%;
-  text-align: center;
+#wrapper #scroller section .enterprise .top {
+  margin: 0 0.74666667rem;
+  height: 1.83466667rem;
+  line-height: 1.83466667rem;
+  border-bottom: solid 0.04266667rem #eeeeee;
 }
-#wrapper #scroller section .supplyAndDemand .supplyAndDemand-title div span {
-  line-height: 1.81333333rem;
-  padding: 0.512rem 0;
-  font-size: 0.512rem;
-  color: #999999;
+#wrapper #scroller section .enterprise .top div {
+  font-size: 0.59733333rem;
 }
-#wrapper #scroller section .supplyAndDemand .supplyAndDemand-title div span.active {
-  border-bottom: solid 0.04266667rem #22a3e5;
-  color: #22a3e5;
-}
-#wrapper #scroller section .supplyAndDemand .content {
-  width: 32rem;
-  overflow: hidden;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list {
+#wrapper #scroller section .enterprise .top div.title {
   float: left;
-  width: 16rem;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text {
-  padding: 0.64rem 0.74666667rem 0 0.74666667rem;
-  margin-top: 0.42666667rem;
-  background-color: #ffffff;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text:first-of-type {
-  margin-top: 0;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title {
-  overflow: hidden;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title div {
-  float: left;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title div.left {
-  width: 1.45066667rem;
-  height: 1.45066667rem;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title div.left img {
-  width: 1.45066667rem;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title div.center {
-  padding-left: 0.34133333rem;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title div.center p {
-  font-size: 0.55466667rem;
   color: #333333;
-  font-weight: 500;
-  line-height: 0.64rem;
 }
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title div.center p span {
-  display: inline-block;
-  font-size: 0.34133333rem;
-  color: #ffffff;
-  background-color: #1c9ee1;
-  transform: scale(0.8) translateX(-12%);
-  border-radius: 0.512rem;
-  padding: 0.128rem 0.34133333rem;
-  letter-spacing: 0.064rem;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-title div.right {
-  float: right;
-  font-size: 0.34133333rem;
-  color: #999999;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-content {
-  font-size: 0.55466667rem;
-  padding: 0.32rem 0;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-content p {
-  line-height: 0.768rem;
-  color: #666666;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-content p:last-of-type {
-  color: #999999;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-img ul {
-  overflow: hidden;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-img ul li {
-  width: 4.69333333rem;
-  height: 2.98666667rem;
-  float: left;
-  overflow: hidden;
-  margin-right: 0.21333333rem;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-img ul li:last-of-type {
-  margin-right: 0;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .supplyAndDemand-text-img ul li img {
-  width: 4.69333333rem;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .count p {
-  font-size: 0.512rem;
-  text-align: right;
-  padding: 0.46933333rem 0;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .count p span {
-  color: #999999;
-  margin-left: 0.40533333rem;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .count p span:first-of-type img {
-  width: 0.768rem;
-  height: 0.42666667rem;
-  vertical-align: 0rem;
-  margin-right: 0.17066667rem;
-}
-#wrapper #scroller section .supplyAndDemand .content .supplyAndDemand-list .supplyAndDemand-text .count p span:last-of-type img {
-  width: 0.64rem;
+#wrapper #scroller section .enterprise .top div.title img {
+  width: 0.08533333rem;
   height: 0.55466667rem;
   vertical-align: -0.08533333rem;
-  margin-right: 0.17066667rem;
+  margin-left: -0.74666667rem;
+  margin-right: 0.66133333rem;
+}
+#wrapper #scroller section .enterprise .top div.right {
+  float: right;
+  color: #999999;
+}
+#wrapper #scroller section .enterprise .top div.right img {
+  width: 0.256rem;
+  height: 0.46933333rem;
+}
+#wrapper #scroller section .enterprise .bottom ul {
+  margin-bottom: 0.21333333rem;
+  padding: 0 0.74666667rem;
+}
+#wrapper #scroller section .enterprise .bottom ul li {
+  padding: 0.74666667rem 0;
+  border-bottom: solid 0.02133333rem #eeeeee;
+}
+#wrapper #scroller section .enterprise .bottom ul li:nth-of-type(odd) a .newList .img {
+  float: left;
+}
+#wrapper #scroller section .enterprise .bottom ul li:nth-of-type(odd) a .newList .text {
+  float: right;
+}
+#wrapper #scroller section .enterprise .bottom ul li:nth-of-type(even) a .newList .img {
+  float: right;
+}
+#wrapper #scroller section .enterprise .bottom ul li:nth-of-type(even) a .newList .text {
+  float: left;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList {
+  overflow: hidden;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .img {
+  width: 5.54666667rem;
+  height: 3.66933333rem;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .img img {
+  width: 100%;
+  border-radius: 0.10666667rem;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .text {
+  width: 8.14933333rem;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .text h2 {
+  font-size: 0.59733333rem;
+  color: #333333;
+  font-weight: 700;
+  padding-bottom: 0.21333333rem;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .text p {
+  font-size: 0.512rem;
+  color: #747474;
+  line-height: 0.81066667rem;
+  overflow: hidden;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .text p:first-of-type {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  letter-spacing: 0px;
+  text-align: justify;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .text p:last-of-type {
+  font-size: 0.42666667rem;
+  color: #999999;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .text p:last-of-type span.time {
+  float: left;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .text p:last-of-type span.read {
+  float: right;
 }
 #wrapper .iScrollVerticalScrollbar .iScrollIndicator {
   opacity: 0;

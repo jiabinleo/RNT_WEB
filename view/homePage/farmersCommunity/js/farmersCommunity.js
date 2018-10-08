@@ -1,9 +1,43 @@
 $(function () {
-    var supDem = {
+    var farmers = {
         init: function () {
-            supDem.listen()
+            farmers.listen()
         },
         listen: function () {
+            myScroll = new IScroll('#scroller');
+            myScroll.on('scrollStart', function () {
+                setTimeout(() => {
+                    var str = $("#scroller").css("transform").replace(/[matrix\(]/g, '')
+                    str = str.slice(0, str.length - 1)
+                    str = str.split(",")
+                    if (str[str.length - 1] > -100) {
+                        $("#header_bg").animate({
+                            "opacity": 0
+                        }, 800)
+                    } else {
+                        $("#header_bg").animate({
+                            "opacity": 1
+                        }, 800)
+                    }
+                }, 500);
+            });
+            // myScroll.on('scrollEnd', function () {
+            //     setTimeout(() => {
+            //         var str = $("#scroller").css("transform").replace(/[matrix\(]/g, '')
+            //         str = str.slice(0, str.length - 1)
+            //         str = str.split(",")
+            //         if (str[str.length - 1] > -100) {
+            //             $("#header_bg").animate({
+            //                 "opacity": 0
+            //             }, 800)
+            //         } else {
+            //             $("#header_bg").animate({
+            //                 "opacity": 1
+            //             }, 800)
+            //         }
+            //     }, 500);
+            // });
+
             var menu = [{
                     title: "农人风采",
                     link: "#",
@@ -92,9 +126,91 @@ $(function () {
                 </div>`
             }
             $("#swiper_menu").html(swiper_menuHTML)
+
+            var newListData = [{
+                    title: "中国“陶氏益农公司”",
+                    text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+                    time: "2018.10.08",
+                    read: "188",
+                    imgUrl: "img/banner.png"
+                },
+                {
+                    title: "美国“陶氏益农公司”",
+                    text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+                    time: "2018.10.08",
+                    read: "188",
+                    imgUrl: "img/banner.png"
+                },
+                {
+                    title: "俄罗斯“陶氏益农公司”",
+                    text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+                    time: "2018.10.08",
+                    read: "188",
+                    imgUrl: "img/banner.png"
+                },
+                {
+                    title: "西班牙“陶氏益农公司”",
+                    text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+                    time: "2018.10.08",
+                    read: "188",
+                    imgUrl: "img/banner.png"
+                },
+                {
+                    title: "西班牙“陶氏益农公司”",
+                    text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+                    time: "2018.10.08",
+                    read: "188",
+                    imgUrl: "img/banner.png"
+                },
+                {
+                    title: "西班牙“陶氏益农公司”",
+                    text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+                    time: "2018.10.08",
+                    read: "188",
+                    imgUrl: "img/banner.png"
+                },
+                {
+                    title: "西班牙“陶氏益农公司”",
+                    text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+                    time: "2018.10.08",
+                    read: "188",
+                    imgUrl: "img/banner.png"
+                },
+                {
+                    title: "西班牙“陶氏益农公司”",
+                    text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+                    time: "2018.10.08",
+                    read: "188",
+                    imgUrl: "img/banner.png"
+                }
+            ]
+            var newListHTML = "";
+            for (let i = 0; i < newListData.length; i++) {
+                newListHTML +=
+                    `<li>
+                <a href="#">
+                    <div class="newList">
+                        <div class="img">
+                            <img src="${newListData[i].imgUrl}" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>
+                            ${newListData[i].title}
+                            </h2>
+                            <p>${newListData[i].text}</p>
+                            <p>
+                                <span class="time">${newListData[i].time}</span>
+                                <span class="read">阅读 ${newListData[i].read}</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </li>`
+            }
+            $("#newListHTML").html(newListHTML)
         }
     }
-    supDem.init()
+    farmers.init()
 
     var mySwiper = new Swiper('.swiper-container', {
         autoplay: 3000,
@@ -113,5 +229,6 @@ $(function () {
         // freeModeMomentum: false,
         // freeModeMomentum: false,
     })
+
 
 })

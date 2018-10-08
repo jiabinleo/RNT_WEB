@@ -14,6 +14,7 @@ body {
   left: 0;
   z-index: 999;
   background-color: #1c9ee1;
+  opacity: 0;
 }
 header {
   position: absolute;
@@ -36,32 +37,53 @@ header {
           img {
             width: 19 / @rem;
             height: 35 / @rem;
+            vertical-align: -4 / @rem;
           }
         }
       }
     }
     &.center {
-      text-align: center;
       width: 600 / @rem;
-      h1 {
-        width: 600 / @rem;
+      height: 88 / @rem;
+      line-height: 88 / @rem;
+      position: relative;
+      img {
+        position: absolute;
+        width: 31 / @rem;
+        height: 31 / @rem;
+        left: 55/@rem;
+        top: 30/@rem;
+      }
+      input {
+        width: 540 / @rem;
+        height: 56 / @rem;
+        margin: 0 30 / @rem;
         color: #ffffff;
-        font-size: 30 / @rem;
-        line-height: 88 / @rem;
-        text-align: center;
+        font-size: 28 / @rem;
+        background-color: rgba(255, 255, 255, 0.35);
+        border-radius: 28 / @rem;
+        text-indent: 70 / @rem;
+        outline: none;
+        vertical-align: 6 / @rem;
+        &::placeholder {
+          color: #ffffff;
+          font-size: 28 / @rem;
+          line-height: 56 / @rem;
+        }
       }
     }
     &.right {
       float: right;
       width: 75 / @rem;
       line-height: 88 / @rem;
-      .alarm {
+      .msg {
         margin-right: 35 / @rem;
         float: right;
-        width: 29 / @rem;
-        height: 35 / @rem;
+        width: 40 / @rem;
+        height: 40 / @rem;
         img {
           width: 100%;
+          vertical-align: -4 / @rem;
         }
       }
     }
@@ -117,13 +139,13 @@ header {
       .line {
         height: 20 / @rem;
       }
-      .content {
+      .recommendData {
         background-color: #ffffff;
         .top {
           margin: 0 35 / @rem;
           height: 86 / @rem;
           line-height: 86 / @rem;
-          border-bottom: solid 2 / @rem #eeeeee;
+          border-bottom: solid 1 / @rem #eeeeee;
           div {
             font-size: 28 / @rem;
             &.title {
@@ -178,127 +200,109 @@ header {
           }
         }
       }
-      .supplyAndDemand {
-        .supplyAndDemand-title {
-          border-bottom: solid 1 / @rem #eeeeee;
-          background-color: #ffffff;
+      .enterprise {
+        background-color: #ffffff;
+        .top {
+          margin: 0 35 / @rem;
+          height: 86 / @rem;
+          line-height: 86 / @rem;
+          border-bottom: solid 2 / @rem #eeeeee;
           div {
-            display: inline-block;
-            width: 48%;
-            text-align: center;
-            span {
-              line-height: 85 / @rem;
-              padding: 24 / @rem 0;
-              font-size: 24 / @rem;
+            font-size: 28 / @rem;
+            &.title {
+              float: left;
+              color: #333333;
+              img {
+                width: 4 / @rem;
+                height: 26 / @rem;
+                vertical-align: -4 / @rem;
+                margin-left: -35 / @rem;
+                margin-right: 31 / @rem;
+              }
+            }
+            &.right {
+              float: right;
               color: #999999;
-              &.active {
-                border-bottom: solid 2 / @rem #22a3e5;
-                color: #22a3e5;
+              img {
+                width: 12 / @rem;
+                height: 22 / @rem;
               }
             }
           }
         }
-        .content {
-          width: 750 * 2 / @rem;
-          overflow: hidden;
-          .supplyAndDemand-list {
-            float: left;
-            width: 750 / @rem;
-            .supplyAndDemand-text {
-              padding: 30 / @rem 35 / @rem 0 35 / @rem;
-              margin-top: 20 / @rem;
-              background-color: #ffffff;
-              &:first-of-type {
-                margin-top: 0;
-              }
-              .supplyAndDemand-text-title {
-                overflow: hidden;
-                div {
-                  float: left;
-                  &.left {
-                    width: 68 / @rem;
-                    height: 68 / @rem;
-                    img {
-                      width: 68 / @rem;
+        .bottom {
+          ul {
+            margin-bottom: 10 / @rem;
+            padding: 0 35 / @rem;
+            li {
+              padding: 35 / @rem 0;
+              border-bottom: solid 1 / @rem #eeeeee;
+              &:nth-of-type(odd) {
+                a {
+                  .newList {
+                    .img {
+                      float: left;
                     }
-                  }
-                  &.center {
-                    padding-left: 16 / @rem;
-                    p {
-                      font-size: 26 / @rem;
-                      color: #333333;
-                      font-weight: 500;
-                      line-height: 30 / @rem;
-                      span {
-                        display: inline-block;
-                        font-size: 16 / @rem;
-                        color: #ffffff;
-                        background-color: #1c9ee1;
-                        transform: scale(0.8) translateX(-12%);
-                        border-radius: 24 / @rem;
-                        padding: 6 / @rem 16 / @rem;
-                        letter-spacing: 3 / @rem;
-                      }
+                    .text {
+                      float: right;
                     }
-                  }
-                  &.right {
-                    float: right;
-                    font-size: 16 / @rem;
-                    color: #999999;
                   }
                 }
               }
-              .supplyAndDemand-text-content {
-                font-size: 26 / @rem;
-                padding: 15 / @rem 0;
-                p {
-                  line-height: 36 / @rem;
-                  color: #666666;
-                  &:last-of-type {
-                    color: #999999;
+              &:nth-of-type(even) {
+                a {
+                  .newList {
+                    .img {
+                      float: right;
+                    }
+                    .text {
+                      float: left;
+                    }
                   }
                 }
               }
-              .supplyAndDemand-text-img {
-                ul {
+              a {
+                .newList {
                   overflow: hidden;
-                  li {
-                    width: 220 / @rem;
-                    height: 140 / @rem;
-                    float: left;
-                    overflow: hidden;
-                    margin-right: 10 / @rem;
-                    &:last-of-type {
-                      margin-right: 0;
-                    }
+                  .img {
+                    width: 260 / @rem;
+                    height: 172 / @rem;
                     img {
-                      width: 220 / @rem;
+                      width: 100%;
+                      border-radius: 5 / @rem;
                     }
                   }
-                }
-              }
-              .count {
-                p {
-                  font-size: 24 / @rem;
-                  text-align: right;
-                  padding: 22 / @rem 0;
-                  span {
-                    color: #999999;
-                    margin-left: 19 / @rem;
-                    &:first-of-type {
-                      img {
-                        width: 36 / @rem;
-                        height: 20 / @rem;
-                        vertical-align: -0 / @rem;
-                        margin-right: 8 / @rem;
-                      }
+                  .text {
+                    width: 382 / @rem;
+                    h2 {
+                      font-size: 28 / @rem;
+                      color: #333333;
+                      font-weight: 700;
+                      padding-bottom: 10 / @rem;
                     }
-                    &:last-of-type {
-                      img {
-                        width: 30 / @rem;
-                        height: 26 / @rem;
-                        vertical-align: -4 / @rem;
-                        margin-right: 8 / @rem;
+                    p {
+                      font-size: 24 / @rem;
+                      color: #747474;
+                      line-height: 38 / @rem;
+                      overflow: hidden;
+                      &:first-of-type {
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        letter-spacing: 0px;
+                        text-align: justify;
+                      }
+                      &:last-of-type {
+                        font-size: 20 / @rem;
+                        color: #999999;
+                        span {
+                          &.time {
+                            float: left;
+                          }
+                          &.read {
+                            float: right;
+                          }
+                        }
                       }
                     }
                   }
