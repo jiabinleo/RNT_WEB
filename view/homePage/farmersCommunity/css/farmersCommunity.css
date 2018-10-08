@@ -4,10 +4,22 @@ body {
   overflow: hidden;
   background-color: #eeeeee;
 }
+.header-bg {
+  position: absolute;
+  width: 16rem;
+  height: 1.87733333rem;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #1c9ee1;
+}
 header {
   position: absolute;
   width: 16rem;
   height: 1.87733333rem;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 header div {
   float: left;
@@ -56,7 +68,7 @@ header div.right .alarm img {
 #wrapper {
   position: absolute;
   z-index: 1;
-  top: 1.87733333rem;
+  top: 0rem;
   bottom: 0rem;
   left: 0;
   width: 100%;
@@ -69,7 +81,7 @@ header div.right .alarm img {
   width: 100%;
 }
 #wrapper #scroller section .menu {
-  padding: 0.384rem 1.17333333rem;
+  padding: 0.384rem 0rem;
   background-color: #ffffff;
   margin-top: -0.08533333rem;
 }
@@ -78,14 +90,14 @@ header div.right .alarm img {
 }
 #wrapper #scroller section .menu ul li {
   float: left;
-  width: 25%;
+  width: 20%;
 }
 #wrapper #scroller section .menu ul li a div {
   text-align: center;
 }
 #wrapper #scroller section .menu ul li a div img {
-  width: 2.45333333rem;
-  height: 2.45333333rem;
+  width: 1.70666667rem;
+  height: 1.70666667rem;
 }
 #wrapper #scroller section .menu ul li a div p {
   font-size: 0.512rem;
@@ -246,10 +258,11 @@ footer .menu div.left {
 footer .menu div.left div {
   width: 50%;
   text-align: center;
+  margin-top: 0.42666667rem;
 }
 footer .menu div.left div img {
-  width: 1.408rem;
-  height: 1.408rem;
+  width: 0.832rem;
+  height: 0.832rem;
 }
 footer .menu div.center {
   width: 2.432rem;
@@ -261,10 +274,11 @@ footer .menu div.right {
 footer .menu div.right div {
   width: 50%;
   text-align: center;
+  margin-top: 0.42666667rem;
 }
 footer .menu div.right div img {
-  width: 1.408rem;
-  height: 1.408rem;
+  width: 0.832rem;
+  height: 0.832rem;
 }
 footer .center-add {
   position: absolute;
@@ -273,7 +287,7 @@ footer .center-add {
   transform: translate(-50%, 0);
   text-align: center;
   font-size: 0.42666667rem;
-  color: #1ea0e3;
+  color: #999999;
 }
 footer .center-add img {
   width: 2.432rem;
