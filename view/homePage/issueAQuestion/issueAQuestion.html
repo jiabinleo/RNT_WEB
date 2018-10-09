@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../../../../js/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css">
+    <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="../../../../css/reset.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/base.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" href="css/issueAQuestion.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="left">
+            <a href="#" onclick="history.back(-1);">
+                <div class="sweep">
+                    <img src="img/jt.png" alt="sweep">
+                </div>
+            </a>
+        </div>
+        <div class="center">
+            <h1>发布提问</h1>
+        </div>
+        <div class="right">
+        </div>
+    </header>
+    <div id="line" class="line">
+
+    </div>
+    <div id="wrapper">
+        <div id="scroller">
+            <section class="aui-content">
+                <div style="height:20px;"></div>
+                <div class="aui-content-up">
+                    <form action="" name="form1" method="post">
+                        <div class="aui-form-group clear">
+                            <div class="aui-form-input">
+                                <input type="text" class="aui-form-control-two" name="yourname" onBlur="checkna()"
+                                    required id="1" placeholder="加个标题哟~">
+                                <!-- <span class="tips" id="divname">长度1~6个字符</span> -->
+                            </div>
+                        </div>
+                        <div class="aui-form-group clear">
+                            <div class="aui-form-input">
+                                <textarea class="aui-form-control" name="description" id="4" minlength="5" placeholder="请发布你要咨询的问题！"></textarea>
+                            </div>
+                        </div>
+                        <div class="aui-form-group clear">
+
+                            <div class="aui-form-input">
+                                <div class="aui-content-img-box aui-content-full">
+                                    <div class="aui-photo aui-up-img clear">
+                                        <section class="aui-file-up fl">
+                                            <img src="img/add.png" class="add-img">
+                                            <input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp"
+                                                multiple />
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="problemAndaddress">
+                    <p>
+                        <span>问题类型</span>
+                    </p>
+                    <p>
+                        <span>233</span>
+                        <span><img src="img/right.png" alt=""></span>
+                    </p>
+                </div>
+                <div class="problemAndaddress">
+                    <p>
+                        <span>所在位置</span>
+                    </p>
+                    <p>
+                        <span>666</span>
+                        <span><img src="img/right.png" alt=""></span>
+                    </p>
+                </div>
+                <div class="aui-btn-default">
+                    <button class="aui-btn aui-btn-account">确认提交</button>
+                </div>
+            </section>
+            <!-- mask begin -->
+            <div class="aui-mask aui-works-mask">
+                <div class="aui-mask-content">
+                    <p class="aui-delete-text">确定要删除你上传的图片？</p>
+                    <p class="aui-check-text">
+                        <span class="aui-delete aui-accept-ok">确定</span>
+                        <span class="aui-accept-no">取消</span>
+                    </p>
+                </div>
+            </div>
+            <!-- mask end -->
+
+            </section>
+        </div>
+    </div>
+
+</body>
+<script src="../../../../js/tool.js"></script>
+
+<script type="text/javascript" src="js/up.js"></script>
+<script src="js/issueAQuestion.js"></script>
+
+</html>

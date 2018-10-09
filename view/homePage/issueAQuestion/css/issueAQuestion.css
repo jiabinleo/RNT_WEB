@@ -1,0 +1,382 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+header {
+  width: 16rem;
+  height: 1.87733333rem;
+  background: linear-gradient(29deg, #1b9de1, #3fbef1);
+  overflow: hidden;
+}
+header div {
+  float: left;
+  height: 1.87733333rem;
+}
+header div.left {
+  width: 1.6rem;
+  line-height: 1.87733333rem;
+}
+header div.left a {
+  display: inline-block;
+}
+header div.left a .sweep {
+  width: 1.6rem;
+  margin-left: 0.74666667rem;
+}
+header div.left a .sweep img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+header div.center {
+  text-align: center;
+  width: 12.8rem;
+}
+header div.center h1 {
+  width: 12.8rem;
+  color: #ffffff;
+  font-size: 0.64rem;
+  line-height: 1.87733333rem;
+  text-align: center;
+}
+.line {
+  height: 0.42666667rem;
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 2.304rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#wrapper #scroller {
+  transition: 0s;
+  overflow: hidden;
+  padding-bottom: 0.64rem;
+  background-color: #ffffff;
+}
+#wrapper #scroller section .aui-content-up form .aui-form-group .aui-form-input input {
+  outline: none;
+  font-size: 0.55466667rem;
+  color: #999999;
+  line-height: 1.49333333rem;
+  font-weight: 500;
+  font-family: PingFang-SC-Medium;
+}
+#wrapper #scroller section .aui-content-up form .aui-form-group .aui-form-input input::placeholder {
+  font-size: 0.55466667rem;
+  color: #999999;
+}
+#wrapper #scroller section .aui-content-up form .aui-form-group .aui-form-input textarea {
+  width: 100%;
+  outline: none;
+  font-size: 0.55466667rem;
+  color: #999999;
+  font-weight: 500;
+  font-family: PingFang-SC-Medium;
+}
+#wrapper #scroller section .aui-content-up form .aui-form-group .aui-form-input textarea::placeholder {
+  font-size: 0.55466667rem;
+  color: #999999;
+}
+#wrapper #scroller section .problemAndaddress {
+  overflow: hidden;
+  border-bottom: #eeeeee solid 0.02133333rem;
+}
+#wrapper #scroller section .problemAndaddress p {
+  float: left;
+  color: #999999;
+  font-size: 0.55466667rem;
+  height: 1.81333333rem;
+  line-height: 1.81333333rem;
+}
+#wrapper #scroller section .problemAndaddress p:last-of-type {
+  float: right;
+}
+#wrapper #scroller section .problemAndaddress p:last-of-type span:first-of-type {
+  margin-right: 0.42666667rem;
+}
+#wrapper #scroller section .problemAndaddress p:last-of-type span img {
+  width: 0.29866667rem;
+  height: 0.55466667rem;
+  vertical-align: -0.064rem;
+}
+#wrapper #scroller section .aui-btn-default {
+  margin-top: 1.70666667rem;
+}
+#wrapper .iScrollVerticalScrollbar .iScrollIndicator {
+  opacity: 0;
+}
+/* 
+*  author: AUI
+*  base.css
+*  http://azenui.com/
+*  http://a-ui.cn/
+*/
+/*up img */
+.aui-content {
+  padding: 0 0.74666667rem;
+}
+.aui-content-img-box .aui-photo {
+  border-radius: 0.064rem;
+  border: 0.02133333rem dashed #b3cef9;
+}
+.aui-content-img-box .aui-photo .aui-file-up {
+  position: relative;
+}
+.aui-content-img-box .aui-photo .aui-up-section {
+  position: relative;
+  margin-right: 0.32rem;
+}
+.aui-file-up .file {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  z-index: 100;
+  cursor: pointer;
+}
+.aui-up-section .aui-close-up-img {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  display: none;
+  z-index: 10;
+  width: 0.42666667rem;
+  cursor: pointer;
+}
+.aui-up-section .aui-up-span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.5);
+  border: 0.02133333rem solid #ddd;
+}
+.aui-up-section:hover {
+  border: 0.02133333rem solid #27a6e6;
+}
+.aui-up-section:hover .aui-close-up-img {
+  display: block;
+}
+.aui-up-section:hover .aui-up-span {
+  visibility: visible;
+}
+.aui-photo .aui-to-up-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0.02133333rem solid #ddd;
+}
+.loading {
+  border: 0.02133333rem solid #d1d1d1;
+  background: url(../img/loading.gif) no-repeat center;
+  background-size: 0.42666667rem;
+}
+.aui-up-clarity {
+  opacity: 0;
+}
+.aui-img-name-p {
+  display: block;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.aui-up-img .aui-up-section {
+  width: 3.84rem;
+  height: 3.84rem;
+  margin: 0.21333333rem;
+}
+.aui-content-img-box .aui-up-img .aui-file-up {
+  width: 3.84rem;
+  height: 3.84rem;
+  margin: 0.21333333rem;
+}
+.aui-file-up .add-img {
+  display: block;
+  width: 3.84rem;
+  height: 3.84rem;
+  border: 0.02133333rem dashed #ddd;
+  border-radius: 0.064rem;
+}
+.img-aui-img-name-p {
+  display: none;
+}
+/*遮罩层样式*/
+.aui-mask {
+  z-index: 1000;
+  display: none;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.aui-mask .aui-mask-content {
+  border-radius: 0.10666667rem;
+  width: 7.25333333rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -3.62666667rem;
+  margin-top: -1.70666667rem;
+  background: white;
+  height: 3.2rem;
+  text-align: center;
+}
+.aui-mask .aui-mask-content .aui-check-text {
+  height: 0.96rem;
+  line-height: 0.96rem;
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem;
+  width: 100%;
+}
+.aui-mask .aui-mask-content .aui-check-text span {
+  margin-top: -0.02133333rem;
+  width: 49.5%;
+  display: block;
+  float: left;
+  text-align: center;
+  color: #f45858;
+  font-size: 0.29866667rem;
+}
+.aui-mask .aui-mask-content .aui-delete-text {
+  color: #555;
+  height: 2.24rem;
+  line-height: 2.24rem;
+  font-size: 0.29866667rem;
+  border-bottom: 0.02133333rem solid #d1d1d1;
+}
+.aui-check-text .aui-delete {
+  border-right: 0.02133333rem solid #d1d1d1;
+}
+/* aui-content-up */
+.aui-content-up {
+  background: #fff;
+  border: 0.02133333rem solid #eaeaea;
+  border-radius: 0.04266667rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.aui-content-up-form h2 {
+  color: #f45858;
+  border-bottom: 0.04266667rem solid #27a6e6;
+  font-size: 0.34133333rem;
+  font-weight: normal;
+  height: 0.74666667rem;
+  line-height: 0.74666667rem;
+}
+.aui-label-control {
+  display: inline-block;
+  width: 1.70666667rem;
+  margin-bottom: 0.10666667rem;
+  min-width: 1.70666667rem;
+  padding-right: 0.21333333rem;
+  line-height: 0.74666667rem;
+  position: relative;
+  float: left;
+  text-align: right;
+}
+.aui-form-input {
+  width: 100%;
+  position: relative;
+}
+.aui-form-input textarea {
+  width: 100%;
+}
+.aui-form-control {
+  display: block;
+  width: 100%;
+  padding: 0.17066667rem 0.34133333rem;
+  font-size: 0.27733333rem;
+  line-height: 1.42857143;
+  color: #999;
+  background-color: #fff;
+  border-radius: 0.08533333rem;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  height: 1.92rem;
+  resize: none;
+  border: 0.02133333rem solid #b3cef9;
+}
+.aui-label-control em {
+  color: #f45858;
+}
+.aui-form-control-two {
+  display: block;
+  width: 100%;
+  height: 0.768rem;
+  padding: 0.17066667rem 0.34133333rem;
+  font-size: 0.256rem;
+  line-height: 1.42857143;
+  color: #222;
+  background-color: #fff;
+  border: 0.02133333rem solid #b3cef9;
+  border-radius: 0.08533333rem;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.aui-label-control span {
+  display: block;
+  font-size: 0.256rem;
+  color: #999;
+  position: absolute;
+  top: 0.42666667rem;
+  right: 0.49066667rem;
+}
+.aui-btn {
+  width: 14.50666667rem;
+  height: 1.77066667rem;
+  line-height: 1.77066667rem;
+  color: #ffffff;
+  font-size: 0.59733333rem;
+  font-weight: 500;
+  background: #27a6e6;
+  border-radius: 0.17066667rem;
+  border: none;
+  font-size: 500;
+}
+.aui-form-group-text h3 {
+  font-size: 0.27733333rem;
+  padding-bottom: 0.08533333rem;
+}
+.aui-form-group-text p {
+  font-size: 0.256rem;
+  color: #999;
+}
+.aui-form-input .tips {
+  position: absolute;
+  right: -3.41333333rem;
+  top: 0.17066667rem;
+  color: #999;
+}
+.aui-form-input .tips_true {
+  color: #08c708;
+}
+.aui-form-input .tips_false {
+  color: #f45858;
+}

@@ -64,7 +64,7 @@ $(function () {
                     link: "../diseaseList/diseaseList.html",
                     list: [{
                             img: "img/new10.png",
-                            text: "两套“三板斧”对付柑橘黄龙病"
+                            text: "两套“三666板斧”对付柑橘黄龙病"
                         }, {
                             img: "img/new11.png",
                             text: "柑橘头号杀手“黄龙病”"
