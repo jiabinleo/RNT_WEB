@@ -25,6 +25,11 @@ $(function () {
                 }
             }
             $("#menu").html(menuHTML)
+
+            $(document).on("click", "#menu > li", function () {
+                $(this).find("span").addClass("active")
+                $(this).siblings().find("span").removeClass("active")
+            })
             var newData = {
                 bannerImg: [{
                         link: "../informationDetails/informationDetails.html",
