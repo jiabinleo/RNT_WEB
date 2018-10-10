@@ -5,7 +5,7 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="../../../js/jquery.js"></script>
+    <script src="../../../../js/jquery.js"></script>
     <link rel="stylesheet" href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css">
     <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
     <link rel="stylesheet" href="../../../css/reset.css">
@@ -13,122 +13,63 @@
 </head>
 
 <body>
-    <div class="bg">
-        <header>
-            <div class="left">
-                <a href="#" onClick="history.back(-1);">
-                    <div class="sweep">
-                        <img src="img/jt.png" alt="sweep">
-                    </div>
-                </a>
-            </div>
-            <div class="center">
-                <h1>借钱</h1>
-            </div>
-            <div class="right">
-                <div class="alarm">
-                    <img src="img/liebiao@2x.png" alt="alarm">
-                </div>
-            </div>
-        </header>
-        <section>
-            <div class="debit">
-                <canvas class="debit_process" width="164px" height="164px"></canvas>
-                <div class="yuan"></div>
-                <div class="debit_rental">
-                    <p>￥
-                        <span class="debitBig">89432</span>
-                        <span>.</span>
-                        <span>61</span>
-                    </p>
-                    <p>
-                        <span>可用额度</span>
-                    </p>
-                    <p>总额度：
-                        <span>100000.00</span>
-                    </p>
-                </div>
-                <div class="debit_r"></div>
-            </div>
-            <div class="promote">
-                提升额度
-            </div>
-            <div class="yeardate">
-                <div class="left">
-                    年利率：
-                    <span>6.8%</span>
-                </div>
-                <div class="right">
-                    还款日：
-                    <span>12月24日</span>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="debit_center">
+    <header>
         <div class="left">
-            <a href="../ImmediateRepayment/ImmediateRepayment.html">
-                <p>立即还款</p>
+            <a href="#" onclick="history.back(-1);">
+                <div class="sweep">
+                    <img src="img/jt.png" alt="sweep">
+                </div>
             </a>
-            <p>下月应还(元)</p>
-            <p>288.00</p>
+        </div>
+        <div class="center">
+            <h1>我要贷款</h1>
         </div>
         <div class="right">
-            <a href="../loanClassification/loanClassification.html">
-                <p>马上借钱</p>
-            </a>
-            <p>可借额度(元)</p>
-            <p>50000.00</p>
+
         </div>
-    </div>
-    <div class="debit_banner">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="left">
-                        <p>
-                            <span>靠谱平台</span>
-                            <span>分期无忧</span>
-                        </p>
-                        <p>低利率分期免息</p>
-                    </div>
-                    <div class="right">
-                        <img src="img/fenqichahua@2x.png" alt="" srcset="">
+    </header>
+    <div id="wrapper">
+        <div id="scroller">
+            <section>
+                <div class="banner">
+                    <div class="swiper-container">
+                        <div id="bannerImgHTML" class="swiper-wrapper">
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="left">
-                        <p>
-                            <span>靠谱平台</span>
-                            <span>分期无忧</span>
-                        </p>
-                        <p>低利率分期免息</p>
-                    </div>
-                    <div class="right">
-                        <img src="img/fenqichahua@2x.png" alt="" srcset="">
+                <div class="menu">
+                    <ul id="menuHTML">
+                        <li>
+                            <a href="">
+                                <div>
+                                    <div class="img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p></p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="loanProcess">
+                    <h2>
+                        贷款流程
+                    </h2>
+                    <div class="loanProcessImg">
+                        <img src="img/liucheng.png" alt="">
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="left">
-                        <p>
-                            <span>靠谱平台</span>
-                            <span>分期无忧</span>
-                        </p>
-                        <p>低利率分期免息</p>
-                    </div>
-                    <div class="right">
-                        <img src="img/fenqichahua@2x.png" alt="" srcset="">
-                    </div>
+                <div class="loanProcess">
+                    <h2>
+                        贷款案例
+                    </h2>
+                    <ul id="caseOfLoan" class="caseOfLoan">
+
+                    </ul>
                 </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
-    <div class="debit_line"></div>
-    <div class="debit_footer">
-        <p>借款流程</p>
-        <div>
-            <img src="img/liucheng.png" alt="liucheng">
+            </section>
+
         </div>
     </div>
     <footer>
@@ -158,7 +99,8 @@
 </body>
 <script>
 </script>
-<script src="../../../js/index.js"></script>
+<script type="text/javascript" src="../../../../js/iscroll.js"></script>
+<script src="../../../../js/loaded_iscroll.js"></script>
 <script src="../../../js/tool.js"></script>
 <script src="js/debit.js"></script>
 

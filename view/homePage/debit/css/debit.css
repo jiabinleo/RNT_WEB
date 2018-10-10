@@ -2,254 +2,162 @@ html,
 body {
   height: 100%;
   overflow: hidden;
+  background-color: #eeeeee;
 }
-.bg {
-  background: -webkit-linear-gradient(30deg, #1b9de1, #38bbf0, #4dc5f4);
-  height: 14.93333333rem;
-}
-.bg header {
+header {
   width: 16rem;
   height: 1.87733333rem;
+  background: linear-gradient(29deg, #1b9de1, #3fbef1);
 }
-.bg header div {
+header div {
   float: left;
   height: 1.87733333rem;
 }
-.bg header div.left {
+header div.left {
   width: 1.6rem;
   line-height: 1.87733333rem;
 }
-.bg header div.left a {
+header div.left a {
   display: inline-block;
 }
-.bg header div.left a .sweep {
+header div.left a .sweep {
   width: 1.6rem;
   margin-left: 0.74666667rem;
 }
-.bg header div.left a .sweep img {
+header div.left a .sweep img {
   width: 0.40533333rem;
   height: 0.74666667rem;
 }
-.bg header div.center {
+header div.center {
   text-align: center;
   width: 12.8rem;
 }
-.bg header div.center h1 {
+header div.center h1 {
   width: 12.8rem;
   color: #ffffff;
   font-size: 0.64rem;
   line-height: 1.87733333rem;
   text-align: center;
 }
-.bg header div.right {
+header div.right {
   float: right;
-  width: 1.6rem;
-  line-height: 1.87733333rem;
 }
-.bg header div.right .alarm {
-  margin-right: 0.74666667rem;
-  float: right;
-  width: 0.61866667rem;
-  height: 0.74666667rem;
-}
-.bg header div.right .alarm img {
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 1.87733333rem;
+  bottom: 0rem;
+  left: 0;
   width: 100%;
-}
-.bg section .debit {
-  position: relative;
-  width: 100%;
-  height: 200px;
-}
-.bg section .debit .debit_process {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -75px;
-  margin-top: -75px;
-}
-.bg section .debit .yuan {
-  position: absolute;
-  left: 50%;
-  top: 27px;
-  width: 0.256rem;
-  height: 0.256rem;
-  background: -webkit-linear-gradient(30deg, #1b9de1, #38bbf0, #4dc5f4);
-  border-radius: 10px;
-}
-.bg section .debit .debit_rental {
-  position: absolute;
-  width: 164px;
-  height: 164px;
   overflow: hidden;
-  left: 50%;
-  top: 50%;
-  margin-left: -82px;
-  margin-top: -82px;
-  text-align: center;
-  color: #ffffff;
 }
-.bg section .debit .debit_rental p:first-of-type {
-  padding-top: 43px;
-  font-size: 12px;
-  margin-bottom: 5px;
+#wrapper #scroller {
+  padding-bottom: 2.41066667rem;
 }
-.bg section .debit .debit_rental p:first-of-type .debitBig {
-  font-size: 21px;
-}
-.bg section .debit .debit_rental p:nth-last-of-type(2) {
-  padding-top: 8px;
-  font-size: 12px;
-  width: 3.2rem;
-  height: 18px;
-  line-height: 11px;
-  border-radius: 18px;
-  background: #4dc5f4;
+#wrapper #scroller section .banner {
+  width: 14.50666667rem;
   margin: 0 auto;
 }
-.bg section .debit .debit_rental p:last-of-type {
-  padding-top: 5px;
-  font-size: 12px;
+#wrapper #scroller section .banner .swiper-container {
+  overflow: visible;
 }
-.bg section .debit .debit_r {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -76px;
-  margin-top: -76px;
-  width: 132px;
-  height: 132px;
-  border: 10px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 14.08rem;
+  margin: 0.42666667rem 0.21333333rem;
 }
-.bg section .promote {
-  width: 5.12rem;
-  height: 1.49333333rem;
+#wrapper #scroller section .banner .swiper-container .swiper-pagination {
+  bottom: -0.17066667rem;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-pagination span {
+  background: #282828;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-pagination span.swiper-pagination-bullet-active {
+  width: 1.06666667rem;
+  border-radius: 0.64rem;
+  background: linear-gradient(29deg, #1b9de1, #3fbef1);
+}
+#wrapper #scroller section .menu {
+  padding: 0.64rem 0.74666667rem;
+  background-color: #ffffff;
+  margin-top: 0.34133333rem;
+}
+#wrapper #scroller section .menu ul {
+  overflow: hidden;
+}
+#wrapper #scroller section .menu ul li {
+  float: left;
+  width: 25%;
+  margin-top: 0.21333333rem;
+}
+#wrapper #scroller section .menu ul li a div {
+  text-align: center;
+}
+#wrapper #scroller section .menu ul li a div img {
+  width: 1.70666667rem;
+  height: 1.70666667rem;
+}
+#wrapper #scroller section .menu ul li a div p {
+  font-size: 0.512rem;
+  color: #666666;
+}
+#wrapper #scroller section .loanProcess {
+  background-color: #ffffff;
+  margin-top: 0.42666667rem;
+}
+#wrapper #scroller section .loanProcess h2 {
+  font-size: 0.59733333rem;
+  font-weight: bold;
+  color: #333333;
   line-height: 1.49333333rem;
-  font-size: 0.64rem;
-  margin: 0 auto;
-  text-align: center;
-  color: #ffffff;
-  border: solid 2px #ffffff;
-  border-radius: 1.49333333rem;
 }
-.bg section .yeardate div {
-  font-size: 0.512rem;
-  color: #ffffff;
-  padding: 0 0.74666667rem;
+#wrapper #scroller section .loanProcess h2::before {
+  content: "";
+  margin-right: 0.55466667rem;
+  display: inline-block;
+  width: 0.08533333rem;
+  height: 0.55466667rem;
+  background: url(../img/line.png);
+  vertical-align: -0.08533333rem;
 }
-.bg section .yeardate div.left {
+#wrapper #scroller section .loanProcess .loanProcessImg {
+  padding: 0.74666667rem;
+}
+#wrapper #scroller section .loanProcess .loanProcessImg img {
+  width: 100%;
+}
+#wrapper #scroller section .loanProcess .caseOfLoan {
+  padding: 0.21333333rem 0.74666667rem;
+  overflow: hidden;
+}
+#wrapper #scroller section .loanProcess .caseOfLoan li {
   float: left;
+  width: 4.69333333rem;
+  margin-right: 0.21333333rem;
+  padding: 0.42666667rem 0rem;
 }
-.bg section .yeardate div.right {
-  float: right;
+#wrapper #scroller section .loanProcess .caseOfLoan li:nth-of-type(3n) {
+  margin-right: 0;
 }
-.debit_center {
-  margin: -1.70666667rem 0.74666667rem;
-  height: 3.41333333rem;
-  border-radius: 10px;
-  background-color: #ffffff;
-  box-shadow: #9fd9f8 0px 0px 13px;
+#wrapper #scroller section .loanProcess .caseOfLoan li div {
+  width: 4.69333333rem;
+  height: 3.11466667rem;
 }
-.debit_center div {
-  float: left;
-  width: 50%;
-  text-align: center;
+#wrapper #scroller section .loanProcess .caseOfLoan li div img {
+  width: 4.69333333rem;
 }
-.debit_center div p:first-of-type {
-  font-size: 0.512rem;
-  color: #999999;
-  padding-top: 0.42666667rem;
-}
-.debit_center div p:last-of-type {
-  font-size: 0.512rem;
-  color: #1b9de1;
-  padding-top: 0.32rem;
-}
-.debit_center div a p {
-  font-size: 0.59733333rem;
-  color: #333333 !important;
+#wrapper #scroller section .loanProcess .caseOfLoan li p {
   padding-top: 0.64rem;
-  font-weight: bolder;
-}
-.debit_banner {
-  height: 3.84rem;
-  padding-top: 2.13333333rem;
-  width: 100%;
-}
-.debit_banner .swiper-container {
-  width: 100%;
-  height: 85px;
-}
-.debit_banner .swiper-container .swiper-wrapper {
-  width: 100%;
-}
-.debit_banner .swiper-container .swiper-wrapper .swiper-slide {
-  width: 100%;
-}
-.debit_banner .swiper-container .swiper-wrapper .swiper-slide .left {
-  float: left;
-  padding-left: 0.81066667rem;
-  padding-top: 0.85333333rem;
-}
-.debit_banner .swiper-container .swiper-wrapper .swiper-slide .left p {
-  font-size: 0;
-}
-.debit_banner .swiper-container .swiper-wrapper .swiper-slide .left p span {
-  font-weight: 700;
-}
-.debit_banner .swiper-container .swiper-wrapper .swiper-slide .left p span:first-of-type {
-  font-size: 0.72533333rem;
   color: #333333;
+  font-size: 0.512rem;
+  line-height: 0.64rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  letter-spacing: 0px;
 }
-.debit_banner .swiper-container .swiper-wrapper .swiper-slide .left p span:last-of-type {
-  margin-left: 0.10666667rem;
-  font-size: 0.68266667rem;
-  color: #1b9de1;
-}
-.debit_banner .swiper-container .swiper-wrapper .swiper-slide .left p:last-of-type {
-  padding-top: 0.32rem;
-  font-size: 0.59733333rem;
-  color: #999999;
-}
-.debit_banner .swiper-container .swiper-wrapper .swiper-slide .right {
-  float: right;
-  padding-right: 0.81066667rem;
-}
-.debit_banner .swiper-container .swiper-wrapper .swiper-slide .right img {
-  width: 3.69066667rem;
-  height: 2.98666667rem;
-}
-.debit_banner .swiper-container .swiper-pagination {
-  bottom: 0;
-}
-.debit_banner .swiper-container .swiper-pagination .swiper-pagination-bullet {
-  width: 0.29866667rem;
-  height: 0.29866667rem;
-  margin: 0 0.10666667rem;
-}
-.debit_banner .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
-  width: 0.64rem;
-  border-radius: 7px;
-  background: #34baf0;
-}
-.debit_line {
-  height: 0.42666667rem;
-  background-color: #eeeeee;
-}
-.debit_footer {
-  padding: 0 0.74666667rem;
-}
-.debit_footer p {
-  font-size: 0.59733333rem;
-  color: #333333;
-  margin-top: 0.64rem;
-}
-.debit_footer div {
-  background-color: #ffffff;
-  margin-top: 0.85333333rem;
-}
-.debit_footer div img {
-  width: 100%;
+#wrapper .iScrollVerticalScrollbar .iScrollIndicator {
+  opacity: 0;
 }
 footer {
   overflow: hidden;
@@ -260,6 +168,7 @@ footer {
   height: 2.09066667rem;
   padding-top: 0.32rem;
   background-color: #ffffff;
+  z-index: 666;
 }
 footer ul {
   width: 100%;

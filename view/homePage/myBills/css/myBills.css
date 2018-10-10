@@ -29,61 +29,75 @@ body header .center {
   color: #ffffff;
   font-size: 0.68266667rem;
 }
-html section ul,
-body section ul {
+html #wrapper,
+body #wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 1.87733333rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+html #wrapper #scroller,
+body #wrapper #scroller {
+  padding-bottom: 2.41066667rem;
+}
+html #wrapper #scroller section ul,
+body #wrapper #scroller section ul {
   padding: 0 0.74666667rem;
 }
-html section ul li,
-body section ul li {
+html #wrapper #scroller section ul li,
+body #wrapper #scroller section ul li {
   padding: 0.64rem 0;
   border-bottom: solid #eeeeee 1px;
 }
-html section ul li .billsTop,
-body section ul li .billsTop {
+html #wrapper #scroller section ul li .billsTop,
+body #wrapper #scroller section ul li .billsTop {
   overflow: hidden;
 }
-html section ul li .billsTop span,
-body section ul li .billsTop span {
+html #wrapper #scroller section ul li .billsTop span,
+body #wrapper #scroller section ul li .billsTop span {
   font-size: 0.55466667rem;
 }
-html section ul li .billsTop span:first-of-type,
-body section ul li .billsTop span:first-of-type {
+html #wrapper #scroller section ul li .billsTop span:first-of-type,
+body #wrapper #scroller section ul li .billsTop span:first-of-type {
   float: left;
   font-size: 0.68266667rem;
   color: #333333;
 }
-html section ul li .billsTop span:last-of-type,
-body section ul li .billsTop span:last-of-type {
+html #wrapper #scroller section ul li .billsTop span:last-of-type,
+body #wrapper #scroller section ul li .billsTop span:last-of-type {
   float: right;
 }
-html section ul li .billsTop span.huankuan,
-body section ul li .billsTop span.huankuan {
+html #wrapper #scroller section ul li .billsTop span.status1,
+body #wrapper #scroller section ul li .billsTop span.status1 {
   color: #20a0e3;
 }
-html section ul li .billsTop span.weihuankuan,
-body section ul li .billsTop span.weihuankuan {
+html #wrapper #scroller section ul li .billsTop span.status2,
+body #wrapper #scroller section ul li .billsTop span.status2 {
   color: #e62b2b;
 }
-html section ul li .billsBottom,
-body section ul li .billsBottom {
+html #wrapper #scroller section ul li .billsBottom,
+body #wrapper #scroller section ul li .billsBottom {
   padding-top: 0.53333333rem;
   overflow: hidden;
   color: #666666;
 }
-html section ul li .billsBottom span,
-body section ul li .billsBottom span {
+html #wrapper #scroller section ul li .billsBottom span,
+body #wrapper #scroller section ul li .billsBottom span {
   font-size: 0.512rem;
 }
-html section ul li .billsBottom span:first-of-type,
-body section ul li .billsBottom span:first-of-type {
+html #wrapper #scroller section ul li .billsBottom span:first-of-type,
+body #wrapper #scroller section ul li .billsBottom span:first-of-type {
   float: left;
 }
-html section ul li .billsBottom span:last-of-type,
-body section ul li .billsBottom span:last-of-type {
+html #wrapper #scroller section ul li .billsBottom span:last-of-type,
+body #wrapper #scroller section ul li .billsBottom span:last-of-type {
   float: right;
 }
-html section ul li .billsBottom span:last-of-type img,
-body section ul li .billsBottom span:last-of-type img {
+html #wrapper #scroller section ul li .billsBottom span:last-of-type img,
+body #wrapper #scroller section ul li .billsBottom span:last-of-type img {
   vertical-align: -13%;
   width: 0.512rem;
   height: 0.512rem;
