@@ -25,7 +25,7 @@ function isPassive() {
 
 function loaded() {
     myScroll = new IScroll('#wrapper', {
-        scrollbars: true,
+        scrollbars: false,
         mouseWheel: true,
         interactiveScrollbars: true,
         shrinkScrollbars: 'scale',
