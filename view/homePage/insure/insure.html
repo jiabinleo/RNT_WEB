@@ -35,7 +35,7 @@
         <div id="scroller">
             <div class="line">
             </div>
-            <div class="forms1">
+            <div class="forms1 forms">
                 <form>
                     <div class="form_price">
                         <div class="form_price_box">
@@ -43,7 +43,7 @@
                                 亩单价
                             </div>
                             <div class="form_price_right">
-                                <span>9</span>
+                                <span id="priceDan">9</span>
                                 <span>元</span>
                                 <span>/</span>
                                 <span>亩</span>
@@ -55,11 +55,16 @@
                             <div class="form_number_left">
                                 投保亩数
                             </div>
-                            <div class="form_number_right">
-                                <span>100</span>
-                                <span>亩</span>
-                                <img src="img/jiantou@2x.png" alt="jiantou">
-                            </div>
+                            <a href="insureInput.html?ids=number">
+                                <div class="form_number_right">
+                                    <span id="number" class="msg" ids="number">
+                                        <!-- 请输入投保亩数 -->
+                                        <!-- 100亩 -->
+                                    </span>
+                                    <span></span>
+                                    <img src="img/jiantou@2x.png" alt="jiantou">
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="form_price">
@@ -68,7 +73,7 @@
                                 应付总价
                             </div>
                             <div class="form_price_right">
-                                <span>900</span>
+                                <span id="priceSum">900</span>
                                 <span>元</span>
                                 <span></span>
                                 <span></span>
@@ -99,7 +104,7 @@
                     </div>
                 </form>
             </div>
-            <div class="forms2">
+            <div class="forms2 forms">
                 <div class="title">
                     投保人信息
                 </div>
@@ -108,10 +113,14 @@
                         <div class="form_number_left">
                             姓名
                         </div>
-                        <div class="form_number_right">
-                            <span>王大锤</span>
-                            <img src="img/jiantou@2x.png" alt="jiantou">
-                        </div>
+                        <a href="insureInput.html?ids=name">
+                            <div class="form_number_right">
+                                <span id="name" class="msg" ids="name">
+                                    <!-- 王大锤 -->
+                                </span>
+                                <img src="img/jiantou@2x.png" alt="jiantou">
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="form_number">
@@ -119,10 +128,14 @@
                         <div class="form_number_left">
                             证件类型
                         </div>
-                        <div class="form_number_right">
-                            <span>身份证</span>
-                            <img src="img/jiantou@2x.png" alt="jiantou">
-                        </div>
+                        <a href="insureInput.html?ids=idType">
+                            <div class="form_number_right">
+                                <span id="idType" class="msg" ids="idType">
+                                    <!-- 身份证 -->
+                                </span>
+                                <img src="img/jiantou@2x.png" alt="jiantou">
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="form_number">
@@ -130,10 +143,14 @@
                         <div class="form_number_left">
                             证件号码
                         </div>
-                        <div class="form_number_right">
-                            <span>4303088199706540195</span>
-                            <img src="img/jiantou@2x.png" alt="jiantou">
-                        </div>
+                        <a href="insureInput.html?ids=id">
+                            <div class="form_number_right">
+                                <span id="id" class="msg" ids="id">
+                                    <!-- 4303088199706540195 -->
+                                </span>
+                                <img src="img/jiantou@2x.png" alt="jiantou">
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="form_number">
@@ -141,10 +158,14 @@
                         <div class="form_number_left">
                             手机号码
                         </div>
-                        <div class="form_number_right">
-                            <span>15246956315</span>
-                            <img src="img/jiantou@2x.png" alt="jiantou">
-                        </div>
+                        <a href="insureInput.html?ids=pho">
+                            <div class="form_number_right">
+                                <span id="pho" class="msg" ids="pho">
+                                    <!-- 15246956315 -->
+                                </span>
+                                <img src="img/jiantou@2x.png" alt="jiantou">
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="form_number">
@@ -152,10 +173,14 @@
                         <div class="form_number_left">
                             电子邮箱
                         </div>
-                        <div class="form_number_right">
-                            <span>shandianqiu@163.com</span>
-                            <img src="img/jiantou@2x.png" alt="jiantou">
-                        </div>
+                        <a href="insureInput.html?ids=ema">
+                            <div class="form_number_right">
+                                <span id="ema" class="msg" ids="ema">
+                                    <!-- shandianqiu@163.com -->
+                                </span>
+                                <img src="img/jiantou@2x.png" alt="jiantou">
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="form_number">
@@ -163,10 +188,14 @@
                         <div class="form_number_left">
                             承保作物信息
                         </div>
-                        <div class="form_number_right">
-                            <span>100亩玉米地</span>
-                            <img src="img/jiantou@2x.png" alt="jiantou">
-                        </div>
+                        <a href="insureInput.html?ids=msg">
+                            <div class="form_number_right">
+                                <span id="msg" class="msg" ids="msg">
+                                    <!-- 100亩玉米地 -->
+                                </span>
+                                <img src="img/jiantou@2x.png" alt="jiantou">
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="form_number">
@@ -174,10 +203,14 @@
                         <div class="form_number_left">
                             受益人信息
                         </div>
-                        <div class="form_number_right">
-                            <span>张三</span>
-                            <img src="img/jiantou@2x.png" alt="jiantou">
-                        </div>
+                        <a href="insureInput.html?ids=ben">
+                            <div class="form_number_right">
+                                <span id="ben" class="msg" ids="ben">
+                                    <!-- 张三 -->
+                                </span>
+                                <img src="img/jiantou@2x.png" alt="jiantou">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -187,9 +220,7 @@
     </div>
     <footer>
         <div class="insure_footer">
-            <form action="">
-                <input id="playFooter" type="button" value="立即付款">
-            </form>
+            <input id="playFooter" type="button" value="立即付款">
         </div>
     </footer>
     <div id="insure_wrap">

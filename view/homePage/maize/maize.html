@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>maize</title>
@@ -97,7 +97,7 @@
             </div>
         </div>
         <a href="../insure/insure.html">
-            <div class="right">
+            <div id="insure" class="right">
                 立即投保
             </div>
         </a>
@@ -109,3 +109,8 @@
 <script src="../../../js/tool.js"></script>
 
 </html>
+<script>
+    $(document).on("click", "#insure", function () {
+        localStorage.setItem("msg", null)
+    })
+</script>
