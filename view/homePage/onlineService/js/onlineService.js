@@ -30,6 +30,24 @@ var onlineService = {
                     text: "珍惜个人信用，保持良好还款习惯，按时还款，勿产生逾期记录。"
                 }
             ]
+        }, {
+            title: "如何申请贷款？",
+            list: [{
+                    text: "珍惜个人信用，保持良好还款习惯，按时还款，勿产生逾期记录。"
+                },
+                {
+                    text: "珍惜个人信用，保持良好还款习惯，按时还款，勿产生逾期记录。"
+                }
+            ]
+        }, {
+            title: "如何申请贷款？",
+            list: [{
+                    text: "珍惜个人信用，保持良好还款习惯，按时还款，勿产生逾期记录。"
+                },
+                {
+                    text: "珍惜个人信用，保持良好还款习惯，按时还款，勿产生逾期记录。"
+                }
+            ]
         }]
 
         var content_listHTML = "";
@@ -52,12 +70,13 @@ var onlineService = {
         }
 
         $("#content_list").html(content_listHTML)
-        $(document).on("click", "#content_list .list", function () {
-            if ($(this).hasClass("active")) {
-                $(this).removeClass("active")
+        $(document).on("touchstart", "#content_list .title", function () {
+            loaded()
+            if ($(this).parent().hasClass("active")) {
+                $(this).parent().removeClass("active")
                 $(this).find("img").attr("src", "img/right.png")
             } else {
-                $(this).addClass("active")
+                $(this).parent().addClass("active")
                 $(this).find("img").attr("src", "img/bottom.png")
             }
         })
