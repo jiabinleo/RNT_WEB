@@ -1,0 +1,21 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  position: relative;
+}
+body .wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6.4rem;
+}
+body input {
+  width: 6.4rem;
+  margin: 0.21333333rem;
+  text-align: center;
+  border: #333333 solid 0.02133333rem;
+  font-size: 0.68266667rem;
+}
