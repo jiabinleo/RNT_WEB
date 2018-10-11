@@ -1,0 +1,193 @@
+@rem: 750/16rem;
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+
+header {
+  width: 750 / @rem;
+  height: 88 / @rem;
+  background: linear-gradient(
+    29deg,
+    rgba(27, 157, 225, 1),
+    rgba(63, 190, 241, 1)
+  );
+  div {
+    float: left;
+    height: 88 / @rem;
+    &.left {
+      width: 85 / @rem;
+      line-height: 88 / @rem;
+      a {
+        display: inline-block;
+        .sweep {
+          width: 75 / @rem;
+          margin-left: 35 / @rem;
+          img {
+            width: 19 / @rem;
+            height: 35 / @rem;
+          }
+        }
+      }
+    }
+    &.center {
+      text-align: center;
+      width: 580 / @rem;
+      h1 {
+        // width: 600 / @rem;
+        color: #ffffff;
+        font-size: 30 / @rem;
+        line-height: 88 / @rem;
+        text-align: center;
+      }
+    }
+    &.right {
+      width: 85 / @rem;
+      float: right;
+      line-height: 88 / @rem;
+      span {
+        img {
+          width: 37 / @rem;
+        }
+      }
+    }
+  }
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 88 / @rem;
+  bottom: 0 / @rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  #scroller {
+    // padding-bottom: 143 / @rem;
+    padding: 0 35 / @rem 190 / @rem 35 / @rem;
+    .banner {
+      margin-top: 30 / @rem;
+      img {
+        width: 100%;
+      }
+    }
+
+    .new {
+      background-color: #ffffff;
+      padding: 30 / @rem 30 / @rem 40 / @rem 30 / @rem;
+      margin-top: 20 / @rem;
+      border-radius: 10 / @rem;
+      box-shadow: 2 / @rem 5 / @rem 8 / @rem rgba(51, 51, 51, 0.1);
+      h2 {
+        padding-bottom: 30 / @rem;
+        font-size: 28 / @rem;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+        line-height: 20 / @rem;
+        border-bottom: solid 1 / @rem #eeeeee;
+      }
+    }
+    .produce {
+      margin-top: 10 / @rem;
+      position: relative;
+      // overflow: hidden;
+      &::before {
+        position: absolute;
+        left: -16 / @rem;
+        top: 64 / @rem;
+        content: "";
+        display: block;
+        width: 32 / @rem;
+        height: 32 / @rem;
+        border-radius: 50%;
+        background-color: #eeeeee;
+      }
+      &::after {
+        position: absolute;
+        right: -16 / @rem;
+        top: 64 / @rem;
+        content: "";
+        display: block;
+        width: 32 / @rem;
+        height: 32 / @rem;
+        border-radius: 50%;
+        background-color: #eeeeee;
+      }
+      h2 {
+        padding-bottom: 30 / @rem;
+        font-size: 28 / @rem;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+        line-height: 20 / @rem;
+        border-bottom: solid 1 / @rem #eeeeee;
+      }
+      p {
+        padding-top: 20 / @rem;
+        color: #999999;
+        font-size: 26 / @rem;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        line-height: 40 / @rem;
+        text-indent: 2em;
+      }
+    }
+    .msg {
+      p {
+        font-size: 26 / @rem;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        line-height: 40 / @rem;
+        padding-top: 10 / @rem;
+        span {
+          &:first-of-type {
+            color: #666666;
+          }
+          &:last-of-type {
+            color: #999999;
+          }
+        }
+      }
+    }
+    .if {
+      ul {
+        li {
+          font-size: 26 / @rem;
+          font-family: PingFang-SC-Medium;
+          font-weight: 500;
+          color: rgba(153, 153, 153, 1);
+          line-height: 40 / @rem;
+        }
+      }
+    }
+  }
+  // .iScrollVerticalScrollbar {
+  //   .iScrollIndicator {
+  //     opacity: 0;
+  //   }
+  // }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 666;
+  width: 100%;
+  padding: 0 35 / @rem;
+  background-color: #ffffff;
+  height: 143 / @rem;
+  line-height: 143 / @rem;
+  input {
+    width: 680 / @rem;
+    height: 83 / @rem;
+    border-radius: 3 / @rem;
+    background-color: #27a6e6;
+    color: #ffffff;
+    font-size: 28 / @rem;
+    font-family: PingFang-SC-Medium;
+    outline: none;
+  }
+}

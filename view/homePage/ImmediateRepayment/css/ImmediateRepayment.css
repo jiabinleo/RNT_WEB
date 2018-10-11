@@ -178,18 +178,17 @@ html #wrapper #scroller section .ImWrap.wrap3,
 body #wrapper #scroller section .ImWrap.wrap3 {
   float: left;
 }
-html #wrapper #scroller #insure_wrap,
-body #wrapper #scroller #insure_wrap {
+html #insure_wrap,
+body #insure_wrap {
   display: none;
   position: relative;
   width: 100%;
-  height: 130%;
-  z-index: 10;
-  top: -100%;
+  height: 100%;
+  z-index: 666;
   background-color: rgba(51, 51, 51, 0.5);
 }
-html #wrapper #scroller #insure_wrap #insure_inner,
-body #wrapper #scroller #insure_wrap #insure_inner {
+html #insure_wrap #insure_inner,
+body #insure_wrap #insure_inner {
   display: none;
   position: absolute;
   left: 50%;
@@ -201,57 +200,57 @@ body #wrapper #scroller #insure_wrap #insure_inner {
   padding: 0 0.64rem 0.85333333rem 0.64rem;
   border-radius: 0.10666667rem;
 }
-html #wrapper #scroller #insure_wrap #insure_inner div,
-body #wrapper #scroller #insure_wrap #insure_inner div {
+html #insure_wrap #insure_inner div,
+body #insure_wrap #insure_inner div {
   border-bottom: solid #eeeeee 1px;
 }
-html #wrapper #scroller #insure_wrap #insure_inner div.insure_play,
-body #wrapper #scroller #insure_wrap #insure_inner div.insure_play {
+html #insure_wrap #insure_inner div.insure_play,
+body #insure_wrap #insure_inner div.insure_play {
   height: 2.048rem;
   line-height: 2.048rem;
   color: #333333;
 }
-html #wrapper #scroller #insure_wrap #insure_inner div.insure_play span,
-body #wrapper #scroller #insure_wrap #insure_inner div.insure_play span {
+html #insure_wrap #insure_inner div.insure_play span,
+body #insure_wrap #insure_inner div.insure_play span {
   font-size: 0.59733333rem;
 }
-html #wrapper #scroller #insure_wrap #insure_inner div.insure_play span:last-of-type,
-body #wrapper #scroller #insure_wrap #insure_inner div.insure_play span:last-of-type {
+html #insure_wrap #insure_inner div.insure_play span:last-of-type,
+body #insure_wrap #insure_inner div.insure_play span:last-of-type {
   float: right;
 }
-html #wrapper #scroller #insure_wrap #insure_inner div.insure_play span:last-of-type img,
-body #wrapper #scroller #insure_wrap #insure_inner div.insure_play span:last-of-type img {
+html #insure_wrap #insure_inner div.insure_play span:last-of-type img,
+body #insure_wrap #insure_inner div.insure_play span:last-of-type img {
   margin-top: 0.96rem;
   width: 0.384rem;
 }
-html #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom,
-body #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom {
+html #insure_wrap #insure_inner div.insure_play_bottom,
+body #insure_wrap #insure_inner div.insure_play_bottom {
   color: #666666;
 }
-html #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type,
-body #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type {
+html #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type,
+body #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type {
   font-size: 0.59733333rem;
   height: 2.98666667rem;
 }
-html #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type img,
-body #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type img {
+html #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type img,
+body #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type img {
   margin: 0.64rem 0;
   width: 1.70666667rem;
 }
-html #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom span:last-of-type,
-body #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom span:last-of-type {
+html #insure_wrap #insure_inner div.insure_play_bottom span:last-of-type,
+body #insure_wrap #insure_inner div.insure_play_bottom span:last-of-type {
   margin-left: 0.64rem;
   vertical-align: middle;
   font-size: 0.59733333rem;
   margin-top: -2.56rem;
   display: inline-block;
 }
-html #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom:last-of-type,
-body #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom:last-of-type {
+html #insure_wrap #insure_inner div.insure_play_bottom:last-of-type,
+body #insure_wrap #insure_inner div.insure_play_bottom:last-of-type {
   border-bottom: 0;
 }
-html #wrapper #scroller #insure_wrap #insure_inner2,
-body #wrapper #scroller #insure_wrap #insure_inner2 {
+html #insure_wrap #insure_inner2,
+body #insure_wrap #insure_inner2 {
   display: none;
   padding: 0 0.42666667rem;
   position: absolute;
@@ -264,73 +263,73 @@ body #wrapper #scroller #insure_wrap #insure_inner2 {
   padding: 0 0.64rem 0.85333333rem 0.64rem;
   border-radius: 0.10666667rem;
 }
-html #wrapper #scroller #insure_wrap #insure_inner2 .zhifu,
-body #wrapper #scroller #insure_wrap #insure_inner2 .zhifu {
+html #insure_wrap #insure_inner2 .zhifu,
+body #insure_wrap #insure_inner2 .zhifu {
   text-align: center;
   font-size: 0.59733333rem;
   color: #333333;
   height: 2.048rem;
   line-height: 2.048rem;
 }
-html #wrapper #scroller #insure_wrap #insure_inner2 .zhifu span,
-body #wrapper #scroller #insure_wrap #insure_inner2 .zhifu span {
+html #insure_wrap #insure_inner2 .zhifu span,
+body #insure_wrap #insure_inner2 .zhifu span {
   overflow: hidden;
 }
-html #wrapper #scroller #insure_wrap #insure_inner2 .zhifu span img,
-body #wrapper #scroller #insure_wrap #insure_inner2 .zhifu span img {
+html #insure_wrap #insure_inner2 .zhifu span img,
+body #insure_wrap #insure_inner2 .zhifu span img {
   width: 0.384rem;
   height: 0.384rem;
   float: right;
   margin-top: 0.81066667rem;
 }
-html #wrapper #scroller #insure_wrap #insure_inner2 .mess,
-body #wrapper #scroller #insure_wrap #insure_inner2 .mess {
+html #insure_wrap #insure_inner2 .mess,
+body #insure_wrap #insure_inner2 .mess {
   height: 3.09333333rem;
   border-bottom: solid 1px #eeeeee;
 }
-html #wrapper #scroller #insure_wrap #insure_inner2 .mess div,
-body #wrapper #scroller #insure_wrap #insure_inner2 .mess div {
+html #insure_wrap #insure_inner2 .mess div,
+body #insure_wrap #insure_inner2 .mess div {
   color: #333333;
   text-align: center;
 }
-html #wrapper #scroller #insure_wrap #insure_inner2 .mess div:first-of-type,
-body #wrapper #scroller #insure_wrap #insure_inner2 .mess div:first-of-type {
+html #insure_wrap #insure_inner2 .mess div:first-of-type,
+body #insure_wrap #insure_inner2 .mess div:first-of-type {
   margin-top: 0.64rem;
   font-size: 0.512rem;
 }
-html #wrapper #scroller #insure_wrap #insure_inner2 .mess div:last-of-type,
-body #wrapper #scroller #insure_wrap #insure_inner2 .mess div:last-of-type {
+html #insure_wrap #insure_inner2 .mess div:last-of-type,
+body #insure_wrap #insure_inner2 .mess div:last-of-type {
   margin-top: 0.42666667rem;
   font-size: 0.896rem;
 }
-html #wrapper #scroller #insure_wrap #insure_inner2 .yinhangka,
-body #wrapper #scroller #insure_wrap #insure_inner2 .yinhangka {
+html #insure_wrap #insure_inner2 .yinhangka,
+body #insure_wrap #insure_inner2 .yinhangka {
   height: 1.83466667rem;
   line-height: 1.83466667rem;
   font-size: 0.55466667rem;
   border-bottom: solid 1px #eeeeee;
 }
-html #wrapper #scroller #insure_wrap #insure_inner2 .yinhangka img:first-of-type,
-body #wrapper #scroller #insure_wrap #insure_inner2 .yinhangka img:first-of-type {
+html #insure_wrap #insure_inner2 .yinhangka img:first-of-type,
+body #insure_wrap #insure_inner2 .yinhangka img:first-of-type {
   width: 1.13066667rem;
   height: 0.512rem;
   margin-right: 0.32rem;
 }
-html #wrapper #scroller #insure_wrap #insure_inner2 .yinhangka img:last-of-type,
-body #wrapper #scroller #insure_wrap #insure_inner2 .yinhangka img:last-of-type {
+html #insure_wrap #insure_inner2 .yinhangka img:last-of-type,
+body #insure_wrap #insure_inner2 .yinhangka img:last-of-type {
   float: right;
   margin-top: 0.74666667rem;
   width: 0.256rem;
   height: 0.448rem;
 }
-html #wrapper #scroller #insure_wrap #insure_inner2 .mima,
-body #wrapper #scroller #insure_wrap #insure_inner2 .mima {
+html #insure_wrap #insure_inner2 .mima,
+body #insure_wrap #insure_inner2 .mima {
   height: 3.52rem;
   font-size: 0;
   padding-top: 0.85333333rem;
 }
-html #wrapper #scroller #insure_wrap #insure_inner2 .mima input,
-body #wrapper #scroller #insure_wrap #insure_inner2 .mima input {
+html #insure_wrap #insure_inner2 .mima input,
+body #insure_wrap #insure_inner2 .mima input {
   outline: none;
   text-align: center;
   font-size: 0.896rem;
@@ -339,12 +338,12 @@ body #wrapper #scroller #insure_wrap #insure_inner2 .mima input {
   border: solid 1px #666666;
   border-right: none;
 }
-html #wrapper #scroller #insure_wrap #insure_inner2 .mima input:first-of-type,
-body #wrapper #scroller #insure_wrap #insure_inner2 .mima input:first-of-type {
+html #insure_wrap #insure_inner2 .mima input:first-of-type,
+body #insure_wrap #insure_inner2 .mima input:first-of-type {
   border-radius: 0.10666667rem 0 0 0.10666667rem;
 }
-html #wrapper #scroller #insure_wrap #insure_inner2 .mima input:last-of-type,
-body #wrapper #scroller #insure_wrap #insure_inner2 .mima input:last-of-type {
+html #insure_wrap #insure_inner2 .mima input:last-of-type,
+body #insure_wrap #insure_inner2 .mima input:last-of-type {
   border-right: solid #666666 1px;
   border-radius: 0 0.10666667rem 0.10666667rem 0;
 }

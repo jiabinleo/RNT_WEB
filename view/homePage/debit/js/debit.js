@@ -17,19 +17,19 @@ var debit = {
         $("#bannerImgHTML").html(bannerImgHTML)
 
         var menuData = [{
-            link: "#",
+            link: "../plantingLoan/plantingLoan.html",
             imgUrl: "img/menu1.png",
             title: "种植贷"
         }, {
-            link: "#",
+            link: "../plantingLoan/plantingLoan.html",
             imgUrl: "img/menu2.png",
             title: "农资贷"
         }, {
-            link: "#",
+            link: "../plantingLoan/plantingLoan.html",
             imgUrl: "img/menu3.png",
             title: "农贸贷"
         }, {
-            link: "#",
+            link: "../plantingLoan/plantingLoan.html",
             imgUrl: "img/menu4.png",
             title: "个人贷"
         }]
