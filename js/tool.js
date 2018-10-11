@@ -5,4 +5,5 @@
     document.head.appendChild(style)
 })();
 
-var localhost = "http://192.168.1.240:55001/v1"
+var localhost = "http://192.168.1.240:55001/v1",
+imgUrl="http://192.168.1.240:50000"

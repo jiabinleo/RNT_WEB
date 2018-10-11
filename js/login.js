@@ -4,7 +4,6 @@ $(function () {
             login.listen()
         },
         listen: function () {
-            console.log(localhost)
             $("#button").on("click", function () {
                 var username = $.trim($("input[name='username']").val());
                 var password = hex_md5($.trim($("input[name='password']").val()));
@@ -34,9 +33,10 @@ $(function () {
                                     "userName",
                                     JSON.stringify(data.data.user.userName)
                                 );
+                                console.log(imgUrl + data.data.user.icon)
                                 sessionStorage.setItem(
                                     "imgUrl",
-                                    JSON.stringify(data.data.user.icon)
+                                    JSON.stringify(imgUrl + data.data.user.icon)
                                 );
                                 sessionStorage.setItem("account", JSON.stringify(username));
                                 sessionStorage.setItem(

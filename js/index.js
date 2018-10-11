@@ -24,6 +24,11 @@ $(function () {
             $(".personalCente_content > ul > li").click(function () {
                 $(this).addClass("active").siblings().removeClass("active")
             })
+            $("#userImg").attr("src", JSON.parse(sessionStorage.getItem("imgUrl")))
+            $("#user_name").html(JSON.parse(sessionStorage.getItem("userName")))
+            $(document).on("click", "#user_quit", function () {
+                window.open("login.html", "_self");
+            })
         }
     }
     indexPage.init()
