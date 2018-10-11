@@ -32,106 +32,95 @@ body header div.center {
   color: #ffffff;
   font-size: 0.68266667rem;
 }
-html section,
-body section {
+html #wrapper,
+body #wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 1.87733333rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
   overflow: hidden;
-  width: 303%;
-  margin-left: -100.5%;
-  animation: 3s;
 }
-html section .ImWrap,
-body section .ImWrap {
+html #wrapper #scroller,
+body #wrapper #scroller {
+  padding-bottom: 2.41066667rem;
+}
+html #wrapper #scroller section,
+body #wrapper #scroller section {
+  overflow: hidden;
+}
+html #wrapper #scroller section .ImWrap,
+body #wrapper #scroller section .ImWrap {
   width: 14.528rem;
   float: left;
   padding: 0.64rem 0.74666667rem;
   position: relative;
 }
-html section .ImWrap .ImquanL,
-body section .ImWrap .ImquanL {
-  position: absolute;
-  left: 0.576rem;
-  top: 3.02933333rem;
-  width: 0.34133333rem;
-  height: 0.34133333rem;
-  border-radius: 0.34133333rem;
-  background-color: #eeeeee;
-  box-shadow: -0.21333333rem 0.21333333rem -0.42666667rem 0rem rgba(51, 51, 51, 0.15);
-}
-html section .ImWrap .ImquanR,
-body section .ImWrap .ImquanR {
-  position: absolute;
-  right: 0.576rem;
-  top: 3.02933333rem;
-  width: 0.34133333rem;
-  height: 0.34133333rem;
-  border-radius: 0.34133333rem;
-  background-color: #eeeeee;
-  box-shadow: 0.21333333rem -0.21333333rem -0.42666667rem 0rem rgba(51, 51, 51, 0.15);
-}
-html section .ImWrap .ImInner,
-body section .ImWrap .ImInner {
+html #wrapper #scroller section .ImWrap .ImInner,
+body #wrapper #scroller section .ImWrap .ImInner {
   background-color: #ffffff;
   padding: 1.06666667rem 0.64rem 0;
   border-radius: 0.064rem;
   box-shadow: 0 0.21333333rem 0.42666667rem 0rem rgba(51, 51, 51, 0.15);
 }
-html section .ImWrap .ImInner .top,
-body section .ImWrap .ImInner .top {
+html #wrapper #scroller section .ImWrap .ImInner .top,
+body #wrapper #scroller section .ImWrap .ImInner .top {
   overflow: hidden;
 }
-html section .ImWrap .ImInner .top div,
-body section .ImWrap .ImInner .top div {
+html #wrapper #scroller section .ImWrap .ImInner .top div,
+body #wrapper #scroller section .ImWrap .ImInner .top div {
   float: left;
   font-size: 0.512rem;
   color: #999999;
   width: 15%;
 }
-html section .ImWrap .ImInner .top div img,
-body section .ImWrap .ImInner .top div img {
+html #wrapper #scroller section .ImWrap .ImInner .top div img,
+body #wrapper #scroller section .ImWrap .ImInner .top div img {
   width: 0.23466667rem;
   height: 0.42666667rem;
 }
-html section .ImWrap .ImInner .top div.topLeft,
-body section .ImWrap .ImInner .top div.topLeft {
+html #wrapper #scroller section .ImWrap .ImInner .top div.topLeft,
+body #wrapper #scroller section .ImWrap .ImInner .top div.topLeft {
   float: left;
 }
-html section .ImWrap .ImInner .top div.topCenter,
-body section .ImWrap .ImInner .top div.topCenter {
+html #wrapper #scroller section .ImWrap .ImInner .top div.topCenter,
+body #wrapper #scroller section .ImWrap .ImInner .top div.topCenter {
   width: 70%;
   font-size: 28 / rem;
   color: #333333;
   text-align: center;
 }
-html section .ImWrap .ImInner .top div.topRight,
-body section .ImWrap .ImInner .top div.topRight {
+html #wrapper #scroller section .ImWrap .ImInner .top div.topRight,
+body #wrapper #scroller section .ImWrap .ImInner .top div.topRight {
   float: right;
 }
-html section .ImWrap .ImInner .center,
-body section .ImWrap .ImInner .center {
+html #wrapper #scroller section .ImWrap .ImInner .center,
+body #wrapper #scroller section .ImWrap .ImInner .center {
   padding-top: 1.49333333rem;
 }
-html section .ImWrap .ImInner .center p,
-body section .ImWrap .ImInner .center p {
+html #wrapper #scroller section .ImWrap .ImInner .center p,
+body #wrapper #scroller section .ImWrap .ImInner .center p {
   text-align: center;
 }
-html section .ImWrap .ImInner .center p:first-of-type,
-body section .ImWrap .ImInner .center p:first-of-type {
+html #wrapper #scroller section .ImWrap .ImInner .center p:first-of-type,
+body #wrapper #scroller section .ImWrap .ImInner .center p:first-of-type {
   font-size: 0.512rem;
   color: #666666;
 }
-html section .ImWrap .ImInner .center p:nth-of-type(2),
-body section .ImWrap .ImInner .center p:nth-of-type(2) {
+html #wrapper #scroller section .ImWrap .ImInner .center p:nth-of-type(2),
+body #wrapper #scroller section .ImWrap .ImInner .center p:nth-of-type(2) {
   line-height: 2.13333333rem;
   font-size: 1.06666667rem;
   color: #333333;
 }
-html section .ImWrap .ImInner .center p:nth-of-type(3),
-body section .ImWrap .ImInner .center p:nth-of-type(3) {
+html #wrapper #scroller section .ImWrap .ImInner .center p:nth-of-type(3),
+body #wrapper #scroller section .ImWrap .ImInner .center p:nth-of-type(3) {
   font-size: 0.512rem;
   color: #f6900b;
 }
-html section .ImWrap .ImInner .center .button,
-body section .ImWrap .ImInner .center .button {
+html #wrapper #scroller section .ImWrap .ImInner .center .button,
+body #wrapper #scroller section .ImWrap .ImInner .center .button {
   width: 10.66666667rem;
   height: 1.92rem;
   line-height: 1.92rem;
@@ -142,55 +131,55 @@ body section .ImWrap .ImInner .center .button {
   color: #ffffff;
   font-size: 0.59733333rem;
 }
-html section .ImWrap .ImInner .bottom h2,
-body section .ImWrap .ImInner .bottom h2 {
+html #wrapper #scroller section .ImWrap .ImInner .bottom h2,
+body #wrapper #scroller section .ImWrap .ImInner .bottom h2 {
   font-size: 0.512rem;
   color: #333333;
   margin-bottom: 0.64rem;
 }
-html section .ImWrap .ImInner .bottom ul li,
-body section .ImWrap .ImInner .bottom ul li {
+html #wrapper #scroller section .ImWrap .ImInner .bottom ul li,
+body #wrapper #scroller section .ImWrap .ImInner .bottom ul li {
   height: 2.51733333rem;
   border-top: solid 1px #eeeeee;
 }
-html section .ImWrap .ImInner .bottom ul li .bottomLeft,
-body section .ImWrap .ImInner .bottom ul li .bottomLeft {
+html #wrapper #scroller section .ImWrap .ImInner .bottom ul li .bottomLeft,
+body #wrapper #scroller section .ImWrap .ImInner .bottom ul li .bottomLeft {
   float: left;
   padding-top: 0.59733333rem;
 }
-html section .ImWrap .ImInner .bottom ul li .bottomLeft p:first-of-type,
-body section .ImWrap .ImInner .bottom ul li .bottomLeft p:first-of-type {
+html #wrapper #scroller section .ImWrap .ImInner .bottom ul li .bottomLeft p:first-of-type,
+body #wrapper #scroller section .ImWrap .ImInner .bottom ul li .bottomLeft p:first-of-type {
   font-size: 0.55466667rem;
   color: #333333;
   font-weight: bold;
 }
-html section .ImWrap .ImInner .bottom ul li .bottomLeft p:last-of-type,
-body section .ImWrap .ImInner .bottom ul li .bottomLeft p:last-of-type {
+html #wrapper #scroller section .ImWrap .ImInner .bottom ul li .bottomLeft p:last-of-type,
+body #wrapper #scroller section .ImWrap .ImInner .bottom ul li .bottomLeft p:last-of-type {
   padding-top: 0.32rem;
   font-size: 0.512rem;
   color: #999999;
 }
-html section .ImWrap .ImInner .bottom ul li .bottomRight,
-body section .ImWrap .ImInner .bottom ul li .bottomRight {
+html #wrapper #scroller section .ImWrap .ImInner .bottom ul li .bottomRight,
+body #wrapper #scroller section .ImWrap .ImInner .bottom ul li .bottomRight {
   font-size: 0.68266667rem;
   font-weight: bold;
   float: right;
   line-height: 2.51733333rem;
 }
-html section .ImWrap.wrap1,
-body section .ImWrap.wrap1 {
+html #wrapper #scroller section .ImWrap.wrap1,
+body #wrapper #scroller section .ImWrap.wrap1 {
   float: left;
 }
-html section .ImWrap.wrap2,
-body section .ImWrap.wrap2 {
+html #wrapper #scroller section .ImWrap.wrap2,
+body #wrapper #scroller section .ImWrap.wrap2 {
   float: left;
 }
-html section .ImWrap.wrap3,
-body section .ImWrap.wrap3 {
+html #wrapper #scroller section .ImWrap.wrap3,
+body #wrapper #scroller section .ImWrap.wrap3 {
   float: left;
 }
-html #insure_wrap,
-body #insure_wrap {
+html #wrapper #scroller #insure_wrap,
+body #wrapper #scroller #insure_wrap {
   display: none;
   position: relative;
   width: 100%;
@@ -199,8 +188,8 @@ body #insure_wrap {
   top: -100%;
   background-color: rgba(51, 51, 51, 0.5);
 }
-html #insure_wrap #insure_inner,
-body #insure_wrap #insure_inner {
+html #wrapper #scroller #insure_wrap #insure_inner,
+body #wrapper #scroller #insure_wrap #insure_inner {
   display: none;
   position: absolute;
   left: 50%;
@@ -212,57 +201,57 @@ body #insure_wrap #insure_inner {
   padding: 0 0.64rem 0.85333333rem 0.64rem;
   border-radius: 0.10666667rem;
 }
-html #insure_wrap #insure_inner div,
-body #insure_wrap #insure_inner div {
+html #wrapper #scroller #insure_wrap #insure_inner div,
+body #wrapper #scroller #insure_wrap #insure_inner div {
   border-bottom: solid #eeeeee 1px;
 }
-html #insure_wrap #insure_inner div.insure_play,
-body #insure_wrap #insure_inner div.insure_play {
+html #wrapper #scroller #insure_wrap #insure_inner div.insure_play,
+body #wrapper #scroller #insure_wrap #insure_inner div.insure_play {
   height: 2.048rem;
   line-height: 2.048rem;
   color: #333333;
 }
-html #insure_wrap #insure_inner div.insure_play span,
-body #insure_wrap #insure_inner div.insure_play span {
+html #wrapper #scroller #insure_wrap #insure_inner div.insure_play span,
+body #wrapper #scroller #insure_wrap #insure_inner div.insure_play span {
   font-size: 0.59733333rem;
 }
-html #insure_wrap #insure_inner div.insure_play span:last-of-type,
-body #insure_wrap #insure_inner div.insure_play span:last-of-type {
+html #wrapper #scroller #insure_wrap #insure_inner div.insure_play span:last-of-type,
+body #wrapper #scroller #insure_wrap #insure_inner div.insure_play span:last-of-type {
   float: right;
 }
-html #insure_wrap #insure_inner div.insure_play span:last-of-type img,
-body #insure_wrap #insure_inner div.insure_play span:last-of-type img {
+html #wrapper #scroller #insure_wrap #insure_inner div.insure_play span:last-of-type img,
+body #wrapper #scroller #insure_wrap #insure_inner div.insure_play span:last-of-type img {
   margin-top: 0.96rem;
   width: 0.384rem;
 }
-html #insure_wrap #insure_inner div.insure_play_bottom,
-body #insure_wrap #insure_inner div.insure_play_bottom {
+html #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom,
+body #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom {
   color: #666666;
 }
-html #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type,
-body #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type {
+html #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type,
+body #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type {
   font-size: 0.59733333rem;
   height: 2.98666667rem;
 }
-html #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type img,
-body #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type img {
+html #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type img,
+body #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom span:first-of-type img {
   margin: 0.64rem 0;
   width: 1.70666667rem;
 }
-html #insure_wrap #insure_inner div.insure_play_bottom span:last-of-type,
-body #insure_wrap #insure_inner div.insure_play_bottom span:last-of-type {
+html #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom span:last-of-type,
+body #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom span:last-of-type {
   margin-left: 0.64rem;
   vertical-align: middle;
   font-size: 0.59733333rem;
   margin-top: -2.56rem;
   display: inline-block;
 }
-html #insure_wrap #insure_inner div.insure_play_bottom:last-of-type,
-body #insure_wrap #insure_inner div.insure_play_bottom:last-of-type {
+html #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom:last-of-type,
+body #wrapper #scroller #insure_wrap #insure_inner div.insure_play_bottom:last-of-type {
   border-bottom: 0;
 }
-html #insure_wrap #insure_inner2,
-body #insure_wrap #insure_inner2 {
+html #wrapper #scroller #insure_wrap #insure_inner2,
+body #wrapper #scroller #insure_wrap #insure_inner2 {
   display: none;
   padding: 0 0.42666667rem;
   position: absolute;
@@ -275,73 +264,73 @@ body #insure_wrap #insure_inner2 {
   padding: 0 0.64rem 0.85333333rem 0.64rem;
   border-radius: 0.10666667rem;
 }
-html #insure_wrap #insure_inner2 .zhifu,
-body #insure_wrap #insure_inner2 .zhifu {
+html #wrapper #scroller #insure_wrap #insure_inner2 .zhifu,
+body #wrapper #scroller #insure_wrap #insure_inner2 .zhifu {
   text-align: center;
   font-size: 0.59733333rem;
   color: #333333;
   height: 2.048rem;
   line-height: 2.048rem;
 }
-html #insure_wrap #insure_inner2 .zhifu span,
-body #insure_wrap #insure_inner2 .zhifu span {
+html #wrapper #scroller #insure_wrap #insure_inner2 .zhifu span,
+body #wrapper #scroller #insure_wrap #insure_inner2 .zhifu span {
   overflow: hidden;
 }
-html #insure_wrap #insure_inner2 .zhifu span img,
-body #insure_wrap #insure_inner2 .zhifu span img {
+html #wrapper #scroller #insure_wrap #insure_inner2 .zhifu span img,
+body #wrapper #scroller #insure_wrap #insure_inner2 .zhifu span img {
   width: 0.384rem;
   height: 0.384rem;
   float: right;
   margin-top: 0.81066667rem;
 }
-html #insure_wrap #insure_inner2 .mess,
-body #insure_wrap #insure_inner2 .mess {
+html #wrapper #scroller #insure_wrap #insure_inner2 .mess,
+body #wrapper #scroller #insure_wrap #insure_inner2 .mess {
   height: 3.09333333rem;
   border-bottom: solid 1px #eeeeee;
 }
-html #insure_wrap #insure_inner2 .mess div,
-body #insure_wrap #insure_inner2 .mess div {
+html #wrapper #scroller #insure_wrap #insure_inner2 .mess div,
+body #wrapper #scroller #insure_wrap #insure_inner2 .mess div {
   color: #333333;
   text-align: center;
 }
-html #insure_wrap #insure_inner2 .mess div:first-of-type,
-body #insure_wrap #insure_inner2 .mess div:first-of-type {
+html #wrapper #scroller #insure_wrap #insure_inner2 .mess div:first-of-type,
+body #wrapper #scroller #insure_wrap #insure_inner2 .mess div:first-of-type {
   margin-top: 0.64rem;
   font-size: 0.512rem;
 }
-html #insure_wrap #insure_inner2 .mess div:last-of-type,
-body #insure_wrap #insure_inner2 .mess div:last-of-type {
+html #wrapper #scroller #insure_wrap #insure_inner2 .mess div:last-of-type,
+body #wrapper #scroller #insure_wrap #insure_inner2 .mess div:last-of-type {
   margin-top: 0.42666667rem;
   font-size: 0.896rem;
 }
-html #insure_wrap #insure_inner2 .yinhangka,
-body #insure_wrap #insure_inner2 .yinhangka {
+html #wrapper #scroller #insure_wrap #insure_inner2 .yinhangka,
+body #wrapper #scroller #insure_wrap #insure_inner2 .yinhangka {
   height: 1.83466667rem;
   line-height: 1.83466667rem;
   font-size: 0.55466667rem;
   border-bottom: solid 1px #eeeeee;
 }
-html #insure_wrap #insure_inner2 .yinhangka img:first-of-type,
-body #insure_wrap #insure_inner2 .yinhangka img:first-of-type {
+html #wrapper #scroller #insure_wrap #insure_inner2 .yinhangka img:first-of-type,
+body #wrapper #scroller #insure_wrap #insure_inner2 .yinhangka img:first-of-type {
   width: 1.13066667rem;
   height: 0.512rem;
   margin-right: 0.32rem;
 }
-html #insure_wrap #insure_inner2 .yinhangka img:last-of-type,
-body #insure_wrap #insure_inner2 .yinhangka img:last-of-type {
+html #wrapper #scroller #insure_wrap #insure_inner2 .yinhangka img:last-of-type,
+body #wrapper #scroller #insure_wrap #insure_inner2 .yinhangka img:last-of-type {
   float: right;
   margin-top: 0.74666667rem;
   width: 0.256rem;
   height: 0.448rem;
 }
-html #insure_wrap #insure_inner2 .mima,
-body #insure_wrap #insure_inner2 .mima {
+html #wrapper #scroller #insure_wrap #insure_inner2 .mima,
+body #wrapper #scroller #insure_wrap #insure_inner2 .mima {
   height: 3.52rem;
   font-size: 0;
   padding-top: 0.85333333rem;
 }
-html #insure_wrap #insure_inner2 .mima input,
-body #insure_wrap #insure_inner2 .mima input {
+html #wrapper #scroller #insure_wrap #insure_inner2 .mima input,
+body #wrapper #scroller #insure_wrap #insure_inner2 .mima input {
   outline: none;
   text-align: center;
   font-size: 0.896rem;
@@ -350,12 +339,12 @@ body #insure_wrap #insure_inner2 .mima input {
   border: solid 1px #666666;
   border-right: none;
 }
-html #insure_wrap #insure_inner2 .mima input:first-of-type,
-body #insure_wrap #insure_inner2 .mima input:first-of-type {
+html #wrapper #scroller #insure_wrap #insure_inner2 .mima input:first-of-type,
+body #wrapper #scroller #insure_wrap #insure_inner2 .mima input:first-of-type {
   border-radius: 0.10666667rem 0 0 0.10666667rem;
 }
-html #insure_wrap #insure_inner2 .mima input:last-of-type,
-body #insure_wrap #insure_inner2 .mima input:last-of-type {
+html #wrapper #scroller #insure_wrap #insure_inner2 .mima input:last-of-type,
+body #wrapper #scroller #insure_wrap #insure_inner2 .mima input:last-of-type {
   border-right: solid #666666 1px;
   border-radius: 0 0.10666667rem 0.10666667rem 0;
 }

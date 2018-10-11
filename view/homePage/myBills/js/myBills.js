@@ -170,24 +170,26 @@ var myBills = {
         for (let i = 0; i < data.length; i++) {
             myBillsHTML +=
                 `<li>
-            <div class="billsTop">
-                <span>
-                    ￥${data[i].num}
-                </span>
-                <span class="status${data[i].status}">
-                    ${myBills.status(data[i].status)}
-                </span>
-            </div>
-            <div class="billsBottom">
-                <span>
-                    期数24 剩余12期
-                </span>
-                <span>
-                    <img src="img/time.png" alt="time">
-                    2017年12月12日
-                </span>
-            </div>
-        </li>`
+                <a href="../ImmediateRepayment/ImmediateRepayment.html">
+                    <div class="billsTop">
+                        <span>
+                            ￥${data[i].num}
+                        </span>
+                        <span class="status${data[i].status}">
+                            ${myBills.status(data[i].status)}
+                        </span>
+                    </div>
+                    <div class="billsBottom">
+                        <span>
+                            期数24 剩余12期
+                        </span>
+                        <span>
+                            <img src="img/time.png" alt="time">
+                            2017年12月12日
+                        </span>
+                    </div>
+                </a>
+                </li>`
 
         }
         $("#myBillsHTML").html(myBillsHTML)
