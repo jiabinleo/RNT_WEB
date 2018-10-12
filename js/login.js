@@ -27,13 +27,11 @@ $(function () {
                             "password": password
                         }),
                         success: function (data) {
-                            console.log(data)
                             if (data.code === "0") {
                                 sessionStorage.setItem(
                                     "userName",
                                     JSON.stringify(data.data.user.userName)
                                 );
-                                console.log(imgUrl + data.data.user.icon)
                                 sessionStorage.setItem(
                                     "imgUrl",
                                     JSON.stringify(imgUrl + data.data.user.icon)

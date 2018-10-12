@@ -1,3 +1,6 @@
+* {
+  font-size: 0.59733333rem;
+}
 html,
 body {
   /* height: 100%; */
@@ -139,8 +142,13 @@ header div.right .alarm .message span {
 #scroller section {
   overflow: hidden;
 }
+#scroller section .banner .swiper-container .swiper-wrapper .swiper-slide {
+  width: 16rem;
+  height: 7.46666667rem;
+}
 #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide img {
   width: 100%;
+  font-size: 0.59733333rem;
 }
 #scroller section .menu {
   margin: 0 0.74666667rem;
@@ -149,18 +157,12 @@ header div.right .alarm .message span {
 #scroller section .menu .menu_ul {
   overflow: hidden;
   width: 100%;
-}
-#scroller section .menu .menu_ul.menu_ul1 {
-  padding-top: 0.74666667rem;
-}
-#scroller section .menu .menu_ul.menu_ul2 {
-  padding-top: 1.024rem;
-  padding-bottom: 0.85333333rem;
+  padding-top: 0.8rem;
 }
 #scroller section .menu .menu_ul li {
   float: left;
   width: 19%;
-  padding-left: 0.8rem;
+  padding: 0rem 0 0.8rem 0.8rem;
 }
 #scroller section .menu .menu_ul li:nth-of-type(1) {
   margin-left: 0;
@@ -170,9 +172,10 @@ header div.right .alarm .message span {
   display: inline-block;
 }
 #scroller section .menu .menu_ul li a img {
-  width: 1.89866667rem;
-  height: 1.89866667rem;
+  width: 1.92rem;
+  height: 1.92rem;
   padding-left: 0.1rem;
+  font-size: 0.59733333rem;
 }
 #scroller section .menu .menu_ul li a p {
   font-size: 0.512rem;
