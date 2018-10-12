@@ -1,6 +1,7 @@
 $(function () {
     var indexPage = {
         init: function () {
+            console.log(0.02133333)
             indexPage.listen();
         },
         listen: function () {
@@ -60,6 +61,14 @@ $(function () {
             $("#user_name").html(JSON.parse(sessionStorage.getItem("userName")));
             $(document).on("click", "#user_quit", function () {
                 window.open("login.html", "_self");
+                session = ["account", "imgUrl", "my_token", "userName"]
+
+                for (let i = 0; i < session.length; i++) {
+                    sessionStorage.removeItem(session[i]);
+                }
+                // sessionStorage.removeItem();
+                // sessionStorage.removeItem("");
+                // sessionStorage.removeItem("");
             });
         },
         banner: function (bannerList) {

@@ -1,4 +1,5 @@
 @rem: 750/16rem;
+// 0.02133333rem;
 html,
 body {
   overflow: hidden;
@@ -10,19 +11,19 @@ body {
 
 header {
   z-index: 100;
-  height: 1.87733333rem;
+  height: 88 / @rem;
   background: #1c9ee1;
   div {
     float: left;
-    height: 1.87733333rem;
+    height: 88 / @rem;
     &.left {
-      width: 2.24rem;
-      line-height: 1.87733333rem;
+      width: 105 / @rem;
+      line-height: 88 / @rem;
       .sweep {
-        width: 0.85333333rem;
-        height: 0.85333333rem;
-        margin-left: 0.74666667rem;
-        padding-top: 0.064rem;
+        width: 40 / @rem;
+        height: 40 / @rem;
+        margin-left: 35 / @rem;
+        padding-top: 3 / @rem;
         img {
           width: 100%;
         }
@@ -31,17 +32,17 @@ header {
     &.center {
       position: relative;
       background: #71ccf3;
-      margin-top: 0.34133333rem;
-      width: 11.52rem;
-      height: 1.19466667rem;
-      line-height: 1.87733333rem;
-      border-radius: 0.64rem;
+      margin-top: 16 / @rem;
+      width: 540 / @rem;
+      height: 56 / @rem;
+      line-height: 88 / @rem;
+      border-radius: 30/@rem;
       img {
         position: absolute;
-        left: 0.74666667rem;
+        left: 35/@rem;
         top: 0.29866667rem;
-        width: 0.64rem;
-        height: 0.64rem;
+        width: 30/@rem;
+        height: 30/@rem;
       }
       input {
         position: absolute;
@@ -78,27 +79,27 @@ header {
     }
     &.right {
       width: 2.24rem;
-      line-height: 1.87733333rem;
+      line-height: 88/@rem;
       .alarm {
-        margin-left: 0.64rem;
-        width: 0.85333333rem;
-        height: 0.85333333rem;
+        margin-left: 30/@rem;
+        width: 40/@rem;
+        height: 40/@rem;
         padding-top: 0.064rem;
         img {
           width: 100%;
         }
         .message {
           position: absolute;
-          right: 0.34133333rem;
-          top: -0.64rem;
+          right: 16/@rem;
+          top: -30/@rem;
           display: none;
           span {
-            width: 0.72533333rem;
-            height: 0.42666667rem;
+            width: 34/@rem;
+            height: 20/@rem;
             background-image: url("../images/mess4@2x.png");
             font-family: "lato", "Franklin Gothic Medium", "Arial Narrow", Arial,
               sans-serif;
-            font-size: 0.34133333rem;
+            font-size: 16/@rem;
             border-radius: 50%;
             color: #ffffff;
           }
@@ -110,7 +111,7 @@ header {
 #wrapper {
   position: absolute;
   z-index: 1;
-  top: 1.87733333rem;
+  top: 88/@rem;
   bottom: 2.13333333rem;
   left: 0;
   width: 100%;
@@ -139,26 +140,26 @@ header {
       overflow: hidden;
 
       .new {
-        padding: 0 0.74666667rem;
+        padding: 0 35/@rem;
         // .inner .new_top
         .inner {
           .new_top {
             // .new_top_right
             .new_top_right {
               h3 {
-                font-size: 0.59733333rem;
+                font-size: 28/@rem;
                 color: #333333;
                 font-weight: bold;
                 overflow: hidden;
-                line-height: 0.99733333rem;
+                line-height: 46/@rem;
                 text-overflow: ellipsis;
                 white-space: nowrap;
               }
               p {
-                /* padding: 0.29866667rem 0 0.34133333rem; */
+                /* padding: 0.29866667rem 0 16/@rem; */
                 font-size: 0.512rem;
                 color: #747474;
-                line-height: 0.68266667rem;
+                line-height: 32/@rem;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 3;
@@ -171,7 +172,7 @@ header {
               .datatime {
                 overflow: hidden;
                 line-height: 0.98266667rem;
-                font-size: 0.42666667rem;
+                font-size: 20/@rem;
                 color: #999999;
                 span {
                   &:nth-of-type(1) {
@@ -181,7 +182,7 @@ header {
                   &:nth-of-type(2) {
                     text-align: right;
                     float: right;
-                    margin-right: 0.42666667rem;
+                    margin-right: 20/@rem;
                   }
                 }
               }
@@ -196,14 +197,14 @@ header {
                   &:nth-of-type(2) {
                     text-align: right;
                     float: right;
-                    margin-right: 0.42666667rem;
+                    margin-right: 20/@rem;
                   }
                 }
               }
             }
           }
           h2 {
-            font-size: 0.59733333rem;
+            font-size: 28/@rem;
             color: #333333;
             height: 1.856rem;
             line-height: 1.856rem;
@@ -212,21 +213,21 @@ header {
               padding-left: 0.256rem;
               img {
                 width: 0.256rem;
-                height: 0.46933333rem;
+                height: 22/@rem;
               }
             }
           }
           .news {
-            padding-bottom: 0.64rem;
+            padding-bottom: 30/@rem;
             overflow: hidden;
             border-bottom: solid 1px #eeeeee;
             .new_top {
-              padding: 0.64rem 0 0.61866667rem;
+              padding: 30/@rem 0 29/@rem;
               overflow: hidden;
               border-bottom: solid 1px #eeeeee;
               .new_top_left {
-                width: 5.54666667rem;
-                height: 3.69066667rem;
+                width: 260/@rem;
+                height: 173/@rem;
                 float: left;
                 border-radius: 8px;
                 overflow: hidden;
@@ -236,26 +237,26 @@ header {
               }
               .new_top_right {
                 float: left;
-                width: 8.27733333rem;
-                margin-left: 0.64rem;
+                width: 388/@rem;
+                margin-left: 30/@rem;
               }
               .new_top_left1 {
                 float: left;
-                width: 8.27733333rem;
-                margin-right: 0.64rem;
+                width: 388/@rem;
+                margin-right: 30/@rem;
                 h3 {
-                  font-size: 0.59733333rem;
+                  font-size: 28/@rem;
                   color: #333333;
                   font-weight: bold;
                   overflow: hidden;
-                  line-height: 0.99733333rem;
+                  line-height: 46/@rem;
                   text-overflow: ellipsis;
                   white-space: nowrap;
                 }
                 p {
                   font-size: 0.512rem;
                   color: #747474;
-                  line-height: 0.68266667rem;
+                  line-height: 32/@rem;
                   display: -webkit-box;
                   -webkit-box-orient: vertical;
                   -webkit-line-clamp: 3;
@@ -267,13 +268,13 @@ header {
                 .datatime {
                   overflow: hidden;
                   line-height: 0.98266667rem;
-                  font-size: 0.42666667rem;
+                  font-size: 20/@rem;
                   color: #999999;
                 }
               }
               .new_top_right1 {
-                width: 5.54666667rem;
-                height: 3.69066667rem;
+                width: 260/@rem;
+                height: 173/@rem;
                 float: left;
                 border-radius: 8px;
                 overflow: hidden;
@@ -283,37 +284,37 @@ header {
               }
             }
             .list {
-              width: 4.39466667rem;
+              width: 206/@rem;
               // float: left;
               display: inline-block;
-              padding-top: 0.64rem;
-              padding-bottom: 0.64rem;
-              margin-left: 0.66133333rem;
+              padding-top: 30/@rem;
+              padding-bottom: 30/@rem;
+              margin-left: 31/@rem;
               &:nth-of-type(4n + 2) {
                 margin-left: 0;
               }
               .bg {
                 position: relative;
-                width: 4.39466667rem;
-                height: 4.39466667rem;
+                width: 206/@rem;
+                height: 206/@rem;
                 border-radius: 8px;
                 overflow: hidden;
                 img {
-                  width: 4.39466667rem;
-                  height: 4.39466667rem;
+                  width: 206/@rem;
+                  height: 206/@rem;
                 }
                 .read {
                   position: absolute;
-                  width: 4.39466667rem;
-                  height: 0.81066667rem;
+                  width: 206/@rem;
+                  height: 38/@rem;
                   bottom: 0;
                   right: 0;
                   z-index: 10;
                   background-color: rgba(51, 51, 51, 0.48);
                   span {
                     float: right;
-                    line-height: 0.81066667rem;
-                    margin-right: 0.42666667rem;
+                    line-height: 38/@rem;
+                    margin-right: 20/@rem;
                     text-align: right;
                     font-size: 0.384rem;
                     color: #ffffff;
@@ -352,7 +353,7 @@ header {
         }
       }
       .menu {
-        margin: 0 0.74666667rem;
+        margin: 0 35/@rem;
         overflow: hidden;
         .menu_ul {
           overflow: hidden;
@@ -383,12 +384,12 @@ header {
         }
       }
       .line {
-        height: 0.42666667rem;
+        height: 20/@rem;
         background-color: #eeeeee;
       }
       .weather {
         font-size: 0.412rem;
-        padding: 0 0.74666667rem;
+        padding: 0 35/@rem;
         background-color: #ffffff;
         overflow: hidden;
         padding: 0.76666667rem;
@@ -456,8 +457,8 @@ footer {
         }
       }
       p {
-        padding-top: 0.17066667rem;
-        font-size: 0.42666667rem;
+        padding-top: 8/@rem;
+        font-size: 20/@rem;
         text-align: center;
       }
     }
@@ -496,18 +497,18 @@ footer {
     width: 11.52rem;
     background: url("../img/userbg.png") no-repeat;
     background-size: 100%;
-    padding-top: 0.64rem;
+    padding-top: 30/@rem;
     .user {
       overflow: hidden;
-      height: 1.87733333rem;
+      height: 88/@rem;
     }
     .user {
       .user_logo {
         width: 1.28rem;
         height: 1.28rem;
         float: left;
-        margin-left: 0.53333333rem;
-        margin-top: 0.42666667rem;
+        margin-left: 25/@rem;
+        margin-top: 20/@rem;
         border-radius: 50%;
         overflow: hidden;
         img {
@@ -517,31 +518,31 @@ footer {
       }
       .user_name {
         float: left;
-        font-size: 0.72533333rem;
+        font-size: 34/@rem;
         color: #ffffff;
-        line-height: 1.87733333rem;
-        padding-top: 0.17066667rem;
-        margin-left: 0.42666667rem;
+        line-height: 88/@rem;
+        padding-top: 8/@rem;
+        margin-left: 20/@rem;
       }
       .user_quit {
         float: right;
-        margin-right: 0.53333333rem;
-        width: 0.98133333rem;
-        height: 0.81066667rem;
-        line-height: 1.87733333rem;
-        padding-top: 0.17066667rem;
+        margin-right: 25/@rem;
+        width: 46/@rem;
+        height: 38/@rem;
+        line-height: 88/@rem;
+        padding-top: 8/@rem;
         img {
-          width: 0.98133333rem;
-          height: 0.81066667rem;
+          width: 46/@rem;
+          height: 38/@rem;
         }
       }
     }
     .user_personalized {
-      font-size: 0.46933333rem;
+      font-size: 22/@rem;
       color: #ffffff;
       margin-left: 2.24rem;
       p {
-        line-height: 0.66133333rem;
+        line-height: 31/@rem;
       }
     }
   }
@@ -553,23 +554,23 @@ footer {
         }
         .me {
           height: 3.52rem;
-          margin-left: 0.74666667rem;
+          margin-left: 35/@rem;
           .top {
             position: relative;
-            padding-top: 0.85333333rem;
+            padding-top: 40/@rem;
             .tp {
               display: inline-block;
               position: absolute;
               left: 0;
               top: 0.87466667rem;
               img {
-                width: 0.59733333rem;
+                width: 28/@rem;
                 height: 0.576rem;
                 vertical-align: -0.03rem;
               }
             }
             span {
-              font-size: 0.64rem;
+              font-size: 30/@rem;
               color: #333333;
               margin-left: 1.06666667rem;
             }

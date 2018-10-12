@@ -12,7 +12,6 @@ $(function () {
                     if (data.code === "0") {
                         nyzx.menu(data.data.newsCategoryList)
                     }
-
                 },
                 error: function (err) {}
             });
@@ -20,7 +19,7 @@ $(function () {
             $(document).on("click", "#menu > li", function () {
                 nyzx.banner($(this).attr("data-id"))
             })
-            
+
             var newData = {
                 bannerImg: [{
                         link: "../informationDetails/informationDetails.html",
@@ -119,7 +118,7 @@ $(function () {
         swiper: function () {
             var mySwiper = new Swiper('.swiper-container', {
                 autoplay: false,
-                loop: true,
+                loop: false,
                 speed: 1000,
                 // slidesPerView: 'auto',
                 pagination: '.swiper-pagination',

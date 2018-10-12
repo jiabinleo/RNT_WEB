@@ -141,12 +141,12 @@ header div.right .alarm .message span {
   color: #333333;
   font-weight: bold;
   overflow: hidden;
-  line-height: 0.99733333rem;
+  line-height: 0.98133333rem;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 #wrapper #scroller section .new .inner .new_top .new_top_right p {
-  /* padding: 0.29866667rem 0 0.34133333rem; */
+  /* padding: 0.29866667rem 0 16/@rem; */
   font-size: 0.512rem;
   color: #747474;
   line-height: 0.68266667rem;
@@ -231,7 +231,7 @@ header div.right .alarm .message span {
   color: #333333;
   font-weight: bold;
   overflow: hidden;
-  line-height: 0.99733333rem;
+  line-height: 0.98133333rem;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
