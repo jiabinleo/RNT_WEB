@@ -4,7 +4,7 @@ $(function () {
             indexPage.listen();
         },
         listen: function () {
-            var my_token = sessionStorage.getItem("my_token")
+            // var my_token = sessionStorage.getItem("my_token")
             $.ajax({
                 url: localhost + "/index/bannerList?category=index",
                 type: "get",
@@ -12,20 +12,18 @@ $(function () {
                 //     xhr.setRequestHeader("login_token", my_token);
                 // },
                 success: function (data) {
+                    console.log(data)
                     if (data.code === "0") {
                         indexPage.banner(data.data.bannerList)
                     }
                 },
                 error: function (err) {}
             });
-
             $.ajax({
                 url: localhost + "/index/menuList",
                 type: "get",
-                // beforeSend: function (xhr) {
-                //     xhr.setRequestHeader("login_token", my_token);
-                // },
                 success: function (data) {
+                    console.log(data)
                     if (data.code === "0") {
                         indexPage.menu(data.data.menuList)
                     }
@@ -33,8 +31,17 @@ $(function () {
                 error: function (err) {}
             });
 
-
-
+            $.ajax({
+                url: localhost + "/news/indexNewsList",
+                type: "get",
+                success: function (data) {
+                    console.log(data)
+                    if (data.code === "0") {
+                        indexPage.indexNews(data.data.newsList)
+                    }
+                },
+                error: function (err) {}
+            });
             $("#center").click(function () {
                 $(".masked").addClass(" maskeds");
                 $(".personalCente").addClass(" peractive");
@@ -54,15 +61,15 @@ $(function () {
             $(document).on("click", "#user_quit", function () {
                 window.open("login.html", "_self");
             });
-
-
         },
         banner: function (bannerList) {
             var bannerHTML = "";
             for (let i = 0; i < bannerList.length; i++) {
                 bannerHTML +=
                     `<div class="swiper-slide">
-                        <img src="${imgUrl+bannerList[i].bannerImg}" alt="${bannerList[i].bannerName}">
+                        <a href="javascript:;">
+                            <img src="${imgUrl+bannerList[i].bannerImg}" alt="${bannerList[i].bannerName}">
+                        </a>
                     </div>`;
             }
             $("#banner").html(bannerHTML);
@@ -80,7 +87,6 @@ $(function () {
             console.log(localhost)
             var menuHTML = "";
             for (let i = 0; i < menuList.length; i++) {
-                console.log(`view/homePage/${menuList[i].code}/${menuList[i].code}.html`)
                 menuHTML +=
                     `<li>
                         <a href="view/homePage/${menuList[i].code}/${menuList[i].code}.html">
@@ -93,9 +99,187 @@ $(function () {
             }
             $("#menuHTML").html(menuHTML)
 
+        },
+        indexNews: function (indexNewsList) {
+            // var indexNewsList = [
+            //     {
+            //     author: "l李大嘴",
+            //     authorIcon: "/img/asdhf.jpg",
+            //     brief: "农业农业农业",
+            //     categoryCode: "ny",
+            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象",
+            //     icon: "/icon/v54.jpg",
+            //     id: 1,
+            //     img: "/img/sahfhd.jpg",
+            //     label: "农业",
+            //     publishTime: 1539167177000,
+            //     reading: 43,
+            //     title: "农业",
+            //     topOne: "1",
+            //     topOneTime: 1539244240000,
+            //     topTwo: null,
+            //     topTwoTime: null
+            // }, {
+            //     author: "张大炮",
+            //     authorIcon: "/img/asdhf.jpg",
+            //     brief: "气象气象气象",
+            //     categoryCode: "qx",
+            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象",
+            //     icon: "/icon/v54.jpg",
+            //     id: 2,
+            //     img: "/img/sahfhd.jpg",
+            //     label: "气象",
+            //     publishTime: 1539080780000,
+            //     reading: 45,
+            //     title: "气象",
+            //     topOne: "1",
+            //     topOneTime: 1539071442000,
+            //     topTwo: null,
+            //     topTwoTime: null
+            // }, {
+            //     author: "张大炮",
+            //     authorIcon: "/img/asdhf.jpg",
+            //     brief: "气象气象气象",
+            //     categoryCode: "qx",
+            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象",
+            //     icon: "/icon/v54.jpg",
+            //     id: 2,
+            //     img: "/img/sahfhd.jpg",
+            //     label: "气象",
+            //     publishTime: 1539080780000,
+            //     reading: 45,
+            //     title: "气象",
+            //     topOne: "1",
+            //     topOneTime: 1539071442000,
+            //     topTwo: null,
+            //     topTwoTime: null
+            // }, {
+            //     author: "张大炮",
+            //     authorIcon: "/img/asdhf.jpg",
+            //     brief: "气象气象气象",
+            //     categoryCode: "qx",
+            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象",
+            //     icon: "/icon/v54.jpg",
+            //     id: 2,
+            //     img: "/img/sahfhd.jpg",
+            //     label: "气象",
+            //     publishTime: 1539080780000,
+            //     reading: 45,
+            //     title: "气象",
+            //     topOne: "1",
+            //     topOneTime: 1539071442000,
+            //     topTwo: null,
+            //     topTwoTime: null
+            // }, {
+            //     author: "张大炮",
+            //     authorIcon: "/img/asdhf.jpg",
+            //     brief: "气象气象气象",
+            //     categoryCode: "qx",
+            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象",
+            //     icon: "/icon/v54.jpg",
+            //     id: 2,
+            //     img: "/img/sahfhd.jpg",
+            //     label: "气象",
+            //     publishTime: 1539080780000,
+            //     reading: 45,
+            //     title: "气象",
+            //     topOne: "1",
+            //     topOneTime: 1539071442000,
+            //     topTwo: null,
+            //     topTwoTime: null
+            // }, {
+            //     author: "张大炮",
+            //     authorIcon: "/img/asdhf.jpg",
+            //     brief: "气象气象气象",
+            //     categoryCode: "qx",
+            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象",
+            //     icon: "/icon/v54.jpg",
+            //     id: 2,
+            //     img: "/img/sahfhd.jpg",
+            //     label: "气象",
+            //     publishTime: 1539080780000,
+            //     reading: 45,
+            //     title: "气象",
+            //     topOne: "1",
+            //     topOneTime: 1539071442000,
+            //     topTwo: null,
+            //     topTwoTime: null
+            // }, {
+            //     author: "张大炮",
+            //     authorIcon: "/img/asdhf.jpg",
+            //     brief: "气象气象气象",
+            //     categoryCode: "qx",
+            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象",
+            //     icon: "/icon/v54.jpg",
+            //     id: 2,
+            //     img: "/img/sahfhd.jpg",
+            //     label: "气象",
+            //     publishTime: 1539080780000,
+            //     reading: 45,
+            //     title: "气象",
+            //     topOne: "1",
+            //     topOneTime: 1539071442000,
+            //     topTwo: null,
+            //     topTwoTime: null
+            // }, {
+            //     author: "张大炮",
+            //     authorIcon: "/img/asdhf.jpg",
+            //     brief: "气象气象气象",
+            //     categoryCode: "qx",
+            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象",
+            //     icon: "/icon/v54.jpg",
+            //     id: 2,
+            //     img: "/img/sahfhd.jpg",
+            //     label: "气象",
+            //     publishTime: 1539080780000,
+            //     reading: 45,
+            //     title: "气象",
+            //     topOne: "1",
+            //     topOneTime: 1539071442000,
+            //     topTwo: null,
+            //     topTwoTime: null
+            // }]
+            console.log(indexNewsList)
+            var newsHTML = ""
+            for (let i = 0; i < indexNewsList.length; i++) {
+                if (i % 4 === 0) {
+                    newsHTML +=
+                        `<div data-id= ${indexNewsList[i].id} class="new_top newsList">
+                            <div class="new_top_left">
+                                <img src="${imgUrl + indexNewsList[i].iconOne}" alt="new01">
+                            </div>
+                            <div class="new_top_right">
+                                <h3>
+                                ${indexNewsList[i].title}
+                                </h3>
+                                <p>${indexNewsList[i].brief}</p>
+                                <div class="datatime">
+                                    <span>${indexNewsList[i].publishTime}</span>
+                                    <span>阅读${indexNewsList[i].reading}</span>
+                                </div>
+                            </div>
+                        </div>`
+                } else if (i % 4 === 1 || i % 4 === 2 || i % 4 === 3) {
+                    newsHTML +=
+                        `<div data-id= ${indexNewsList[i].id} class="list newsList">
+                            <div class="bg">
+                                <img src="${imgUrl + indexNewsList[i].iconOne}" alt="new02">
+                                <div class="read">
+                                    <span>阅读${indexNewsList[i].reading}</span>
+                                </div>
+                            </div>
+                            <p class="text">${indexNewsList[i].brief}</p>
+                        </div>`
+                }
+            }
+            $("#news").html(newsHTML)
+            $(document).on("click", "#news > .newsList", function () {
+                console.log()
+                window.open(`view/homePage/informationDetails/informationDetails.html?id=${$(this).attr("data-id")}`, "_self");
+            })
         }
-    };
 
+    };
 
     indexPage.init();
 

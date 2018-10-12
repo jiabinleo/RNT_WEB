@@ -5,31 +5,22 @@ $(function () {
             nyzx.swiper()
         },
         listen: function () {
-            var data = [{
-                title: "今日要闻"
-            }, {
-                title: "农业政策"
-            }, {
-                title: "地区资讯"
-            }, {
-                title: "展览展会"
-            }, {
-                title: "农产品"
-            }]
-            var menuHTML = "";
-            for (let i = 0; i < data.length; i++) {
-                if (i === 0) {
-                    menuHTML += `<li> <span class = "active">${data[i].title}</span></li>`
-                } else {
-                    menuHTML += `<li> <span>${data[i].title}</span></li>`
-                }
-            }
-            $("#menu").html(menuHTML)
+            $.ajax({
+                url: localhost + "/news/newsCategory",
+                type: "get",
+                success: function (data) {
+                    if (data.code === "0") {
+                        nyzx.menu(data.data.newsCategoryList)
+                    }
+
+                },
+                error: function (err) {}
+            });
 
             $(document).on("click", "#menu > li", function () {
-                $(this).find("span").addClass("active")
-                $(this).siblings().find("span").removeClass("active")
+                nyzx.banner($(this).attr("data-id"))
             })
+            
             var newData = {
                 bannerImg: [{
                         link: "../informationDetails/informationDetails.html",
@@ -135,6 +126,36 @@ $(function () {
                 autoplayDisableOnInteraction: false,
                 centeredSlides: true
             })
+        },
+        menu: function (newsCategoryList) {
+            nyzx.banner(newsCategoryList[0].categoryCode)
+            var menuHTML = "";
+            for (let i = 0; i < newsCategoryList.length; i++) {
+                if (i === 0) {
+                    menuHTML += `<li data-id="${newsCategoryList[i].categoryCode}"> <span class = "active">${newsCategoryList[i].categoryName}</span></li>`
+                } else {
+                    menuHTML += `<li data-id="${newsCategoryList[i].categoryCode}"> <span>${newsCategoryList[i].categoryName}</span></li>`
+                }
+            }
+            $("#menu").html(menuHTML)
+
+            $(document).on("click", "#menu > li", function () {
+                $(this).find("span").addClass("active")
+                $(this).siblings().find("span").removeClass("active")
+            })
+        },
+        banner: function (category) {
+            $.ajax({
+                url: localhost + "/news/topNewsListByCategory?category=" + category,
+                type: "get",
+                success: function (data) {
+                    if (data.code === "0") {
+                        console.log(data)
+                    }
+
+                },
+                error: function (err) {}
+            });
         }
     }
     nyzx.init()

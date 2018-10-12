@@ -79,14 +79,3 @@ body #wrapper #scroller section .source div:last-of-type img:first-of-type {
   width: 1.06666667rem;
   height: 0.53333333rem;
 }
-body #wrapper #scroller section .content img {
-  width: 100%;
-}
-body #wrapper #scroller section .content .content-text {
-  padding: 0.64rem 0;
-  font-size: 0.59733333rem;
-  color: #333333;
-  font-weight: 500;
-  line-height: 0.85333333rem;
-  text-indent: 1.19466667rem;
-}
