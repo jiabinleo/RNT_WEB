@@ -18,6 +18,8 @@ $(function () {
                 success: function (data) {
                     if (data.code === "0") {
                         nyzx.menu(data.data.newsCategoryList)
+                        category = data.data.newsCategoryList[0].categoryCode
+                        nyzx.newList(category, title, label, pageNum, pageSize)
                     }
                 },
                 error: function (err) {}
@@ -27,7 +29,7 @@ $(function () {
                 category = $(this).attr("data-id")
                 nyzx.banner(category)
                 $("#information_list").html("")
-                pageNum = 1, total = 0;
+                pageNum = 1, pageSize = 5, total = 0;
                 nyzx.newList(category, title, label, pageNum, pageSize)
             })
 
@@ -50,7 +52,6 @@ $(function () {
                     }
                 });
             }, 300);
-            nyzx.newList(category, title, label, pageNum, pageSize)
 
 
         },

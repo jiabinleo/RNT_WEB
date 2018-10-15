@@ -71,7 +71,9 @@ var onlineService = {
 
         $("#content_list").html(content_listHTML)
         $(document).on("touchstart", "#content_list .title", function () {
-            loaded()
+            if (myScroll) {
+                myScroll.refresh();
+            }
             if ($(this).parent().hasClass("active")) {
                 $(this).parent().removeClass("active")
                 $(this).find("img").attr("src", "img/right.png")
