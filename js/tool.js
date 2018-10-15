@@ -6,7 +6,7 @@
 })();
 var localhost = "http://192.168.1.240:55001/v1",
     imgUrl = "http://192.168.1.240:50000",
-    localhostB = "127.0.0.1:5500";
+    linkUrl = "http://127.0.0.1:5500";
 
 
 var tool = {

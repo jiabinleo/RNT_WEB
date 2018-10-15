@@ -98,7 +98,7 @@ $(function () {
             for (let i = 0; i < menuList.length; i++) {
                 menuHTML +=
                     `<li>
-                        <a href="view/homePage/${menuList[i].code}/${menuList[i].code}.html">
+                        <a href="${linkUrl}/view/homePage/${menuList[i].code}/${menuList[i].code}.html">
                             <div>
                                 <img src="${imgUrl+menuList[i].icon}" alt="${menuList[i].title}">
                                 <p>${menuList[i].title}</p>
