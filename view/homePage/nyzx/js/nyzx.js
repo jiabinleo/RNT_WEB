@@ -1,8 +1,11 @@
 $(function () {
-    var pageNum = 1,
-        pageSize = 10;
+    var category = "",
+        title = "",
+        label = "",
+        pageNum = 1,
+        pageSize = 5,
+        total = null;
     var nyzx = {
-
         init: function () {
             // nyzx.swiper()
             nyzx.listen()
@@ -13,7 +16,6 @@ $(function () {
                 url: localhost + "/news/newsCategory",
                 type: "get",
                 success: function (data) {
-                    console.log(data)
                     if (data.code === "0") {
                         nyzx.menu(data.data.newsCategoryList)
                     }
@@ -22,308 +24,17 @@ $(function () {
             });
 
             $(document).on("click", "#menu > li", function () {
-                nyzx.banner($(this).attr("data-id"))
+                category = $(this).attr("data-id")
+                nyzx.banner(category)
+                $("#information_list").html("")
+                pageNum = 1, total = 0;
+                nyzx.newList(category, title, label, pageNum, pageSize)
             })
 
-            var newData = {
-                bannerImg: [{
-                        link: "../informationDetails/informationDetails.html",
-                        imgUrl: "img/banner.png",
-                        text: "“123”带动河北承德深山区农民致富,让农民轻松松耕种致富是我追求的目标。",
-                        time: "1小时前",
-                        read: "888"
-                    },
-                    {
-                        link: "../informationDetails/informationDetails.html",
-                        imgUrl: "img/banner.png",
-                        text: "“原始农业”带动河北承德深山区农民致富,让农民轻松松耕种致富是我追求的目标。",
-                        time: "1小时前",
-                        read: "888"
-                    },
-                    {
-                        link: "../informationDetails/informationDetails.html",
-                        imgUrl: "img/banner.png",
-                        text: "“原始农业”带动河北承德深山区农民致富,让农民轻松松耕种致富是我追求的目标。",
-                        time: "1小时前",
-                        read: "888"
-                    }
-                ],
-                news: [{
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    }, {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    }, {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    }, {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    }, {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    }, {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    }, {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    }, {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new01.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    },
-                    {
-                        title: "警惕！壮汉吃半盘四季豆被毒倒半夜全身抽搐发抖！",
-                        text: "吃完宵夜回家，半夜突然浑身发冷冻得“打摆子”，日前，49岁的武汉市民闻先生一连串的异常反应吓坏家人，一连串的异常反应吓坏家人一连串的异常反应吓坏家人",
-                        imgUrl: "img/new02.png",
-                        time: "2017.12.21",
-                        read: "183"
-                    }
-                ]
-            }
-            var bannerHTML = "";
-
-
-            var informationListHTML = "";
-            for (let i = 0; i < newData.news.length; i++) {
-                informationListHTML +=
-                    `<li>
-                        <a href="../informationDetails/informationDetails.html">
-                            <div class="information-list-text">
-                                <div class="left">
-                                    <p class="list-title">${newData.news[i].title}</p>
-                                    <p class="list-content">${newData.news[i].text}</p>
-                                    <p class="list-time"><span>${newData.news[i].time}</span><span>阅读 ${newData.news[i].read}</span>
-                                    </p>
-                                </div>
-                                <div class="right">
-                                    <img src="${newData.news[i].imgUrl}" alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </li>`
-            }
-            $("#information_list").html(informationListHTML)
             setTimeout(() => {
                 var minY = null;
                 myScroll.on('scrollStart', function () {
-
                     minY = this.y;
-                    // console.log(minY)
                 });
 
                 myScroll.on('scroll', function () {
@@ -333,30 +44,14 @@ $(function () {
 
                 myScroll.on('scrollEnd', function () {
                     minY = minY < this.y ? minY : this.y;
-                    // console.log(minY)
-                    // console.log(this.y)
-                    // console.log(this.directionY)
-                    // if (this.y === minY > 10 && (this.directionY == 1)) {
-                    //     console.log('到底了')
-                    //     console.log("666")
-                    // }
                     if (this.y == this.maxScrollY) {
                         pageNum++
-                        // loaded()
-                        // console.log('到底了')
-
-                        // nyzx.newList(category, title, label, pageNum, pageSize)
-                        console.log(pageNum)
-                        $("#information_list").append(
-                            `<p>新的新闻</p>`
-                        )
-                        if (myScroll) {
-                            myScroll.refresh();
-                        }
-
+                        nyzx.newList(category, title, label, pageNum, pageSize)
                     }
                 });
             }, 300);
+            nyzx.newList(category, title, label, pageNum, pageSize)
+
 
         },
         swiper: function () {
@@ -435,6 +130,62 @@ $(function () {
         },
         newList: function (category, title, label, pageNum, pageSize) {
             console.log(category, title, label, pageNum, pageSize)
+            $.ajax({
+                url: localhost + "/news/newsList?category=" + category + "&title=" + title + "&label=" + label + "&pageNum=" + pageNum + "&pageSize=" + pageSize,
+                type: "get",
+                success: function (data) {
+                    console.log(data)
+                    if (data.code === "0") {
+                        var informationListHTML = "";
+                        var newListData = data.data.newsList.rows
+                        console.log(data.data.newsList.total)
+
+                        total += newListData.length
+                        console.log(total)
+                        if (myScroll) {
+                            myScroll.refresh();
+                        }
+                        if (total > data.data.newsList.total) {
+                            // alert("没有新数据")
+                            return
+                        }
+                        for (let i = 0; i < newListData.length; i++) {
+                            // ../informationDetails/informationDetails.html
+                            informationListHTML +=
+                                `<li>
+                                    <a href="#">
+                                        <div class="information-list-text">
+                                            <div class="left">
+                                                <p class="list-title">${newListData[i].title}</p>
+                                                <p class="list-content">${newListData[i].brief}</p>
+                                                <p class="list-time">
+                                                    <span>${newListData[i].publishTime}</span>
+                                                    <span>阅读 ${newListData[i].reading}</span>
+                                                </p>
+                                            </div>
+                                            <div class="right">
+                                                <img src="${imgUrl + newListData[i].iconOne}" alt="" onerror=src="/img/loading.gif" >
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>`
+                        }
+                        $("#information_list").append(
+                            informationListHTML
+                        )
+
+                        if (myScroll) {
+                            myScroll.refresh();
+                        }
+                    }
+                },
+                error: function (err) {}
+            });
+
+            // $("#information_list").append(
+            //     informationListHTML
+            //     // `<p>新的新闻</p>`
+            // )
         }
     }
     nyzx.init()

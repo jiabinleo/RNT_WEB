@@ -141,6 +141,7 @@ body {
                 float: left;
                 &.left {
                   width: 425 / @rem;
+                  height: 206 / @rem;
                   p {
                     &.list-title {
                       color: #333333;
@@ -148,20 +149,24 @@ body {
                       line-height: 38 / @rem;
                       font-weight: 700;
                       margin-top: -5 / @rem;
+                      display: -webkit-box;
+                      -webkit-box-orient: vertical;
+                      -webkit-line-clamp: 1;
+                      overflow: hidden;
                     }
                     &.list-content {
                       color: #999999;
                       font-size: 24 / @rem;
-                      line-height: 34 / @rem;
+                      line-height: 40 / @rem;
                       padding-top: 11 / @rem;
-
+                      min-height: 120/@rem;
                       display: -webkit-box;
                       -webkit-box-orient: vertical;
                       -webkit-line-clamp: 3;
                       overflow: hidden;
-                      letter-spacing: 0px;
-                      text-align: justify;
-                      text-align-last: justify;
+                      // letter-spacing: 0px;
+                      // text-align: justify;
+                      // text-align-last: justify;
                     }
                     &.list-time {
                       color: #999999;

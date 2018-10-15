@@ -135,6 +135,7 @@ body #wrapper #scroller section .information-list li .information-list-text div 
 }
 body #wrapper #scroller section .information-list li .information-list-text div.left {
   width: 9.06666667rem;
+  height: 4.39466667rem;
 }
 body #wrapper #scroller section .information-list li .information-list-text div.left p.list-title {
   color: #333333;
@@ -142,19 +143,21 @@ body #wrapper #scroller section .information-list li .information-list-text div.
   line-height: 0.81066667rem;
   font-weight: 700;
   margin-top: -0.10666667rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 body #wrapper #scroller section .information-list li .information-list-text div.left p.list-content {
   color: #999999;
   font-size: 0.512rem;
-  line-height: 0.72533333rem;
+  line-height: 0.85333333rem;
   padding-top: 0.23466667rem;
+  min-height: 2.56rem;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
-  letter-spacing: 0px;
-  text-align: justify;
-  text-align-last: justify;
 }
 body #wrapper #scroller section .information-list li .information-list-text div.left p.list-time {
   color: #999999;
