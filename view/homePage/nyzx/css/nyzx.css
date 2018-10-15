@@ -58,10 +58,16 @@ body #wrapper {
   position: absolute;
   z-index: 1;
   top: 3.62666667rem;
-  bottom: 0rem;
+  bottom: -1.06666667rem;
   left: 0;
   width: 100%;
   overflow: hidden;
+}
+body #wrapper #scroller {
+  padding-bottom: 0rem;
+}
+body #wrapper #scroller section {
+  padding-bottom: 0.85333333rem;
 }
 body #wrapper #scroller section .banner-wrap {
   background-color: #ffffff;
@@ -73,32 +79,41 @@ body #wrapper #scroller section .banner-wrap .banner {
 body #wrapper #scroller section .banner-wrap .banner .swiper-container {
   overflow: inherit;
 }
+body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide {
+  width: 14.50666667rem;
+}
 body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap {
-  margin-right: 0.21333333rem;
+  width: 100%;
+  height: 7.70133333rem;
   position: relative;
 }
-body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap img {
-  width: 100%;
+body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap .img-inner {
   border-radius: 0.17066667rem;
+  width: 14.29333333rem;
+  height: 7.70133333rem;
   overflow: hidden;
 }
-body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap .mask {
+body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap .img-inner img {
+  width: 14.29333333rem;
+}
+body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap .img-inner .mask {
   position: absolute;
-  bottom: 0.10666667rem;
+  bottom: 0rem;
   left: 0;
+  right: 0.21333333rem;
   padding: 0.21333333rem 0.64rem;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 0 0 0.17066667rem 0.17066667rem;
   overflow: hidden;
 }
-body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap .mask p {
+body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap .img-inner .mask p {
   color: #ffffff;
 }
-body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap .mask p:first-of-type {
+body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap .img-inner .mask p:first-of-type {
   font-size: 0.55466667rem;
   line-height: 0.85333333rem;
 }
-body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap .mask p:last-of-type {
+body #wrapper #scroller section .banner-wrap .banner .swiper-container .swiper-wrapper .swiper-slide .img-wrap .img-inner .mask p:last-of-type {
   font-size: 0.46933333rem;
   text-align: right;
 }
@@ -161,4 +176,10 @@ body #wrapper #scroller section .information-list li .information-list-text div.
 }
 body #wrapper #scroller section .information-list li .information-list-text div.right img {
   width: 100%;
+}
+body #wrapper #scroller p.loadingTxt {
+  font-size: 0.59733333rem;
+  text-align: center;
+  color: #666666;
+  line-height: 2;
 }
