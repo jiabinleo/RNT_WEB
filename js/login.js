@@ -1,6 +1,9 @@
 $(function () {
     var login = {
         init: function () {
+            setTimeout(() => {
+                $("#bg").fadeOut("slow");
+            }, 1000);
             login.listen()
         },
         listen: function () {
@@ -28,6 +31,12 @@ $(function () {
                         }),
                         success: function (data) {
                             if (data.code === "0") {
+                                // var a = data.data
+                                // console.log(a)
+                                // a = JSON.stringify(a)
+                                // console.log(a)
+                                // a = hex_md5(a)
+                                // console.log(a)
                                 sessionStorage.setItem(
                                     "userName",
                                     JSON.stringify(data.data.user.userName)

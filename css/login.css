@@ -4,6 +4,15 @@ body {
 }
 body {
   position: relative;
+  width: 100%;
+}
+body .bg {
+  position: absolute;
+  z-index: 9999;
+}
+body .bg img {
+  width: 100vw;
+  height: 100vh;
 }
 body .wrap {
   position: absolute;
