@@ -63,6 +63,7 @@ header div.right {
 }
 #wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide img {
   width: 14.08rem;
+  min-height: 4.90666667rem;
   margin: 0.42666667rem 0.21333333rem;
 }
 #wrapper #scroller section .banner .swiper-container .swiper-pagination {

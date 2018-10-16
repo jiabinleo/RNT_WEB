@@ -49,7 +49,7 @@ header div.center input {
   width: 8.53333333rem;
   padding: 0;
   border: 0;
-  font-size: 0.42666666rem;
+  font-size: 0.42666667rem;
   outline: none;
   color: #ffffff;
 }
@@ -146,7 +146,7 @@ header div.right .alarm .message span {
   white-space: nowrap;
 }
 #wrapper #scroller section .new .inner .new_top .new_top_right p {
-  /* padding: 0.29866667rem 0 16/@rem; */
+  /* padding: 14/@rem 0 16/@rem; */
   font-size: 0.512rem;
   color: #747474;
   line-height: 0.68266667rem;
@@ -356,11 +356,11 @@ header div.right .alarm .message span {
   background-color: #eeeeee;
 }
 #wrapper #scroller section .weather {
-  font-size: 0.412rem;
+  font-size: 0.42666667rem;
   padding: 0 0.74666667rem;
   background-color: #ffffff;
   overflow: hidden;
-  padding: 0.76666667rem;
+  padding: 0.768rem;
 }
 #wrapper #scroller section .weather .left {
   float: left;
@@ -415,7 +415,7 @@ footer .foot a .ft {
   margin: 0 auto;
 }
 footer .foot a .ft img {
-  /* width: 1.13066667rem; */
+  /* width: 53/@rem; */
   width: 1.13066667rem;
   height: 1.024rem;
 }

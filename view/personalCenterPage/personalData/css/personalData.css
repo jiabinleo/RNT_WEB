@@ -71,6 +71,10 @@ body #wrapper #scroller section ul li div.user-logo {
   line-height: 1.70666667rem;
   overflow: hidden;
 }
+body #wrapper #scroller section ul li div.user-logo img {
+  width: 100%;
+  border-radius: 50%;
+}
 body #wrapper #scroller section ul li div.dataText {
   height: 0.59733333rem;
   line-height: 0.59733333rem;

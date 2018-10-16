@@ -52,7 +52,10 @@ $(function () {
                     }
                 });
             }, 300);
-
+            $(document).on("click", "section  .newsList", function () {
+                console.log($(this).attr("data-id"))
+                window.open(`../informationDetails/informationDetails.html?id=${$(this).attr("data-id")}`, "_self");
+            })
 
         },
         swiper: function () {
@@ -96,12 +99,11 @@ $(function () {
                         console.log(bannerData[0])
                         for (let i = 0; i < bannerData.length; i++) {
                             // ${ imgUrl+bannerData[i].cover}
-                            // 
+                            // console.log()
                             bannerHTML +=
-                                `<div class="swiper-slide">
+                                `<div data-id="${data.data.newsList[i].id}"  class="newsList swiper-slide">
                                     <div class="img-wrap">
                                         <div class="img-inner">
-                                        <a href="../informationDetails/informationDetails.html">
                                             <img src="img/new01.png" alt="${bannerData[i].title}">
                                             <div class="mask">
                                                 <p>
@@ -111,7 +113,6 @@ $(function () {
                                                 ${bannerData[i].publishTime}·阅读量${bannerData[i].reading}
                                                 </p>
                                             </div>
-                                        </a>
                                         </div>
                                     </div>
                                 </div>`
@@ -153,7 +154,7 @@ $(function () {
                         for (let i = 0; i < newListData.length; i++) {
                             // ../informationDetails/informationDetails.html
                             informationListHTML +=
-                                `<li>
+                                `<li data-id="${data.data.newsList.rows[i].id}" class="newsList">
                                     <a href="#">
                                         <div class="information-list-text">
                                             <div class="left">

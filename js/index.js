@@ -1,7 +1,6 @@
 $(function () {
     var indexPage = {
         init: function () {
-            console.log(0.02133333)
             indexPage.listen();
         },
         listen: function () {
@@ -13,7 +12,6 @@ $(function () {
                 //     xhr.setRequestHeader("login_token", my_token);
                 // },
                 success: function (data) {
-                    console.log(data)
                     if (data.code === "0") {
                         indexPage.banner(data.data.bannerList)
                     }
@@ -24,7 +22,6 @@ $(function () {
                 url: localhost + "/index/menuList",
                 type: "get",
                 success: function (data) {
-                    console.log(data)
                     if (data.code === "0") {
                         indexPage.menu(data.data.menuList)
                     }
@@ -36,7 +33,6 @@ $(function () {
                 url: localhost + "/news/indexNewsList",
                 type: "get",
                 success: function (data) {
-                    console.log(data)
                     if (data.code === "0") {
                         indexPage.indexNews(data.data.newsList)
                     }
@@ -70,6 +66,10 @@ $(function () {
                 // sessionStorage.removeItem("");
                 // sessionStorage.removeItem("");
             });
+            $(document).on("click", "#news > .newsList", function () {
+                window.open(`view/homePage/informationDetails/informationDetails.html?id=${$(this).attr("data-id")}`, "_self");
+            })
+
         },
         banner: function (bannerList) {
             var bannerHTML = "";
@@ -93,12 +93,11 @@ $(function () {
             });
         },
         menu: function (menuList) {
-            console.log(localhost)
             var menuHTML = "";
             for (let i = 0; i < menuList.length; i++) {
                 menuHTML +=
                     `<li>
-                        <a href="${linkUrl}/view/homePage/${menuList[i].code}/${menuList[i].code}.html">
+                        <a href="view/homePage/${menuList[i].code}/${menuList[i].code}.html">
                             <div>
                                 <img src="${imgUrl+menuList[i].icon}" alt="${menuList[i].title}">
                                 <p>${menuList[i].title}</p>
@@ -107,148 +106,8 @@ $(function () {
                     </li>`
             }
             $("#menuHTML").html(menuHTML)
-
         },
         indexNews: function (indexNewsList) {
-            // var indexNewsList = [
-            //     {
-            //     author: "l李大嘴",
-            //     authorIcon: "/img/asdhf.jpg",
-            //     brief: "农业农业农业",
-            //     categoryCode: "ny",
-            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象气象",
-            //     icon: "/icon/v54.jpg",
-            //     id: 1,
-            //     img: "/img/sahfhd.jpg",
-            //     label: "农业",
-            //     publishTime: 1539167177000,
-            //     reading: 43,
-            //     title: "农业",
-            //     topOne: "1",
-            //     topOneTime: 1539244240000,
-            //     topTwo: null,
-            //     topTwoTime: null
-            // }, {
-            //     author: "张大炮",
-            //     authorIcon: "/img/asdhf.jpg",
-            //     brief: "气象气象气象",
-            //     categoryCode: "qx",
-            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象",
-            //     icon: "/icon/v54.jpg",
-            //     id: 2,
-            //     img: "/img/sahfhd.jpg",
-            //     label: "气象",
-            //     publishTime: 1539080780000,
-            //     reading: 45,
-            //     title: "气象",
-            //     topOne: "1",
-            //     topOneTime: 1539071442000,
-            //     topTwo: null,
-            //     topTwoTime: null
-            // }, {
-            //     author: "张大炮",
-            //     authorIcon: "/img/asdhf.jpg",
-            //     brief: "气象气象气象",
-            //     categoryCode: "qx",
-            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象",
-            //     icon: "/icon/v54.jpg",
-            //     id: 2,
-            //     img: "/img/sahfhd.jpg",
-            //     label: "气象",
-            //     publishTime: 1539080780000,
-            //     reading: 45,
-            //     title: "气象",
-            //     topOne: "1",
-            //     topOneTime: 1539071442000,
-            //     topTwo: null,
-            //     topTwoTime: null
-            // }, {
-            //     author: "张大炮",
-            //     authorIcon: "/img/asdhf.jpg",
-            //     brief: "气象气象气象",
-            //     categoryCode: "qx",
-            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象",
-            //     icon: "/icon/v54.jpg",
-            //     id: 2,
-            //     img: "/img/sahfhd.jpg",
-            //     label: "气象",
-            //     publishTime: 1539080780000,
-            //     reading: 45,
-            //     title: "气象",
-            //     topOne: "1",
-            //     topOneTime: 1539071442000,
-            //     topTwo: null,
-            //     topTwoTime: null
-            // }, {
-            //     author: "张大炮",
-            //     authorIcon: "/img/asdhf.jpg",
-            //     brief: "气象气象气象",
-            //     categoryCode: "qx",
-            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象",
-            //     icon: "/icon/v54.jpg",
-            //     id: 2,
-            //     img: "/img/sahfhd.jpg",
-            //     label: "气象",
-            //     publishTime: 1539080780000,
-            //     reading: 45,
-            //     title: "气象",
-            //     topOne: "1",
-            //     topOneTime: 1539071442000,
-            //     topTwo: null,
-            //     topTwoTime: null
-            // }, {
-            //     author: "张大炮",
-            //     authorIcon: "/img/asdhf.jpg",
-            //     brief: "气象气象气象",
-            //     categoryCode: "qx",
-            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象",
-            //     icon: "/icon/v54.jpg",
-            //     id: 2,
-            //     img: "/img/sahfhd.jpg",
-            //     label: "气象",
-            //     publishTime: 1539080780000,
-            //     reading: 45,
-            //     title: "气象",
-            //     topOne: "1",
-            //     topOneTime: 1539071442000,
-            //     topTwo: null,
-            //     topTwoTime: null
-            // }, {
-            //     author: "张大炮",
-            //     authorIcon: "/img/asdhf.jpg",
-            //     brief: "气象气象气象",
-            //     categoryCode: "qx",
-            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象",
-            //     icon: "/icon/v54.jpg",
-            //     id: 2,
-            //     img: "/img/sahfhd.jpg",
-            //     label: "气象",
-            //     publishTime: 1539080780000,
-            //     reading: 45,
-            //     title: "气象",
-            //     topOne: "1",
-            //     topOneTime: 1539071442000,
-            //     topTwo: null,
-            //     topTwoTime: null
-            // }, {
-            //     author: "张大炮",
-            //     authorIcon: "/img/asdhf.jpg",
-            //     brief: "气象气象气象",
-            //     categoryCode: "qx",
-            //     content: "气象气象气象气象气象气象气象气象气象气象气象气象",
-            //     icon: "/icon/v54.jpg",
-            //     id: 2,
-            //     img: "/img/sahfhd.jpg",
-            //     label: "气象",
-            //     publishTime: 1539080780000,
-            //     reading: 45,
-            //     title: "气象",
-            //     topOne: "1",
-            //     topOneTime: 1539071442000,
-            //     topTwo: null,
-            //     topTwoTime: null
-            // }]
-            console.log(indexNewsList)
             var newsHTML = ""
             for (let i = 0; i < indexNewsList.length; i++) {
                 if (i % 4 === 0) {
@@ -282,10 +141,10 @@ $(function () {
                 }
             }
             $("#news").html(newsHTML)
-            $(document).on("click", "#news > .newsList", function () {
-                console.log()
-                window.open(`view/homePage/informationDetails/informationDetails.html?id=${$(this).attr("data-id")}`, "_self");
-            })
+            if (myScroll) {
+                myScroll.refresh();
+            }
+
         }
 
     };

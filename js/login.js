@@ -46,6 +46,8 @@ $(function () {
                                     JSON.stringify(imgUrl + data.data.user.icon)
                                 );
                                 sessionStorage.setItem("account", JSON.stringify(username));
+                                sessionStorage.setItem("telephone", JSON.stringify(data.data.user.telephone));
+                                sessionStorage.setItem("email", JSON.stringify(data.data.user.email));
                                 sessionStorage.setItem(
                                     "my_token",
                                     JSON.stringify(data.data.token)
