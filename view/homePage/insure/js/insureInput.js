@@ -47,8 +47,26 @@ $(function () {
                     msg[urlIds] = $("#text").attr("placeholder")
                 }
                 localStorage.setItem("msg", JSON.stringify([msg]))
+                window.open("insure.html", "_self");
             })
+            // $(document).on("click", "#historyBack", function () {
+            //     msg[urlIds] = $("#text").val()
+            //     if ($("#text").val() == "") {
+            //         msg[urlIds] = $("#text").attr("placeholder")
+            //     }
+            //     localStorage.setItem("msg", JSON.stringify([msg]))
+            // })
 
+            $("input").keyup(function (e) {
+                if (e.keyCode === 13) {
+                    msg[urlIds] = $("#text").val()
+                    if ($("#text").val() == "") {
+                        // msg[urlIds] = $("#text").attr("placeholder")
+                    }
+                    localStorage.setItem("msg", JSON.stringify([msg]))
+                    window.open("insure.html", "_self");
+                }
+            });
         },
         getRequest: function () {
             var url = window.location.search; //获取url中"?"符后的字串

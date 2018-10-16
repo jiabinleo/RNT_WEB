@@ -16,11 +16,11 @@ header div.left {
   width: 1.6rem;
   line-height: 1.87733333rem;
 }
-header div.left a .sweep {
+header div.left .sweep {
   width: 1.6rem;
   margin-left: 0.74666667rem;
 }
-header div.left a .sweep img {
+header div.left .sweep img {
   width: 0.40533333rem;
   height: 0.74666667rem;
 }
