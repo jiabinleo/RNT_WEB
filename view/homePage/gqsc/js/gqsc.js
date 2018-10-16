@@ -224,8 +224,10 @@ $(function () {
             }
             $("#contentHTML_left").html(contentHTML)
             $("#contentHTML_right").html(contentHTML)
-
-            $(document).on("click",".supplyAndDemand-title div",function(){
+            if (myScroll) {
+                myScroll.refresh();
+            }
+            $(document).on("click", ".supplyAndDemand-title div", function () {
                 $(".supplyAndDemand-title span").removeClass("active")
                 $(this).find("span").addClass("active")
                 var $eleWidth = $(window).width()
@@ -233,6 +235,9 @@ $(function () {
                     "marginLeft": $(this).find("span").attr("data-id") * -$eleWidth,
                     transition: "0.5s"
                 })
+                if (myScroll) {
+                    myScroll.refresh();
+                }
             })
 
         }

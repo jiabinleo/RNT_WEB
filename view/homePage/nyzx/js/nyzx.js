@@ -70,7 +70,6 @@ $(function () {
             })
         },
         menu: function (newsCategoryList) {
-            console.log(newsCategoryList)
             nyzx.banner(newsCategoryList[0].categoryCode)
             var menuHTML = "";
             for (let i = 0; i < newsCategoryList.length; i++) {
@@ -131,19 +130,14 @@ $(function () {
             });
         },
         newList: function (category, title, label, pageNum, pageSize) {
-            console.log(category, title, label, pageNum, pageSize)
             $.ajax({
                 url: localhost + "/news/newsList?category=" + category + "&title=" + title + "&label=" + label + "&pageNum=" + pageNum + "&pageSize=" + pageSize,
                 type: "get",
                 success: function (data) {
-                    console.log(data)
                     if (data.code === "0") {
                         var informationListHTML = "";
                         var newListData = data.data.newsList.rows
-                        console.log(data.data.newsList.total)
-
                         total += newListData.length
-                        console.log(total)
                         if (myScroll) {
                             myScroll.refresh();
                         }
@@ -183,11 +177,6 @@ $(function () {
                 },
                 error: function (err) {}
             });
-
-            // $("#information_list").append(
-            //     informationListHTML
-            //     // `<p>新的新闻</p>`
-            // )
         }
     }
     nyzx.init()

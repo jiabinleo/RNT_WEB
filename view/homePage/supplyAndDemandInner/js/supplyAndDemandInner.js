@@ -181,6 +181,9 @@ $(function () {
         </div></a>`
             }
             $("#contentHTML").html(contentHTML)
+            if (myScroll) {
+                myScroll.refresh();
+            }
         }
     }
     supDem.init()
