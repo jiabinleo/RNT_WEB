@@ -5,7 +5,7 @@ body {
 header {
   position: absolute;
   z-index: 10;
-  width: 16rem;
+  width: 100%;
   height: 1.87733333rem;
   background: #1c9ee1;
 }

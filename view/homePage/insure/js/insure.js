@@ -74,6 +74,9 @@ $(function () {
                 }
 
             });
+            $(document).on("click", "#sweep", function () {
+                window.location.href = "../maize/maize.html";
+            })
         }
     }
     insure.init()
