@@ -61,11 +61,13 @@ html header .headerBottom .topLeft {
 body header .headerBottom .topLeft .topLeftlt,
 html header .headerBottom .topLeft .topLeftlt {
   float: left;
+  width: 2.176rem;
+  height: 2.176rem;
 }
 body header .headerBottom .topLeft .topLeftlt img,
 html header .headerBottom .topLeft .topLeftlt img {
-  width: 2.176rem;
-  height: 2.176rem;
+  width: 100%;
+  border-radius: 50%;
 }
 body header .headerBottom .topLeft .topLeftrt,
 html header .headerBottom .topLeft .topLeftrt {
@@ -90,28 +92,19 @@ html header .headerBottom .topRight {
   float: right;
   width: 5.12rem;
 }
-body header .headerBottom .topRight .center_process,
-html header .headerBottom .topRight .center_process {
-  padding: 0 0.17066667rem;
+body header .headerBottom .topRight .canvas,
+html header .headerBottom .topRight .canvas {
   position: absolute;
-  top: 0;
   left: 50%;
-  margin-left: -1.728rem;
-  margin-top: 0.32rem;
-  width: 3.2rem;
-  height: 3.2rem;
-  transform: rotate(200deg);
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(210deg) scale(0.75);
 }
 body header .headerBottom .topRight .processInner,
 html header .headerBottom .topRight .processInner {
   position: absolute;
-  top: 0.66133333rem;
+  top: 40%;
   left: 50%;
-  margin-left: -1.23733333rem;
-  width: 2.47466667rem;
-  height: 2.47466667rem;
-  background-color: #ffffff;
-  border-radius: 2.47466667rem;
+  transform: translate(-50%, -50%);
 }
 body header .headerBottom .topRight .processInner div,
 html header .headerBottom .topRight .processInner div {
@@ -141,7 +134,7 @@ body section .list ul li,
 html section .list ul li {
   height: 1.92rem;
   line-height: 1.70666667rem;
-  border-bottom: solid #eeeeee 1px;
+  border-bottom: solid #eeeeee 0.02133333rem;
   background-color: #ffffff;
   padding: 0 0.74666667rem;
 }

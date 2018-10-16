@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>用户中心</title>
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="stylesheet" href="css/mycenter.css">
 </head>
 
 <body>
@@ -26,54 +28,55 @@
         <div class="headerBottom">
             <div class="topLeft">
                 <div class="topLeftlt">
-                    <img src="img/user.png" alt="userr">
+                    <img id="userImg" src="img/user.png" alt="userr">
                 </div>
                 <div class="topLeftrt">
-                    <p>Tenderness`</p>
+                    <p id="user_name">Tenderness`</p>
                     <img src="img/renzheng.png" alt="renzheng">
                 </div>
             </div>
             <div class="topRight">
-                <canvas class="center_process" width="150px" height="150px"></canvas>
+                <!-- <canvas class="center_process" width="150px" height="150px"></canvas> -->
+                <canvas class="canvas" id="canvas"></canvas>
                 <div class="processInner">
-                    <div>￥100000</div>
+                    <div id="yy">100000￥</div>
                     <div>总额度</div>
                 </div>
-                <p>可用额度:￥89432</p>
+                <p id="ss">可用额度:￥89432</p>
             </div>
         </div>
     </header>
     <section>
-        <div class="list">
+        <div id="list" class="list">
             <ul>
-                <li>
+                <li data-id="myBills">
                     <span><img src="img/111.png" alt="我的账单"></span>
                     <span>我的账单</span>
                     <span><img src="img/jiantou.png" alt="jiantou"></span>
                 </li>
-                <li>
+                <li data-id="#">
                     <span><img src="img/112.png" alt="我的账单"></span>
                     <span>银行卡管理</span>
                     <span><img src="img/jiantou.png" alt="jiantou"></span>
                 </li>
             </ul>
             <ul>
-                <li>
+                <li data-id="#">
                     <span><img src="img/113.png" alt="我的账单"></span>
                     <span>基础信息</span>
                     <span><img src="img/jiantou.png" alt="jiantou"></span>
                 </li>
-                <li>
+                <li data-id="#">
                     <span><img src="img/114.png" alt="我的账单"></span>
                     <span>实名认证</span>
                     <span><img src="img/jiantou.png" alt="jiantou"></span>
                 </li>
-                <li>
+                <li data-id="#">
                     <span><img src="img/115.png" alt="我的账单"></span>
                     <span>安全中心</span>
                     <span><img src="img/jiantou.png" alt="jiantou"></span>
                 </li>
-                <li>
+                <li data-id="#">
                     <span><img src="img/120.png" alt="我的账单"></span>
                     <span>收件地址管理</span>
                     <span><img src="img/jiantou.png" alt="jiantou"></span>
@@ -85,11 +88,10 @@
 
 </body>
 <script src="../../../js/jquery.js"></script>
-<link rel="stylesheet" href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css">
-<script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
+<!-- <link rel="stylesheet" href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css"> -->
+<!-- <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script> -->
 <script src="../../../js/tool.js"></script>
-<link rel="stylesheet" href="../../../css/reset.css">
-<link rel="stylesheet" href="css/mycenter.css">
+
 <script src="js/mycenter.js"></script>
 
 </html>

@@ -155,7 +155,7 @@ header div.right {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  letter-spacing: 0px;
+  letter-spacing: 0rem;
 }
 #wrapper .iScrollVerticalScrollbar .iScrollIndicator {
   opacity: 0;
@@ -165,7 +165,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  border-top: #eeeeee solid 1px;
+  border-top: #eeeeee solid 0.02133333rem;
   height: 2.09066667rem;
   padding-top: 0.32rem;
   background-color: #ffffff;
