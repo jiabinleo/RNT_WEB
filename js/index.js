@@ -57,14 +57,11 @@ $(function () {
             $("#user_name").html(JSON.parse(sessionStorage.getItem("userName")));
             $(document).on("click", "#user_quit", function () {
                 window.open("login.html", "_self");
-                session = ["account", "imgUrl", "my_token", "userName"]
+                session = ["account", "imgUrl", "my_token", "userName", "email", "telephone"]
 
                 for (let i = 0; i < session.length; i++) {
                     sessionStorage.removeItem(session[i]);
                 }
-                // sessionStorage.removeItem();
-                // sessionStorage.removeItem("");
-                // sessionStorage.removeItem("");
             });
             $(document).on("click", "#news > .newsList", function () {
                 window.open(`view/homePage/informationDetails/informationDetails.html?id=${$(this).attr("data-id")}`, "_self");
@@ -120,7 +117,7 @@ $(function () {
                     newsHTML +=
                         `<div data-id= ${indexNewsList[i].id} class="new_top newsList">
                             <div class="new_top_left">
-                                <img src="${imgUrl + indexNewsList[i].iconOne}" alt="${indexNewsList[i].iconOne}">
+                                <img src="${imgUrl + indexNewsList[i].iconOne}" alt="${indexNewsList[i].iconTwo}">
                             </div>
                             <div class="new_top_right">
                                 <h3>

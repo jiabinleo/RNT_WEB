@@ -5,7 +5,6 @@ body {
   overflow: hidden;
 }
 
-
 // header div.right .alarm
 
 // header div.right
@@ -41,45 +40,45 @@ header {
       img {
         position: absolute;
         left: 35 / @rem;
-        top: 14/@rem;
+        top: 14 / @rem;
         width: 30 / @rem;
         height: 30 / @rem;
       }
       input {
         position: absolute;
-        left: 95/@rem;
+        left: 95 / @rem;
         top: 0rem;
-        height: 56/@rem;
+        height: 56 / @rem;
         background: #71ccf3;
-        width: 400/@rem;
+        width: 400 / @rem;
         padding: 0;
         border: 0;
-        font-size: 24/@rem;
+        font-size: 24 / @rem;
         outline: none;
         color: #ffffff;
         &::placeholder {
           color: #ffffff;
-          font-size: 24/@rem;
+          font-size: 24 / @rem;
         }
         &::-webkit-input-placeholder {
           /* WebKit browsers */
           color: #ffffff;
-          font-size: 24/@rem;
+          font-size: 24 / @rem;
         }
         &::-moz-placeholder {
           /* Mozilla Firefox 4 to 18 */
           color: #ffffff;
-          font-size: 24/@rem;
+          font-size: 24 / @rem;
         }
         &::-ms-input-placeholder {
           /* Internet Explorer 10+ */
           color: #ffffff;
-          font-size: 24/@rem;
+          font-size: 24 / @rem;
         }
       }
     }
     &.right {
-      width: 105/@rem;
+      width: 105 / @rem;
       line-height: 88 / @rem;
       .alarm {
         margin-left: 30 / @rem;
@@ -113,7 +112,7 @@ header {
   position: absolute;
   z-index: 1;
   top: 88 / @rem;
-  bottom: 100/@rem;
+  bottom: 100 / @rem;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -140,12 +139,94 @@ header {
     section {
       overflow: hidden;
 
+      .banner {
+        .swiper-container {
+          .swiper-wrapper {
+            .swiper-slide {
+              width: 750 / @rem;
+              height: 360 / @rem;
+              img {
+                width: 100%;
+                font-size: 28 / @rem;
+              }
+            }
+          }
+        }
+      }
+      .menu {
+        margin: 0 35 / @rem;
+        overflow: hidden;
+        .menu_ul {
+          overflow: hidden;
+          width: 100%;
+          padding-top: 0.8rem;
+          li {
+            float: left;
+            width: 19%;
+            padding: 0rem 0 0.8rem 0.8rem;
+            &:nth-of-type(1) {
+              margin-left: 0;
+            }
+            a {
+              text-decoration: none;
+              display: inline-block;
+              img {
+                width: 90 / @rem;
+                height: 90 / @rem;
+                padding-left: 0.1rem;
+                font-size: 28 / @rem;
+              }
+              p {
+                font-size: 0.512rem;
+                padding-top: 10 / @rem;
+              }
+            }
+          }
+        }
+      }
+      .line {
+        height: 20 / @rem;
+        background-color: #eeeeee;
+      }
+      .weather {
+        font-size: 20 / @rem;
+        padding: 0 35 / @rem;
+        background-color: #ffffff;
+        overflow: hidden;
+        padding: 36 / @rem;
+        .left {
+          float: left;
+          img {
+            width: 1.5rem;
+            padding: 0 0.3rem 0 0;
+          }
+          p {
+            color: #666666;
+            line-height: 0.75rem;
+            &:last-of-type {
+              color: #999999;
+            }
+            img {
+              width: 1.2rem;
+              margin-left: 0.2rem;
+              vertical-align: -0.11rem;
+            }
+          }
+        }
+        .right {
+          float: right;
+          color: #999999;
+          img {
+            width: 0.25rem;
+            padding-left: 0.2rem;
+            vertical-align: -0.04rem;
+          }
+        }
+      }
       .new {
         padding: 0 35 / @rem;
-        // .inner .new_top
         .inner {
           .new_top {
-            // .new_top_right
             .new_top_right {
               h3 {
                 font-size: 28 / @rem;
@@ -157,7 +238,6 @@ header {
                 white-space: nowrap;
               }
               p {
-                /* padding: 14/@rem 0 16/@rem; */
                 font-size: 0.512rem;
                 color: #747474;
                 line-height: 32 / @rem;
@@ -167,7 +247,6 @@ header {
                 overflow: hidden;
                 letter-spacing: 0px;
                 text-align: justify;
-                // text-align-last: justify;
                 min-height: 88 / @rem;
               }
               .datatime {
@@ -329,97 +408,13 @@ header {
                 line-height: 0.632rem;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
-                -webkit-line-clamp: 1;
+                -webkit-line-clamp: 2;
                 overflow: hidden;
                 letter-spacing: 0px;
                 // text-align: justify;
                 // text-align-last: justify;
               }
             }
-          }
-        }
-      }
-      .banner {
-        .swiper-container {
-          .swiper-wrapper {
-            .swiper-slide {
-              width: 750 / @rem;
-              height: 360 / @rem;
-              img {
-                width: 100%;
-                font-size: 28 / @rem;
-              }
-            }
-          }
-        }
-      }
-      .menu {
-        margin: 0 35 / @rem;
-        overflow: hidden;
-        .menu_ul {
-          overflow: hidden;
-          width: 100%;
-          padding-top: 0.8rem;
-          li {
-            float: left;
-            width: 19%;
-            padding: 0rem 0 0.8rem 0.8rem;
-            &:nth-of-type(1) {
-              margin-left: 0;
-            }
-            a {
-              text-decoration: none;
-              display: inline-block;
-              img {
-                width: 90 / @rem;
-                height: 90 / @rem;
-                padding-left: 0.1rem;
-                font-size: 28 / @rem;
-              }
-              p {
-                font-size: 0.512rem;
-                padding-top: 10/@rem;
-              }
-            }
-          }
-        }
-      }
-      .line {
-        height: 20 / @rem;
-        background-color: #eeeeee;
-      }
-      .weather {
-        font-size: 20/@rem;
-        padding: 0 35 / @rem;
-        background-color: #ffffff;
-        overflow: hidden;
-        padding: 36/@rem;
-        .left {
-          float: left;
-          img {
-            width: 1.5rem;
-            padding: 0 0.3rem 0 0;
-          }
-          p {
-            color: #666666;
-            line-height: 0.75rem;
-            &:last-of-type {
-              color: #999999;
-            }
-            img {
-              width: 1.2rem;
-              margin-left: 0.2rem;
-              vertical-align: -0.11rem;
-            }
-          }
-        }
-        .right {
-          float: right;
-          color: #999999;
-          img {
-            width: 0.25rem;
-            padding-left: 0.2rem;
-            vertical-align: -0.04rem;
           }
         }
       }
@@ -438,8 +433,8 @@ footer {
   background-color: #ffffff;
   overflow: hidden;
   border-top: solid 1px #eeeeee;
-  height: 100/@rem;
-  padding: 10/@rem 0;
+  height: 100 / @rem;
+  padding: 10 / @rem 0;
   .foot {
     width: 4rem;
     float: left;
@@ -448,13 +443,13 @@ footer {
     a {
       display: inline-block;
       .ft {
-        width: 53/@rem;
-        height: 48/@rem;
+        width: 53 / @rem;
+        height: 48 / @rem;
         margin: 0 auto;
         img {
           /* width: 53/@rem; */
-          width: 53/@rem;
-          height: 48/@rem;
+          width: 53 / @rem;
+          height: 48 / @rem;
         }
       }
       p {
@@ -505,16 +500,16 @@ footer {
     }
     .user {
       .user_logo {
-        width: 60/@rem;
-        height: 60/@rem;
+        width: 60 / @rem;
+        height: 60 / @rem;
         float: left;
         margin-left: 25 / @rem;
         margin-top: 20 / @rem;
         border-radius: 50%;
         overflow: hidden;
         img {
-          width: 60/@rem;
-          height: 60/@rem;
+          width: 60 / @rem;
+          height: 60 / @rem;
         }
       }
       .user_name {
@@ -541,7 +536,7 @@ footer {
     .user_personalized {
       font-size: 22 / @rem;
       color: #ffffff;
-      margin-left: 105/@rem;
+      margin-left: 105 / @rem;
       p {
         line-height: 31 / @rem;
       }

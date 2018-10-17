@@ -133,6 +133,84 @@ header div.right .alarm .message span {
 #wrapper #scroller section {
   overflow: hidden;
 }
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide {
+  width: 16rem;
+  height: 7.68rem;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  font-size: 0.59733333rem;
+}
+#wrapper #scroller section .menu {
+  margin: 0 0.74666667rem;
+  overflow: hidden;
+}
+#wrapper #scroller section .menu .menu_ul {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 0.8rem;
+}
+#wrapper #scroller section .menu .menu_ul li {
+  float: left;
+  width: 19%;
+  padding: 0rem 0 0.8rem 0.8rem;
+}
+#wrapper #scroller section .menu .menu_ul li:nth-of-type(1) {
+  margin-left: 0;
+}
+#wrapper #scroller section .menu .menu_ul li a {
+  text-decoration: none;
+  display: inline-block;
+}
+#wrapper #scroller section .menu .menu_ul li a img {
+  width: 1.92rem;
+  height: 1.92rem;
+  padding-left: 0.1rem;
+  font-size: 0.59733333rem;
+}
+#wrapper #scroller section .menu .menu_ul li a p {
+  font-size: 0.512rem;
+  padding-top: 0.21333333rem;
+}
+#wrapper #scroller section .line {
+  height: 0.42666667rem;
+  background-color: #eeeeee;
+}
+#wrapper #scroller section .weather {
+  font-size: 0.42666667rem;
+  padding: 0 0.74666667rem;
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 0.768rem;
+}
+#wrapper #scroller section .weather .left {
+  float: left;
+}
+#wrapper #scroller section .weather .left img {
+  width: 1.5rem;
+  padding: 0 0.3rem 0 0;
+}
+#wrapper #scroller section .weather .left p {
+  color: #666666;
+  line-height: 0.75rem;
+}
+#wrapper #scroller section .weather .left p:last-of-type {
+  color: #999999;
+}
+#wrapper #scroller section .weather .left p img {
+  width: 1.2rem;
+  margin-left: 0.2rem;
+  vertical-align: -0.11rem;
+}
+#wrapper #scroller section .weather .right {
+  float: right;
+  color: #999999;
+}
+#wrapper #scroller section .weather .right img {
+  width: 0.25rem;
+  padding-left: 0.2rem;
+  vertical-align: -0.04rem;
+}
 #wrapper #scroller section .new {
   padding: 0 0.74666667rem;
 }
@@ -146,7 +224,6 @@ header div.right .alarm .message span {
   white-space: nowrap;
 }
 #wrapper #scroller section .new .inner .new_top .new_top_right p {
-  /* padding: 14/@rem 0 16/@rem; */
   font-size: 0.512rem;
   color: #747474;
   line-height: 0.68266667rem;
@@ -308,87 +385,9 @@ header div.right .alarm .message span {
   line-height: 0.632rem;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 2;
   overflow: hidden;
   letter-spacing: 0px;
-}
-#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide {
-  width: 16rem;
-  height: 7.68rem;
-}
-#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide img {
-  width: 100%;
-  font-size: 0.59733333rem;
-}
-#wrapper #scroller section .menu {
-  margin: 0 0.74666667rem;
-  overflow: hidden;
-}
-#wrapper #scroller section .menu .menu_ul {
-  overflow: hidden;
-  width: 100%;
-  padding-top: 0.8rem;
-}
-#wrapper #scroller section .menu .menu_ul li {
-  float: left;
-  width: 19%;
-  padding: 0rem 0 0.8rem 0.8rem;
-}
-#wrapper #scroller section .menu .menu_ul li:nth-of-type(1) {
-  margin-left: 0;
-}
-#wrapper #scroller section .menu .menu_ul li a {
-  text-decoration: none;
-  display: inline-block;
-}
-#wrapper #scroller section .menu .menu_ul li a img {
-  width: 1.92rem;
-  height: 1.92rem;
-  padding-left: 0.1rem;
-  font-size: 0.59733333rem;
-}
-#wrapper #scroller section .menu .menu_ul li a p {
-  font-size: 0.512rem;
-  padding-top: 0.21333333rem;
-}
-#wrapper #scroller section .line {
-  height: 0.42666667rem;
-  background-color: #eeeeee;
-}
-#wrapper #scroller section .weather {
-  font-size: 0.42666667rem;
-  padding: 0 0.74666667rem;
-  background-color: #ffffff;
-  overflow: hidden;
-  padding: 0.768rem;
-}
-#wrapper #scroller section .weather .left {
-  float: left;
-}
-#wrapper #scroller section .weather .left img {
-  width: 1.5rem;
-  padding: 0 0.3rem 0 0;
-}
-#wrapper #scroller section .weather .left p {
-  color: #666666;
-  line-height: 0.75rem;
-}
-#wrapper #scroller section .weather .left p:last-of-type {
-  color: #999999;
-}
-#wrapper #scroller section .weather .left p img {
-  width: 1.2rem;
-  margin-left: 0.2rem;
-  vertical-align: -0.11rem;
-}
-#wrapper #scroller section .weather .right {
-  float: right;
-  color: #999999;
-}
-#wrapper #scroller section .weather .right img {
-  width: 0.25rem;
-  padding-left: 0.2rem;
-  vertical-align: -0.04rem;
 }
 footer {
   position: fixed;
