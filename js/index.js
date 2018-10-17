@@ -82,6 +82,9 @@ $(function () {
                     </div>`;
             }
             $("#banner").html(bannerHTML);
+            if (myScroll) {
+                myScroll.refresh();
+            }
             var mySwiper = new Swiper(".swiper-container", {
                 autoplay: 3000,
                 loop: true,
@@ -106,6 +109,9 @@ $(function () {
                     </li>`
             }
             $("#menuHTML").html(menuHTML)
+            if (myScroll) {
+                myScroll.refresh();
+            }
         },
         indexNews: function (indexNewsList) {
             var newsHTML = ""
@@ -114,7 +120,7 @@ $(function () {
                     newsHTML +=
                         `<div data-id= ${indexNewsList[i].id} class="new_top newsList">
                             <div class="new_top_left">
-                                <img src="${imgUrl + indexNewsList[i].iconOne}" alt="new01">
+                                <img src="${imgUrl + indexNewsList[i].iconOne}" alt="${indexNewsList[i].iconOne}">
                             </div>
                             <div class="new_top_right">
                                 <h3>
@@ -131,7 +137,7 @@ $(function () {
                     newsHTML +=
                         `<div data-id= ${indexNewsList[i].id} class="list newsList">
                             <div class="bg">
-                                <img src="${imgUrl + indexNewsList[i].iconOne}" alt="new02">
+                                <img src="${imgUrl + indexNewsList[i].iconTwo}" alt="${indexNewsList[i].iconTwo}">
                                 <div class="read">
                                     <span>阅读${indexNewsList[i].reading}</span>
                                 </div>

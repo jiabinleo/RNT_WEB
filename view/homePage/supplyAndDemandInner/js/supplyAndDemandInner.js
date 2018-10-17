@@ -2,10 +2,30 @@ $(function () {
     var supDem = {
         init: function () {
             console.log(localStorage.getItem("fenlei"))
-            try {
-                $("#fenlei").html(localStorage.getItem("fenlei"))
-            } catch (error) {
+            if ($.isEmptyObject(localStorage.getItem("fenlei"))) {
+                console.log(true)
                 $("#fenlei").html("选择分类")
+            } else {
+                console.log(false)
+                $("#fenlei").html(localStorage.getItem("fenlei"))
+            }
+
+            console.log(localStorage.getItem("diqu"))
+            if ($.isEmptyObject(localStorage.getItem("diqu"))) {
+                console.log(true)
+                $("#diqu").html("选择地区")
+            } else {
+                console.log(false)
+                $("#diqu").html(localStorage.getItem("diqu"))
+            }
+
+            console.log(localStorage.getItem("paixu"))
+            if ($.isEmptyObject(localStorage.getItem("paixu"))) {
+                console.log(true)
+                $("#paixu").html("排序方式")
+            } else {
+                console.log(false)
+                $("#paixu").html(localStorage.getItem("paixu"))
             }
             supDem.listen()
         },

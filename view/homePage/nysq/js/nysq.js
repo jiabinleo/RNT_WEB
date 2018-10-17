@@ -1,11 +1,11 @@
-$(function() {
+$(function () {
   var farmers = {
-    init: function() {
+    init: function () {
       farmers.listen();
     },
-    listen: function() {
+    listen: function () {
       myScroll = new IScroll("#scroller");
-      myScroll.on("scrollStart", function() {
+      myScroll.on("scrollStart", function () {
         setTimeout(() => {
           var str = $("#scroller")
             .css("transform")
@@ -13,15 +13,13 @@ $(function() {
           str = str.slice(0, str.length - 1);
           str = str.split(",");
           if (str[str.length - 1] > -100) {
-            $("#header_bg").animate(
-              {
+            $("#header_bg").animate({
                 opacity: 0
               },
               800
             );
           } else {
-            $("#header_bg").animate(
-              {
+            $("#header_bg").animate({
                 opacity: 1
               },
               800
@@ -29,7 +27,7 @@ $(function() {
           }
         }, 500);
       });
-      myScroll.on("scrollEnd", function() {
+      myScroll.on("scrollEnd", function () {
         setTimeout(() => {
           var str = $("#scroller")
             .css("transform")
@@ -37,15 +35,13 @@ $(function() {
           str = str.slice(0, str.length - 1);
           str = str.split(",");
           if (str[str.length - 1] > -100) {
-            $("#header_bg").animate(
-              {
+            $("#header_bg").animate({
                 opacity: 0
               },
               800
             );
           } else {
-            $("#header_bg").animate(
-              {
+            $("#header_bg").animate({
                 opacity: 1
               },
               800
@@ -54,8 +50,7 @@ $(function() {
         }, 500);
       });
 
-      var menu = [
-        {
+      var menu = [{
           title: "农人风采",
           link: "#",
           imgUrl: "img/nongren.png"
@@ -93,8 +88,7 @@ $(function() {
       }
       $("#menuHTML").html(menuHTML);
 
-      var recommendData = [
-        {
+      var recommendData = [{
           link: "#",
           imgUrl: "img/banner.png",
           text: "大鹏种植的奥秘"
@@ -153,67 +147,58 @@ $(function() {
       }
       $("#swiper_menu").html(swiper_menuHTML);
 
-      var newListData = [
-        {
+      var newListData = [{
           title: "中国“陶氏益农公司”",
-          text:
-            "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+          text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
           time: "2018.10.08",
           read: "188",
           imgUrl: "img/banner.png"
         },
         {
           title: "美国“陶氏益农公司”",
-          text:
-            "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+          text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
           time: "2018.10.08",
           read: "188",
           imgUrl: "img/banner.png"
         },
         {
           title: "俄罗斯“陶氏益农公司”",
-          text:
-            "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+          text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
           time: "2018.10.08",
           read: "188",
           imgUrl: "img/banner.png"
         },
         {
           title: "西班牙“陶氏益农公司”",
-          text:
-            "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+          text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
           time: "2018.10.08",
           read: "188",
           imgUrl: "img/banner.png"
         },
         {
           title: "西班牙“陶氏益农公司”",
-          text:
-            "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+          text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
           time: "2018.10.08",
           read: "188",
           imgUrl: "img/banner.png"
         },
         {
           title: "西班牙“陶氏益农公司”",
-          text:
-            "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+          text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
           time: "2018.10.08",
           read: "188",
           imgUrl: "img/banner.png"
         },
         {
           title: "西班牙“陶氏益农公司”",
-          text:
-            "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+          text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
           time: "2018.10.08",
           read: "188",
           imgUrl: "img/banner.png"
         },
         {
           title: "西班牙“陶氏益农公司”",
-          text:
-            "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
+          text: "美国陶氏益农公司是领先世界的五大农药跨国公司之一，是美国第一大化学公司－陶氏化学的全资子公司。",
           time: "2018.10.08",
           read: "188",
           imgUrl: "img/banner.png"
@@ -244,6 +229,9 @@ $(function() {
             </li>`;
       }
       $("#newListHTML").html(newListHTML);
+      if (myScroll) {
+        myScroll.refresh();
+      }
     }
   };
   farmers.init();

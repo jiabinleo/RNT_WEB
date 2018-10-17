@@ -103,13 +103,13 @@ $(function () {
                                 `<div data-id="${data.data.newsList[i].id}"  class="newsList swiper-slide">
                                     <div class="img-wrap">
                                         <div class="img-inner">
-                                            <img src="img/new01.png" alt="${bannerData[i].title}">
+                                            <img src="${imgUrl+bannerData[i].cover}" alt="${bannerData[i].title}">
                                             <div class="mask">
                                                 <p>
                                                 ${bannerData[i].label}
                                                 </p>
                                                 <p>
-                                                ${bannerData[i].publishTime}·阅读量${bannerData[i].reading}
+                                                ${bannerData[i].publishTime} · ${bannerData[i].reading}人阅读
                                                 </p>
                                             </div>
                                         </div>
@@ -160,7 +160,7 @@ $(function () {
                                                 </p>
                                             </div>
                                             <div class="right">
-                                                <img src="${imgUrl + newListData[i].iconOne}" alt="" onerror=src="/img/loading.gif" >
+                                                <img src="${imgUrl + newListData[i].iconTwo}" alt="" onerror=src="/img/loading.gif" >
                                             </div>
                                         </div>
                                     </a>

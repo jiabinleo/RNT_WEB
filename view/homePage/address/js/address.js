@@ -34,7 +34,7 @@ $(function () {
                         },
                         {
                             "name": "根茎类",
-                            "list2": ["不限","萝卜", "马铃薯", "藕", "甘薯", "山药", "芋头", "茭白", "苤蓝", "慈姑", "洋葱", "生姜", "其他"]
+                            "list2": ["不限", "萝卜", "马铃薯", "藕", "甘薯", "山药", "芋头", "茭白", "苤蓝", "慈姑", "洋葱", "生姜", "其他"]
                         },
                         {
                             "name": "瓜类",
@@ -143,7 +143,7 @@ $(function () {
 
             function Prompt() {
                 var c = $(".AreaCenter .active").text() + $(this).text();
-                localStorage.setItem("fenlei", c)
+                localStorage.setItem("diqu", c)
                 window.location.href = "../supplyAndDemandInner/supplyAndDemandInner.html"
             }
 
