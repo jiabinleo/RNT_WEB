@@ -80,6 +80,10 @@ var onlineService = {
                 $(this).find("img").attr("src", "img/bottom.png")
             }
         })
+
+        $(document).on("touchend", "#dksq", function () {
+            window.open("../dksq/dksq.html", "_self");
+        })
     }
 }
 onlineService.init()
