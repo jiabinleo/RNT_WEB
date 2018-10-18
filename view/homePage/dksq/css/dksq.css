@@ -99,6 +99,11 @@ header div.right {
   line-height: 0.85333333rem;
   font-size: 0.59733333rem;
 }
+#wrapper #scroller section .forms1 .form_input .form_input_box .form_input_left img {
+  margin-left: 0.21333333rem;
+  width: 0.64rem;
+  vertical-align: -0.128rem;
+}
 #wrapper #scroller section .forms1 .form_input .form_input_box .form_input_right {
   color: #999999;
   font-size: 0;

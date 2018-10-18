@@ -1,0 +1,245 @@
+/*
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2018-10-18 18:04:05
+ * @LastEditTime: 2018-10-18 18:04:05
+ * @LastEditors: your name
+ */
+
+
+@rem: 750/16rem;
+
+html {
+  height: 100%;
+  body {
+    margin: 0;
+    height: 100%;
+  }
+}
+header {
+  width: 100%;
+  height: 88 / @rem;
+  background: linear-gradient(
+    29deg,
+    rgba(27, 157, 225, 1),
+    rgba(63, 190, 241, 1)
+  );
+  div {
+    float: left;
+    height: 88 / @rem;
+    &.left {
+      width: 140 / @rem;
+      line-height: 88 / @rem;
+      a {
+        display: inline-block;
+        .sweep {
+          width: 75 / @rem;
+          margin-left: 35 / @rem;
+          img {
+            width: 19 / @rem;
+            height: 35 / @rem;
+          }
+        }
+      }
+    }
+    &.center {
+      text-align: center;
+      width: 470 / @rem;
+      h1 {
+        color: #ffffff;
+        font-size: 30 / @rem;
+        line-height: 88 / @rem;
+        text-align: center;
+      }
+    }
+    &.right {
+      width: 140 / @rem;
+      float: right;
+      line-height: 88 / @rem;
+    }
+  }
+}
+
+#areaLabel {
+  width: 100%;
+  height: 88 / @rem;
+  font-size: 28 / @rem;
+  color: #000;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border-bottom: 2/@rem / @rem solid #aaa;
+  padding-right: 1em;
+  padding-left: 1em;
+  position: relative;
+}
+
+#areaLabel::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(1em + 36 / @rem / 2);
+  width: 36 / @rem;
+  height: 36 / @rem;
+  border-width: 2 / @rem;
+  border-style: solid solid none none;
+  border-color: #000;
+  transform: rotate(45deg) translateY(-50%);
+  transform-origin: center;
+}
+
+#areaLabel span {
+  width: 160 / @rem;
+}
+
+#areaLabel input {
+  flex: 1;
+  border: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#addressSelectWrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#addressSelect {
+  z-index: 999;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 87%;
+  background-color: #fff;
+}
+
+#addressSelect .tip {
+  position: relative;
+  height: 80 / @rem;
+  line-height: 80 / @rem;
+  width: 100%;
+  border-bottom: 2 / @rem solid #dedede;
+}
+
+#addressSelect .tip h3 {
+  width: 100%;
+  height: 80 / @rem;
+  line-height: 80 / @rem;
+  text-align: center;
+  font-size: 32 / @rem;
+  font-weight: normal;
+  color: #666;
+}
+
+#addressSelect .tip #cancel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 78 / @rem;
+  height: 78 / @rem;
+  color: #666;
+  border: none;
+  background: transparent url("../img/cancel.png") no-repeat center;
+  cursor: pointer;
+}
+
+#addressSelect #address {
+  width: 100%;
+  height: 100%;
+}
+
+/*被选中的地址*/
+.selected-address {
+  width: 100%;
+  height: 80 / @rem;
+  line-height: 80 / @rem;
+  border-bottom: 2 / @rem solid #ededed;
+}
+
+.selected-address:before {
+  content: "";
+  display: table;
+}
+
+.selected-address:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.selected-address li {
+  float: left;
+  height: 80 / @rem;
+  line-height: 78 / @rem;
+  text-align: center;
+  width: 25%;
+//   padding-right: 0.3em;
+//   padding-left: 0.3em;
+  color: #333;
+  border-bottom: 2 / @rem solid transparent;
+  font-size: 26 / @rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.selected-address li.active {
+  border-bottom-color: #3da5fe;
+  color: #3da5fe;
+}
+
+/*各级地址列表*/
+.address-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /*加载中*/
+}
+
+.address-content ul {
+  display: block;
+  width: 100%;
+  height: 80%;
+  overflow-y: auto;
+  padding-top: 16 / @rem;
+  padding-bottom: 176 / @rem;
+}
+
+.address-content ul li {
+  height: 72 / @rem;
+  line-height: 72 / @rem;
+  padding-left: 1em;
+  font-size: 26 / @rem;
+  width: 100%;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+  cursor: pointer;
+}
+
+.address-content ul li.active {
+  background-color: #3da5ef;
+  color: #fff;
+}
+
+.address-content .loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 28 / @rem 28 / @rem 28 / @rem 104 / @rem;
+  background: rgba(0, 0, 0, 0.5) url("../img/loading.gif") no-repeat left 14 /
+    @rem center / 48 / @rem 48 / @rem;
+  color: #fff;
+  border-radius: 12 / @rem;
+  font-size: 32 / @rem;
+}

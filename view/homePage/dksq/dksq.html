@@ -5,6 +5,7 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
     <link rel="stylesheet" href="../../../css/reset.css">
     <link rel="stylesheet" href="css/dksq.css">
 </head>
@@ -38,11 +39,9 @@
                                 <div class="form_input_left">
                                     机构类型
                                 </div>
-                                <a href="insureInput.html?ids=number">
+                                <a href="dksqInput.html?ids=mec">
                                     <div class="form_input_right">
-                                        <span id="number" class="msg" ids="number">
-                                            <!-- 请输入投保亩数 -->
-                                            <!-- 100亩 -->
+                                        <span id="mec" class="msg" ids="mec">
                                         </span>
                                         <span></span>
                                         <img src="img/right.png" alt="jiantou">
@@ -55,9 +54,9 @@
                                 <div class="form_input_left">
                                     机构名称
                                 </div>
-                                <a href="insureInput.html?ids=number">
+                                <a href="dksqInput.html?ids=org">
                                     <div class="form_input_right">
-                                        <span id="number" class="msg" ids="number">
+                                        <span id="org" class="msg" ids="org">
                                         </span>
                                         <span></span>
                                         <img src="img/right.png" alt="jiantou">
@@ -68,11 +67,11 @@
                         <div class="form_input">
                             <div class="form_input_box">
                                 <div class="form_input_left">
-                                    所在地区
+                                    所在地区<img id="dd" src="img/dingwei.svg" alt="">
                                 </div>
-                                <a href="insureInput.html?ids=number">
+                                <a href="address.html?ids=loc">
                                     <div class="form_input_right">
-                                        <span id="number" class="msg" ids="number">
+                                        <span id="loc" class="msg" ids="loc">
                                         </span>
                                         <span></span>
                                         <img src="img/right.png" alt="jiantou">
@@ -85,9 +84,9 @@
                                 <div class="form_input_left">
                                     土地面积
                                 </div>
-                                <a href="insureInput.html?ids=number">
+                                <a href="dksqInput.html?ids=lan">
                                     <div class="form_input_right">
-                                        <span id="number" class="msg" ids="number">
+                                        <span id="lan" class="msg" ids="lan">
                                             <!-- 请输入投保亩数 -->
                                             <!-- 100亩 -->
                                         </span>
@@ -102,12 +101,10 @@
                                 <div class="form_radius_left">
                                     土地经营权
                                 </div>
-                                <a href="insureInput.html?ids=number">
-                                    <div class="form_radius_right">
-                                        <span><img src="img/no.png" alt="">没有</span>
-                                        <span><img src="img/yes.png" alt="">有</span>
-                                    </div>
-                                </a>
+                                <div id="man" class="radius form_radius_right">
+                                    <span data-id="0" class="status"><img src="img/no.png" alt="">没有</span>
+                                    <span data-id="1" class="status"><img src="img/no.png" alt="">有</span>
+                                </div>
                             </div>
                         </div>
                         <div class="form_radius">
@@ -115,12 +112,10 @@
                                 <div class="form_radius_left">
                                     婚姻状况
                                 </div>
-                                <a href="insureInput.html?ids=number">
-                                    <div class="form_radius_right">
-                                        <span><img src="img/no.png" alt="">单身</span>
-                                        <span><img src="img/yes.png" alt="">已婚</span>
-                                    </div>
-                                </a>
+                                <div id="mar" class="radius form_radius_right">
+                                    <span data-id="0" class="status"><img src="img/no.png" alt="">单身</span>
+                                    <span data-id="1" class="status"><img src="img/no.png" alt="">已婚</span>
+                                </div>
                             </div>
                         </div>
                         <div class="form_radius">
@@ -128,12 +123,10 @@
                                 <div class="form_radius_left">
                                     是否有其他贷款
                                 </div>
-                                <a href="insureInput.html?ids=number">
-                                    <div class="form_radius_right">
-                                        <span><img src="img/no.png" alt="">没有</span>
-                                        <span><img src="img/yes.png" alt="">有</span>
-                                    </div>
-                                </a>
+                                <div id="loa" class="radius form_radius_right">
+                                    <span data-id="0" class="status"><img src="img/no.png" alt="">没有</span>
+                                    <span data-id="1" class="status"><img src="img/no.png" alt="">有</span>
+                                </div>
                             </div>
                         </div>
                         <div class="form_input">
@@ -141,9 +134,9 @@
                                 <div class="form_input_left">
                                     其他抵押物
                                 </div>
-                                <a href="insureInput.html?ids=number">
+                                <a href="dksqInput.html?ids=col">
                                     <div class="form_input_right">
-                                        <span id="number" class="msg" ids="number">
+                                        <span id="col" class="msg" ids="col">
                                         </span>
                                         <span></span>
                                         <img src="img/right.png" alt="jiantou">
@@ -156,9 +149,9 @@
                                 <div class="form_input_left">
                                     联系人
                                 </div>
-                                <a href="insureInput.html?ids=number">
+                                <a href="dksqInput.html?ids=con">
                                     <div class="form_input_right">
-                                        <span id="number" class="msg" ids="number">
+                                        <span id="con" class="msg" ids="con">
                                         </span>
                                         <span></span>
                                         <img src="img/right.png" alt="jiantou">
@@ -171,9 +164,9 @@
                                 <div class="form_input_left">
                                     联系电话
                                 </div>
-                                <a href="insureInput.html?ids=number">
+                                <a href="dksqInput.html?ids=num">
                                     <div class="form_input_right">
-                                        <span id="number" class="msg" ids="number">
+                                        <span id="num" class="msg" ids="num">
                                         </span>
                                         <span></span>
                                         <img src="img/right.png" alt="jiantou">
@@ -186,9 +179,9 @@
                                 <div class="form_input_left">
                                     贷款金额
                                 </div>
-                                <a href="insureInput.html?ids=number">
+                                <a href="dksqInput.html?ids=amo">
                                     <div class="form_input_right">
-                                        <span id="number" class="msg" ids="number">
+                                        <span id="amo" class="msg" ids="amo">
                                         </span>
                                         <span></span>
                                         <img src="img/right.png" alt="jiantou">
@@ -201,9 +194,9 @@
                                 <div class="form_input_left">
                                     贷款用途
                                 </div>
-                                <a href="insureInput.html?ids=number">
+                                <a href="dksqInput.html?ids=use">
                                     <div class="form_input_right">
-                                        <span id="number" class="msg" ids="number">
+                                        <span id="use" class="msg" ids="use">
                                         </span>
                                         <span></span>
                                         <img src="img/right.png" alt="jiantou">
@@ -216,10 +209,12 @@
                                 <div class="form_date_left">
                                     开始日期
                                 </div>
-                                <div class="form_date_right">
-                                    <span>2018.02.23</span>
-                                    <img src="img/right.png" alt="jiantou">
-                                </div>
+                                <a href="dksqInput.html?ids=sta">
+                                    <div class="form_date_right">
+                                        <span id="sta">2018.02.23</span>
+                                        <img src="img/right.png" alt="sta">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="form_date form_end">
@@ -227,10 +222,12 @@
                                 <div class="form_date_left">
                                     结束日期
                                 </div>
-                                <div class="form_date_right">
-                                    <span>2018.02.23</span>
-                                    <img src="img/right.png" alt="jiantou">
-                                </div>
+                                <a href="dksqInput.html?ids=end">
+                                    <div class="form_date_right">
+                                        <span id="end">2018.02.23</span>
+                                        <img src="img/right.png" alt="end">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </form>
@@ -249,9 +246,11 @@
 </body>
 <script>
 </script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.10&key=465c831c8323875841cda920ae24fd7b"></script>
 <script type="text/javascript" src="../../../js/jquery.js"></script>
 <script type="text/javascript" src="../../../js/iscroll.js"></script>
 <script type="text/javascript" src="../../../js/loaded_iscroll.js"></script>
+<script type="text/javascript" src="../../../js/public.js"></script>
 <script type="text/javascript" src="../../../js/tool.js"></script>
 <script type="text/javascript" src="js/dksq.js"></script>
 
