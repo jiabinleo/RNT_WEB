@@ -19,7 +19,7 @@ $(function () {
                 } else {
                     console.log(username, password)
                     $.ajax({
-                        url: localhost + "/user/login",
+                        url: localhost55001 + "/user/login",
                         type: "POST",
                         dataType: "json",
                         headers: {

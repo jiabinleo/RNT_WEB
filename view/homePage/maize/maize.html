@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>maize</title>
-    <link rel="stylesheet" href="../../../css/swiper.3.4.2.min.css">
     <link rel="stylesheet" href="../../../css/reset.css">
     <link rel="stylesheet" href="css/maize.css">
 </head>
@@ -21,7 +20,7 @@
             </a>
         </div>
         <div class="center">
-            <h1>喀左县玉米干旱指数保险</h1>
+            <h1 id="title"></h1>
         </div>
         <div class="right">
             <div class="alarm">
@@ -34,21 +33,21 @@
                 <div class="line">
 
                 </div>
-                <div class="banner">
-                    <img src="img/banner.png" alt="banner@2x">
+                <div id="banner" class="banner">
+
                 </div>
                 <div class="line">
 
                 </div>
                 <div class="insurance1">
                     <div class="insurance_title">
-                        <h3>喀左县玉米干旱指数保险
-                            <img src="img/jingxuan@2x.png" alt="jingxuan">
-                            <img src="img/rexiao@2x.png" alt="rexiao">
+                        <h3 id="h3">
                         </h3>
                         <h4>产品特点：</h4>
-                        <p>1.本产品针对长期种植玉米的农户，保障农户玉米收到干旱 的损失。</p>
-                        <p>2.本产品有这良好的赔利，可以大大的减少农户的损失。</p>
+                        <div id="list" class="list">
+                            <p>1.本产品针对长期种植玉米的农户，保障农户玉米收到干旱 的损失。</p>
+                            <p>2.本产品有这良好的赔利，可以大大的减少农户的损失。</p>
+                        </div>
                     </div>
                 </div>
                 <div class="line">
@@ -73,11 +72,23 @@
                 <div class="insurance3">
                     <div class="insurance_title">
                         <h3>产品方案:</h3>
-                        <p>在保险期间内，保险玉米因发生保险事故造成部分损失的， 保险人在赔偿时实施10%的绝对免赔率。</p>
-                        <h3 class="title">保障责任:</h3>
-                        <p>在保险期间内，保险玉米因发生保险事故造成部分损失的， 保险人在赔偿时实施10%的绝对免赔率。</p>
-                        <h3>保额:</h3>
-                        <p>在保险期间内，保险玉米因发生保险事故造成部分损失的， 保险人在赔偿时实施10%的绝对免赔率。</p>
+                        <p id="scheme">在保险期间内，保险玉米因发生保险事故造成部分损失的， 保险人在赔偿时实施10%的绝对免赔率。</p>
+                        <h3>保障责任:</h3>
+                        <p id="responsibility">在保险期间内，保险玉米因发生保险事故造成部分损失的， 保险人在赔偿时实施10%的绝对免赔率。</p>
+                        <h3>保障额度:</h3>
+                        <p>
+                            <span class="bzed">50</span>
+                            <span>元</span>
+                            <span>/</span>
+                            <span>亩</span>
+                        </p>
+                        <h3>保费:</h3>
+                        <p>
+                            <span class="bf">5</span>
+                            <span>元</span>
+                            <span>/</span>
+                            <span>亩</span>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -94,23 +105,21 @@
                 <span>收藏</span>
             </div>
         </div>
-        <a href="../insure/insure.html">
-            <div id="insure" class="right">
-                立即投保
-            </div>
-        </a>
+        <!-- <a href=""> -->
+        <div id="insure" class="right">
+            立即投保
+        </div>
+        <!-- </a> -->
 
     </footer>
 </body>
 <script src="../../../js/jquery.js"></script>
-<script src="../../../js/swiper.3.4.2.min.js"></script>
 <script src="../../../js/iscroll.js"></script>
 <script src="../../../js/loaded_iscroll.js"></script>
 <script src="../../../js/tool.js"></script>
+<script src="js/maize.js"></script>
 
 </html>
 <script>
-    $(document).on("click", "#insure", function () {
-        localStorage.setItem("msg", null)
-    })
+
 </script>

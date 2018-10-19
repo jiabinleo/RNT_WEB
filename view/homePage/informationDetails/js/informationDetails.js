@@ -5,7 +5,7 @@ var info = {
     listen: function () {
         console.log()
         $.ajax({
-            url: localhost + "/news/detail/" + tool.getRequest().id,
+            url: localhost55001 + "/news/detail/" + tool.getRequest().id,
             type: "get",
             success: function (data) {
                 console.log(data)

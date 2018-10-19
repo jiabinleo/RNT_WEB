@@ -5,7 +5,7 @@ $(function () {
             this.listen()
         },
         listen: function () {
-            var urlIds = insureInput.getRequest().ids
+            var urlIds = tool.getRequest().ids
             var msg = JSON.parse(localStorage.getItem("msg"))[0]
             console.log(msg)
             if (urlIds === "number") {
@@ -40,7 +40,7 @@ $(function () {
                 } else {
                     localStorage.setItem("msg", JSON.stringify([msg]))
                 }
-                window.open("insure.html", "_self");
+                window.open("insure.html?id=" + tool.getRequest().id, "_self");
             })
 
             $("input").keyup(function (e) {
@@ -51,21 +51,9 @@ $(function () {
                     } else {
                         localStorage.setItem("msg", JSON.stringify([msg]))
                     }
-                    window.open("insure.html", "_self");
+                    window.open("insure.html?id=" + tool.getRequest().id, "_self");
                 }
             });
-        },
-        getRequest: function () {
-            var url = window.location.search; //获取url中"?"符后的字串
-            var theRequest = new Object();
-            if (url.indexOf("?") != -1) {
-                var str = url.substr(1);
-                strS = str.split("&");
-                for (var i = 0; i < strS.length; i++) {
-                    theRequest[strS[i].split("=")[0]] = decodeURI(strS[i].split("=")[1]);
-                }
-            }
-            return theRequest;
         }
     }
     insureInput.init()

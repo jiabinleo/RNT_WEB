@@ -4,7 +4,8 @@
     style.innerHTML = "html{font-size: " + width / 16 + "px !important;}"
     document.head.appendChild(style)
 })();
-var localhost = "http://192.168.1.240:55001/v1",
+var localhost55001 = "http://192.168.1.240:55001/v1",
+    localhost40000 = "http://192.168.1.240:40000/v1",
     imgUrl = "http://192.168.1.240:50000",
     linkUrl = "http://127.0.0.1:5500";
 

@@ -1,6 +1,7 @@
 html,
 body {
   overflow: hidden;
+  background-color: #eeeeee;
 }
 header {
   width: 16rem;
@@ -49,13 +50,10 @@ header div.right .alarm {
   position: absolute;
   z-index: 1;
   top: 1.87733333rem;
-  bottom: 2.09066667rem;
+  bottom: 2.13333333rem;
   left: 0;
   width: 100%;
   overflow: hidden;
-}
-#wrapper .iScrollVerticalScrollbar {
-  display: none;
 }
 #wrapper #scroller {
   position: absolute;
@@ -81,13 +79,19 @@ header div.right .alarm {
 #wrapper #scroller section .line {
   width: 100%;
   height: 0.42666667rem;
-  background-color: #eeeeee;
+}
+#wrapper #scroller section .banner {
+  width: 16rem;
+  height: 5.504rem;
+  overflow: hidden;
+  background-color: #ffffff;
 }
 #wrapper #scroller section .banner img {
   width: 100%;
 }
 #wrapper #scroller section .insurance1 {
   padding: 0.64rem 0.74666667rem;
+  background-color: #ffffff;
 }
 #wrapper #scroller section .insurance1 .insurance_title h3 {
   font-size: 0.59733333rem;
@@ -104,7 +108,7 @@ header div.right .alarm {
   color: #666666;
   padding-top: 0.64rem;
 }
-#wrapper #scroller section .insurance1 .insurance_title p {
+#wrapper #scroller section .insurance1 .insurance_title .list p {
   font-size: 0.55466667rem;
   color: #999999;
   line-height: 0.85333333rem;
@@ -112,6 +116,7 @@ header div.right .alarm {
 }
 #wrapper #scroller section .insurance2 {
   padding: 0 0.74666667rem 0.64rem 0.74666667rem;
+  background-color: #ffffff;
 }
 #wrapper #scroller section .insurance2 .insurance_title p {
   font-size: 0.55466667rem;
@@ -124,10 +129,10 @@ header div.right .alarm {
   float: right;
 }
 #wrapper #scroller section .insurance3 {
-  padding: 0 0.74666667rem;
+  padding: 0.64rem 0.74666667rem;
+  background-color: #ffffff;
 }
 #wrapper #scroller section .insurance3 .insurance_title h3 {
-  padding-top: 0.42666667rem;
   font-size: 0.55466667rem;
   line-height: 0.85333333rem;
   color: #666666;
@@ -135,8 +140,25 @@ header div.right .alarm {
 #wrapper #scroller section .insurance3 .insurance_title p {
   padding-top: -0.14933333rem;
   font-size: 0.55466667rem;
-  line-height: 0.85333333rem;
+  line-height: 1.06666667rem;
   color: #999999;
+}
+#wrapper #scroller section .insurance3 .insurance_title p span {
+  font-size: 0.59733333rem;
+  color: #999999;
+}
+#wrapper #scroller section .insurance3 .insurance_title p span:nth-of-type(1) {
+  font-size: 0.72533333rem;
+  color: #f70101;
+}
+#wrapper #scroller section .insurance3 .insurance_title p span:nth-of-type(2) {
+  font-size: 0.59733333rem;
+}
+#wrapper #scroller section .insurance3 .insurance_title p span:nth-of-type(3) {
+  font-size: 0.55466667rem;
+}
+#wrapper #scroller section .insurance3 .insurance_title p span:nth-of-type(4) {
+  font-size: 0.512rem;
 }
 footer {
   position: fixed;

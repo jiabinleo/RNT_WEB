@@ -6,7 +6,7 @@ $(function () {
         listen: function () {
             // var my_token = sessionStorage.getItem("my_token")
             $.ajax({
-                url: localhost + "/index/bannerList?category=index",
+                url: localhost55001 + "/index/bannerList?category=index",
                 type: "get",
                 // beforeSend: function (xhr) {
                 //     xhr.setRequestHeader("login_token", my_token);
@@ -19,7 +19,7 @@ $(function () {
                 error: function (err) {}
             });
             $.ajax({
-                url: localhost + "/index/menuList",
+                url: localhost55001 + "/index/menuList",
                 type: "get",
                 success: function (data) {
                     if (data.code === "0") {
@@ -30,7 +30,7 @@ $(function () {
             });
 
             $.ajax({
-                url: localhost + "/news/indexNewsList",
+                url: localhost55001 + "/news/indexNewsList",
                 type: "get",
                 success: function (data) {
                     if (data.code === "0") {

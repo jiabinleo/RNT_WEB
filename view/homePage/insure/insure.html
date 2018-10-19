@@ -46,21 +46,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form_number">
+                    <div class="acreage optionCode form_number">
                         <div class="form_number_box">
                             <div class="form_number_left">
                                 投保亩数
                             </div>
-                            <a href="insureInput.html?ids=number">
-                                <div class="form_number_right">
-                                    <span id="number" class="msg" ids="number">
-                                        <!-- 请输入投保亩数 -->
-                                        <!-- 100亩 -->
-                                    </span>
-                                    <span></span>
-                                    <img src="img/jiantou@2x.png" alt="jiantou">
-                                </div>
-                            </a>
+                            <!-- <a href="insureInput.html?ids=number"> -->
+                            <div data-id="acreage" class="input form_number_right">
+                                <span id="acreage" class="msg" ids="acreage">
+                                    <!-- 请输入投保亩数 -->
+                                    <!-- 100亩 -->
+                                </span>
+                                <span></span>
+                                <img src="img/jiantou@2x.png" alt="jiantou">
+                            </div>
+                            <!-- </a> -->
                         </div>
                     </div>
                     <div class="form_price">
@@ -76,141 +76,217 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form_date">
+                    <div class="term_start optionCode form_date">
                         <div class="form_date_box">
                             <div class="form_date_left">
                                 起保日期
                             </div>
                             <div class="form_date_right">
-                                <span>2018.02.23</span>
+                                <span ids="term_start" id="term_start">2018.02.23</span>
                                 <img src="img/jiantou@2x.png" alt="jiantou">
                             </div>
                         </div>
                     </div>
-                    <div class="form_date form_end">
+                    <div class="term_end optionCode form_date form_end">
                         <div class="form_date_box">
                             <div class="form_date_left">
                                 终保日期
                             </div>
                             <div class="form_date_right">
-                                <span>2018.02.23</span>
+                                <span ids="term_end">2018.02.23</span>
+                                <img src="img/jiantou@2x.png" alt="jiantou">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="policy_time optionCode form_date form_end">
+                        <div class="form_date_box">
+                            <div class="form_date_left">
+                                投保日期
+                            </div>
+                            <div class="form_date_right">
+                                <span ids="policy_time">2018.02.23</span>
                                 <img src="img/jiantou@2x.png" alt="jiantou">
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
+            <div class="line">
+            </div>
             <div class="forms2 forms">
                 <div class="title">
                     投保人信息
                 </div>
-                <div class="form_number">
+                <div class="holder_name optionCode form_number">
                     <div class="form_number_box">
                         <div class="form_number_left">
                             姓名
                         </div>
-                        <a href="insureInput.html?ids=name">
-                            <div class="form_number_right">
-                                <span id="name" class="msg" ids="name">
-                                    <!-- 王大锤 -->
-                                </span>
-                                <img src="img/jiantou@2x.png" alt="jiantou">
-                            </div>
-                        </a>
+                        <div data-id="holder_name" class="input form_number_right">
+                            <span id="holder_name" class="msg" ids="holder_name">
+                            </span>
+                            <img src="img/jiantou@2x.png" alt="jiantou">
+                        </div>
                     </div>
                 </div>
-                <div class="form_number">
+                <div class="optionCode form_number">
                     <div class="form_number_box">
                         <div class="form_number_left">
                             证件类型
                         </div>
-                        <a href="insureInput.html?ids=idType">
-                            <div class="form_number_right">
-                                <span id="idType" class="msg" ids="idType">
-                                    <!-- 身份证 -->
-                                </span>
-                                <img src="img/jiantou@2x.png" alt="jiantou">
-                            </div>
-                        </a>
+                        <!-- <a href="insureInput.html?ids=idType"> -->
+                        <div data-id="idType" class="input form_number_right">
+                            <span id="idType" class="msg" ids="idType">
+                                <!-- 身份证 -->
+                            </span>
+                            <img src="img/jiantou@2x.png" alt="jiantou">
+                        </div>
+                        <!-- </a> -->
                     </div>
                 </div>
-                <div class="form_number">
+                <div class="holder_id_card optionCode form_number">
                     <div class="form_number_box">
                         <div class="form_number_left">
                             证件号码
                         </div>
-                        <a href="insureInput.html?ids=id">
-                            <div class="form_number_right">
-                                <span id="id" class="msg" ids="id">
-                                    <!-- 4303088199706540195 -->
-                                </span>
-                                <img src="img/jiantou@2x.png" alt="jiantou">
-                            </div>
-                        </a>
+                        <!-- <a href="insureInput.html?ids=id"> -->
+                        <div data-id="holder_id_card" class="input form_number_right">
+                            <span id="holder_id_card" class="msg" ids="holder_id_card">
+                                <!-- 4303088199706540195 -->
+                            </span>
+                            <img src="img/jiantou@2x.png" alt="jiantou">
+                        </div>
+                        <!-- </a> -->
                     </div>
                 </div>
-                <div class="form_number">
+                <div class="holder_phone optionCode form_number">
                     <div class="form_number_box">
                         <div class="form_number_left">
                             手机号码
                         </div>
-                        <a href="insureInput.html?ids=pho">
-                            <div class="form_number_right">
-                                <span id="pho" class="msg" ids="pho">
-                                    <!-- 15246956315 -->
-                                </span>
-                                <img src="img/jiantou@2x.png" alt="jiantou">
-                            </div>
-                        </a>
+                        <!-- <a href="insureInput.html?ids=pho"> -->
+                        <div data-id="holder_phone" class="input form_number_right">
+                            <span id="holder_phone" class="msg" ids="holder_phone">
+                                <!-- 15246956315 -->
+                            </span>
+                            <img src="img/jiantou@2x.png" alt="jiantou">
+                        </div>
+                        <!-- </a> -->
                     </div>
                 </div>
-                <div class="form_number">
+                <div class="holder_address optionCode form_number">
+                    <div class="form_number_box">
+                        <div class="form_number_left">
+                            投保人地址
+                        </div>
+                        <!-- <a href="insureInput.html?ids=ema"> -->
+                        <div data-id="holder_address" class="input form_number_right">
+                            <span id="holder_address" class="msg" ids="holder_address">
+                                <!-- shandianqiu@163.com -->
+                            </span>
+                            <img src="img/jiantou@2x.png" alt="jiantou">
+                        </div>
+                        <!-- </a> -->
+                    </div>
+                </div>
+                <div class="holder_email optionCode form_number">
                     <div class="form_number_box">
                         <div class="form_number_left">
                             电子邮箱
                         </div>
-                        <a href="insureInput.html?ids=ema">
-                            <div class="form_number_right">
-                                <span id="ema" class="msg" ids="ema">
-                                    <!-- shandianqiu@163.com -->
-                                </span>
-                                <img src="img/jiantou@2x.png" alt="jiantou">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="form_number">
-                    <div class="form_number_box">
-                        <div class="form_number_left">
-                            承保作物信息
+                        <!-- <a href="insureInput.html?ids=ema"> -->
+                        <div data-id="holder_email" class="input form_number_right">
+                            <span id="holder_email" class="msg" ids="holder_email">
+                                <!-- shandianqiu@163.com -->
+                            </span>
+                            <img src="img/jiantou@2x.png" alt="jiantou">
                         </div>
-                        <a href="insureInput.html?ids=msg">
-                            <div class="form_number_right">
-                                <span id="msg" class="msg" ids="msg">
-                                    <!-- 100亩玉米地 -->
-                                </span>
-                                <img src="img/jiantou@2x.png" alt="jiantou">
-                            </div>
-                        </a>
+                        <!-- </a> -->
                     </div>
                 </div>
-                <div class="form_number">
-                    <div class="form_number_box">
-                        <div class="form_number_left">
-                            受益人信息
-                        </div>
-                        <a href="insureInput.html?ids=ben">
-                            <div class="form_number_right">
-                                <span id="ben" class="msg" ids="ben">
-                                    <!-- 张三 -->
-                                </span>
-                                <img src="img/jiantou@2x.png" alt="jiantou">
-                            </div>
-                        </a>
-                    </div>
-                </div>
+
             </div>
             <div class="line">
+            </div>
+            <div class="forms2 forms">
+                <div class="title">
+                    受益人信息
+                </div>
+                <div class="beneficiary_name optionCode form_number">
+                    <div class="form_number_box">
+                        <div class="form_number_left">
+                            姓名
+                        </div>
+                        <!-- <a href="insureInput.html?ids=name"> -->
+                        <div data-id="beneficiary_name" class="input form_number_right">
+                            <span id="beneficiary_name" class="msg" ids="beneficiary_name">
+                                <!-- 王大锤 -->
+                            </span>
+                            <img src="img/jiantou@2x.png" alt="jiantou">
+                        </div>
+                        <!-- </a> -->
+                    </div>
+                </div>
+                <div class="optionCode form_number">
+                    <div class="form_number_box">
+                        <div class="form_number_left">
+                            证件类型
+                        </div>
+                        <!-- <a href="insureInput.html?ids=idType"> -->
+                        <div data-id="beneficiary_idType" class="input form_number_right">
+                            <span id="beneficiary_idType" class="msg" ids="beneficiary_idType">
+                                <!-- 身份证 -->
+                            </span>
+                            <img src="img/jiantou@2x.png" alt="jiantou">
+                        </div>
+                        <!-- </a> -->
+                    </div>
+                </div>
+                <div class="beneficiary_id_card optionCode form_number">
+                    <div class="form_number_box">
+                        <div class="form_number_left">
+                            证件号码
+                        </div>
+                        <!-- <a href="insureInput.html?ids=id"> -->
+                        <div data-id="beneficiary_id_card" class="input form_number_right">
+                            <span id="beneficiary_id_card" class="msg" ids="beneficiary_id_card">
+                                <!-- 4303088199706540195 -->
+                            </span>
+                            <img src="img/jiantou@2x.png" alt="jiantou">
+                        </div>
+                        <!-- </a> -->
+                    </div>
+                </div>
+                <div class="beneficiary_phone optionCode form_number">
+                    <div class="form_number_box">
+                        <div class="form_number_left">
+                            手机号码
+                        </div>
+                        <!-- <a href="insureInput.html?ids=pho"> -->
+                        <div data-id="beneficiary_phone" class="input form_number_right">
+                            <span id="beneficiary_phone" class="msg" ids="beneficiary_phone">
+                                <!-- 15246956315 -->
+                            </span>
+                            <img src="img/jiantou@2x.png" alt="jiantou">
+                        </div>
+                        <!-- </a> -->
+                    </div>
+                </div>
+                <div class="beneficiary_address optionCode form_number">
+                    <div class="form_number_box">
+                        <div class="form_number_left">
+                            受益人地址
+                        </div>
+                        <!-- <a href="insureInput.html?ids=ben"> -->
+                        <div data-id="beneficiary_address" class="input form_number_right">
+                            <span id="beneficiary_address" class="msg" ids="beneficiary_address">
+                                <!-- 张三 -->
+                            </span>
+                            <img src="img/jiantou@2x.png" alt="jiantou">
+                        </div>
+                        <!-- </a> -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -3,7 +3,7 @@ $(function () {
         title = "",
         label = "",
         pageNum = 1,
-        pageSize = 5,
+        pageSize = 1,
         total = null;
     var nyzx = {
         init: function () {
@@ -13,7 +13,7 @@ $(function () {
         },
         listen: function () {
             $.ajax({
-                url: localhost + "/news/newsCategory",
+                url: localhost55001 + "/news/newsCategory",
                 type: "get",
                 success: function (data) {
                     if (data.code === "0") {
@@ -37,6 +37,7 @@ $(function () {
                 var minY = null;
                 myScroll.on('scrollStart', function () {
                     minY = this.y;
+                    $("#loadingTxt").html("加载更多..")
                 });
 
                 myScroll.on('scroll', function () {
@@ -46,6 +47,9 @@ $(function () {
 
                 myScroll.on('scrollEnd', function () {
                     minY = minY < this.y ? minY : this.y;
+                    setTimeout(() => {
+                        $("#loadingTxt").html("")
+                    }, 3000);
                     if (this.y == this.maxScrollY) {
                         pageNum++
                         nyzx.newList(category, title, label, pageNum, pageSize)
@@ -88,7 +92,7 @@ $(function () {
         },
         banner: function (category) {
             $.ajax({
-                url: localhost + "/news/topNewsListByCategory?category=" + category,
+                url: localhost55001 + "/news/topNewsListByCategory?category=" + category,
                 type: "get",
                 success: function (data) {
                     if (data.code === "0") {
@@ -131,7 +135,7 @@ $(function () {
         },
         newList: function (category, title, label, pageNum, pageSize) {
             $.ajax({
-                url: localhost + "/news/newsList?category=" + category + "&title=" + title + "&label=" + label + "&pageNum=" + pageNum + "&pageSize=" + pageSize,
+                url: localhost55001 + "/news/newsList?category=" + category + "&title=" + title + "&label=" + label + "&pageNum=" + pageNum + "&pageSize=" + pageSize,
                 type: "get",
                 success: function (data) {
                     if (data.code === "0") {
@@ -143,6 +147,7 @@ $(function () {
                         }
                         if (total > data.data.newsList.total) {
                             // alert("没有新数据")
+                            $("#loadingTxt").html("没有新数据")
                             return
                         }
                         for (let i = 0; i < newListData.length; i++) {

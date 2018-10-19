@@ -16,15 +16,13 @@ header {
     &.left {
       width: 75 / @rem;
       line-height: 88 / @rem;
-      a {
-        display: inline-block;
-        .sweep {
-          width: 75 / @rem;
-          margin-left: 35 / @rem;
-          img {
-            width: 19 / @rem;
-            height: 35 / @rem;
-          }
+      display: inline-block;
+      .sweep {
+        width: 75 / @rem;
+        margin-left: 35 / @rem;
+        img {
+          width: 19 / @rem;
+          height: 35 / @rem;
         }
       }
     }
@@ -85,47 +83,6 @@ header {
         }
       }
       .recommend {
-        .header {
-          height: 106 / @rem;
-          line-height: 106 / @rem;
-          padding: 0 35 / @rem;
-          .left {
-            float: left;
-            .left_left {
-              img {
-                vertical-align: middle;
-                width: 42 / @rem;
-                height: 42 / @rem;
-                padding-right: 10 / @rem;
-                padding-top: 2 / @rem;
-              }
-            }
-            .left_right {
-              font-family: "PingFang SC", "Franklin Gothic Medium",
-                "Arial Narrow", Arial, sans-serif;
-              font-size: 28 / @rem;
-              color: #333333;
-            }
-          }
-          .right {
-            float: right;
-            .right_left {
-              font-family: "PingFang SC", "Franklin Gothic Medium",
-                "Arial Narrow", Arial, sans-serif;
-              font-size: 28 / @rem;
-              color: #666666;
-              padding-right: 10 / @rem;
-            }
-            .right_right {
-              img {
-                vertical-align: middle;
-                width: 14 / @rem;
-                height: 30 / @rem;
-                padding-top: 2 / @rem;
-              }
-            }
-          }
-        }
         .produce {
           padding: 0 35 / @rem;
           margin-top: -30 / @rem;
@@ -190,12 +147,16 @@ header {
             }
           }
         }
+        p {
+          &.loadingTxt {
+            font-size: 28 / @rem;
+            text-align: center;
+            color: #666666;
+            line-height: 2;
+            // background-color: #ffffff;
+          }
+        }
       }
-    }
-  }
-  .iScrollVerticalScrollbar {
-    .iScrollIndicator {
-      opacity: 0;
     }
   }
 }
