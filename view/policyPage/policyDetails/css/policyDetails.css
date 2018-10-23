@@ -30,76 +30,88 @@ body header div.right img {
   width: 0.85333333rem;
   height: 0.81066667rem;
 }
-body section {
-  background-color: #ffffff;
-}
-body section .detailsTop {
-  padding: 0 0.74666667rem;
-}
-body section .detailsTop ul li {
+body #wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 1.87733333rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
   overflow: hidden;
 }
-body section .detailsTop ul li:first-of-type {
+body #wrapper #scroller {
+  padding-bottom: 1.06666667rem;
+}
+body #wrapper #scroller section {
+  background-color: #ffffff;
+}
+body #wrapper #scroller section .detailsTop {
+  padding: 0 0.74666667rem;
+}
+body #wrapper #scroller section .detailsTop ul li {
+  overflow: hidden;
+}
+body #wrapper #scroller section .detailsTop ul li:first-of-type {
   padding-top: 0.85333333rem;
 }
-body section .detailsTop ul li:first-of-type span.left {
+body #wrapper #scroller section .detailsTop ul li:first-of-type span.left {
   float: left;
   font-size: 0.68266667rem;
   color: #32b5ee;
 }
-body section .detailsTop ul li:first-of-type span.right {
+body #wrapper #scroller section .detailsTop ul li:first-of-type span.right {
   float: right;
   font-size: 0.68266667rem;
   color: #ff0606;
 }
-body section .detailsTop ul li:first-of-type span.right a {
+body #wrapper #scroller section .detailsTop ul li:first-of-type span.right a {
   font-size: 0.512rem;
   color: #ff0606;
 }
-body section .detailsTop ul li:last-of-type {
+body #wrapper #scroller section .detailsTop ul li:last-of-type {
   padding: 0.21333333rem 0 0.64rem;
 }
-body section .detailsTop ul li:last-of-type span {
+body #wrapper #scroller section .detailsTop ul li:last-of-type span {
   color: #999999;
 }
-body section .detailsTop ul li:last-of-type span.left {
+body #wrapper #scroller section .detailsTop ul li:last-of-type span.left {
   float: left;
   font-size: 0.512rem;
 }
-body section .detailsTop ul li:last-of-type span.right {
+body #wrapper #scroller section .detailsTop ul li:last-of-type span.right {
   float: right;
   font-size: 0.512rem;
 }
-body section .line {
+body #wrapper #scroller section .line {
   width: 100%;
   height: 0.42666667rem;
   background-color: #eeeeee;
 }
-body section .detailsCenter {
+body #wrapper #scroller section .detailsCenter {
   padding: 0 0.74666667rem;
 }
-body section .detailsCenter h2 {
+body #wrapper #scroller section .detailsCenter h2 {
   font-size: 0.59733333rem;
   color: #333333;
   border-bottom: solid 1px #eeeeee;
   line-height: 1.70666667rem;
   margin-bottom: 0.46933333rem;
 }
-body section .detailsCenter ul li {
+body #wrapper #scroller section .detailsCenter ul li {
   line-height: 1.19466667rem;
   overflow: hidden;
 }
-body section .detailsCenter ul li span.left {
+body #wrapper #scroller section .detailsCenter ul li span.left {
   float: left;
   font-size: 0.55466667rem;
   color: #666666;
 }
-body section .detailsCenter ul li span.right {
+body #wrapper #scroller section .detailsCenter ul li span.right {
   float: right;
   font-size: 0.55466667rem;
   color: #666666;
 }
-body section .detailsCenter ul li span.right a {
+body #wrapper #scroller section .detailsCenter ul li span.right a {
   font-size: 0.72533333rem;
   color: #ff0606;
 }

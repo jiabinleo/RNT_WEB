@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../../../css/swiper.3.4.2.min.css">
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="stylesheet" href="css/policyList.css">
 </head>
 
 <body>
@@ -22,141 +25,31 @@
 
         </div>
     </header>
-    <section>
+
+    <menu>
         <div class="top">
-            <ul>
-                <li class="active">
-                    <span class="quanbu">全部</span>
-                </li>
-                <li>
-                    <span class="daizhifu">待支付</span>
-                </li>
-                <li>
-                    <span class="shengxiao">正在生效</span>
-                </li>
-                <li>
-                    <span class="lipei">已理赔</span>
-                </li>
-                <li>
-                    <span class="zhongzhi">已终止</span>
-                </li>
+            <ul id="menu">
             </ul>
         </div>
-        <div class="bottom">
-            <div class="list list1">
-                <a href="../policyDetails/policyDetails.html">
-                    <div class="lis">
-                        <div class="left">
-                            <img src="img/policy01.png" alt="policy01">
-                        </div>
-                        <div class="right">
-                            <h2>农业台风保险</h2>
-                            <p>时效 : 2017年1月-2017年12月</p>
-                            <p>保费 : 100元/亩</p>
-                            <p>面积 : 300亩<span class="minRight blue">正在生效</span></p>
-                            <p class="maxRight"><span>30000</span>/元</p>
-                        </div>
-                    </div>
-                </a>
-                <div class="line">
+    </menu>
 
+    <div id="wrapper">
+        <div id="scroller">
+            <section>
+                <div id="listHTML" class="bottom">
                 </div>
-                <div class="lis">
-                    <div class="left">
-                        <img src="img/policy02.png" alt="policy02">
-                    </div>
-                    <div class="right">
-                        <h2>农业重大保险</h2>
-                        <p>时效 : 2016年1月-2016年12月</p>
-                        <p>保费 : 750元/亩</p>
-                        <p>面积 : 30亩<span class="minRight gray">已理赔</span></p>
-                        <p class="maxRight"><span>22500</span>/元</p>
-                    </div>
-                </div>
-                <div class="line">
-
-                </div>
-                <div class="lis">
-                    <div class="left">
-                        <img src="img/policy03.png" alt="policy03">
-                    </div>
-                    <div class="right">
-                        <h2>农业灾害保险</h2>
-                        <p>时效 : 2016年1月-2016年12月</p>
-                        <p>保费 : 750元/亩</p>
-                        <p>面积 : 30亩<span class="minRight red">待支付</span></p>
-                        <p class="maxRight"><span>22500</span>/元</p>
-                    </div>
-                </div>
-                <div class="line">
-
-                </div>
-            </div>
-            <div class="list list2">
-                <div class="lis">
-                    <div class="left">
-                        <img src="img/policy03.png" alt="policy03">
-                    </div>
-                    <div class="right">
-                        <h2>农业灾害保险</h2>
-                        <p>时效 : 2016年1月-2016年12月</p>
-                        <p>保费 : 750元/亩</p>
-                        <p>面积 : 30亩<span class="minRight red">待支付</span></p>
-                        <p class="maxRight"><span>22500</span>/元</p>
-                    </div>
-                </div>
-                <div class="line">
-
-                </div>
-            </div>
-            <div class="list list3">
-                <a href="../policyDetails/policyDetails.html">
-                    <div class="lis">
-                        <div class="left">
-                            <img src="img/policy01.png" alt="policy01">
-                        </div>
-                        <div class="right">
-                            <h2>农业台风保险</h2>
-                            <p>时效 : 2017年1月-2017年12月</p>
-                            <p>保费 : 100元/亩</p>
-                            <p>面积 : 300亩<span class="minRight blue">正在生效</span></p>
-                            <p class="maxRight"><span>30000</span>/元</p>
-                        </div>
-                    </div>
-                </a>
-                <div class="line">
-
-                </div>
-            </div>
-            <div class="list list4">
-                <div class="lis">
-                    <div class="left">
-                        <img src="img/policy02.png" alt="policy02">
-                    </div>
-                    <div class="right">
-                        <h2>农业重大保险</h2>
-                        <p>时效 : 2016年1月-2016年12月</p>
-                        <p>保费 : 750元/亩</p>
-                        <p>面积 : 30亩<span class="minRight gray">已理赔</span></p>
-                        <p class="maxRight"><span>22500</span>/元</p>
-                    </div>
-                </div>
-                <div class="line">
-
-                </div>
-            </div>
-            <div class="list list5">
-
-            </div>
+                <p id="loadingTxt" class="loadingTxt">加载更多...</p>
+            </section>
         </div>
-    </section>
+    </div>
 </body>
-<link rel="stylesheet" href="../../../css/reset.css">
-<link rel="stylesheet" href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css">
-<link rel="stylesheet" href="css/policyList.css">
+
 <script src="../../../js/jquery.js"></script>
-<script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
-<script src="../../../js/tool.js"></script>
-<script src="./js/policyList.js"></script>
+<script src="../../../js/swiper.3.4.2.min.js"></script>
+<script type="text/javascript" src="../../../js/iscroll.js"></script>
+<script type="text/javascript" src="../../../js/loaded_iscroll.js"></script>
+<script type="text/javascript" src="../../../js/tool.js"></script>
+<script type="text/javascript" src="../../../js/public.js"></script>
+<script src="js/policyList.js"></script>
 
 </html>

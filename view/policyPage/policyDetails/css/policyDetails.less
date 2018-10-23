@@ -1,117 +1,129 @@
 @rem: 750/16rem;
 
-body{
-    header{
-        height: 88/@rem;
-        background-color: #1c9ee1;
-        div{
-            float: left;
-            &.left{
-                width: 10%;
-                padding-left: 35/@rem;
-                line-height: 88/@rem;
-                img{
-                    width: 19/@rem;
-                    height: 35/@rem;
-                }
-            }
-            &.center{
-                margin-left: -35/@rem;
-                line-height: 88/@rem;
-                width: 80%;
-                color: #ffffff;
-                font-size: 32/@rem;
-                text-align: center;
-            }
-            &.right{
-                width: 10%;
-                line-height: 88/@rem;
-                img{
-                    width: 40/@rem;
-                    height: 38/@rem;
-                }
-            }
+body {
+  header {
+    height: 88 / @rem;
+    background-color: #1c9ee1;
+    div {
+      float: left;
+      &.left {
+        width: 10%;
+        padding-left: 35 / @rem;
+        line-height: 88 / @rem;
+        img {
+          width: 19 / @rem;
+          height: 35 / @rem;
         }
+      }
+      &.center {
+        margin-left: -35 / @rem;
+        line-height: 88 / @rem;
+        width: 80%;
+        color: #ffffff;
+        font-size: 32 / @rem;
+        text-align: center;
+      }
+      &.right {
+        width: 10%;
+        line-height: 88 / @rem;
+        img {
+          width: 40 / @rem;
+          height: 38 / @rem;
+        }
+      }
     }
-    section{
+  }
+  #wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 88 / @rem;
+    bottom: 0 / @rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    #scroller {
+      padding-bottom: 50 / @rem;
+      section {
         background-color: #ffffff;
-        .detailsTop{
-            padding: 0 35/@rem;
-            ul{
-                li{
-                    overflow: hidden;
-                    &:first-of-type{
-                        padding-top: 40/@rem;
-                        span{
-                            &.left{
-                                float: left;
-                                font-size: 32/@rem;
-                                color: #32b5ee;
-                            }
-                            &.right{
-                                float: right;
-                                font-size: 32/@rem;
-                                color: #ff0606;
-                                a{
-                                    font-size: 24/@rem;
-                                    color: #ff0606;
-                                }
-                            }
-                        }
+        .detailsTop {
+          padding: 0 35 / @rem;
+          ul {
+            li {
+              overflow: hidden;
+              &:first-of-type {
+                padding-top: 40 / @rem;
+                span {
+                  &.left {
+                    float: left;
+                    font-size: 32 / @rem;
+                    color: #32b5ee;
+                  }
+                  &.right {
+                    float: right;
+                    font-size: 32 / @rem;
+                    color: #ff0606;
+                    a {
+                      font-size: 24 / @rem;
+                      color: #ff0606;
                     }
-                    &:last-of-type{
-                        padding: 10/@rem 0 30/@rem;
-                       span{
-                           color: #999999;
-                            &.left{
-                                float: left;
-                                font-size: 24/@rem;
-                            }
-                            &.right{
-                                float: right;
-                                font-size: 24/@rem;
-                            }
-                       }
-                    }
+                  }
                 }
-            }
-        }
-        .line{
-            width: 100%;
-            height: 20/@rem;
-            background-color: #eeeeee;
-        }
-        .detailsCenter{
-            padding: 0 35/@rem;
-            h2{
-                font-size: 28/@rem;
-                color: #333333;
-                border-bottom: solid 1px #eeeeee;
-                line-height: 80/@rem;
-                margin-bottom: 22/@rem;
-            }
-            ul{
-                li{
-                    line-height: 56/@rem;
-                    overflow: hidden;
-                    span{
-                        &.left{
-                            float: left;
-                            font-size: 26/@rem;
-                            color: #666666;
-                        }
-                        &.right{
-                            float: right;
-                            font-size: 26/@rem;
-                            color: #666666;
-                            a{
-                                font-size: 34/@rem;
-                                color: #ff0606;
-                            }
-                        }
-                    }
+              }
+              &:last-of-type {
+                padding: 10 / @rem 0 30 / @rem;
+                span {
+                  color: #999999;
+                  &.left {
+                    float: left;
+                    font-size: 24 / @rem;
+                  }
+                  &.right {
+                    float: right;
+                    font-size: 24 / @rem;
+                  }
                 }
+              }
             }
+          }
         }
+        .line {
+          width: 100%;
+          height: 20 / @rem;
+          background-color: #eeeeee;
+        }
+        .detailsCenter {
+          padding: 0 35 / @rem;
+          h2 {
+            font-size: 28 / @rem;
+            color: #333333;
+            border-bottom: solid 1px #eeeeee;
+            line-height: 80 / @rem;
+            margin-bottom: 22 / @rem;
+          }
+          ul {
+            li {
+              line-height: 56 / @rem;
+              overflow: hidden;
+              span {
+                &.left {
+                  float: left;
+                  font-size: 26 / @rem;
+                  color: #666666;
+                }
+                &.right {
+                  float: right;
+                  font-size: 26 / @rem;
+                  color: #666666;
+                  a {
+                    font-size: 34 / @rem;
+                    color: #ff0606;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }

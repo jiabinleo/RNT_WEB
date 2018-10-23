@@ -1,7 +1,6 @@
 $(function () {
     var my_token = JSON.parse(sessionStorage.getItem("my_token")),
-        optionObj = {},
-        msg = {};
+        optionObj = {}
     console.log(my_token)
     var insure = {
         init: function () {
@@ -19,13 +18,11 @@ $(function () {
                     beneficiary_idType: "请选择受益人的证件类型",
                     beneficiary_id_card: "请输入受益人证件号码",
                     beneficiary_phone: "请输入受益人手机号",
-                    beneficiary_address: "请输入受益人地址",
-                    benTrue: "false"
+                    beneficiary_address: "请输入受益人地址"
                 }]
                 localStorage.setItem("msg", JSON.stringify(msg))
             }
-            msg = JSON.parse(localStorage.getItem("msg"))[0]
-            console.log(msg)
+            var msg = JSON.parse(localStorage.getItem("msg"))[0]
             $("#acreage").html((parseFloat(msg.acreage) ? parseFloat(msg.acreage) : 0) + "亩")
             $("#policy_holder").html(msg.holder_name)
             $("#holder_zjlx").html(msg.idType)
@@ -44,13 +41,7 @@ $(function () {
             } else {
                 $("#zongjia").html(0)
             }
-            if (msg.benTrue === "true") {
-                $("#benTrue").find("img").attr("src", "img/checktrue.png")
-                $("#benTrue").attr("ids", "true")
-            } else {
-                $("#benTrue").find("img").attr("src", "img/checkfalse.png")
-                $("#benTrue").attr("ids", "false")
-            }
+
             $.ajax({
                 url: localhost40000 + "/policy/optionList?insuranceId=" + tool.getRequest().id,
                 type: "GET",
@@ -65,19 +56,18 @@ $(function () {
                     if (data.code === "0") {
                         var optionS = $(document).find(".optionCode")
                         var optionListData = data.data.optionList
+
                         for (let i = 0; i < optionS.length; i++) {
                             $(".optionCode").eq(i).hide()
                         }
                         for (let j = 0; j < optionListData.length; j++) {
                             $("." + optionListData[j].optionCode).show()
                             if (optionListData[j].optionCode === "acreage") {
-                                optionObj[optionListData[j].optionCode] = parseFloat($("#" + optionListData[j].optionCode).text())
+                                optionObj[optionListData[j].optionCode] = parseFloat($("#" + optionListData[j].optionCode).text()) + ""
                             } else {
                                 optionObj[optionListData[j].optionCode] = $("#" + optionListData[j].optionCode).text()
                             }
                         }
-
-                        console.log(optionObj)
                         if (myScroll) {
                             myScroll.refresh();
                         }
@@ -99,7 +89,6 @@ $(function () {
                     xhr.setRequestHeader("login_token", my_token);
                 },
                 success: function (data) {
-                    console.log(data)
                     if (data.code === "0") {
                         var list = data.data.list
                         var idTypeWrapHTML = "";
@@ -117,6 +106,7 @@ $(function () {
                 },
                 error: function () {}
             })
+
 
             insure.listen()
         },
@@ -146,45 +136,27 @@ $(function () {
             })
             //end
 
-            $(document).on("touchstart", "#benTrue", function () {
-                if ($(this).attr("ids") == "false") {
-                    $(this).find("img").attr("src", "img/checktrue.png")
-                    $(this).attr("ids", "true")
-
-                    if ($(this).attr("ids") == "true") {
-                        msg = JSON.parse(localStorage.getItem("msg"))[0]
-                        console.log(msg.holder_name)
-                        msg.beneficiary_name = msg.holder_name
-                        msg.beneficiary_idType = msg.idType
-                        msg.beneficiary_id_card = msg.holder_id_card
-                        msg.beneficiary_phone = msg.holder_phone
-                        msg.beneficiary_address = msg.holder_address
-                        $("#beneficiary").html(msg.holder_name)
-                        $("#beneficiary_zjlx").html(msg.idType)
-                        $("#beneficiary_id_card").html(msg.holder_id_card)
-                        $("#beneficiary_phone").html(msg.holder_phone)
-                        $("#beneficiary_address").html(msg.holder_address)
-                        localStorage.setItem("msg", JSON.stringify([msg]))
-                    }
-                } else {
-                    $(this).find("img").attr("src", "img/checkfalse.png")
-                    $(this).eq(0).attr("ids", "false")
-
-
-                }
-            })
 
             //提交保单
             $("#playFooter").on("touchend", function () {
-                console.log(optionObj)
-                var option = optionObj,
-                    insuranceId = tool.getRequest().id;
-                var data = {
-                    option: option,
-                    insuranceId: insuranceId
+                var optionObjString = ""
+                for (var key in optionObj) {
+                    optionObjString += '' + key + '":"' + optionObj[key] + ','
                 }
+                optionObjString = optionObjString.substring(0, optionObjString.lastIndexOf(','));
+                // optionObjString += ""
+                var option = optionObjString
+                insuranceId = tool.getRequest().id;
+                console.log(option)
+                console.log(insuranceId)
+                var senddata = {}
+                senddata.option = option
+                senddata.insuranceId = insuranceId
+
+                console.log(senddata)
+
                 $.ajax({
-                    url: "http://192.168.1.240:40000/v1/policy/save",
+                    url: localhost40000 + "/policy/save",
                     type: "POST",
                     dataType: "json",
                     headers: {
@@ -193,12 +165,9 @@ $(function () {
                     beforeSend: function (xhr) {
                         xhr.setRequestHeader("login_token", my_token);
                     },
-                    data: JSON.stringify(data),
+                    data: senddata,
                     success: function (data) {
                         console.log(data)
-                        if (data.code === "0") {
-                            console.log(data)
-                        }
                     },
                     error: function () {}
                 })
@@ -257,7 +226,7 @@ $(function () {
             $(document).on("click", "#sweep", function () {
                 window.open("../maize/maize.html?id=" + tool.getRequest().id, "_self");
             })
-            $(document).on("click", ".input", function () {
+            $(document).on("touchstart", ".input", function () {
                 window.open("insureInput.html?ids=" + $(this).attr("data-id") + "&id=" + tool.getRequest().id, "_self");
             })
         }

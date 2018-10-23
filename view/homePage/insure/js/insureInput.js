@@ -8,31 +8,38 @@ $(function () {
             var urlIds = tool.getRequest().ids
             var msg = JSON.parse(localStorage.getItem("msg"))[0]
             console.log(msg)
-            if (urlIds === "number") {
+            if (urlIds === "acreage") {
                 $("#title").html("请输入投保亩数")
                 $("#text").attr("placeholder", "请输入投保亩数")
-            } else if (urlIds === "name") {
+            } else if (urlIds === "holder_name") {
                 $("#title").html("请输入你的姓名")
                 $("#text").attr("placeholder", "请输入你的姓名")
-            } else if (urlIds === "idType") {
-                $("#title").html("请选择你的证件类型")
-                $("#text").attr("placeholder", "请选择你的证件类型")
-            } else if (urlIds === "id") {
+            } else if (urlIds === "holder_id_card") {
                 $("#title").html("请输入你的证件号码")
                 $("#text").attr("placeholder", "请输入你的证件号码")
-            } else if (urlIds === "pho") {
+            } else if (urlIds === "holder_phone") {
                 $("#title").html("请输入你的手机号")
                 $("#text").attr("placeholder", "请输入你的手机号")
-            } else if (urlIds === "ema") {
+            } else if (urlIds === "holder_address") {
+                $("#title").html("请输入你的地址")
+                $("#text").attr("placeholder", "请输入你的地址")
+            } else if (urlIds === "holder_email") {
                 $("#title").html("请输入你的电子邮箱")
                 $("#text").attr("placeholder", "请输入你的电子邮箱")
-            } else if (urlIds === "msg") {
-                $("#title").html("请输入承保作物信息")
-                $("#text").attr("placeholder", "请输入承保作物信息")
-            } else if (urlIds === "ben") {
-                $("#title").html("请输入受益人名称")
-                $("#text").attr("placeholder", "请输入受益人名称")
+            } else if (urlIds === "beneficiary_name") {
+                $("#title").html("请输入受益人的姓名")
+                $("#text").attr("placeholder", "请输入受益人的姓名")
+            } else if (urlIds === "beneficiary_id_card") {
+                $("#title").html("请输入受益人证件号码")
+                $("#text").attr("placeholder", "请输入受益人证件号码")
+            } else if (urlIds === "beneficiary_phone") {
+                $("#title").html("请输入受益人手机号")
+                $("#text").attr("placeholder", "请输入受益人手机号")
+            } else if (urlIds === "beneficiary_address") {
+                $("#title").html("请输入受益人地址")
+                $("#text").attr("placeholder", "请输入受益人地址")
             }
+            $(document).find("#text").focus()
             $(document).on("click", "#sweep", function () {
                 msg[urlIds] = $("#text").val()
                 if ($.trim($("#text").val()) == "") {
@@ -41,6 +48,7 @@ $(function () {
                     localStorage.setItem("msg", JSON.stringify([msg]))
                 }
                 window.open("insure.html?id=" + tool.getRequest().id, "_self");
+                // window.history.go(-1);
             })
 
             $("input").keyup(function (e) {
@@ -52,6 +60,7 @@ $(function () {
                         localStorage.setItem("msg", JSON.stringify([msg]))
                     }
                     window.open("insure.html?id=" + tool.getRequest().id, "_self");
+                    // window.history.go(-1);
                 }
             });
         }
