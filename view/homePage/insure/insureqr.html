@@ -7,24 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>insure</title>
     <link rel="stylesheet" href="../../../css/reset.css">
-    <link rel="stylesheet" href="css/insure.css">
+    <link rel="stylesheet" href="css/insureqr.css">
 </head>
 
 <body>
     <header>
         <div class="left">
-            <a href="#">
+            <a href="#" onclick="history.back(-1);">
                 <div id="sweep" class="sweep">
                     <img src="img/jt.png" alt="sweep">
                 </div>
             </a>
         </div>
         <div class="center">
-            <h1 id="title"></h1>
+            <h1>确认订单</h1>
         </div>
         <div class="right">
-            <div class="alarm">
-            </div>
+            <a href="#" onclick="history.back(-1);">
+                修改订单
+            </a>
         </div>
     </header>
     <div id="wrapper">
@@ -65,7 +66,7 @@
                                 应付总价
                             </div>
                             <div class="form_price_right">
-                                <span id="zongjia"></span>
+                                <span id="zongjia">900</span>
                                 <span>元</span>
                                 <span></span>
                                 <span></span>
@@ -78,7 +79,7 @@
                                 起保日期
                             </div>
                             <div class="form_date_right">
-                                <span id="term_start"></span>
+                                <span id="term_start">2018.02.23</span>
                                 <img src="img/jiantou@2x.png" alt="jiantou">
                             </div>
                         </div>
@@ -89,7 +90,7 @@
                                 终保日期
                             </div>
                             <div class="form_date_right">
-                                <span id="term_end"></span>
+                                <span id="term_end">2018.02.23</span>
                                 <img src="img/jiantou@2x.png" alt="jiantou">
                             </div>
                         </div>
@@ -100,7 +101,7 @@
                                 投保日期
                             </div>
                             <div class="form_date_right">
-                                <span id="policy_time"></span>
+                                <span id="policy_time">2018.02.23</span>
                                 <img src="img/jiantou@2x.png" alt="jiantou">
                             </div>
                         </div>
@@ -113,13 +114,13 @@
                 <div class="title">
                     投保人信息
                 </div>
-                <div class="holder_name holder_name optionCode form_number">
+                <div class="policy_holder holder_name optionCode form_number">
                     <div class="form_number_box">
                         <div class="form_number_left">
                             姓名
                         </div>
                         <div data-id="holder_name" class="input form_number_right">
-                            <span id="holder_name" class="msg">
+                            <span id="policy_holder" class="msg">
                             </span>
                             <img src="img/jiantou@2x.png" alt="jiantou">
                         </div>
@@ -130,7 +131,7 @@
                         <div class="form_number_left">
                             证件类型
                         </div>
-                        <div data-id="holder_zjlx" num="holder_zjlx" class="idType form_number_right">
+                        <div data-id="idType" num="idType" class="idType form_number_right">
                             <span id="holder_zjlx" class="msg">
                             </span>
                             <img src="img/jiantou@2x.png" alt="jiantou">
@@ -194,13 +195,13 @@
                     受益人信息
                     <span ids="false" id="benTrue"><img src="img/checkfalse.png" srcset=""> 与投保人为同一人</span>
                 </div>
-                <div class="beneficiary_name optionCode form_number">
+                <div class="beneficiary optionCode form_number">
                     <div class="form_number_box">
                         <div class="form_number_left">
                             姓名
                         </div>
                         <div data-id="beneficiary_name" class="input form_number_right">
-                            <span id="beneficiary_name" class="msg">
+                            <span id="beneficiary" class="msg">
                             </span>
                             <img src="img/jiantou@2x.png" alt="jiantou">
                         </div>
@@ -211,7 +212,7 @@
                         <div class="form_number_left">
                             证件类型
                         </div>
-                        <div data-id="beneficiary_zjlx" num="beneficiary_zjlx" class="idType form_number_right">
+                        <div data-id="beneficiary_idType" num="beneficiary_idType" class="idType form_number_right">
                             <span id="beneficiary_zjlx" class="msg">
                             </span>
                             <img src="img/jiantou@2x.png" alt="jiantou">
@@ -259,23 +260,12 @@
     </div>
     <footer>
         <div class="insure_footer">
-            <input id="playFooter" type="button" value="确认订单">
+            <input id="playFooter" type="button" value="付款">
         </div>
     </footer>
     <div id="insure_wrap">
         <div id="insure_inner">
-            <div class="top">
-                <p>确认提交订单</p>
-            </div>
-            <div class="bottom">
-                <div id="yes" class="left">
-                    确认
-                </div>
-                <div id="no" class="right">
-                    取消
-                </div>
-            </div>
-            <!--  <div class="insure_play">
+            <div class="insure_play">
                 <span>请选择您的付款方式</span>
                 <span id="insureClose">
                     <img src="img/close.png" alt="close">
@@ -323,7 +313,7 @@
                 <input type="password">
                 <input type="password">
                 <input type="password">
-            </div>-->
+            </div>
         </div>
 
 
@@ -339,6 +329,6 @@
 <script src="../../../js/iscroll.js"></script>
 <script src="../../../js/loaded_iscroll.js"></script>
 <script src="../../../js/tool.js"></script>
-<script src="js/insure.js"></script>
+<script src="js/insureqr.js"></script>
 
 </html>

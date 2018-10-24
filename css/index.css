@@ -431,7 +431,6 @@ footer .foot a p {
   left: 0;
   z-index: -1;
   background-color: rgba(0, 0, 0, 0);
-  transition: 1s;
 }
 .masked.maskeds {
   z-index: 100;

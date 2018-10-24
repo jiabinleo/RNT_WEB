@@ -122,6 +122,7 @@
                     parseFloat(data.page.rows[i].zongjia) ? zongjia = parseFloat(data.page.rows[i].zongjia).toFixed(2) : zongjia = "-"
                     data.page.rows[i].termStart ? termStart = data.page.rows[i].termStart : termStart = "-"
                     data.page.rows[i].termStart ? termEnd = data.page.rows[i].termStart : termEnd = "-"
+                    console.log(data.page.rows[i])
                     listHTML += `<div data-id="${data.page.rows[i].id}" class="lis">
                                     <div class="left">
                                         <img src="${imgUrl+data.page.rows[i].icon}" onerror=src="img/error.png" alt="policy01">

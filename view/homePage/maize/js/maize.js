@@ -26,6 +26,7 @@ $(function () {
         pageHtml: function (insurance) {
             console.log(insurance)
             $("#title").html(insurance.insuranceName)
+            localStorage.setItem("insuranceName", JSON.stringify(insurance.insuranceName))
             $("#banner").html(
                 `<img src="${imgUrl+insurance.cover}" alt="">`
             )
