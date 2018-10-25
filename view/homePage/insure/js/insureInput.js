@@ -1,6 +1,23 @@
 $(function () {
+    // if ("id" in tool.getRequest()) {
+    //     if (tool.getRequest().id !== "ccc") {
+    //         var policyIdOrid = "id"
+    //         var insuranceId = "insuranceId"
+    //     }
+    // }
+    // if ("policyId" in tool.getRequest()) {
+    //     if (tool.getRequest().policyId !== "ccc") {
+    //         var policyIdOrid = "policyId"
+    //         var insuranceId = "policyId"
+    //     }
+    // }
+    if ("insuranceId" in tool.getRequest()) {
+        var ins = "?id=" + tool.getRequest().insuranceId
+    }
+    if ("policyId" in tool.getRequest()) {
+        var ins = "?policyId=" + tool.getRequest().policyId
+    }
     var insureInput = {
-
         init: function () {
             this.listen()
         },
@@ -47,7 +64,7 @@ $(function () {
                 } else {
                     localStorage.setItem("msg", JSON.stringify([msg]))
                 }
-                window.open("insure.html?id=" + tool.getRequest().id, "_self");
+                window.open("insure.html?id=" + tool.getRequest().policyId, "_self");
                 // window.history.go(-1);
             })
 
@@ -59,8 +76,7 @@ $(function () {
                     } else {
                         localStorage.setItem("msg", JSON.stringify([msg]))
                     }
-                    window.open("insure.html?id=" + tool.getRequest().id, "_self");
-                    // window.history.go(-1);
+                    window.open("insure.html" + ins, "_self");
                 }
             });
         }

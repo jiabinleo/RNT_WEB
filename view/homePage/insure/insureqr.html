@@ -22,8 +22,8 @@
         <div class="center">
             <h1>确认订单</h1>
         </div>
-        <div class="right">
-            <a href="#" onclick="history.back(-1);">
+        <div id="qr" class="right">
+            <a>
                 修改订单
             </a>
         </div>
@@ -114,13 +114,13 @@
                 <div class="title">
                     投保人信息
                 </div>
-                <div class="policy_holder holder_name optionCode form_number">
+                <div class="holder_name holder_name optionCode form_number">
                     <div class="form_number_box">
                         <div class="form_number_left">
                             姓名
                         </div>
                         <div data-id="holder_name" class="input form_number_right">
-                            <span id="policy_holder" class="msg">
+                            <span id="holder_name" class="msg">
                             </span>
                             <img src="img/jiantou@2x.png" alt="jiantou">
                         </div>
@@ -195,13 +195,13 @@
                     受益人信息
                     <span ids="false" id="benTrue"><img src="img/checkfalse.png" srcset=""> 与投保人为同一人</span>
                 </div>
-                <div class="beneficiary optionCode form_number">
+                <div class="beneficiary_name optionCode form_number">
                     <div class="form_number_box">
                         <div class="form_number_left">
                             姓名
                         </div>
                         <div data-id="beneficiary_name" class="input form_number_right">
-                            <span id="beneficiary" class="msg">
+                            <span id="beneficiary_name" class="msg">
                             </span>
                             <img src="img/jiantou@2x.png" alt="jiantou">
                         </div>
@@ -264,6 +264,20 @@
         </div>
     </footer>
     <div id="insure_wrap">
+        <div id="insure_inner0">
+            <div id="top" class="top">
+                <p>确认提交订单</p>
+            </div>
+            <div id="bottom" class="bottom">
+                <div id="yes" class="left">
+                    确认
+                </div>
+                <div id="no" class="right">
+                    取消
+                </div>
+            </div>
+            <div id="tGIng" class="tGIng"></div>
+        </div>
         <div id="insure_inner">
             <div class="insure_play">
                 <span>请选择您的付款方式</span>

@@ -65,7 +65,12 @@
                     }
                 }, 3000);
                 $(document).on("click", ".lis", function () {
-                    window.open(`../policyDetails/policyDetails.html?id=` + $(this).attr("data-id"), "_self");
+                    if ($(this).attr("status") == "1") {
+                        window.open(`../../homePage/insure/insureqr.html?policyId=` + $(this).attr("data-id"), "_self");
+                    } else {
+                        window.open(`../policyDetails/policyDetails.html?id=` + $(this).attr("data-id"), "_self");
+                    }
+
                 })
             },
             menu: function (data) {
@@ -122,8 +127,7 @@
                     parseFloat(data.page.rows[i].zongjia) ? zongjia = parseFloat(data.page.rows[i].zongjia).toFixed(2) : zongjia = "-"
                     data.page.rows[i].termStart ? termStart = data.page.rows[i].termStart : termStart = "-"
                     data.page.rows[i].termStart ? termEnd = data.page.rows[i].termStart : termEnd = "-"
-                    console.log(data.page.rows[i])
-                    listHTML += `<div data-id="${data.page.rows[i].id}" class="lis">
+                    listHTML += `<div data-id="${data.page.rows[i].id}" class="lis" status=${data.page.rows[i].status}>
                                     <div class="left">
                                         <img src="${imgUrl+data.page.rows[i].icon}" onerror=src="img/error.png" alt="policy01">
                                     </div>

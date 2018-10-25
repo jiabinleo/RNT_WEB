@@ -18,11 +18,11 @@ header div.left {
   width: 1.6rem;
   line-height: 1.87733333rem;
 }
-header div.left a .sweep {
+header div.left .sweep {
   width: 1.6rem;
   margin-left: 0.74666667rem;
 }
-header div.left a .sweep img {
+header div.left .sweep img {
   width: 0.40533333rem;
   height: 0.74666667rem;
 }
@@ -231,6 +231,45 @@ footer .insure_footer input {
   height: 100%;
   z-index: 10;
   background-color: rgba(51, 51, 51, 0.5);
+}
+#insure_wrap #insure_inner0 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 0.10666667rem;
+  font-size: 0.59733333rem;
+  text-align: center;
+  color: #666666;
+}
+#insure_wrap #insure_inner0 .top {
+  line-height: 1.28rem;
+}
+#insure_wrap #insure_inner0 .bottom {
+  overflow: hidden;
+  line-height: 1.28rem;
+  width: 8.576rem;
+  border-top: 0.04266667rem solid #eeeeee;
+}
+#insure_wrap #insure_inner0 .bottom div {
+  width: 4.26666667rem;
+}
+#insure_wrap #insure_inner0 .bottom div.left {
+  float: left;
+  border-right: 0.04266667rem solid #eeeeee;
+}
+#insure_wrap #insure_inner0 .bottom div.right {
+  float: right;
+  border-right: none;
+}
+#insure_wrap #insure_inner0 .bottom div.active {
+  color: #ffffff;
+  background-color: #1c9ee1;
+}
+#insure_wrap #insure_inner0 .tGIng {
+  display: none;
+  padding: 0.85333333rem;
 }
 #insure_wrap #insure_inner {
   display: none;

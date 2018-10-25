@@ -17,15 +17,15 @@ header {
     &.left {
       width: 75 / @rem;
       line-height: 88 / @rem;
-      a {
-        .sweep {
-          width: 75 / @rem;
-          margin-left: 35 / @rem;
-          img {
-            width: 19 / @rem;
-            height: 35 / @rem;
-          }
+      // a {
+      .sweep {
+        width: 75 / @rem;
+        margin-left: 35 / @rem;
+        img {
+          width: 19 / @rem;
+          height: 35 / @rem;
         }
+        // }
       }
     }
     &.center {
@@ -235,6 +235,46 @@ footer {
   height: 100%;
   z-index: 10;
   background-color: rgba(51, 51, 51, 0.5);
+  #insure_inner0 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 5 / @rem;
+    font-size: 28 / @rem;
+    text-align: center;
+    color: #666666;
+    .top {
+      line-height: 60 / @rem;
+    }
+    .bottom {
+      overflow: hidden;
+
+      line-height: 60 / @rem;
+      width: 402 / @rem;
+      border-top: 2 / @rem solid #eeeeee;
+      div {
+        width: 200 / @rem;
+        &.left {
+          float: left;
+          border-right: 2 / @rem solid #eeeeee;
+        }
+        &.right {
+          float: right;
+          border-right: none;
+        }
+        &.active {
+          color: #ffffff;
+          background-color: #1c9ee1;
+        }
+      }
+    }
+    .tGIng {
+      display: none;
+      padding: 40 / @rem;
+    }
+  }
   #insure_inner {
     display: none;
     position: absolute;
