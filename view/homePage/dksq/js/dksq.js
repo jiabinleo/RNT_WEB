@@ -1,117 +1,137 @@
 $(function () {
-    var locs = false;
-    var dksq = {
-        init: function () {
-            if (localStorage.getItem("msg") == null || localStorage.getItem("msg") == "null") {
-                var msg = [{
-                    mec: "请选择机构类型",
-                    org: "请输入机构名称或借款人姓名",
-                    loc: "请输入地址",
-                    lan: "请输入土地面积",
-                    man: "1",
-                    mar: "1",
-                    loa: "1", //0没有 1有
-                    col: "请输入",
-                    con: "请输入",
-                    num: "请输入",
-                    amo: "请输入",
-                    use: "请输入",
-                    sta: "请选择",
-                    end: "请选择",
-                }]
-                localStorage.setItem("msg", JSON.stringify(msg))
-            }
-            var msg = JSON.parse(localStorage.getItem("msg"))[0]
-            console.log(msg)
-            $("#mec").html(msg.mec)
-            $("#org").html(msg.org)
-            $("#loc").html(msg.loc)
-            $("#lan").html(msg.lan)
-            $("#col").html(msg.col)
-            $("#con").html(msg.con)
-            $("#num").html(msg.num)
-            $("#amo").html(msg.amo)
-            $("#use").html(msg.use)
-            $("#sta").html(msg.sta)
-            $("#end").html(msg.end)
-            $("#man .status").eq(msg.man).find("img").attr("src", "img/yes.png")
-            $("#mar .status").eq(msg.mar).find("img").attr("src", "img/yes.png")
-            $("#loa .status").eq(msg.loa).find("img").attr("src", "img/yes.png")
-            dksq.listen()
-        },
-        listen: function () {
-            $(document).on("touchend", ".radius span", function () {
-                $(this).find("img").attr("src", "img/yes.png").parent().siblings().find("img").attr("src", "img/no.png")
-                var msg = JSON.parse(localStorage.getItem("msg"))[0]
-                msg[$(this).parent().attr("id")] = $(this).attr("data-id")
-                localStorage.setItem("msg", JSON.stringify([msg]))
-            })
-
-            $("#dd").on("click", function () {
-                locs = true;
-                console.log(loc)
-                $("#loc").html(loc)
-            })
-
-
-            $("#playFooter").on("click", function () {
-                $("#dksq_wrap").css("display", "block")
-                $("#dksq_inner").css("display", "block")
-            })
-            $("#dksqClose").on("click", function () {
-                $("#dksq_wrap").css("display", "none")
-                $("#dksq_inner").css("display", "none")
-            })
-            $(".dksq_play_bottom").on("click", function () {
-                $("#dksq_inner").css("display", "none")
-                $("#dksq_inner2").css("display", "block")
-            })
-            $("#dksqClose2").on("click", function () {
-                $("#dksq_wrap").css("display", "block")
-                $("#dksq_inner").css("display", "block")
-                $("#dksq_inner2").css("display", "none")
-                for (var i = 0; i < 6; i++) {
-                    $(".mima input").eq(i).val("")
-                }
-            })
-
-            var pwdarr = [];
-            var pwdarrs = ["1", "2", "3", "4", "5", "6"]
-            $(".mima").on("click", function () {
-                $(".mima input").eq(0).focus()
-                pwdarr = [];
-            })
-            var pwss = true;
-            $(".mima > input").on("input", function () {
-                $(this).val($(this).val().trim().substr(0, 1))
-                pwdarr.push($(this).val().trim().substr(0, 1))
-                if ($(this).next().length) {
-                    $(this).next().focus()
-                } else {
-                    if (pwdarr.length = 6) {
-                        setTimeout(() => {
-                            window.location.href = "/project/view/playsuc/playsuc.html";
-                        }, 1000);
-                    }
-                }
-
-            });
-            $(document).on("click", "#sweep", function () {
-                window.location.href = "../maize/maize.html";
-            })
-        },
-
+    if ("id" in tool.getRequest()) {
+        var td = "loanId" + tool.getRequest().id
+    } else if ("billId" in tool.getRequest()) {
+        var td = "billId=" + tool.getRequest().billId
     }
+    var my_token = JSON.parse(sessionStorage.getItem("my_token")),
+        loc = null,
+        optionListArr = [],
+        dksq = {
+            init: function () {
+
+                dksq.listen()
+            },
+            listen: function () {
+                $.ajax({
+                    url: localhost40000 + "/bill/optionList?" + td,
+                    type: "GET",
+                    dataType: "json",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    beforeSend: function (xhr) {
+                        xhr.setRequestHeader("login_token", my_token);
+                    },
+                    success: function (result) {
+                        console.log(result)
+                        if (result.code === "0") {
+                            optionList = result.data.optionList
+                            if ("id" in tool.getRequest()) {
+                                for (let i = 0; i < optionList.length; i++) {
+                                    $("." + optionList[i].optionCode).show()
+                                    optionListArr.push(optionList[i].optionCode)
+                                }
+                            } else if ("billId" in tool.getRequest()) {
+                                for (let i = 0; i < optionList.length; i++) {
+                                    $("." + optionList[i].optionCode).show()
+                                    optionListArr.push(optionList[i].optionCode)
+                                    if (optionList[i].optionCode === "qita_daikuan" || optionList[i].optionCode === "hunyin_zhuangkuang" || optionList[i].optionCode === "tudi_jingyingquan") {
+                                        console.log(optionList[i].dataValue)
+                                        $("#" + optionList[i].optionCode).find("span").eq(optionList[i].dataValue).find("img").attr("src", "img/yes.png").parent().siblings().find("img").attr("src", "img/no.png")
+                                                                          
+                                        $("#" + optionList[i].optionCode).attr("data-id", optionList[i].dataValue)
+                                    } else {
+                                        $("#" + optionList[i].optionCode).val(optionList[i].dataValue)
+                                    }
+                                }
+                            }
+                            if (myScroll) {
+                                myScroll.refresh();
+                            }
+                        }
+                    },
+                    error: function (error) {
+                        console.log(error)
+                    }
+                })
+
+                $(document).on("touchend", ".radius span", function () {
+                    $(this).find("img").attr("src", "img/yes.png").parent().siblings().find("img").attr("src", "img/no.png")
+                    $(this).parent().attr("data-id", $(this).attr("data-id"))
+                })
+
+                $("#dw").on("click", function () {
+                    $("#diqu").val(loc)
+                })
+                $(document).on("click", "#sweep", function () {
+                    window.location.href = "../maize/maize.html";
+                })
+                $(document).on("touchstart", "#playFooter", function () {
+                    var msg = ""
+                    console.log(optionListArr)
+                    var option = {}
+                    for (let i = 0; i < optionListArr.length; i++) {
+
+                        if (optionListArr[i] === "qita_daikuan" || optionListArr[i] === "hunyin_zhuangkuang" || optionListArr[i] === "tudi_jingyingquan") {
+                            option[optionListArr[i]] = $("#" + optionListArr[i]).attr("data-id")
+                        } else {
+                            option[optionListArr[i]] = $("#" + optionListArr[i]).val()
+                        }
+                    }
+                    if ("id" in tool.getRequest()) {
+                        var url = localhost40000 + "/bill/save?loanId" + tool.getRequest().id
+                    }
+                    // if ("policyId" in tool.getRequest()) {
+                    //     var url = localhost40000 + "/bill/save?id" + tool.getRequest().id
+                    // }
+                    if ("id" in tool.getRequest()) {
+                        var data = {
+                            option: option,
+                            loanId: tool.getRequest().id
+                        }
+                    } else if ("billId" in tool.getRequest()) {
+                        var data = {
+                            option: option,
+                            id: tool.getRequest().billId
+                        }
+                    }
+                    console.log(option)
+                    $.ajax({
+                        url: localhost40000 + "/bill/save",
+                        type: "POST",
+                        dataType: "json",
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        beforeSend: function (xhr) {
+                            xhr.setRequestHeader("login_token", my_token);
+                        },
+                        data: JSON.stringify(data),
+                        success: function (result) {
+                            console.log(result)
+                            if (result.code === "0") {
+                                window.open("dksqqr.html?billId=" + result.data.billId, "_self")
+                            }
+                        },
+                        error: function (error) {
+                            console.log(error)
+                        }
+                    })
+                })
+            },
+
+
+        }
     dksq.init()
 
 
     try {
-        var loc = "定位中..."
+        loc = "定位中..."
         var map = new AMap.Map('container', {
             resizeEnable: true
         });
         var options = {
-
             enableHighAccuracy: true, // 是否使用高精度定位，默认:true
             timeout: 10000, // 超过10秒后停止定位，默认：无穷大
             maximumAge: 0, // 定位结果缓存0毫秒，默认：0
@@ -127,12 +147,8 @@ $(function () {
 
         function onComplete(obj) {
             loc = obj.addressComponent.city + obj.addressComponent.district + obj.addressComponent.township
-            var msg = JSON.parse(localStorage.getItem("msg"))[0]
-            msg.loc = loc
-            localStorage.setItem("msg", JSON.stringify([msg]))
-            if (locs) {
-                $("#loc").html(loc)
-            }
+            $("#diqu").val(loc)
+            console.log(loc)
         }
     } catch (error) {
 

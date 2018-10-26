@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
     <link rel="stylesheet" href="../../../css/reset.css">
-    <link rel="stylesheet" href="css/dksq.css">
+    <link rel="stylesheet" href="css/dksqqr.css">
 </head>
 
 <body>
@@ -22,16 +22,17 @@
         <div class="center">
             <h1>贷款申请</h1>
         </div>
-        <div class="right">
+        <div id="xg" class="right">
+            修改
         </div>
     </header>
+    <div class="marquee">
+        <marquee>温馨提示，如果您有任何疑问，请点击此处拨打客服电话88</marquee>
+        <div class="closeMarquee"><img src="img/closeMarquee.png" alt=""></div>
+    </div>
     <div id="wrapper">
         <div id="scroller">
             <section>
-                <div class="marquee">
-                    <marquee>温馨提示，如果您有任何疑问，请点击此处拨打客服电话88</marquee>
-                    <div class="closeMarquee"><img src="img/closeMarquee.png" alt=""></div>
-                </div>
                 <div class="forms1 forms">
                     <form>
                         <div class="jigou_leixing optionCode form_input">
@@ -43,8 +44,8 @@
                                 <div class="form_input_right">
                                     <!-- <span id="mec" class="msg" ids="mec">
                                         </span> -->
-                                    <input id="jigou_leixing" type="text" placeholder="请输入机构类型">
-                                    <img src="img/right.png" alt="jiantou">
+                                    <span id="jigou_leixing"></span>
+                                    <!-- <img src="img/right.png" alt="jiantou"> -->
                                 </div>
                                 <!-- </a> -->
                             </div>
@@ -56,8 +57,8 @@
                                 </div>
                                 <!-- <a href="dksqInput.html?ids=org"> -->
                                 <div class="form_input_right">
-                                    <input id="jigou_mingcheng" type="text" placeholder="请输入机构名称">
-                                    <img src="img/right.png" alt="jiantou">
+                                    <span id="jigou_mingcheng"></span>
+                                    <!-- <img src="img/right.png" alt="jiantou"> -->
                                 </div>
                                 <!-- </a> -->
                             </div>
@@ -65,12 +66,12 @@
                         <div class="diqu optionCode form_input">
                             <div class="form_input_box">
                                 <div class="form_input_left">
-                                    所在地区<img id="dw" src="img/dingwei.svg" alt="">
+                                    所在地区
                                 </div>
                                 <!-- <a href="address.html?ids=loc"> -->
                                 <div class="form_input_right">
-                                    <input id="diqu" type="text" placeholder="请输入地址">
-                                    <img src="img/right.png" alt="jiantou">
+                                    <span id="diqu"></span>
+                                    <!-- <img src="img/right.png" alt="jiantou"> -->
                                 </div>
                                 <!-- </a> -->
                             </div>
@@ -82,8 +83,8 @@
                                 </div>
                                 <!-- <a href="dksqInput.html?ids=lan"> -->
                                 <div class="form_input_right">
-                                    <input id="tudi_mianji" type="text" placeholder="请输入土地面积">
-                                    <img src="img/right.png" alt="jiantou">
+                                    <span id="tudi_mianji"></span>
+                                    <!-- <img src="img/right.png" alt="jiantou"> -->
                                 </div>
                                 <!-- </a> -->
                             </div>
@@ -128,8 +129,8 @@
                                 </div>
                                 <!-- <a href="dksqInput.html?ids=col"> -->
                                 <div class="form_input_right">
-                                    <input id="qita_diyawu" type="text" placeholder="请输入">
-                                    <img src="img/right.png" alt="jiantou">
+                                    <span id="qita_diyawu"></span>
+                                    <!-- <img src="img/right.png" alt="jiantou"> -->
                                 </div>
                                 <!-- </a> -->
                             </div>
@@ -141,8 +142,8 @@
                                 </div>
                                 <!-- <a href="dksqInput.html?ids=con"> -->
                                 <div class="form_input_right">
-                                    <input id="lianxi_ren" type="text" placeholder="请输入">
-                                    <img src="img/right.png" alt="jiantou">
+                                    <span id="lianxi_ren"></span>
+                                    <!-- <img src="img/right.png" alt="jiantou"> -->
                                 </div>
                                 <!-- </a> -->
                             </div>
@@ -154,8 +155,8 @@
                                 </div>
                                 <!-- <a href="dksqInput.html?ids=num"> -->
                                 <div class="form_input_right">
-                                    <input id="lianxi_dianhua" type="text" placeholder="请输入">
-                                    <img src="img/right.png" alt="jiantou">
+                                    <span id="lianxi_dianhua"></span>
+                                    <!-- <img src="img/right.png" alt="jiantou"> -->
                                 </div>
                                 <!-- </a> -->
                             </div>
@@ -167,8 +168,8 @@
                                 </div>
                                 <!-- <a href="dksqInput.html?ids=amo"> -->
                                 <div class="form_input_right">
-                                    <input id="daikuan_jine" type="text" placeholder="请输入">
-                                    <img src="img/right.png" alt="jiantou">
+                                    <span id="daikuan_jine"></span>
+                                    <!-- <img src="img/right.png" alt="jiantou"> -->
                                 </div>
                                 <!-- </a> -->
                             </div>
@@ -180,8 +181,8 @@
                                 </div>
                                 <!-- <a href="dksqInput.html?ids=use"> -->
                                 <div class="form_input_right">
-                                    <input id="daikuai_yongtu" type="text" placeholder="请输入">
-                                    <img src="img/right.png" alt="jiantou">
+                                    <span id="daikuai_yongtu"></span>
+                                    <!-- <img src="img/right.png" alt="jiantou"> -->
                                 </div>
                                 <!-- </a> -->
                             </div>
@@ -193,8 +194,8 @@
                                 </div>
                                 <!-- <a href="dksqInput.html?ids=sta"> -->
                                 <div class="form_input_right">
-                                    <input id="kaishi_riqi" type="date" placeholder="请输入">
-                                    <img src="img/right.png" alt="sta">
+                                    <span id="kaishi_riqi"></span>
+                                    <!-- <img src="img/right.png" alt="sta"> -->
                                 </div>
                                 <!-- </a> -->
                             </div>
@@ -206,8 +207,8 @@
                                 </div>
                                 <!-- <a href="dksqInput.html?ids=end"> -->
                                 <div class="form_input_right">
-                                    <input id="jieshu_riqi" type="date" placeholder="请输入">
-                                    <img src="img/right.png" alt="end">
+                                    <span id="jieshu_riqi"></span>
+                                    <!-- <img src="img/right.png" alt="end"> -->
                                 </div>
                                 <!-- </a> -->
                             </div>
@@ -234,6 +235,6 @@
 <script type="text/javascript" src="../../../js/loaded_iscroll.js"></script>
 <script type="text/javascript" src="../../../js/public.js"></script>
 <script type="text/javascript" src="../../../js/tool.js"></script>
-<script type="text/javascript" src="js/dksq.js"></script>
+<script type="text/javascript" src="js/dksqqr.js"></script>
 
 </html>

@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #eeeeee;
 }
 header {
   width: 100%;
@@ -42,20 +42,12 @@ header div.right {
   width: 2.98666667rem;
   float: right;
   line-height: 1.87733333rem;
+  font-size: 0.59733333rem;
+  text-align: right;
+  padding-right: 0.74666667rem;
+  color: #ffffff;
 }
-#wrapper {
-  position: absolute;
-  z-index: 1;
-  top: 1.87733333rem;
-  bottom: 0rem;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-}
-#wrapper #scroller {
-  padding-bottom: 2.98666667rem;
-}
-#wrapper #scroller section .marquee {
+.marquee {
   position: relative;
   height: 1.408rem;
   background: #fff7ea;
@@ -66,24 +58,35 @@ header div.right {
   line-height: 1.408rem;
   padding: 0 2.00533333rem 0 0.74666667rem;
 }
-#wrapper #scroller section .marquee .closeMarquee {
+.marquee .closeMarquee {
   position: absolute;
   right: 0.74666667rem;
   top: 0;
 }
-#wrapper #scroller section .marquee .closeMarquee img {
+.marquee .closeMarquee img {
   width: 0.42666667rem;
   height: 0.42666667rem;
   margin: 0 0.128rem;
 }
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 3.28533333rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#wrapper #scroller {
+  padding-bottom: 2.98666667rem;
+}
 #wrapper #scroller section .line {
   width: 100%;
   height: 0.42666667rem;
-  background-color: #eeeeee;
 }
 #wrapper #scroller section .forms1 {
-  padding: 0.64rem 0;
-  margin: 0 0.74666667rem;
+  background-color: #ffffff;
+  padding: 0 0.74666667rem;
 }
 #wrapper #scroller section .forms1 .optionCode {
   display: none;
@@ -113,7 +116,7 @@ header div.right {
   line-height: 0.85333333rem;
   float: right;
 }
-#wrapper #scroller section .forms1 .form_input .form_input_box .form_input_right input {
+#wrapper #scroller section .forms1 .form_input .form_input_box .form_input_right span {
   font-size: 0.59733333rem;
   height: 0.85333333rem;
   width: 8.53333333rem;

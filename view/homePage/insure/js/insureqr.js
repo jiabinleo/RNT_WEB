@@ -63,8 +63,6 @@ $(function () {
             $(document).on("touchend", "#qr", function () {
                 window.open("insure.html?policyId=" + tool.getRequest().policyId, "_self");
             })
-
-
             $(document).on("touchend", "#playFooter", function () {
                 session = ["msg"]
 

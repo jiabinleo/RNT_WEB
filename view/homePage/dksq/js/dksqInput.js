@@ -71,7 +71,7 @@ $(function () {
                     } else {
                         localStorage.setItem("msg", JSON.stringify([msg]))
                     }
-                    window.open("dksq.html", "_self");
+                    // window.open("dksq.html", "_self");
                 }
             });
         },

@@ -60,6 +60,9 @@ header div.right span img {
 }
 #wrapper #scroller .banner {
   margin-top: 0.64rem;
+  width: 14.80533333rem;
+  height: 5.84533333rem;
+  overflow: hidden;
 }
 #wrapper #scroller .banner img {
   width: 100%;
@@ -137,7 +140,7 @@ header div.right span img {
 #wrapper #scroller .msg p span:last-of-type {
   color: #999999;
 }
-#wrapper #scroller .if ul li {
+#wrapper #scroller .if ul {
   font-size: 0.55466667rem;
   font-family: PingFang-SC-Medium;
   font-weight: 500;

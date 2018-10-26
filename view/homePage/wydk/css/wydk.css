@@ -90,14 +90,14 @@ header div.right {
   width: 25%;
   margin-top: 0.21333333rem;
 }
-#wrapper #scroller section .menu ul li a div {
+#wrapper #scroller section .menu ul li div {
   text-align: center;
 }
-#wrapper #scroller section .menu ul li a div img {
+#wrapper #scroller section .menu ul li div img {
   width: 1.70666667rem;
   height: 1.70666667rem;
 }
-#wrapper #scroller section .menu ul li a div p {
+#wrapper #scroller section .menu ul li div p {
   font-size: 0.512rem;
   color: #666666;
 }

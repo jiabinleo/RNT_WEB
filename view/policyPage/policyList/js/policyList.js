@@ -64,14 +64,39 @@
 
                     }
                 }, 3000);
-                $(document).on("click", ".lis", function () {
-                    if ($(this).attr("status") == "1") {
+                //删除
+                $(document).on("click", ".cancel", function (event) {
+                    window.event ? window.event.cancelBubble = true : event.stopPropagation();
+                    var $lis = $(this).parent().parent().parent()
+                    var id = $lis.attr("data-id")
+                    $.ajax({
+                        url: localhost40000 + "/policy/cancel/" + id,
+                        type: "GET",
+                        dataType: "json",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        beforeSend: function (xhr) {
+                            xhr.setRequestHeader("login_token", my_token);
+                        },
+                        success: function (result) {
+                            if (result.code === "0") {
+                                console.log(result)
+                                $lis.remove()
+                            }
+                        },
+                        error: function (error) {}
+                    });
+                })
+
+                $(document).on("click", ".lisImg", function () {
+                    if ($(this).parent().attr("status") == "1") {
                         window.open(`../../homePage/insure/insureqr.html?policyId=` + $(this).attr("data-id"), "_self");
                     } else {
                         window.open(`../policyDetails/policyDetails.html?id=` + $(this).attr("data-id"), "_self");
                     }
-
                 })
+
             },
             menu: function (data) {
                 statusId = data[0].id
@@ -127,12 +152,17 @@
                     parseFloat(data.page.rows[i].zongjia) ? zongjia = parseFloat(data.page.rows[i].zongjia).toFixed(2) : zongjia = "-"
                     data.page.rows[i].termStart ? termStart = data.page.rows[i].termStart : termStart = "-"
                     data.page.rows[i].termStart ? termEnd = data.page.rows[i].termStart : termEnd = "-"
+                    if (data.page.rows[i].status === "1") {
+                        var cancel = "<span class=cancel>删除</span>"
+                    } else {
+                        var cancel = ""
+                    }
                     listHTML += `<div data-id="${data.page.rows[i].id}" class="lis" status=${data.page.rows[i].status}>
-                                    <div class="left">
+                                    <div class="left lisImg" data-id="${data.page.rows[i].id}">
                                         <img src="${imgUrl+data.page.rows[i].icon}" onerror=src="img/error.png" alt="policy01">
                                     </div>
                                     <div class="right">
-                                        <h2>${data.page.rows[i].insuranceName}</h2>
+                                        <h2>${data.page.rows[i].insuranceName+cancel}</h2>
                                         <p>时效 : ${termStart}-${termEnd}</p>
                                         <p>保费 : ${danjia}元/亩</p>
                                         <p>面积 : ${acreage}亩${policyList.status(data.page.rows[i].status)}</p>

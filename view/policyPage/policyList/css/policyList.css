@@ -94,6 +94,12 @@ body #wrapper #scroller section .bottom .lis .right {
 }
 body #wrapper #scroller section .bottom .lis .right h2 {
   font-size: 0.59733333rem;
+  position: relative;
+}
+body #wrapper #scroller section .bottom .lis .right h2 span {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 body #wrapper #scroller section .bottom .lis .right p {
   width: 100%;

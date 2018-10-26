@@ -1,89 +1,58 @@
-var onlineService = {
+var my_token = JSON.parse(sessionStorage.getItem("my_token"));
+var plantingLoan = {
     init: function () {
-        onlineService.listen()
+        var id = tool.getRequest().id
+        $.ajax({
+            url: localhost40000 + "/loan/detail/" + id,
+            type: "GET",
+            dataType: "json",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader("login_token", my_token);
+            },
+            success: function (result) {
+                if (result.code === "0") {
+                    plantingLoan.htmlData(result.data.loan)
+                }
+            },
+            error: function (error) {
+                console.log(error)
+            }
+        })
+        plantingLoan.listen()
     },
     listen: function () {
-        var data = [{
-            title: "如何申请贷款？",
-            list: [{
-                    text: "珍惜个人信用，保持良好还款习惯，按时还款，勿产生逾期记录。"
-                },
-                {
-                    text: "珍惜个人信用，保持良好还款习惯，按时还款，勿产生逾期记录。"
-                }
-            ]
-        }, {
-            title: "如何申请贷款？",
-            list: [{
-                    text: "珍惜个人信用，保持良好还款习惯，按时还款，勿产生逾期记录。"
-                },
-                {
-                    text: "珍惜个人信用，保持良好还款习惯，按时还款，勿产生逾期记录。"
-                }
-            ]
-        }, {
-            title: "如何申请贷款？",
-            list: [{
-                    text: "珍惜个人信用，保持良好还款习惯，按时还款，勿产生逾期记录。"
-                },
-                {
-                    text: "珍惜个人信用，保持良好还款习惯，按时还款，勿产生逾期记录。"
-                }
-            ]
-        }, {
-            title: "如何申请贷款？",
-            list: [{
-                    text: "珍惜个人信用，保持良好还款习惯，按时还款，勿产生逾期记录。"
-                },
-                {
-                    text: "珍惜个人信用，保持良好还款习惯，按时还款，勿产生逾期记录。"
-                }
-            ]
-        }, {
-            title: "如何申请贷款？",
-            list: [{
-                    text: "珍惜个人信用，保持良好还款习惯，按时还款，勿产生逾期记录。"
-                },
-                {
-                    text: "珍惜个人信用，保持良好还款习惯，按时还款，勿产生逾期记录。"
-                }
-            ]
-        }]
-
-        var content_listHTML = "";
-        for (let i = 0; i < data.length; i++) {
-            var lisHTML = ""
-            for (let j = 0; j < data[i].list.length; j++) {
-                lisHTML +=
-                    ` <li>(${j})${data[i].list[j].text}</li>`
-            }
-            content_listHTML +=
-                `<li class="list">
-                    <div class="title">
-                        <p>${i+1}.${data[i].title}</p>
-                        <span class="img"><img src="img/right.png" alt=""></span>
-                    </div>
-                    <ul class="content_list_text">
-                    ${lisHTML}
-                    </ul>
-                </li>`
-        }
-
-        $("#content_list").html(content_listHTML)
-        $(document).on("touchstart", "#content_list .title", function () {
-            loaded()
-            if ($(this).parent().hasClass("active")) {
-                $(this).parent().removeClass("active")
-                $(this).find("img").attr("src", "img/right.png")
-            } else {
-                $(this).parent().addClass("active")
-                $(this).find("img").attr("src", "img/bottom.png")
-            }
-        })
-
         $(document).on("touchend", "#dksq", function () {
-            window.open("../dksq/dksq.html", "_self");
+            window.open("../dksq/dksq.html?id=" + $(this).attr("data-id"), "_self");
         })
+    },
+    htmlData: function (data) {
+        $("#title").html(isNull(data.name))
+        $("#fengmianTu").attr("src", data.fengmianTu)
+        $("#jianjie").html(isNull(data.jianjie))
+        $("#daikuanEdu").html(isNull(data.daikuanEdu))
+        $("#daikuaiLilv").html(isNull(data.daikuaiLilv))
+        $("#fuwuDuixiang").html(isNull(data.fuwuDuixiang))
+        $("#dksq").attr("data-id", data.id)
+        if (data.daikuanTiaojian) {
+            var daikuanTiaojian = data.daikuanTiaojian.split("&")
+            for (let i = 0; i < daikuanTiaojian.length; i++) {
+                $("#daikuanTiaojian").append(
+                    `<li>${i+1}.${daikuanTiaojian[i]}</li>`
+                )
+            }
+        }
+        if (myScroll) {
+            myScroll.refresh();
+        }
     }
 }
-onlineService.init()
+plantingLoan.init()
+
+function isNull(str) {
+    if (str) {
+        return str
+    }
+}

@@ -45,6 +45,9 @@ body #wrapper #scroller {
 body #wrapper #scroller section {
   background-color: #ffffff;
 }
+body #wrapper #scroller section .optionList {
+  display: none;
+}
 body #wrapper #scroller section .detailsTop {
   padding: 0 0.74666667rem;
 }
@@ -58,6 +61,15 @@ body #wrapper #scroller section .detailsTop ul li:first-of-type span.left {
   float: left;
   font-size: 0.68266667rem;
   color: #32b5ee;
+}
+body #wrapper #scroller section .detailsTop ul li:first-of-type span.left span.blue {
+  color: #1d9fe2;
+}
+body #wrapper #scroller section .detailsTop ul li:first-of-type span.left span.gray {
+  color: #999999;
+}
+body #wrapper #scroller section .detailsTop ul li:first-of-type span.left span.red {
+  color: #ff4e00;
 }
 body #wrapper #scroller section .detailsTop ul li:first-of-type span.right {
   float: right;

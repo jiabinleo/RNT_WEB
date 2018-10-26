@@ -45,6 +45,9 @@ body {
       padding-bottom: 50 / @rem;
       section {
         background-color: #ffffff;
+        .optionList {
+          display: none;
+        }
         .detailsTop {
           padding: 0 35 / @rem;
           ul {
@@ -57,6 +60,17 @@ body {
                     float: left;
                     font-size: 32 / @rem;
                     color: #32b5ee;
+                    span {
+                      &.blue {
+                        color: #1d9fe2;
+                      }
+                      &.gray {
+                        color: #999999;
+                      }
+                      &.red {
+                        color: #ff4e00;
+                      }
+                    }
                   }
                   &.right {
                     float: right;
