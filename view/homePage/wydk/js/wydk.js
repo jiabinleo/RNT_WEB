@@ -42,6 +42,7 @@ var wydk = {
                 xhr.setRequestHeader("login_token", my_token);
             },
             success: function (result) {
+                console.log(result)
                 if (result.code === "0") {
                     console.log(result)
                     let list = result.data.list

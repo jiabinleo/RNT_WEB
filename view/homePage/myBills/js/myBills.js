@@ -1,6 +1,7 @@
 var pageNum = 1,
     pageSize = 6,
     total = null,
+    status = 1,
     my_token = JSON.parse(sessionStorage.getItem("my_token")),
     myBills = {
         init: function () {
@@ -8,11 +9,23 @@ var pageNum = 1,
             myBills.listen()
         },
         listen: function () {
+            $(document).on("touchstart", "menu > div", function () {
+                $(this).addClass("active").siblings().removeClass("active")
+                status = $(this).attr("data-id")
+                pageNum = 1;
+                total = null;
+                $("#loadingTxt").html("");
+                $("#myBillsHTML").html("")
+                if (myScroll) {
+                    myScroll.refresh();
+                }
+                myBills.newList(pageNum, pageSize, status)
+            })
             setTimeout(() => {
                 var minY = null;
                 myScroll.on('scrollStart', function () {
                     minY = this.y;
-                    $("#loadingTxt").html("加载更多..")
+                    $("#loadingTxt").html("加载更多...")
                 });
 
                 myScroll.on('scroll', function () {
@@ -27,12 +40,17 @@ var pageNum = 1,
                     }, 3000);
                     if (this.y == this.maxScrollY) {
                         pageNum++
-                        myBills.newList(pageNum, pageSize)
+                        myBills.newList(pageNum, pageSize, status)
                     }
                 });
             }, 300);
-            $(document).on("touchend", "#myBillsHTML > li", function () {
-                window.open("myBillsDetail.html?id=" + $(this).attr("data-id"), "_self")
+            $(document).on("click", "#myBillsHTML > li", function () {
+                if ($(this).attr("status") === "1") {
+                    window.open("../dksq/dksqqr.html?id=" + $(this).attr("data-id"), "_self")
+                } else {
+                    window.open("myBillsDetail.html?id=" + $(this).attr("data-id"), "_self")
+                }
+
             })
         },
         status: function (status) {
@@ -43,10 +61,13 @@ var pageNum = 1,
                     ss = "申请中"
                     break;
                 case "2":
-                    ss = "未还款"
+                    ss = "还款中"
                     break;
                 case "3":
-                    ss = "已还清"
+                    ss = "未还款"
+                    break;
+                case "4":
+                    ss = "已结清"
                     break;
                 default:
                     break;
@@ -55,7 +76,7 @@ var pageNum = 1,
         },
         newList: function () {
             $.ajax({
-                url: localhost40000 + "/bill/getPage?pageNum=" + pageNum + "&pageSize=" + pageSize,
+                url: localhost40000 + "/bill/getPage?pageNum=" + pageNum + "&pageSize=" + pageSize + "&status=" + status,
                 type: "GET",
                 dataType: "json",
                 headers: {
@@ -70,16 +91,20 @@ var pageNum = 1,
                         var rows = result.data.page.rows
                         var myBillsHTML = "";
                         total += rows.length
-                        if (total > result.data.page.total) {
-                            // alert("没有新数据")
+                        console.log(total)
+                        console.log(result.data.page.total)
+                        if (total > result.data.page.total || result.data.page.total == 0) {
                             $("#loadingTxt").html("没有新数据")
+                            setTimeout(() => {
+                                $("#loadingTxt").html("")
+                            }, 5000);
                             pageNum--
                             return
                         }
                         for (let i = 0; i < rows.length; i++) {
                             console.log(rows[i])
                             myBillsHTML +=
-                                `<li data-id="${rows[i].id}">
+                                `<li data-id="${rows[i].id}" status="${rows[i].status}">
                                 <div class="billsTop">
                                     <span>
                                         ￥${myBills.isNull(rows[i].daikuanJine)}

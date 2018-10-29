@@ -39,7 +39,7 @@ $(function () {
                                     if (optionList[i].optionCode === "qita_daikuan" || optionList[i].optionCode === "hunyin_zhuangkuang" || optionList[i].optionCode === "tudi_jingyingquan") {
                                         console.log(optionList[i].dataValue)
                                         $("#" + optionList[i].optionCode).find("span").eq(optionList[i].dataValue).find("img").attr("src", "img/yes.png").parent().siblings().find("img").attr("src", "img/no.png")
-                                                                          
+
                                         $("#" + optionList[i].optionCode).attr("data-id", optionList[i].dataValue)
                                     } else {
                                         $("#" + optionList[i].optionCode).val(optionList[i].dataValue)
@@ -55,7 +55,28 @@ $(function () {
                         console.log(error)
                     }
                 })
-
+                $.ajax({
+                    url: localhost55001 + "/message/kefu",
+                    type: "GET",
+                    dataType: "json",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    beforeSend: function (xhr) {
+                        xhr.setRequestHeader("login_token", my_token);
+                    },
+                    success: function (result) {
+                        console.log(result)
+                        if (result.code === "0") {
+                            $("#marquee").html(result.data.message)
+                            tel = result.data.tel;
+                            $("#tel").attr("href", "tel:" + tel)
+                        }
+                    },
+                    error: function (error) {
+                        console.log(error)
+                    }
+                })
                 $(document).on("touchend", ".radius span", function () {
                     $(this).find("img").attr("src", "img/yes.png").parent().siblings().find("img").attr("src", "img/no.png")
                     $(this).parent().attr("data-id", $(this).attr("data-id"))
@@ -146,6 +167,7 @@ $(function () {
         });
 
         function onComplete(obj) {
+            console.log(obj)
             loc = obj.addressComponent.city + obj.addressComponent.district + obj.addressComponent.township
             $("#diqu").val(loc)
             console.log(loc)

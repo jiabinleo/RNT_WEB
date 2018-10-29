@@ -106,105 +106,42 @@ header div.right .alarm {
   height: 0.59733333rem;
   vertical-align: -0.08533333rem;
 }
-#wrapper #scroller .forms .form_price {
+#wrapper #scroller .forms .optionCode {
+  display: none;
+}
+#wrapper #scroller .forms .form {
   height: 0.85333333rem;
   border-bottom: solid 1px #eeeeee;
   line-height: 1.83466667rem;
   height: 1.83466667rem;
 }
-#wrapper #scroller .forms .form_price .form_price_box {
+#wrapper #scroller .forms .form .form_box {
   height: 0.85333333rem;
   padding-top: 0.49066667rem;
 }
-#wrapper #scroller .forms .form_price .form_price_box .form_price_left {
+#wrapper #scroller .forms .form .form_box .form_left {
   float: left;
   font-size: 0.59733333rem;
   color: #666666;
   line-height: 0.85333333rem;
 }
-#wrapper #scroller .forms .form_price .form_price_box .form_price_right {
+#wrapper #scroller .forms .form .form_box .form_right {
   font-size: 0;
   line-height: 0.85333333rem;
   float: right;
   margin-right: 0.61866667rem;
 }
-#wrapper #scroller .forms .form_price .form_price_box .form_price_right span {
+#wrapper #scroller .forms .form .form_box .form_right input {
   font-size: 0.59733333rem;
-  color: #999999;
-}
-#wrapper #scroller .forms .form_price .form_price_box .form_price_right span:nth-of-type(1) {
-  font-size: 0.72533333rem;
-  color: #f70101;
-}
-#wrapper #scroller .forms .form_price .form_price_box .form_price_right span:nth-of-type(2) {
-  font-size: 0.59733333rem;
-}
-#wrapper #scroller .forms .form_price .form_price_box .form_price_right span:nth-of-type(3) {
-  font-size: 0.55466667rem;
-}
-#wrapper #scroller .forms .form_price .form_price_box .form_price_right span:nth-of-type(4) {
-  font-size: 0.512rem;
-}
-#wrapper #scroller .forms .form_number {
-  height: 1.83466667rem;
-  border-bottom: solid 1px #eeeeee;
-}
-#wrapper #scroller .forms .form_number .form_number_box {
+  text-align: right;
   height: 0.85333333rem;
-  padding-top: 0.49066667rem;
+  outline: none;
 }
-#wrapper #scroller .forms .form_number .form_number_box .form_number_left {
-  float: left;
-  color: #666666;
-  line-height: 0.85333333rem;
+#wrapper #scroller .forms .form .form_box .form_right span {
   font-size: 0.59733333rem;
-}
-#wrapper #scroller .forms .form_number .form_number_box .form_number_right {
   color: #999999;
-  font-size: 0;
-  line-height: 0.85333333rem;
-  float: right;
-}
-#wrapper #scroller .forms .form_number .form_number_box .form_number_right span {
-  font-size: 0.59733333rem;
-}
-#wrapper #scroller .forms .form_number .form_number_box .form_number_right img {
-  vertical-align: sub;
-  margin-left: 0.32rem;
-  width: 0.29866667rem;
-  height: 0.55466667rem;
-}
-#wrapper #scroller .forms .form_date {
-  height: 1.83466667rem;
-  border-bottom: solid 1px #eeeeee;
-}
-#wrapper #scroller .forms .form_date.form_end {
-  border: none;
-}
-#wrapper #scroller .forms .form_date .form_date_box {
   height: 0.85333333rem;
-  padding-top: 0.49066667rem;
-}
-#wrapper #scroller .forms .form_date .form_date_box .form_date_left {
-  float: left;
-  font-size: 0.59733333rem;
-  color: #666666;
   line-height: 0.85333333rem;
-}
-#wrapper #scroller .forms .form_date .form_date_box .form_date_right {
-  color: #999999;
-  font-size: 0;
-  line-height: 0.85333333rem;
-  float: right;
-}
-#wrapper #scroller .forms .form_date .form_date_box .form_date_right span {
-  font-size: 0.59733333rem;
-}
-#wrapper #scroller .forms .form_date .form_date_box .form_date_right img {
-  vertical-align: sub;
-  margin-left: 0.32rem;
-  width: 0.29866667rem;
-  height: 0.55466667rem;
 }
 footer {
   z-index: 10;

@@ -40,6 +40,11 @@ $(function () {
                 rx = 1;
             jx == 1 ? $("#jx").show() : $("#jx").hide()
             rx == 1 ? $("#rx").show() : $("#rx").hide()
+            $("#toubaowu").html(insurance.toubaoWu)
+            $("#term").html(insurance.termStart + "-" + insurance.termEnd)
+            $("#areaName").html(insurance.areaName)
+            $("#baoE").html(insurance.baoE)
+            $("#cost").html(insurance.cost)
             var listArr = insurance.characteristic.split('&');
             var listHTML = "";
             for (let i = 0; i < listArr.length; i++) {

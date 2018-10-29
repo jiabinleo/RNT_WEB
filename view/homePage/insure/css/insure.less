@@ -107,102 +107,39 @@ header {
           }
         }
       }
-      .form_price {
+      .optionCode {
+        display: none;
+      }
+      .form {
         height: 40 / @rem;
         border-bottom: solid 1px #eeeeee;
         line-height: 86 / @rem;
         height: 86 / @rem;
-        .form_price_box {
+        .form_box {
           height: 40 / @rem;
           padding-top: 23 / @rem;
-          .form_price_left {
+          .form_left {
             float: left;
             font-size: 28 / @rem;
             color: #666666;
             line-height: 40 / @rem;
           }
-          .form_price_right {
+          .form_right {
             font-size: 0;
             line-height: 40 / @rem;
             float: right;
             margin-right: 29 / @rem;
+            input {
+              font-size: 28 / @rem;
+              text-align: right;
+              height: 40 / @rem;
+              outline: none;
+            }
             span {
               font-size: 28 / @rem;
               color: #999999;
-              &:nth-of-type(1) {
-                font-size: 34 / @rem;
-                color: #f70101;
-              }
-              &:nth-of-type(2) {
-                font-size: 28 / @rem;
-              }
-              &:nth-of-type(3) {
-                font-size: 26 / @rem;
-              }
-              &:nth-of-type(4) {
-                font-size: 24 / @rem;
-              }
-            }
-          }
-        }
-      }
-      .form_number {
-        height: 86 / @rem;
-        border-bottom: solid 1px #eeeeee;
-        .form_number_box {
-          height: 40 / @rem;
-          padding-top: 23 / @rem;
-          .form_number_left {
-            float: left;
-            color: #666666;
-            line-height: 40 / @rem;
-            font-size: 28 / @rem;
-          }
-          .form_number_right {
-            color: #999999;
-            font-size: 0;
-            line-height: 40 / @rem;
-            float: right;
-            span {
-              font-size: 28 / @rem;
-            }
-            img {
-              vertical-align: sub;
-              margin-left: 15 / @rem;
-              width: 14 / @rem;
-              height: 26 / @rem;
-            }
-          }
-        }
-      }
-      .form_date {
-        height: 86 / @rem;
-        border-bottom: solid 1px #eeeeee;
-        &.form_end {
-          border: none;
-        }
-        .form_date_box {
-          height: 40 / @rem;
-          padding-top: 23 / @rem;
-          .form_date_left {
-            float: left;
-            font-size: 28 / @rem;
-            color: #666666;
-            line-height: 40 / @rem;
-          }
-          .form_date_right {
-            color: #999999;
-            font-size: 0;
-            line-height: 40 / @rem;
-            float: right;
-            span {
-              font-size: 28 / @rem;
-            }
-            img {
-              vertical-align: sub;
-              margin-left: 15 / @rem;
-              width: 14 / @rem;
-              height: 26 / @rem;
+              height: 40 / @rem;
+              line-height: 40 / @rem;
             }
           }
         }
@@ -248,11 +185,11 @@ footer {
     text-align: center;
     color: #666666;
     .top {
-      line-height: 60/@rem;
+      line-height: 60 / @rem;
     }
     .bottom {
       overflow: hidden;
-      
+
       line-height: 60 / @rem;
       width: 402 / @rem;
       border-top: 2 / @rem solid #eeeeee;
@@ -266,11 +203,10 @@ footer {
           float: right;
           border-right: none;
         }
-        &.active{
+        &.active {
           color: #ffffff;
           background-color: #1c9ee1;
         }
-
       }
     }
     // div {

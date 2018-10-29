@@ -29,11 +29,32 @@ body header .center {
   color: #ffffff;
   font-size: 0.68266667rem;
 }
+html menu,
+body menu {
+  overflow: hidden;
+}
+html menu div,
+body menu div {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  text-align: center;
+  font-size: 0.59733333rem;
+  border: solid 0.02133333rem #eeeeee;
+  line-height: 1.70666667rem;
+}
+html menu div.active span,
+body menu div.active span {
+  display: inline-block;
+  line-height: 1.70666667rem;
+  height: 1.70666667rem;
+  border-bottom: #1b9de1 solid 0.02133333rem;
+}
 html #wrapper,
 body #wrapper {
   position: absolute;
   z-index: 1;
-  top: 1.87733333rem;
+  top: 3.584rem;
   bottom: 0rem;
   left: 0;
   width: 100%;
@@ -101,4 +122,10 @@ body #wrapper #scroller section ul li .billsBottom span:last-of-type img {
   vertical-align: -13%;
   width: 0.512rem;
   height: 0.512rem;
+}
+html #wrapper #scroller .loadingTxt,
+body #wrapper #scroller .loadingTxt {
+  text-align: center;
+  font-size: 0.59733333rem;
+  line-height: 0.85333333rem;
 }

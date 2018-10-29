@@ -44,9 +44,24 @@ $(function () {
                     if (result.code === "0") {
                         console.log(result.data.optionList)
                         var optionList = result.data.optionList
+                        var holder_name = null,
+                            beneficiary_name = null;
                         for (let i = 0; i < optionList.length; i++) {
-                            $("." + optionList[i].optionCode).show()
-                            $("#" + optionList[i].optionCode).html(optionList[i].dataValue)
+                            if (optionList[i].optionCode === "holder_zjlx" || optionList[i].optionCode === "beneficiary_zjlx") {
+                                $("#" + optionList[i].optionCode).html(insure.typeId(optionList[i].dataValue))
+                            } else {
+                                $("#" + optionList[i].optionCode).html(optionList[i].dataValue)
+                                $("." + optionList[i].optionCode).show()
+                            }
+                            if (optionList[i].optionCode === "holder_name") {
+                                holder_name = optionList[i].dataValue
+                            }
+                            if (optionList[i].optionCode === "beneficiary_name") {
+                                beneficiary_name = optionList[i].dataValue
+                            }
+                        }
+                        if (holder_name === beneficiary_name) {
+                            $("#benTrue").find("img").attr("src","img/checktrue.png")
                         }
                         if (myScroll) {
                             myScroll.refresh();
@@ -180,6 +195,24 @@ $(function () {
                     }
                 }
             });
+        },
+        typeId(id) {
+            var str = ""
+            switch (id) {
+                case "1":
+                    str = "身份证"
+                    break;
+                case "2":
+                    str = "护照"
+                    break;
+                case "3":
+                    str = "驾照"
+                    break;
+                default:
+                    str = "身份证"
+                    break;
+            }
+            return str
         }
     }
     insure.init()
