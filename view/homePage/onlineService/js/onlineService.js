@@ -3,6 +3,35 @@ var onlineService = {
         onlineService.listen()
     },
     listen: function () {
+        //客服
+        $.ajax({
+            url: localhost55001 + "/message/kefu",
+            type: "GET",
+            dataType: "json",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader("login_token", my_token);
+            },
+            success: function (result) {
+                console.log(result)
+                if (result.code === "0") {
+                    console.log(result)
+                    $("#marquee").html(result.data.message)
+                    $(".tel").attr("href", "tel:" + result.data.tel)
+                }
+            },
+            error: function (error) {
+                console.log(error)
+            }
+        })
+
+        $(document).on("touchend", "#closeMarquee", function () {
+            $(".marquee").hide()
+            $("#wrapper").addClass("wrapper")
+        })
+
         var data = [{
             title: "如何申请贷款？",
             list: [{

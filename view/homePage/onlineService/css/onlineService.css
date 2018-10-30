@@ -49,19 +49,7 @@ header div.right span {
 header div.right span img {
   width: 0.78933333rem;
 }
-#wrapper {
-  position: absolute;
-  z-index: 1;
-  top: 1.87733333rem;
-  bottom: 0rem;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-}
-#wrapper #scroller {
-  padding-bottom: 7.25333333rem;
-}
-#wrapper #scroller section .marquee {
+.marquee {
   position: relative;
   height: 1.408rem;
   background: #fff7ea;
@@ -71,16 +59,32 @@ header div.right span img {
   color: #e5be5b;
   line-height: 1.408rem;
   padding: 0 2.00533333rem 0 0.74666667rem;
+  overflow: hidden;
 }
-#wrapper #scroller section .marquee .closeMarquee {
+.marquee .closeMarquee {
   position: absolute;
   right: 0.74666667rem;
   top: 0;
 }
-#wrapper #scroller section .marquee .closeMarquee img {
+.marquee .closeMarquee img {
   width: 0.42666667rem;
   height: 0.42666667rem;
   margin: 0 0.128rem;
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 3.28533333rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#wrapper.wrapper {
+  top: 1.87733333rem;
+}
+#wrapper #scroller {
+  padding-bottom: 2.09066667rem;
 }
 #wrapper #scroller section .content {
   padding: 0 0.74666667rem;

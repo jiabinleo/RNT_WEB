@@ -1,4 +1,5 @@
-if (JSON.parse(sessionStorage.getItem("my_token")) == null) {
+var my_token = JSON.parse(sessionStorage.getItem("my_token"));
+if (my_token == null) {
     window.open("/login.html", "_self");
 }
 

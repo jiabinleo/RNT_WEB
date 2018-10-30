@@ -1,4 +1,3 @@
-var my_token = JSON.parse(sessionStorage.getItem("my_token"));
 var wydk = {
     init: function () {
         $.ajax({

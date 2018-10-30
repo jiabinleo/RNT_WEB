@@ -1,4 +1,4 @@
-(function() {
+(function () {
   var width = document.documentElement.clientWidth;
   var style = document.createElement("style");
   style.innerHTML = "html{font-size: " + width / 16 + "px !important;}";
@@ -10,7 +10,7 @@ var localhost55001 = "http://192.168.1.240:55001/v1",
   linkUrl = "http://127.0.0.1:5500";
 
 var tool = {
-  getRequest: function() {
+  getRequest: function () {
     var url = window.location.search;
     var theRequest = new Object();
     if (url.indexOf("?") != -1) {
@@ -22,7 +22,7 @@ var tool = {
     }
     return theRequest;
   },
-  formatDate: function(now) {
+  formatDate: function (now) {
     var now = new Date(now);
     var year = now.getFullYear();
     var month = now.getMonth() + 1;
@@ -45,11 +45,11 @@ var tool = {
     );
   },
   //时间如果为单位数补0
-  fixZero: function(num, length) {
+  fixZero: function (num, length) {
     var str = "" + num;
     var len = str.length;
     var s = "";
-    for (var i = length; i-- > len; ) {
+    for (var i = length; i-- > len;) {
       s += "0";
     }
     return s + str;
