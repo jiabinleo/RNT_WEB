@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>悦农通</title>
+    <link rel="Shortcut Icon" href="../../../img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/smrz.css">
+    <script>
+        (function () {
+                var width = document.documentElement.clientWidth;
+                var style = document.createElement("style");
+                style.innerHTML = "html{font-size: " + width / 16 + "px !important;}";
+                document.head.appendChild(style);
+            })();
+        </script>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <a href="#" onclick="history.back(-1);">
+                <div class="sweep">
+                    <img src="../../../img/return.png" alt="sweep" />
+                </div>
+            </a>
+        </div>
+        <div class="center">
+            <h1>实名认证</h1>
+        </div>
+        <div class="right">
+        </div>
+    </header>
+    <section>
+        <div class="top">
+            <div class="lr">
+                <div class="left">
+                    真实姓名
+                </div>
+                <div class="right">
+                    <input type="text" name="" value="" id="zsxm" placeholder="请输入真实姓名" />
+                </div>
+            </div>
+            <div class="lr">
+                <div class="left">
+                    身份证
+                </div>
+                <div class="right">
+                    <input type="text" name="" value="" id="sfzh" placeholder="请输入身份证号" />
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <h3>上传证件材料</h3>
+            <div class="sfz">
+                <div class="file">
+                    <div class="file-left">
+                        <img class="Img" id="imgFrontImg" src="../../../img/imgFront.png" onerror="javascript:this.src='../../../img/imgBack.png'"
+                            alt />
+                        <input class="file" type="file" name="file" id="imgFront" value="" accept="jpg,jpeg,png" />
+
+                    </div>
+                    <div class="file-right">
+                        <img class="Img" id="imgBackImg" src="../../../img/imgBack.png" onerror="javascript:this.src='../../../img/imgBack.png'"
+                            alt />
+                        <input id="imgBack" class="file" type="file" name="file" capture="camera" accept="jpg,jpeg,png" />
+                    </div>
+                </div>
+                <div class="beCareful">
+                    <div class="beCareful-left">
+                        <img src="../../../img/beCareful.png" alt="" />
+                    </div>
+                    <div class="beCareful-right">
+                        <p>证件必须是清晰色彩原件电子版本。可以是扫描件或者数码拍摄照片。仅支持JPG、PNG、JPEG的图片格式。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <input type="button" id="upload" class="upload" value="确定上传" />
+    </footer>
+    <div id="wrap-mask" class="wrap-mask">
+        <div class="inner">
+            <span id="message"></span>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+<script type="text/javascript" src="../../../js/jquery.js"></script>
+<!-- <script type="text/javascript" src="../../../js/iscroll.js"></script>
+<script type="text/javascript" src="../../../js/loaded_iscroll.js"></script> -->
+<script type="text/javascript" src="../../../js/tool.js"></script>
+<script type="text/javascript" src="js/smrz.js"></script>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>悦农通</title>
+    <link rel="Shortcut Icon" href="../../../img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <link rel="stylesheet" href="css/dlyb.css">
+    <script>
+            (function () {
+                var width = document.documentElement.clientWidth;
+                var style = document.createElement("style");
+                style.innerHTML = "html{font-size: " + width / 16 + "px !important;}";
+                document.head.appendChild(style);
+            })();
+        </script>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <a href="#" onclick="history.back(-1);">
+                <div class="sweep">
+                    <img src="../../../img/return.png" alt="sweep"/>
+                </div>
+            </a>
+        </div>
+        <div class="center">
+            短临预报
+        </div>
+        <div class="right">
+        </div>
+    </header>
+    <section>
+
+        <div class="wrap">
+            <div class="top">
+                <p><img src="../../../img/dingwei.png" alt="" srcset=""/><span id="address">深圳市南山区桃源街道珠光创新科技园</span></p>
+                <p>未来两小时降水(ml)</p>
+            </div>
+            <div id="main" class="main" style="width: 100%;height:64%;"></div>
+        </div>
+        <div id="container"></div>
+    </section>
+</body>
+<script src="../../../plugin/js/echarts.common.min.js"></script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.10&key=465c831c8323875841cda920ae24fd7b"></script>
+<script type="text/javascript" src="../../../js/jquery.js"></script>
+<script type="text/javascript" src="../../../js/tool.js"></script>
+<script type="text/javascript" src="js/dlyb.js"></script>
+
+</html>

@@ -1,0 +1,94 @@
+@rem: 750/16rem;
+@import '../../../../css/reset.less';
+body {
+  background-color: #eeeeee;
+  header {
+    height: 88 / @rem;
+    background-color: #1c9ee1;
+    div {
+      line-height: 88 / @rem;
+      &.left {
+        padding-left: 35 / @rem;
+        width: 20%;
+        float: left;
+        img {
+          width: 19 / @rem;
+          height: 35 / @rem;
+        }
+      }
+      &.center {
+        margin-left: -35 / @rem;
+        float: left;
+        width: 60%;
+        font-size: 32 / @rem;
+        text-align: center;
+        color: #ffffff;
+      }
+      &.right {
+        float: right;
+        font-size: 32 / @rem;
+        color: #ffffff;
+        margin-right: 35 / @rem;
+      }
+    }
+    a {
+      overflow: hidden;
+    }
+  }
+  section {
+    margin-top: 20 / @rem;
+    ul {
+      li {
+        background-color: #ffffff;
+        padding: 0 35 / @rem;
+        &:last-of-type {
+          p {
+            border-bottom: none;
+          }
+        }
+        p {
+          overflow: hidden;
+          height: 87 / @rem;
+          line-height: 87 / @rem;
+          border-bottom: solid 1px #eeeeee;
+          font-size: 28 / @rem;
+          color: #666666;
+          input {
+            font-size: 28 / @rem;
+            color: #999999;
+            text-align: right;
+            float: right;
+            height: 87 / @rem;
+            line-height: 87 / @rem;
+            outline: none;
+            &::placeholder {
+              font-size: 28 / @rem;
+              color: #999999;
+            }
+          }
+        }
+      }
+    }
+  }
+  .mask {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 101;
+    // background: black;
+    .msg {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 28 / @rem;
+      background: #d3d3d3;
+      padding: 10 / @rem 20 / @rem;
+      border-radius: 10 / @rem;
+      color: #333333;
+    }
+  }
+}

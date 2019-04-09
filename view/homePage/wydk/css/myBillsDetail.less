@@ -1,0 +1,93 @@
+@rem: 750/16rem;
+@import "../../../../css/reset.less";
+
+html,
+body {
+  overflow: hidden;
+  header {
+    background: -webkit-linear-gradient(30deg, #1b9de1, #38bbf0, #4dc5f4);
+    overflow: hidden;
+    height: 88 / @rem;
+    line-height: 88 / @rem;
+    .left {
+      float: left;
+      width: 10%;
+      padding-left: 35 / @rem;
+      img {
+        width: 19 / @rem;
+        height: 35 / @rem;
+      }
+    }
+
+    .center {
+      float: left;
+      width: 80%;
+      margin-left: -35 / @rem;
+      text-align: center;
+      color: #ffffff;
+      font-size: 32 / @rem;
+    }
+  }
+
+  #wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 88 / @rem;
+    bottom: 0 / @rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    #scroller {
+      padding-bottom: 113 / @rem;
+      section {
+        ul {
+          padding: 0 35 / @rem;
+          li {
+            // height: 70/@rem;
+            padding: 30 / @rem 0;
+            border-bottom: solid #eeeeee 1px;
+            .billsTop {
+              overflow: hidden;
+              span {
+                &:first-of-type {
+                  float: left;
+                  font-size: 32 / @rem;
+                  color: #333333;
+                }
+                &:last-of-type {
+                  float: right;
+                }
+                font-size: 26 / @rem;
+                &.status1 {
+                  color: #e62b2b;
+                }
+                &.status2 {
+                  color: #20a0e3;
+                }
+              }
+            }
+            .billsBottom {
+              padding-top: 25 / @rem;
+              overflow: hidden;
+              color: #666666;
+              span {
+                font-size: 24 / @rem;
+                &:first-of-type {
+                  float: left;
+                }
+                &:last-of-type {
+                  float: right;
+                  img {
+                    vertical-align: -13%;
+                    width: 24 / @rem;
+                    height: 24 / @rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

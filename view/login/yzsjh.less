@@ -1,0 +1,124 @@
+@rem: 750/16rem;
+@import "../../css/reset.less";
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+header {
+  width: 750 / @rem;
+  height: 88 / @rem;
+  background: linear-gradient(
+    29deg,
+    rgba(27, 157, 225, 1),
+    rgba(63, 190, 241, 1)
+  );
+  div {
+    float: left;
+    height: 88 / @rem;
+    &.left {
+      width: 75 / @rem;
+      line-height: 88 / @rem;
+      a {
+        display: inline-block;
+        .sweep {
+          width: 75 / @rem;
+          margin-left: 35 / @rem;
+          img {
+            width: 19 / @rem;
+            height: 35 / @rem;
+          }
+        }
+      }
+    }
+    &.center {
+      text-align: center;
+      width: 600 / @rem;
+      h1 {
+        width: 600 / @rem;
+        color: #ffffff;
+        font-size: 30 / @rem;
+        line-height: 88 / @rem;
+        text-align: center;
+      }
+    }
+    &.right {
+      float: right;
+    }
+  }
+}
+section {
+  .center {
+    height: 324 / @rem;
+    position: relative;
+    h1 {
+      position: absolute;
+      left: 50%;
+      top: 180 / @rem;
+      transform: translateX(-50%);
+      img {
+        width: 58 / @rem;
+        height: 113 / @rem;
+        vertical-align: middle;
+      }
+      span {
+        padding-left: 20 / @rem;
+        font-size: 32 / @rem;
+        color: #333333;
+        font-weight: 500;
+        letter-spacing: 10 / @rem;
+      }
+    }
+  }
+  .tel {
+    position: relative;
+    height: 30 / @rem;
+    p {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 26 / @rem;
+      color: #666666;
+      white-space: nowrap;
+      letter-spacing: 4 / @rem;
+      span {
+        padding: 0 4 / @rem;
+        &:nth-last-child(1) {
+          color: #999999;
+          padding: 0;
+        }
+        &:nth-last-child(2) {
+          color: #999999;
+          padding: 20 / @rem 0;
+        }
+      }
+    }
+  }
+  .input {
+    height: 165 / @rem;
+    font-size: 0;
+    padding-top: 52 / @rem;
+    text-align: center;
+    input {
+      text-align: center;
+      font-size: 46 / @rem;
+      width: 80 / @rem;
+      height: 80 / @rem;
+      border: solid 2 / @rem #d3d3d3;
+      color: #1d9fe2;
+      margin-left: 15 / @rem;
+      &:first-child {
+        margin-left: 0;
+      }
+      // border-right: none;
+      // &:first-of-type {
+      //   border-radius: 5 / @rem 0 0 5 / @rem;
+      // }
+      // &:last-of-type {
+      //   border-right: solid 2 / @rem #d3d3d3;
+      //   border-radius: 0 5 / @rem 5 / @rem 0;
+      // }
+    }
+  }
+}

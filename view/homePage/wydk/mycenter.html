@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>悦农通</title>
+    <link rel="Shortcut Icon" href="../../../img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/mycenter.css">
+    <script>
+        (function () {
+            var width = document.documentElement.clientWidth;
+            var style = document.createElement("style");
+            style.innerHTML = "html{font-size: " + width / 16 + "px !important;}";
+            document.head.appendChild(style);
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="headerTop">
+            <div class="left">
+                <a href="#" onclick="history.back(-1);">
+                    <img src="../../../img/return.png" alt="jt" />
+                </a>
+            </div>
+            <div class="center">
+                用户中心
+            </div>
+            <div class="right">
+                <img src="../../../img/kefu.png" alt="kf" />
+            </div>
+        </div>
+        <div class="headerBottom">
+            <div class="topLeft">
+                <div class="topLeftlt">
+                    <img id="userImg" src="" onerror="javascript:this.src='../../../img/60logo.png'" alt />
+                </div>
+                <div class="topLeftrt">
+                    <p id="user_name">Tenderness`</p>
+                    <img id="rzbs" src="../../../img/rznh.png" alt="renzheng" />
+                </div>
+            </div>
+            <div style="display: none;" class="topRight">
+                <!-- <canvas class="center_process" width="150px" height="150px"></canvas> -->
+                <canvas class="canvas" id="canvas"></canvas>
+                <div class="processInner">
+                    <div id="yy">100000￥</div>
+                    <div>总额度</div>
+                </div>
+                <p id="ss">可用额度:￥89432</p>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="list" class="list">
+            <ul>
+                <li data-id="jcxx">
+                    <span><img src="../../../img/113.png" alt /></span>
+                    <span>基础信息</span>
+                    <span><img src="../../../img/arrow-right-gray.png" alt /></span>
+                </li>
+                <li data-id="smrz">
+                    <span><img src="../../../img/114.png" alt /></span>
+                    <span>实名认证</span>
+                    <span><a id="rz"></a><img src="../../../img/arrow-right-gray.png" alt /></span>
+                </li>
+                <li style="display:none;" data-id="#">
+                    <span><img src="../../../img/115.png" alt /></span>
+                    <span>安全中心</span>
+                    <span><img src="../../../img/arrow-right-gray.png" alt /></span>
+                </li>
+                <li style="display:none;" data-id="address">
+                    <span><img src="../../../img/120.png" alt /></span>
+                    <span>收件地址管理</span>
+                    <span><img src="../../../img/arrow-right-gray.png" alt /></span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/tool.js"></script>
+<script src="js/mycenter.js"></script>
+
+</html>

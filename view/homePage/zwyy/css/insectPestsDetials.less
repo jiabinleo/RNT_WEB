@@ -1,0 +1,183 @@
+@rem: 750/16rem;
+@import "../../../../css/reset.less";
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+header {
+  width: 750 / @rem;
+  height: 88 / @rem;
+  background: #1c9ee1;
+  overflow: hidden;
+  div {
+    float: left;
+    height: 88 / @rem;
+    &.left {
+      width: 75 / @rem;
+      line-height: 88 / @rem;
+      a {
+        display: inline-block;
+        .sweep {
+          width: 75 / @rem;
+          margin-left: 35 / @rem;
+          img {
+            width: 19 / @rem;
+            height: 35 / @rem;
+          }
+        }
+      }
+    }
+    &.center {
+      text-align: center;
+      width: 600 / @rem;
+      h1 {
+        width: 600 / @rem;
+        color: #ffffff;
+        font-size: 30 / @rem;
+        line-height: 88 / @rem;
+        text-align: center;
+        height: 88 / @rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        letter-spacing: 0px;
+      }
+    }
+  }
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 88 / @rem;
+  bottom: 0 / @rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  #scroller {
+    transition: 0s;
+    overflow: hidden;
+    width: 750 * 4 / @rem;
+    section {
+      width: 750 / @rem;
+      float: left;
+      .banner {
+        .swiper-container {
+          .swiper-wrapper {
+            .swiper-slide {
+              position: relative;
+              width: 750 / @rem;
+              height: 385 / @rem;
+              overflow: hidden;
+              img {
+                width: 100%;
+              }
+              .banner-msg {
+                position: absolute;
+                z-index: 666;
+                bottom: 20 / @rem;
+                right: 20 / @rem;
+                span {
+                  font-size: 22 / @rem;
+                  border-radius: 50%;
+                  color: #ffffff;
+                  line-height: 40 / @rem;
+                  background: RGBA(0, 0, 0, 0.3);
+                  padding: 10 / @rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .content {
+        background-color: #ffffff;
+        padding: 0 35 / @rem;
+        margin-top: -4 / @rem;
+        .content-title {
+          height: 86 / @rem;
+          line-height: 86 / @rem;
+          position: relative;
+          .blue-line {
+            position: absolute;
+            left: -35 / @rem;
+            top: 36 / @rem;
+            width: 0 / @rem;
+            height: 0 / @rem;
+            padding: 13 / @rem 2 / @rem;
+            background-color: #1d9fe2;
+          }
+          .title {
+            border-bottom: solid 2 / @rem #eeeeee;
+            span {
+              font-size: 28 / @rem;
+              color: #333333;
+              font-weight: 500;
+              &:last-of-type {
+                float: right;
+                padding: 0 / @rem 30 / @rem;
+                img {
+                  width: 12 / @rem;
+                  height: 22 / @rem;
+                  vertical-align: middle;
+                }
+              }
+            }
+          }
+        }
+        ul {
+          font-size: 26 / @rem;
+          &.content-text-top {
+            li {
+              height: 85 / @rem;
+              line-height: 85 / @rem;
+              border-bottom: solid 2 / @rem #eeeeee;
+              span {
+                &.left {
+                  float: left;
+                  color: #666666;
+                }
+                &.right {
+                  float: right;
+                  color: #999999;
+                }
+              }
+            }
+          }
+          &.content-text-bottom {
+            li {
+              padding: 30 / @rem 0;
+              border-bottom: solid 2 / @rem #eeeeee;
+              &:last-of-type {
+                border-bottom: none;
+              }
+              p {
+                color: #666666;
+                &:last-of-type {
+                  line-height: 40 / @rem;
+                  padding-top: 30 / @rem;
+                  color: #999999;
+                }
+              }
+            }
+          }
+        }
+      }
+      .jsfwContent {
+        padding: 20 / @rem 35 / @rem;
+        p {
+          font-size: 28 / @rem;
+          line-height: 40 / @rem;
+        }
+      }
+    }
+  }
+  .iScrollVerticalScrollbar {
+    .iScrollIndicator {
+      opacity: 0;
+    }
+  }
+}

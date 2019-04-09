@@ -1,0 +1,292 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  outline: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  overflow: hidden;
+}
+html header,
+body header {
+  background: -webkit-linear-gradient(30deg, #1b9de1, #38bbf0, #4dc5f4);
+  overflow: hidden;
+  height: 1.87733333rem;
+  line-height: 1.87733333rem;
+}
+html header .left,
+body header .left {
+  float: left;
+  width: 10%;
+  padding-left: 0.74666667rem;
+}
+html header .left img,
+body header .left img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+html header .center,
+body header .center {
+  float: left;
+  width: 80%;
+  margin-left: -0.74666667rem;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.68266667rem;
+}
+html menu,
+body menu {
+  overflow: hidden;
+}
+html menu div,
+body menu div {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  text-align: center;
+  font-size: 0.59733333rem;
+  border: solid 0.02133333rem #eeeeee;
+  line-height: 1.70666667rem;
+}
+html menu div.active span,
+body menu div.active span {
+  display: inline-block;
+  line-height: 1.70666667rem;
+  height: 1.70666667rem;
+  border-bottom: #1b9de1 solid 0.02133333rem;
+}
+html #wrapper,
+body #wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 3.584rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+html #wrapper #scroller,
+body #wrapper #scroller {
+  padding-bottom: 2.41066667rem;
+}
+html #wrapper #scroller section ul,
+body #wrapper #scroller section ul {
+  padding: 0 0.74666667rem;
+}
+html #wrapper #scroller section ul li,
+body #wrapper #scroller section ul li {
+  padding: 0.64rem 0;
+  border-bottom: solid #eeeeee 1px;
+}
+html #wrapper #scroller section ul li .billsTop,
+body #wrapper #scroller section ul li .billsTop {
+  overflow: hidden;
+}
+html #wrapper #scroller section ul li .billsTop span,
+body #wrapper #scroller section ul li .billsTop span {
+  font-size: 0.55466667rem;
+}
+html #wrapper #scroller section ul li .billsTop span:first-of-type,
+body #wrapper #scroller section ul li .billsTop span:first-of-type {
+  float: left;
+  font-size: 0.68266667rem;
+  color: #333333;
+}
+html #wrapper #scroller section ul li .billsTop span:last-of-type,
+body #wrapper #scroller section ul li .billsTop span:last-of-type {
+  float: right;
+}
+html #wrapper #scroller section ul li .billsTop span.status1,
+body #wrapper #scroller section ul li .billsTop span.status1 {
+  color: #e62b2b;
+}
+html #wrapper #scroller section ul li .billsTop span.status2,
+body #wrapper #scroller section ul li .billsTop span.status2 {
+  color: #20a0e3;
+}
+html #wrapper #scroller section ul li .billsBottom,
+body #wrapper #scroller section ul li .billsBottom {
+  padding-top: 0.53333333rem;
+  overflow: hidden;
+  color: #666666;
+}
+html #wrapper #scroller section ul li .billsBottom span,
+body #wrapper #scroller section ul li .billsBottom span {
+  font-size: 0.512rem;
+}
+html #wrapper #scroller section ul li .billsBottom span:first-of-type,
+body #wrapper #scroller section ul li .billsBottom span:first-of-type {
+  float: left;
+}
+html #wrapper #scroller section ul li .billsBottom span:last-of-type,
+body #wrapper #scroller section ul li .billsBottom span:last-of-type {
+  float: right;
+}
+html #wrapper #scroller section ul li .billsBottom span:last-of-type img,
+body #wrapper #scroller section ul li .billsBottom span:last-of-type img {
+  vertical-align: -13%;
+  width: 0.512rem;
+  height: 0.512rem;
+}
+html #wrapper #scroller .loadingTxt,
+body #wrapper #scroller .loadingTxt {
+  text-align: center;
+  font-size: 0.59733333rem;
+  line-height: 0.85333333rem;
+}

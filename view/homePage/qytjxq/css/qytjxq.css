@@ -1,0 +1,348 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  outline: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+header {
+  width: 16rem;
+  height: 1.87733333rem;
+  background: linear-gradient(29deg, #1b9de1, #3fbef1);
+  overflow: hidden;
+}
+header div {
+  float: left;
+  height: 1.87733333rem;
+}
+header div.left {
+  width: 1.6rem;
+  line-height: 1.87733333rem;
+}
+header div.left a {
+  display: inline-block;
+}
+header div.left a .sweep {
+  width: 1.6rem;
+  margin-left: 0.74666667rem;
+}
+header div.left a .sweep img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+header div.center {
+  text-align: center;
+  width: 12.8rem;
+}
+header div.center h1 {
+  width: 12.8rem;
+  color: #ffffff;
+  font-size: 0.64rem;
+  line-height: 1.87733333rem;
+  text-align: center;
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 1.87733333rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#wrapper #scroller {
+  transition: 0s;
+  overflow: hidden;
+  padding-bottom: 0.64rem;
+}
+#wrapper #scroller section {
+  width: 16rem;
+  float: left;
+}
+#wrapper #scroller section .banner {
+  padding: 0.74666667rem;
+}
+#wrapper #scroller section .banner .swiper-container {
+  border-radius: 0.21333333rem 0.21333333rem 0.32rem 0.32rem;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide {
+  position: relative;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide .banner-msg {
+  position: absolute;
+  z-index: 666;
+  bottom: 0.42666667rem;
+  right: 0.42666667rem;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide .banner-msg span {
+  font-size: 0.46933333rem;
+  border-radius: 50%;
+  color: #ffffff;
+  line-height: 0.85333333rem;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.21333333rem;
+}
+#wrapper #scroller section .content {
+  padding: 0 0.74666667rem;
+}
+#wrapper #scroller section .content h2 {
+  font-size: 0.59733333rem;
+  color: #333333;
+  border-bottom: solid 0.04266667rem #eeeeee;
+  line-height: 1.49333333rem;
+  font-weight: 700;
+}
+#wrapper #scroller section .content p.detial {
+  padding: 0.64rem 0;
+  font-size: 0.55466667rem;
+  color: #666666;
+  line-height: 0.64rem;
+}
+#wrapper #scroller section .content ul li {
+  border-bottom: solid 0.02133333rem #eeeeee;
+  padding-bottom: 0.21333333rem;
+}
+#wrapper #scroller section .content ul li:last-of-type {
+  border-bottom: none;
+}
+#wrapper #scroller section .content ul li .title {
+  padding: 0.64rem 0;
+  overflow: hidden;
+}
+#wrapper #scroller section .content ul li .title .userLogo {
+  float: left;
+  width: 1.92rem;
+  height: 1.92rem;
+  border-radius: 50%;
+}
+#wrapper #scroller section .content ul li .title .userLogo img {
+  width: 100%;
+}
+#wrapper #scroller section .content ul li .title .userMsg {
+  float: left;
+  padding: 0.17066667rem 0 0.17066667rem 0.42666667rem;
+}
+#wrapper #scroller section .content ul li .title .userMsg p {
+  line-height: 0.85333333rem;
+  padding: 0;
+  font-size: 0.55466667rem;
+  color: #666666;
+}
+#wrapper #scroller section .content ul li .title .userMsg p span {
+  font-size: 0.42666667rem;
+  padding: 0 0.128rem;
+  color: #ffffff;
+  background: linear-gradient(29deg, #1b9de1, #3fbef1);
+  border-radius: 5px;
+}
+#wrapper #scroller section .content ul li .text p {
+  font-size: 0.512rem;
+  color: #999999;
+  padding-bottom: 0.42666667rem;
+}
+#wrapper #scroller section .content ul li .count {
+  overflow: hidden;
+}
+#wrapper #scroller section .content ul li .count p {
+  float: left;
+  font-size: 0.512rem;
+  line-height: 0.768rem;
+}
+#wrapper #scroller section .content ul li .count p:last-of-type {
+  float: right;
+  font-weight: 500;
+  color: #666666;
+}
+#wrapper #scroller section .content ul li .count p img {
+  width: 0.55466667rem;
+  vertical-align: -0.08533333rem;
+}
+#wrapper #scroller section .content ul li .count p span {
+  color: #999999;
+  font-size: 0.46933333rem;
+  padding: 0 0.61866667rem 0 0.23466667rem;
+}
+#wrapper #scroller section .content ul li ul {
+  padding: 0.21333333rem 0;
+}
+#wrapper #scroller section .content ul li ul li {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+#wrapper #scroller section .content ul li ul li span {
+  font-size: 0.512rem;
+}
+#wrapper #scroller section .content ul li ul li span.name {
+  color: #666666;
+  font-weight: 500;
+}
+#wrapper #scroller section .content ul li ul li span.reply {
+  font-weight: 500;
+  color: #999999;
+}
+#wrapper .iScrollVerticalScrollbar .iScrollIndicator {
+  opacity: 0;
+}

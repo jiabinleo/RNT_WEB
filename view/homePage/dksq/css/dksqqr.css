@@ -1,0 +1,419 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  outline: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+header {
+  width: 100%;
+  height: 1.87733333rem;
+  background: linear-gradient(29deg, #1b9de1, #3fbef1);
+}
+header div {
+  float: left;
+  height: 1.87733333rem;
+}
+header div.left {
+  width: 2.98666667rem;
+  line-height: 1.87733333rem;
+}
+header div.left a {
+  display: inline-block;
+}
+header div.left a .sweep {
+  width: 1.6rem;
+  margin-left: 0.74666667rem;
+}
+header div.left a .sweep img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+header div.center {
+  text-align: center;
+  width: 10.02666667rem;
+}
+header div.center h1 {
+  color: #ffffff;
+  font-size: 0.64rem;
+  line-height: 1.87733333rem;
+  text-align: center;
+}
+header div.right {
+  width: 2.98666667rem;
+  float: right;
+  line-height: 1.87733333rem;
+  font-size: 0.59733333rem;
+  text-align: right;
+  padding-right: 0.74666667rem;
+  color: #ffffff;
+}
+.marquee {
+  position: relative;
+  height: 1.408rem;
+  background: #fff7ea;
+  font-size: 0.512rem;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: #e5be5b;
+  line-height: 1.408rem;
+  padding: 0 2.00533333rem 0 0.74666667rem;
+}
+.marquee .closeMarquee {
+  position: absolute;
+  right: 0.74666667rem;
+  top: 0;
+}
+.marquee .closeMarquee img {
+  width: 0.42666667rem;
+  height: 0.42666667rem;
+  margin: 0 0.128rem;
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 3.28533333rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#wrapper #scroller {
+  padding-bottom: 2.98666667rem;
+}
+#wrapper #scroller section .line {
+  width: 100%;
+  height: 0.42666667rem;
+}
+#wrapper #scroller section .forms1 {
+  background-color: #ffffff;
+  padding: 0 0.74666667rem;
+}
+#wrapper #scroller section .forms1 .optionCode {
+  display: none;
+}
+#wrapper #scroller section .forms1 .form_input {
+  height: 1.83466667rem;
+  border-bottom: solid 1px #eeeeee;
+}
+#wrapper #scroller section .forms1 .form_input .form_input_box {
+  height: 0.85333333rem;
+  padding-top: 0.49066667rem;
+}
+#wrapper #scroller section .forms1 .form_input .form_input_box .form_input_left {
+  float: left;
+  color: #666666;
+  line-height: 0.85333333rem;
+  font-size: 0.59733333rem;
+}
+#wrapper #scroller section .forms1 .form_input .form_input_box .form_input_left img {
+  margin-left: 0.21333333rem;
+  width: 0.64rem;
+  vertical-align: -0.128rem;
+}
+#wrapper #scroller section .forms1 .form_input .form_input_box .form_input_right {
+  color: #999999;
+  font-size: 0;
+  line-height: 0.85333333rem;
+  float: right;
+}
+#wrapper #scroller section .forms1 .form_input .form_input_box .form_input_right span {
+  font-size: 0.59733333rem;
+  height: 0.85333333rem;
+  width: 8.53333333rem;
+  text-align: right;
+  line-height: 0.85333333rem;
+  vertical-align: 0rem;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+#wrapper #scroller section .forms1 .form_input .form_input_box .form_input_right img {
+  vertical-align: sub;
+  margin-left: 0.32rem;
+  width: 0.29866667rem;
+  height: 0.55466667rem;
+}
+#wrapper #scroller section .forms1 .form_radius {
+  height: 1.83466667rem;
+  border-bottom: solid 1px #eeeeee;
+}
+#wrapper #scroller section .forms1 .form_radius .form_radius_box {
+  height: 0.85333333rem;
+  padding-top: 0.49066667rem;
+}
+#wrapper #scroller section .forms1 .form_radius .form_radius_box .form_radius_left {
+  float: left;
+  color: #666666;
+  line-height: 0.85333333rem;
+  font-size: 0.59733333rem;
+}
+#wrapper #scroller section .forms1 .form_radius .form_radius_box .form_radius_right {
+  color: #999999;
+  font-size: 0;
+  line-height: 0.85333333rem;
+  float: right;
+}
+#wrapper #scroller section .forms1 .form_radius .form_radius_box .form_radius_right span {
+  font-size: 0.59733333rem;
+  margin-left: 0.29866667rem;
+}
+#wrapper #scroller section .forms1 .form_radius .form_radius_box .form_radius_right span img {
+  margin-right: 0.08533333rem;
+  width: 0.46933333rem;
+  height: 0.49066667rem;
+}
+#wrapper #scroller section .forms1 .form_date {
+  height: 1.83466667rem;
+  border-bottom: solid 1px #eeeeee;
+}
+#wrapper #scroller section .forms1 .form_date.form_end {
+  border: none;
+}
+#wrapper #scroller section .forms1 .form_date .form_date_box {
+  height: 0.85333333rem;
+  padding-top: 0.49066667rem;
+}
+#wrapper #scroller section .forms1 .form_date .form_date_box .form_date_left {
+  float: left;
+  font-size: 0.59733333rem;
+  color: #666666;
+  line-height: 0.85333333rem;
+}
+#wrapper #scroller section .forms1 .form_date .form_date_box .form_date_right {
+  color: #999999;
+  font-size: 0;
+  line-height: 0.85333333rem;
+  float: right;
+}
+#wrapper #scroller section .forms1 .form_date .form_date_box .form_date_right span {
+  font-size: 0.59733333rem;
+}
+#wrapper #scroller section .forms1 .form_date .form_date_box .form_date_right img {
+  vertical-align: sub;
+  margin-left: 0.32rem;
+  width: 0.29866667rem;
+  height: 0.55466667rem;
+}
+footer {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+footer .insure_footer {
+  background-color: #ffffff;
+  padding: 0.64rem 0.74666667rem;
+}
+footer .insure_footer input {
+  background-color: #1c9ee1;
+  width: 14.50666667rem;
+  height: 1.77066667rem;
+  font-size: 0.59733333rem;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+.mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.2);
+}
+.mask .inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 13.01333333rem;
+  height: 10.21866667rem;
+  background: #fff;
+  box-shadow: 0rem 0.10666667rem 0.17066667rem 0rem rgba(30, 159, 227, 0.2);
+  border-radius: 0.21333333rem;
+  overflow: hidden;
+}
+.mask .inner .top {
+  width: 13.01333333rem;
+  height: 4.75733333rem;
+  background: #1e9fe3;
+  text-align: center;
+  line-height: 4.75733333rem;
+  color: #fff;
+}
+.mask .inner input {
+  width: 11.73333333rem;
+  height: 1.55733333rem;
+  margin: 0.64rem 0.64rem 0.21333333rem 0.64rem;
+  background: #20a4e4;
+  border-radius: 0.21333333rem;
+  font-size: 0.59733333rem;
+  color: #fff;
+}
+.mask .inner input:nth-of-type(2) {
+  background: #d3d3d3;
+}

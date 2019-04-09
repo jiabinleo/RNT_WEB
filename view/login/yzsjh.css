@@ -1,0 +1,262 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  outline: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+header {
+  width: 16rem;
+  height: 1.87733333rem;
+  background: linear-gradient(29deg, #1b9de1, #3fbef1);
+}
+header div {
+  float: left;
+  height: 1.87733333rem;
+}
+header div.left {
+  width: 1.6rem;
+  line-height: 1.87733333rem;
+}
+header div.left a {
+  display: inline-block;
+}
+header div.left a .sweep {
+  width: 1.6rem;
+  margin-left: 0.74666667rem;
+}
+header div.left a .sweep img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+header div.center {
+  text-align: center;
+  width: 12.8rem;
+}
+header div.center h1 {
+  width: 12.8rem;
+  color: #ffffff;
+  font-size: 0.64rem;
+  line-height: 1.87733333rem;
+  text-align: center;
+}
+header div.right {
+  float: right;
+}
+section .center {
+  height: 6.912rem;
+  position: relative;
+}
+section .center h1 {
+  position: absolute;
+  left: 50%;
+  top: 3.84rem;
+  transform: translateX(-50%);
+}
+section .center h1 img {
+  width: 1.23733333rem;
+  height: 2.41066667rem;
+  vertical-align: middle;
+}
+section .center h1 span {
+  padding-left: 0.42666667rem;
+  font-size: 0.68266667rem;
+  color: #333333;
+  font-weight: 500;
+  letter-spacing: 0.21333333rem;
+}
+section .tel {
+  position: relative;
+  height: 0.64rem;
+}
+section .tel p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.55466667rem;
+  color: #666666;
+  white-space: nowrap;
+  letter-spacing: 0.08533333rem;
+}
+section .tel p span {
+  padding: 0 0.08533333rem;
+}
+section .tel p span:nth-last-child(1) {
+  color: #999999;
+  padding: 0;
+}
+section .tel p span:nth-last-child(2) {
+  color: #999999;
+  padding: 0.42666667rem 0;
+}
+section .input {
+  height: 3.52rem;
+  font-size: 0;
+  padding-top: 1.10933333rem;
+  text-align: center;
+}
+section .input input {
+  text-align: center;
+  font-size: 0.98133333rem;
+  width: 1.70666667rem;
+  height: 1.70666667rem;
+  border: solid 0.04266667rem #d3d3d3;
+  color: #1d9fe2;
+  margin-left: 0.32rem;
+}
+section .input input:first-child {
+  margin-left: 0;
+}

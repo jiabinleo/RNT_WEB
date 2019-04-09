@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>悦农通</title>
+    <link rel="Shortcut Icon" href="../../../img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../plugin/css/mobiscroll.custom.min.css">
+    <link rel="stylesheet" href="../../../plugin/css/mobileSelect.css">
+    <link rel="stylesheet" href="css/grzl.css">
+    <script>
+        (function () {
+            var width = document.documentElement.clientWidth;
+            var style = document.createElement("style");
+            style.innerHTML = "html{font-size: " + width / 16 + "px !important;}";
+            document.head.appendChild(style);
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="#" onclick="history.back(-1);">
+            <div class="left">
+                <img src="../../../img/return.png" alt="jt" />
+            </div>
+        </a>
+        <div class="center">
+            个人资料
+        </div>
+        <div id="wc" class="right">
+            完成
+        </div>
+    </header>
+    <section>
+        <ul class="top">
+            <li>
+                <div class="user-logo">
+                    <div class="left">
+                        <p>头像</p>
+                    </div>
+                    <div class="right">
+                        <div class="userLogo">
+                            <img id="userLogo" src='' onerror="javascript:this.src='../../../img/45logo.png'" />
+                            <input id="fileImage" type="file" name="file[]" class="file" accept="JPG,PNG,jpg,png" />
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <div class="dataText">
+                    <div class="left">
+                        <p>昵称</p>
+                    </div>
+                    <div class="right">
+                        <input id="userName" class="right-text" type="text" value="" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dataText">
+                    <div class="left">
+                        <p>性别</p>
+                    </div>
+                    <div class="right">
+                        <div id="sex" class="right-text">
+                            <span><img data-status="1" src="../../../img/radio-no.png" alt="" />男</span>
+                            <span><img data-status="2" src="../../../img/radio-no.png" alt="" />女</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dataText">
+                    <div class="left">
+                        <p>微信号</p>
+                    </div>
+                    <div class="right">
+                        <input id="weiXin" class="right-text" type="text" name="" value="" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dataText">
+                    <div class="left">
+                        <p>所在区域</p>
+                    </div>
+                    <div class="right">
+                        <input id="areaId" class="right-text" type="text" name="" value="" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dataText">
+                    <div class="left">
+                        <p>详细地址</p>
+                    </div>
+                    <div class="right">
+                        <input id="address" class="right-text" type="text" name="" value="" />
+                    </div>
+                </div>
+            </li>
+            <li id="receiving">
+                <div class="dataText">
+                    <div class="left">
+                        <p>收件地址管理</p>
+                    </div>
+                    <div class="right">
+                        <input class="right-text" type="text" name="" value="" />
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="bottom">
+            <li>
+                <div class="dataText">
+                    <div class="left">
+                        <p>个性签名</p>
+                    </div>
+                    <div id="surplus" class="right surplus">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dataText dataTextP">
+                    <textarea class="sign" name="" id="sign" width="100%" placeholder="..."></textarea>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script type="text/javascript" src="../../../js/jquery.js"></script>
+    <script src="../../../plugin/js/exif.js"></script>
+    <script type="text/javascript" src="../../../plugin/js/mobiscroll.custom.min.js"></script>
+    <script type="text/javascript" src="../../../js/tool.js"></script>
+    <script src="js/citySelect.js"></script>
+    <script type="text/javascript" src="js/grzl.js"></script>
+</body>
+
+</html>

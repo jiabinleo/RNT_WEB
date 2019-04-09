@@ -1,0 +1,106 @@
+@rem: 750/16rem;
+@import '../../css/reset.less';
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+header {
+  width: 750 / @rem;
+  height: 88 / @rem;
+  background: linear-gradient(
+    29deg,
+    rgba(27, 157, 225, 1),
+    rgba(63, 190, 241, 1)
+  );
+  div {
+    float: left;
+    height: 88 / @rem;
+    &.left {
+      width: 75 / @rem;
+      line-height: 88 / @rem;
+      a {
+        display: inline-block;
+        .sweep {
+          width: 75 / @rem;
+          margin-left: 35 / @rem;
+          img {
+            width: 19 / @rem;
+            height: 35 / @rem;
+          }
+        }
+      }
+    }
+    &.center {
+      text-align: center;
+      width: 600 / @rem;
+      h1 {
+        width: 600 / @rem;
+        color: #ffffff;
+        font-size: 30 / @rem;
+        line-height: 88 / @rem;
+        text-align: center;
+      }
+    }
+    &.right {
+      float: right;
+    }
+  }
+}
+section {
+  padding: 0 55 / @rem;
+  div {
+    &.newPass {
+      margin-top: 50 / @rem;
+      input {
+        width: 604 / @rem;
+        height: 80 / @rem;
+        line-height: 80 / @rem;
+        border-radius: 10 / @rem;
+        border: solid 2 / @rem #d3d3d3;
+        font-size: 24 / @rem;
+        padding-left: 30 / @rem;
+        color: #999999;
+        &::placeholder {
+          color: #999999;
+        }
+      }
+    }
+  }
+  p {
+    font-size: 20 / @rem;
+    color: #666666;
+    line-height: 70 / @rem;
+    padding-left: 6 / @rem;
+  }
+  input[type="button"] {
+    width: 640 / @rem;
+    background-color: #34b8ef;
+    color: #ffffff;
+    font-size: 28 / @rem;
+    height: 80 / @rem;
+    border-radius: 10 / @rem;
+    margin-top: 30 / @rem;
+  }
+}
+.mask {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  .inner {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28 / @rem;
+    background: #d3d3d3;
+    padding: 10 / @rem 20 / @rem;
+    border-radius: 10 / @rem;
+    color: #333333;
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>悦农通</title>
+    <link rel="Shortcut Icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/login.css">
+    <style>
+        input:-webkit-autofill {
+          -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+          -webkit-text-fill-color: #999999 !important;
+        }
+    </style>
+    <script src="js/rem.js"></script>
+</head>
+
+<body>
+    <div id="bg" style="position: absolute;z-index: 9999;left: 0;top: 0;right: 0;bottom: 0;overflow: hidden;" class="bg">
+        <img style="width: 100vw;height: 100vh;" src="img/bootAnimation.png" alt="" />
+    </div>
+    <div class="wrap">
+        <h1>
+            <img src="img/logo.png" />
+        </h1>
+        <h2>
+            <img src="img/logo-text.png" />
+        </h2>
+        <div class="input">
+            <img src="img/signIn-username.png" />
+            <input name='username' id="username" class="username" type="text" placeholder="请输入手机号" />
+        </div>
+        <div class="input">
+            <img src="img/signIn-password.png" alt="" />
+            <input name='password' id="password" class="password" type="password" placeholder="密码" />
+        </div>
+        <div class="save">
+            <input id="button" type="button" value="登录" />
+        </div>
+        <div class="else">
+            <div class="top">
+                <div class="left">
+                    <p onclick="window.open('view/login/sjhzc.html?id=0','_self')">手机号快捷注册</p>
+                </div>
+                <div class="
+                        center">
+                    <span>其他方式登录</span>
+                </div>
+                <div class="right">
+                    <p onclick="window.open('view/login/sjhzc.html?id=1','_self')">忘记密码</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="else-login">
+                    <span><img src="img/signIn-wx.png" alt="" srcset="" /></span>
+                    <span id="QQLogin"><img src="img/signIn-qq.png"/></span>
+                    <span><img src="img/signIn-sina.png" alt="" srcset="" /></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="return" onclick="javascript:history.back(-1);return false;">
+        <img src="img/close-gray.png" alt="" srcset="" />
+    </div>
+    <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="1108009813" charset="utf-8"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="plugin/js/md5.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

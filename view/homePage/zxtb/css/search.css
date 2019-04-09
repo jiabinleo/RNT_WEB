@@ -1,0 +1,308 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  outline: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: 1.87733333rem;
+  line-height: 1.87733333rem;
+  background: linear-gradient(30deg, #1b9de1, #38bbf0, #4dc5f4);
+}
+header .left {
+  position: absolute;
+  left: 0.74666667rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12.672rem;
+  height: 1.19466667rem;
+  background: rgba(252, 255, 255, 0.4);
+  border-radius: 0.59733333rem;
+  overflow: hidden;
+}
+header .left .search {
+  position: absolute;
+  left: 0.42666667rem;
+  top: 50%;
+  margin-top: -0.96rem;
+  width: 0.64rem;
+  height: 0.64rem;
+}
+header .left .search img {
+  width: 100%;
+  height: 100%;
+}
+header .left input {
+  background: transparent;
+  position: absolute;
+  left: 1.06666667rem;
+  top: 0;
+  padding-left: 0.64rem;
+  line-height: 1.19466667rem;
+  width: 11.09333333rem;
+  font-size: 0.59733333rem;
+  color: #fff;
+}
+header .left input::placeholder {
+  font-size: 0.59733333rem;
+  color: #fff;
+}
+header .right {
+  position: absolute;
+  right: 0.74666667rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .right span {
+  vertical-align: middle;
+  font-size: 0.55466667rem;
+  color: #fff;
+}
+menu {
+  padding: 0.42666667rem 0.74666667rem;
+}
+menu p {
+  position: relative;
+  font-size: 0.59733333rem;
+  color: #333;
+  margin: 0.64rem 0;
+  padding-left: 0.85333333rem;
+}
+menu p::before {
+  position: absolute;
+  left: 0rem;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 0.512rem;
+  height: 0.576rem;
+  background: url(../../../../img/hot.png);
+  background-repeat: no-repeat;
+  background-size: 0.512rem 0.576rem;
+  vertical-align: middle;
+}
+menu ul {
+  overflow: hidden;
+  padding-bottom: 0.42666667rem;
+  border-bottom: solid 0.04266667rem #d3d3d3;
+}
+menu ul li {
+  box-sizing: border-box;
+  font-size: 0.512rem;
+  color: #666;
+  float: left;
+  width: 2.688rem;
+  height: 0.98133333rem;
+  text-align: center;
+  line-height: 0.98133333rem;
+  border: solid 0.04266667rem #d3d3d3;
+  border-radius: 0.21333333rem;
+  margin: 0.64rem 0.64rem 0 0;
+}
+menu ul li.active {
+  background: #35b8ef;
+  color: #fff;
+  border: none;
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 6.4rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#wrapper #scroller section {
+  padding-bottom: 2.98666667rem;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list {
+  padding: 0 0.74666667rem;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list li .top {
+  margin: 0.64rem 0;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list li .top img {
+  width: 100%;
+  border-radius: 0.21333333rem;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list li .bottom p {
+  font-size: 0.59733333rem;
+  color: #333;
+  line-height: 0.85333333rem;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list li .bottom p:last-of-type {
+  font-size: 0.512rem;
+  color: #999;
+  overflow: hidden;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list li .bottom p:last-of-type span {
+  float: left;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list li .bottom p:last-of-type span:last-of-type {
+  float: right;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list li .bottom p:last-of-type span:last-of-type a {
+  color: #f70101;
+  font-size: 0.72533333rem;
+}
+#wrapper #scroller section .supplyAndDemand .supplyAndDemand-list li .bottom p:last-of-type span:last-of-type a:last-of-type {
+  color: #666;
+  font-size: 0.68266667rem;
+}

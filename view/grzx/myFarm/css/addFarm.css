@@ -1,0 +1,310 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  outline: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.ljb-tip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+.ljb-tip span {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  padding: 0.42666667rem;
+  background: #999;
+  font-size: 0.59733333rem;
+  border-radius: 0.21333333rem;
+  color: #fff;
+}
+html,
+body {
+  background-color: #ffffff;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.87733333rem;
+  background: linear-gradient(29deg, #1b9de1, #3fbef1);
+}
+header div {
+  float: left;
+  height: 1.87733333rem;
+}
+header div.left {
+  width: 1.6rem;
+  line-height: 1.87733333rem;
+}
+header div.left a {
+  display: inline-block;
+}
+header div.left a .sweep {
+  width: 1.6rem;
+  margin-left: 0.74666667rem;
+}
+header div.left a .sweep img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+header div.center {
+  text-align: center;
+  width: 8.53333333rem;
+}
+header div.center h1 {
+  width: 12.8rem;
+  color: #ffffff;
+  font-size: 0.64rem;
+  line-height: 1.87733333rem;
+  text-align: center;
+}
+section {
+  margin-top: 1.87733333rem;
+}
+section ul {
+  background-color: #ffffff;
+  padding: 0 0.74666667rem 1.70666667rem;
+}
+section ul li {
+  height: 1.83466667rem;
+  font-size: 0.59733333rem;
+  color: #666666;
+  line-height: 1.83466667rem;
+  border-bottom: solid 0.04266667rem #eeeeee;
+  overflow: hidden;
+}
+section ul li:last-of-type {
+  border: none;
+}
+section ul li div {
+  float: left;
+}
+section ul li div.right {
+  float: right;
+  width: 60%;
+}
+section ul li div.right input {
+  float: right;
+  width: 100%;
+  text-align: right;
+  height: 1.83466667rem;
+  line-height: 1.83466667rem;
+  outline: none;
+  color: #999999;
+}
+section ul li div.right input::placeholder {
+  color: #999999;
+}
+section ul li input {
+  height: 1.83466667rem;
+  line-height: 1.83466667rem;
+  outline: none;
+  color: #999999;
+  width: 100%;
+}
+section .line {
+  height: 0.42666667rem;
+  background-color: #eeeeee;
+}
+section .bottom {
+  background-color: #ffffff;
+}
+section .bottom p {
+  font-size: 0.59733333rem;
+  color: #666666;
+  line-height: 1.83466667rem;
+  border-bottom: solid 0.04266667rem #eeeeee;
+  padding: 0 0.74666667rem;
+}
+section .bottom .file ul {
+  margin-top: 0.64rem;
+  overflow: hidden;
+}
+section .bottom .file ul li {
+  position: relative;
+  float: left;
+  width: 3.84rem;
+  height: 3.84rem;
+  border: none;
+  padding: 0 0.64rem 0.256rem 0;
+}
+section .bottom .file ul li img {
+  width: 100%;
+  height: 100%;
+}
+section .bottom .file ul li input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3.84rem;
+  height: 3.84rem;
+  opacity: 0;
+}
+section .bottom .input {
+  width: 100%;
+}
+section .bottom .input input {
+  margin: 0 0.74666667rem 1.06666667rem 0.74666667rem;
+  width: 14.50666667rem;
+  height: 1.77066667rem;
+  font-size: 0.59733333rem;
+  color: #ffffff;
+  background-color: #27a6e6;
+  border-radius: 0.064rem;
+}

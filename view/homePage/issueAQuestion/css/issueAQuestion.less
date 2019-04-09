@@ -1,0 +1,460 @@
+@rem: 750/16rem;
+@import '../../../../css/reset.less';
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+header {
+  width: 750 / @rem;
+  height: 88 / @rem;
+  background: linear-gradient(
+    29deg,
+    rgba(27, 157, 225, 1),
+    rgba(63, 190, 241, 1)
+  );
+  overflow: hidden;
+  div {
+    float: left;
+    height: 88 / @rem;
+    &.left {
+      width: 75 / @rem;
+      line-height: 88 / @rem;
+      a {
+        display: inline-block;
+        .sweep {
+          width: 75 / @rem;
+          margin-left: 35 / @rem;
+          img {
+            width: 19 / @rem;
+            height: 35 / @rem;
+          }
+        }
+      }
+    }
+    &.center {
+      text-align: center;
+      width: 600 / @rem;
+      h1 {
+        width: 600 / @rem;
+        color: #ffffff;
+        font-size: 30 / @rem;
+        line-height: 88 / @rem;
+        text-align: center;
+      }
+    }
+  }
+}
+.line {
+  height: 20 / @rem;
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 108 / @rem;
+  bottom: 0 / @rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  #scroller {
+    transition: 0s;
+    overflow: hidden;
+    padding-bottom: 30 / @rem;
+    background-color: #ffffff;
+    section {
+      .aui-content-up {
+        form {
+          .aui-form-group {
+            .aui-form-input {
+              input {
+                //   border: none;
+                outline: none;
+                font-size: 26 / @rem;
+                color: #999999;
+                line-height: 70 / @rem;
+                font-weight: 500;
+                font-family: PingFang-SC-Medium;
+                &::placeholder {
+                  font-size: 26 / @rem;
+                  color: #999999;
+                }
+              }
+              textarea {
+                width: 100%;
+                outline: none;
+                // border: none;
+                font-size: 26 / @rem;
+                color: #999999;
+                font-weight: 500;
+                font-family: PingFang-SC-Medium;
+                &::placeholder {
+                  font-size: 26 / @rem;
+                  color: #999999;
+                }
+              }
+            }
+          }
+        }
+      }
+      .problemAndaddress {
+        overflow: hidden;
+        border-bottom: #eeeeee solid 1 / @rem;
+        p {
+          float: left;
+          color: #999999;
+          font-size: 26 / @rem;
+          height: 85 / @rem;
+          line-height: 85 / @rem;
+          &:last-of-type {
+            float: right;
+            span {
+              &:first-of-type {
+                margin-right: 20 / @rem;
+              }
+              img {
+                width: 14 / @rem;
+                height: 26 / @rem;
+                vertical-align: -3 / @rem;
+              }
+            }
+          }
+        }
+      }
+      .aui-btn-default {
+        margin-top: 80 / @rem;
+      }
+    }
+  }
+  .iScrollVerticalScrollbar {
+    .iScrollIndicator {
+      opacity: 0;
+    }
+  }
+}
+
+/* 
+*  author: AUI
+*  base.css
+*  http://azenui.com/
+*  http://a-ui.cn/
+*/
+
+/*up img */
+@rem: 750/16rem;
+.aui-content {
+  padding: 0 35 / @rem;
+}
+.aui-content-img-box {
+  .aui-photo {
+    // padding: 15 / @rem;
+    border-radius: 3 / @rem;
+    border: 1 / @rem dashed #b3cef9;
+    .aui-file-up {
+      position: relative;
+    }
+    .aui-up-section {
+      position: relative;
+      margin-right: 15 / @rem;
+    }
+  }
+}
+
+.aui-file-up .file {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0 / @rem;
+  left: 0 / @rem;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.aui-up-section {
+  .aui-close-up-img {
+    position: absolute;
+    top: 0 / @rem;
+    right: 0 / @rem;
+    display: none;
+    z-index: 10;
+    width: 20 / @rem;
+    cursor: pointer;
+  }
+  .aui-up-span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    position: absolute;
+    top: 0 / @rem;
+    left: 0 / @rem;
+    z-index: 9;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1 / @rem solid #ddd;
+  }
+}
+
+.aui-up-section:hover {
+  border: 1 / @rem solid #27a6e6;
+}
+
+.aui-up-section:hover .aui-close-up-img {
+  display: block;
+}
+
+.aui-up-section:hover .aui-up-span {
+  visibility: visible;
+}
+
+.aui-photo .aui-to-up-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1 / @rem solid #ddd;
+}
+
+.loading {
+  border: 1 / @rem solid #d1d1d1;
+  background: url(../img/loading.gif) no-repeat center;
+  background-size: 20 / @rem;
+}
+
+.aui-up-clarity {
+  opacity: 0;
+}
+
+.aui-img-name-p {
+  display: block;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.aui-content-full {
+}
+
+.aui-up-img .aui-up-section {
+  width: 180 / @rem;
+  height: 180 / @rem;
+  margin: 10 / @rem;
+}
+
+.aui-content-img-box .aui-up-img .aui-file-up {
+  width: 180 / @rem;
+  height: 180 / @rem;
+  margin: 10 / @rem;
+}
+
+.aui-file-up .add-img {
+  display: block;
+  width: 180 / @rem;
+  height: 180 / @rem;
+  border: 1 / @rem dashed #ddd;
+  border-radius: 3 / @rem;
+}
+
+.img-aui-img-name-p {
+  display: none;
+}
+
+/*遮罩层样式*/
+.aui-mask {
+  z-index: 1000;
+  display: none;
+  position: fixed;
+  top: 0 / @rem;
+  left: 0 / @rem;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.aui-mask .aui-mask-content {
+  border-radius: 5 / @rem;
+  width: 340 / @rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -170 / @rem;
+  margin-top: -80 / @rem;
+  background: white;
+  height: 150 / @rem;
+  text-align: center;
+  .aui-check-text {
+    height: 45 / @rem;
+    line-height: 45 / @rem;
+    position: absolute;
+    bottom: 0 / @rem;
+    left: 0 / @rem;
+    width: 100%;
+    span {
+      margin-top: -1 / @rem;
+      width: 49.5%;
+      display: block;
+      float: left;
+      text-align: center;
+      color: #f45858;
+      font-size: 14 / @rem;
+    }
+  }
+}
+
+.aui-mask .aui-mask-content .aui-delete-text {
+  color: #555;
+  height: 105 / @rem;
+  line-height: 105 / @rem;
+  font-size: 14 / @rem;
+  border-bottom: 1 / @rem solid #d1d1d1;
+}
+
+.aui-mask-content {
+}
+
+.aui-check-text .aui-delete {
+  border-right: 1 / @rem solid #d1d1d1;
+}
+
+/* aui-content-up */
+.aui-content-up {
+  background: #fff;
+  border: 1 / @rem solid #eaeaea;
+  border-radius: 2 / @rem;
+  // padding: 0 35 / @rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.aui-content-up-form h2 {
+  color: #f45858;
+  border-bottom: 2 / @rem solid #27a6e6;
+  font-size: 16 / @rem;
+  font-weight: normal;
+  height: 35 / @rem;
+  line-height: 35 / @rem;
+}
+
+.aui-form-group {
+  // padding-top: 20 / @rem;
+}
+
+.aui-label-control {
+  display: inline-block;
+  width: 80 / @rem;
+  margin-bottom: 5 / @rem;
+  min-width: 80 / @rem;
+  padding-right: 10 / @rem;
+  line-height: 35 / @rem;
+  position: relative;
+  float: left;
+  text-align: right;
+}
+
+.aui-form-input {
+  //   width: 470 / @rem;
+  width: 100%;
+  position: relative;
+  textarea {
+    width: 100%;
+  }
+}
+
+.aui-form-control {
+  display: block;
+  width: 100%;
+  padding: 8 / @rem 16 / @rem;
+  font-size: 13 / @rem;
+  line-height: 1.42857143;
+  color: #999;
+  background-color: #fff;
+  border-radius: 4 / @rem;
+  -webkit-transition: border-color ease-in-out 0.15s,
+    box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  height: 90 / @rem;
+  resize: none;
+  border: 1 / @rem solid #b3cef9;
+}
+
+.aui-label-control em {
+  color: #f45858;
+}
+
+.aui-form-control-two {
+  display: block;
+  width: 100%;
+  height: 36 / @rem;
+  padding: 8 / @rem 16 / @rem;
+  font-size: 12 / @rem;
+  line-height: 1.42857143;
+  color: #222;
+  background-color: #fff;
+  border: 1 / @rem solid #b3cef9;
+  border-radius: 4 / @rem;
+  -webkit-transition: border-color ease-in-out 0.15s,
+    box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.aui-label-control span {
+  display: block;
+  font-size: 12 / @rem;
+  color: #999;
+  position: absolute;
+  top: 20 / @rem;
+  right: 23 / @rem;
+}
+.aui-btn {
+  width: 680 / @rem;
+  height: 83 / @rem;
+  line-height: 83 / @rem;
+  color: #ffffff;
+  font-size: 28 / @rem;
+  font-weight: 500;
+  background: rgba(39, 166, 230, 1);
+  border-radius: 8 / @rem;
+  border: none;
+  font-size: 500;
+}
+.aui-form-group-text h3 {
+  font-size: 13 / @rem;
+  padding-bottom: 4 / @rem;
+}
+
+.aui-form-group-text p {
+  font-size: 12 / @rem;
+  color: #999;
+}
+
+.aui-form-input .tips {
+  position: absolute;
+  right: -160 / @rem;
+  top: 8 / @rem;
+  color: #999;
+}
+
+.aui-form-input .tips_true {
+  color: #08c708;
+}
+
+.aui-form-input .tips_false {
+  color: #f45858;
+}

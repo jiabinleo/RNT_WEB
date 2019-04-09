@@ -1,0 +1,115 @@
+@rem: 750/16rem;
+@import '../../css/reset.less';
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+header {
+  width: 750 / @rem;
+  height: 88 / @rem;
+  background: linear-gradient(
+    29deg,
+    rgba(27, 157, 225, 1),
+    rgba(63, 190, 241, 1)
+  );
+  div {
+    float: left;
+    height: 88 / @rem;
+    &.left {
+      width: 75 / @rem;
+      line-height: 88 / @rem;
+      a {
+        display: inline-block;
+        .sweep {
+          width: 75 / @rem;
+          margin-left: 35 / @rem;
+          img {
+            width: 19 / @rem;
+            height: 35 / @rem;
+          }
+        }
+      }
+    }
+    &.center {
+      text-align: center;
+      width: 600 / @rem;
+      h1 {
+        width: 600 / @rem;
+        color: #ffffff;
+        font-size: 30 / @rem;
+        line-height: 88 / @rem;
+        text-align: center;
+      }
+    }
+    &.right {
+      float: right;
+    }
+  }
+}
+section {
+  h1 {
+    text-align: center;
+    padding-top: 79 / @rem;
+    img {
+      width: 169 / @rem;
+      height: 171 / @rem;
+    }
+  }
+  .phone {
+    margin: 50 / @rem 55 / @rem 0 55 / @rem;
+    border: solid 2 / @rem #d3d3d3;
+    width: 630 / @rem;
+    height: 82 / @rem;
+    padding-left: 10 / @rem;
+    border-radius: 10 / @rem;
+    img {
+      width: 40 / @rem;
+      height: 40 / @rem;
+      vertical-align: -10 / @rem;
+    }
+    input {
+      width: 500 / @rem;
+      height: 80 / @rem;
+      font-size: 24 / @rem;
+      color: #999999;
+      line-height: 80 / @rem;
+      &::placeholder {
+        color: #999999;
+      }
+    }
+  }
+  p {
+    padding: 0 55 / @rem;
+    font-size: 24 / @rem;
+    line-height: 60 / @rem;
+    height: 60 / @rem;
+    text-align: center;
+  }
+  .save {
+    width: 640 / @rem;
+    margin: 0 55 / @rem;
+    input {
+      box-sizing: content-box;
+      width: 640 / @rem;
+      height: 80 / @rem;
+      font-size: 28 / @rem;
+      font-weight: bold;
+      color: #ffffff;
+      background: rgba(52, 184, 239, 1);
+      border-radius: 10 / @rem;
+    }
+  }
+  .read {
+    p {
+      color: #333333;
+      font-size: 20 / @rem;
+      line-height: 80 / @rem;
+      text-align: center;
+      a {
+        color: #34b8ef;
+      }
+    }
+  }
+}

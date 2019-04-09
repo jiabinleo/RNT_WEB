@@ -1,0 +1,402 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  outline: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  overflow: hidden;
+}
+header {
+  height: 1.87733333rem;
+  background: #1c9ee1;
+}
+header div {
+  float: left;
+  height: 1.87733333rem;
+}
+header div.left {
+  width: 2.24rem;
+  line-height: 1.87733333rem;
+}
+header div.left a .jt {
+  width: 0.34133333rem;
+  height: 0.68266667rem;
+  margin-left: 0.74666667rem;
+}
+header div.left a .jt img {
+  width: 100%;
+}
+header div.center {
+  position: relative;
+  background: #71ccf3;
+  margin-top: 0.34133333rem;
+  width: 11.52rem;
+  height: 1.19466667rem;
+  line-height: 1.87733333rem;
+  border-radius: 0.64rem;
+}
+header div.center img {
+  position: absolute;
+  left: 0.74666667rem;
+  top: 0.29866667rem;
+  width: 0.64rem;
+  height: 0.64rem;
+}
+header div.center input {
+  position: absolute;
+  left: 2.02666667rem;
+  top: 0rem;
+  height: 1.19466667rem;
+  background: #71ccf3;
+  width: 8.53333333rem;
+  padding: 0;
+  border: 0;
+  font-size: 0.512rem;
+  outline: none;
+  color: #ffffff;
+}
+header div.center input::placeholder {
+  color: #ffffff;
+  font-size: 0.512rem;
+}
+header div.center input::placeholder {
+  color: #ffffff;
+  font-size: 0.512rem;
+}
+header div.center input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #ffffff;
+  font-size: 0.512rem;
+}
+header div.center input::-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ffffff;
+  font-size: 0.512rem;
+}
+header div.center input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ffffff;
+  font-size: 0.512rem;
+}
+header div.center input::-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #ffffff;
+  font-size: 0.512rem;
+}
+header div.right {
+  width: 2.24rem;
+  line-height: 1.87733333rem;
+  position: relative;
+}
+header div.right .shop {
+  margin-left: 0.64rem;
+  width: 0.91733333rem;
+  height: 0.85333333rem;
+}
+header div.right .shop img {
+  width: 100%;
+}
+header div.right .shop .message {
+  position: absolute;
+  right: 0.34133333rem;
+  top: 0.42666667rem;
+  width: 1.06666667rem;
+  height: 0.768rem;
+  text-align: center;
+  background-image: url("../../../../img/bg-msg-read.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+header div.right .shop .message span {
+  position: absolute;
+  width: 1.06666667rem;
+  height: 0.768rem;
+  left: 0rem;
+  top: -0.68266667rem;
+  font-size: 0.34133333rem;
+  color: #ffffff;
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 1.87733333rem;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#wrapper .iScrollVerticalScrollbar {
+  display: none;
+}
+#wrapper #scroller {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+#wrapper #scroller section {
+  overflow: hidden;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+#wrapper #scroller section menu {
+  padding: 0.64rem 0;
+}
+#wrapper #scroller section menu .swiper-menu .swiper-wrapper div {
+  text-align: center;
+}
+#wrapper #scroller section menu .swiper-menu .swiper-wrapper div img {
+  width: 1.87733333rem;
+  height: 1.87733333rem;
+}
+#wrapper #scroller section menu .swiper-menu .swiper-wrapper div p {
+  font-size: 0.512rem;
+  line-height: 0.98133333rem;
+  color: #333;
+}
+#wrapper #scroller section .line {
+  height: 0.88533333rem;
+  background-color: #eeeeee;
+}
+#wrapper #scroller section .recommend {
+  background-color: #eeeeee;
+  position: relative;
+}
+#wrapper #scroller section .recommend ul {
+  overflow: hidden;
+}
+#wrapper #scroller section .recommend ul li {
+  float: left;
+  width: 7.89333333rem;
+  margin-left: 0.21333333rem;
+  margin-bottom: 0.21333333rem;
+}
+#wrapper #scroller section .recommend ul li:nth-of-type(odd) {
+  margin-left: 0;
+}
+#wrapper #scroller section .recommend ul li a {
+  text-decoration: none;
+}
+#wrapper #scroller section .recommend ul li a .list {
+  background-color: #ffffff;
+  height: 12.37333333rem;
+}
+#wrapper #scroller section .recommend ul li a .list .pesticides {
+  width: 7.89333333rem;
+  height: 7.89333333rem;
+  position: relative;
+}
+#wrapper #scroller section .recommend ul li a .list .pesticides .shopping {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 4.26666667rem;
+  height: 5.33333333rem;
+  overflow: hidden;
+}
+#wrapper #scroller section .recommend ul li a .list .pesticides .shopping.prebig {
+  margin-left: -2.66666667rem;
+  width: 5.33333333rem;
+  height: 5.33333333rem;
+}
+#wrapper #scroller section .recommend ul li a .list .pesticides .shopping img {
+  width: 100%;
+}
+#wrapper #scroller section .recommend ul li a .list .presentation {
+  margin-top: 0.32rem;
+  padding: 0 0.74666667rem;
+}
+#wrapper #scroller section .recommend ul li a .list .presentation p {
+  font-size: 0.46933333rem;
+  line-height: 0.68266667rem;
+  color: #333333;
+  height: 2.13333333rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  letter-spacing: 0px;
+}
+#wrapper #scroller section .recommend ul li a .list .presentation p span img {
+  padding-right: 0.10666667rem;
+  width: 0.768rem;
+  height: 0.42666667rem;
+}
+#wrapper #scroller section .recommend ul li a .list .presentation .shop {
+  padding-top: 0.21333333rem;
+  font-size: 0.384rem;
+  color: #999999;
+}
+#wrapper #scroller section .recommend ul li a .list .price {
+  padding: 0.32rem 0.74666667rem;
+  color: #ff0000;
+  font-size: 0.59733333rem;
+}
+#wrapper #scroller section .recommend .recommendPesticides {
+  position: absolute;
+  top: -0.56533333rem;
+  left: 0;
+  z-index: 10;
+}
+#wrapper #scroller section .recommend .recommendPesticides img {
+  width: 3.92533333rem;
+  height: 1.13066667rem;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>悦农通</title>
+    <link rel="Shortcut Icon" href="../../../img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/insureInput.css">
+    <script>
+            (function () {
+                var width = document.documentElement.clientWidth;
+                var style = document.createElement("style");
+                style.innerHTML = "html{font-size: " + width / 16 + "px !important;}";
+                document.head.appendChild(style);
+            })();
+        </script>
+</head>
+
+<body>
+    <header>
+        <div id="historyBack" class="left">
+            <div id="sweep" class="sweep">
+                <img src="img/" alt="sweep"/>
+            </div>
+        </div>
+        <div class="center">
+            <h1 id="title">请修改名称</h1>
+        </div>
+        <div class="right">
+            <div class="alarm">
+            </div>
+        </div>
+    </header>
+    <section>
+        <input id="text" type="text" placeholder="请输入投保亩数" value="" autofocus="autofocus"/>
+    </section>
+</body>
+<script type="text/javascript" src="../../../js/jquery.js"></script>
+<script type="text/javascript" src="../../../js/tool.js"></script>
+<script type="text/javascript" src="../../../js/public.js"></script>
+<script type="text/javascript" src="js/insureInput.js"></script>
+
+</html>

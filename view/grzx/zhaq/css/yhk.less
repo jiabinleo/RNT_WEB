@@ -1,0 +1,123 @@
+@rem: 750/16rem;
+@import '../../../../css/reset.less';
+html {
+  overflow: hidden;
+}
+body {
+  background-color: #ffffff;
+  overflow: hidden;
+  header {
+    height: 88 / @rem;
+    background-color: #1c9ee1;
+    div {
+      line-height: 88 / @rem;
+      &.left {
+        padding-left: 35 / @rem;
+        width: 20%;
+        float: left;
+        img {
+          width: 19 / @rem;
+          height: 35 / @rem;
+        }
+      }
+      &.center {
+        margin-left: -35 / @rem;
+        float: left;
+        width: 60%;
+        font-size: 32 / @rem;
+        text-align: center;
+        color: #ffffff;
+      }
+      &.right {
+        width: 20%;
+        float: left;
+        text-align: right;
+        img {
+          margin-right: 35 / @rem;
+          width: 40 / @rem;
+          height: 40 / @rem;
+        }
+      }
+    }
+    a {
+      overflow: hidden;
+    }
+  }
+  menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.6);
+    .inner {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ffffff;
+      padding: 20 / @rem;
+      box-shadow: 4 / @rem 4 / @rem 20 / @rem rgba(0, 0, 0, 0.1);
+      border-radius: 8 / @rem;
+      p {
+        text-align: center;
+        font-size: 28 / @rem;
+        color: #666666;
+        line-height: 2;
+        input {
+          width: 50%;
+          text-align: center;
+          background: none;
+        }
+      }
+    }
+  }
+  #wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 90 / @rem;
+    bottom: 0 / @rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    #scroller {
+      padding-bottom: 100 / @rem;
+      section {
+        ul {
+          li {
+            padding: 5 / @rem 30 / @rem;
+            .bg {
+              position: relative;
+              height: 235 / @rem;
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+              span {
+                position: absolute;
+                color: #ffffff;
+                font-size: 42 / @rem;
+                &.left {
+                  top: 106 / @rem;
+                  left: 50 / @rem;
+                }
+                &.bankId {
+                  top: 98 / @rem;
+                  right: 50 / @rem;
+                }
+              }
+            }
+          }
+        }
+        .add {
+          margin: 0 auto;
+          width: 685 / @rem;
+          height: 185 / @rem;
+          background-image: url("../../../../img/addNewBank.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+}

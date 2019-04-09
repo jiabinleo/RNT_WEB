@@ -1,0 +1,215 @@
+@rem: 750/16rem;
+@import "../../../../css/reset.less";
+
+html {
+  overflow: hidden;
+}
+body {
+  background-color: #eeeeee;
+  overflow: hidden;
+  header {
+    height: 88 / @rem;
+    background-color: #1c9ee1;
+    div {
+      line-height: 88 / @rem;
+      &.left {
+        padding-left: 35 / @rem;
+        width: 20%;
+        float: left;
+        img {
+          width: 19 / @rem;
+          height: 35 / @rem;
+        }
+      }
+      &.center {
+        margin-left: -35 / @rem;
+        float: left;
+        width: 60%;
+        font-size: 32 / @rem;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+    a {
+      overflow: hidden;
+    }
+  }
+  menu {
+    background-color: #ffffff;
+    border-bottom: solid 2 / @rem #f2f2f2;
+    .swiper-menu {
+      .swiper-wrapper {
+        .swiper-slide {
+          text-align: center;
+          span {
+            font-size: 24 / @rem;
+            line-height: 80 / @rem;
+            color: #999999;
+          }
+          &.active {
+            span {
+              display: inline-block;
+              font-size: 24 / @rem;
+              line-height: 80 / @rem;
+              color: #22a3e5;
+              border-bottom: solid 2 / @rem #22a3e5;
+            }
+          }
+        }
+      }
+    }
+  }
+  #wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 190 / @rem;
+    bottom: 0 / @rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    #scroller {
+      // padding-bottom: 30 / @rem;
+      section {
+        padding-bottom: 0 / @rem;
+        .banner-wrap {
+          background-color: #ffffff;
+          .banner {
+            padding: 30 / @rem 0;
+            width: 680 / @rem;
+            .swiper-container {
+              overflow: inherit;
+              .swiper-wrapper {
+                .swiper-slide {
+                  width: 680 / @rem;
+                  .img-wrap {
+                    width: 100%;
+                    height: 361 / @rem;
+                    position: relative;
+                    .img-inner {
+                      border-radius: 8 / @rem;
+                      width: 670 / @rem;
+                      height: 361 / @rem;
+                      overflow: hidden;
+                      img {
+                        width: 100%;
+                        height: 100%;
+                      }
+                      .mask {
+                        position: absolute;
+                        bottom: 0 / @rem;
+                        left: 0;
+                        right: 10 / @rem;
+                        padding: 10 / @rem 30 / @rem;
+                        background: rgba(0, 0, 0, 0.5);
+                        border-radius: 0 0 8 / @rem 8 / @rem;
+                        overflow: hidden;
+                        p {
+                          color: #ffffff;
+                          &:first-of-type {
+                            font-size: 26 / @rem;
+                            line-height: 40 / @rem;
+                            height: 80 / @rem;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            overflow: hidden;
+                          }
+                          &:last-of-type {
+                            font-size: 22 / @rem;
+                            text-align: right;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .information-list {
+          margin-top: 20 / @rem;
+          padding: 0 35 / @rem;
+          background-color: #ffffff;
+          li {
+            &:last-of-type {
+              .information-list-text {
+                border-bottom: none;
+              }
+            }
+            .information-list-text {
+              overflow: hidden;
+              padding: 30 / @rem 0;
+              border-bottom: solid 1 / @rem #eeeeee;
+              div {
+                float: left;
+                &.left {
+                  width: 425 / @rem;
+                  height: 206 / @rem;
+                  p {
+                    &.list-title {
+                      color: #333333;
+                      font-size: 28 / @rem;
+                      line-height: 38 / @rem;
+                      font-weight: 700;
+                      margin-top: -5 / @rem;
+                      display: -webkit-box;
+                      -webkit-box-orient: vertical;
+                      -webkit-line-clamp: 1;
+                      overflow: hidden;
+                    }
+                    &.list-content {
+                      color: #999999;
+                      font-size: 24 / @rem;
+                      line-height: 40 / @rem;
+                      padding-top: 11 / @rem;
+                      min-height: 120 / @rem;
+                      display: -webkit-box;
+                      -webkit-box-orient: vertical;
+                      -webkit-line-clamp: 3;
+                      overflow: hidden;
+                    }
+                    &.list-time {
+                      color: #999999;
+                      font-size: 20 / @rem;
+                      overflow: hidden;
+                      padding-top: 11 / @rem;
+                      span {
+                        &:first-of-type {
+                          float: left;
+                        }
+                        &:last-of-type {
+                          float: right;
+                        }
+                      }
+                    }
+                  }
+                }
+                &.right {
+                  width: 206 / @rem;
+                  height: 206 / @rem;
+                  margin-left: 45 / @rem;
+                  overflow: hidden;
+                  border-radius: 10 / @rem;
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      p {
+        &.loadingTxt {
+          font-size: 28 / @rem;
+          text-align: center;
+          line-height: 60 / @rem;
+          margin-top: 20 / @rem;
+          color: #666666;
+        }
+      }
+    }
+  }
+}

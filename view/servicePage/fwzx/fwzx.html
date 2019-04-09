@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>悦农通</title>
+    <link rel="stylesheet" href="../../../css/swiper.3.4.2.min.css">
+    <link rel="stylesheet" href="css/fwzx.css">
+    <script>
+        (function () {
+            var width = document.documentElement.clientWidth;
+            var style = document.createElement("style");
+            style.innerHTML = "html{font-size: " + width / 16 + "px !important;}";
+            document.head.appendChild(style);
+        })();
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <!-- <a href="#" onclick="history.back(-1);return false;">
+            <div class="left">
+                <img src="../../../img/return.png" alt="jt"/>
+            </div>
+        </a> -->
+        <div class="center">
+            服务中心
+        </div>
+        <div class="left">
+        </div>
+    </header>
+    <menu id="menu" class="swiper-menu">
+        <div id="swiper_menu" class="swiper-wrapper">
+            <div class="active swiper-slide" ids="">
+                <span>全部问题</span>
+            </div>
+        </div>
+    </menu>
+    <section>
+        <h3><img src="../../../img/hot.png" alt="" /> 热门问题</h3>
+        <div id="hot" class="menus">
+        </div>
+        <h4>问题列表</h4>
+        <div class="list">
+        </div>
+    </section>
+    <div id="wrapper">
+        <div id="scroller">
+            <ul id="wtList">
+
+            </ul>
+        </div>
+        <div id="ljb-mask" style="position: absolute;top: 0;left: 0;bottom: 0;right: 0;z-index:9999;background: #fff;">
+            <img style="position: absolute;left: 50%;top: 10%;transform: translate(-50%, -50%);" src="../../../img/loading.gif" />
+        </div>
+    </div>
+    <footer>
+        <div class="foot"><a href="../../../index.html">
+                <div class="ft"><img src="../../../img/icon/tab_map.png" alt="" srcset="" /></div>
+                <p>首页</p>
+            </a></div>
+        <div class="foot"><a href="javascript:void(0)">
+                <div class="ft"><img src="../../../img/icon/tab_message_pre.png" alt="" srcset="" /></div>
+                <p>服务中心</p>
+            </a></div>
+        <div class="foot n">
+            <div class="ft"><img src="../../../img/icon/tab_set.png" alt="" srcset="" /></div>
+            <p>保单</p>
+        </div>
+        <div class="foot" id="center">
+            <a href="javascript:;">
+                <div class="ft"><img src="../../../img/icon/tab_more.png" alt="" srcset="" /></div>
+                <p>我</p>
+            </a>
+        </div>
+    </footer>
+    <div class="masked"></div>
+    <div class="personalCente">
+        <div class="personalCente_header">
+            <div class="user">
+                <div id="user_logo" class="user_logo"><img id="userImg" src='' onerror="javascript:this.src='../../../img/60logo.png'"
+                        alt="user" /></div>
+                <div id="user_name" class="user_name">未登录</div>
+                <div id="user_quit" class="user_quit"><img src="../../../img/exit.png" alt="" /></div>
+            </div>
+            <div id="user_personalized" class="user_personalized">
+                <p></p>
+            </div>
+        </div>
+        <div id="personalCente_content" class="personalCente_content">
+            <ul>
+                <li ids="sc">
+                    <div class="me">
+                        <div class="top">
+                            <span>我的收藏</span>
+                        </div>
+                        <p>喜欢的全在这里</p>
+                    </div>
+                </li>
+                <li ids="accountSecurity">
+                    <div class="me">
+                        <div class="top">
+                            <span>账号与安全</span>
+                        </div>
+                        <p>完善账号资料，保护账号安全</p>
+                    </div>
+                </li>
+                <li ids="grzl">
+                    <div class="me">
+                        <div class="top">
+                            <span>个人资料</span>
+                        </div>
+                        <p>完善账户资料，让别人更多的了解你</p>
+                    </div>
+                </li>
+                <li ids="myFarm">
+                    <div class="me">
+                        <div class="top">
+                            <span>我的农场</span>
+                        </div>
+                        <p>更好的管理自己的农场</p>
+                    </div>
+                </li>
+                <li ids="" style="display:none;">
+                    <div class="me">
+                        <div class="top">
+                            <span>设置</span>
+                        </div>
+                        <p>系统功能偏好设置</p>
+                    </div>
+                </li>
+                <li ids="gy">
+                    <div class="me">
+                        <div class="top">
+                            <span>关于</span>
+                        </div>
+                        <p>APP操作手册及疑问解答</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="../../../js/jquery.js"></script>
+    <script src="../../../js/swiper.3.4.2.min.js"></script>
+    <script type="text/javascript" src="../../../js/iscroll.js"></script>
+    <script type="text/javascript" src="../../../js/loaded_iscroll.js"></script>
+    <script src="../../../js/tool.js"></script>
+    <script src="js/fwzx.js"></script>
+</body>
+
+</html>

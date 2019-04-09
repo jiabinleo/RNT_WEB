@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0;">
+    <title>悦农通</title>
+    <link rel="Shortcut Icon" href="../../../img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <link rel="stylesheet" href="../../../plugin/css/mobiscroll.custom.min.css">
+    <link rel="stylesheet" href="../../../css/swiper.3.4.2.min.css">
+    <link rel="stylesheet" href="css/zhjc.css">
+    <script>
+        (function () {
+            var width = document.documentElement.clientWidth;
+            var style = document.createElement("style");
+            style.innerHTML = "html{font-size: " + width / 16 + "px !important;}";
+            document.head.appendChild(style);
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <a href="#" onclick="history.back(-1);">
+                <div class="sweep">
+                    <img src="../../../img/return.png" alt="sweep"/>
+                </div>
+            </a>
+        </div>
+        <div class="center">
+            灾害监测
+        </div>
+        <div class="right">
+        </div>
+    </header>
+    <menu class="container">
+        <div class="swiper-container swiper1">
+            <div id="swiper1_wrapper" class="swiper-wrapper">
+            </div>
+        </div>
+        <div class="swiper-container swiper2">
+            <div id="swiper2_wrapper" class="swiper-wrapper">
+            </div>
+        </div>
+    </menu>
+    <section>
+        <div class="wrap">
+        </div>
+        <div id="container"></div>
+    </section>
+    <div id="mask" class="mask">
+        <div class="inner">
+            <p class="mask-title">请选择开始结束时间</p>
+            <span class="mask-close" id="mask-close"><img src="../../../img/close-gray.png" alt/></span>
+            <div class="mask-time">
+                <input type="text" id="start" class="mbsc-comp" readonly="" placeholder="开始时间" value=""/>
+                <span>至</span>
+                <input type="text" id="end" class="mbsc-comp" readonly="" placeholder="结束时间" value=""/>
+                <img class="time1" src="../../../img/time.png" alt=""/>
+                <img class="time2" src="../../../img/time.png" alt=""/>
+            </div>
+            <input id="save" class="save" type="button" value="确认"/>
+        </div>
+    </div>
+</body>
+<script src="../../../plugin/js/echarts.common.min.js"></script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.10&key=465c831c8323875841cda920ae24fd7b"></script>
+<script type="text/javascript" src="../../../js/jquery.js"></script>
+<script type="text/javascript" src="../../../plugin/js/mobiscroll.custom.min.js"></script>
+<script src="../../../js/swiper.3.4.2.min.js"></script>
+<script type="text/javascript" src="../../../js/tool.js"></script>
+<script type="text/javascript" src="js/zhjc.js"></script>
+
+</html>

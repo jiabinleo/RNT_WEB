@@ -1,0 +1,64 @@
+@rem: 750/16rem;
+@import '../../../../css/reset.less';
+
+html,
+body {
+  height: 100%;
+  background-color: #eeeeee;
+}
+header {
+  width: 750 / @rem;
+  height: 88 / @rem;
+  background: #1c9ee1;
+  div {
+    float: left;
+    height: 88 / @rem;
+    &.left {
+      width: 75 / @rem;
+      line-height: 88 / @rem;
+      // a {
+        .sweep {
+          width: 75 / @rem;
+          margin-left: 35 / @rem;
+          img {
+            width: 19 / @rem;
+            height: 35 / @rem;
+          }
+        }
+      // }
+    }
+    &.center {
+      text-align: center;
+      width: 600 / @rem;
+      h1 {
+        width: 600 / @rem;
+        color: #ffffff;
+        font-size: 32 / @rem;
+        line-height: 88 / @rem;
+        text-align: center;
+      }
+    }
+    &.right {
+      float: right;
+      width: 75 / @rem;
+      line-height: 88 / @rem;
+      .alarm {
+        margin-right: 35 / @rem;
+        float: right;
+        width: 29 / @rem;
+        height: 35 / @rem;
+      }
+    }
+  }
+}
+section {
+  input {
+    width: 680 / @rem;
+    height: 80 / @rem;
+    padding: 0 35 / @rem;
+    line-height: 80 / @rem;
+    outline: none;
+    font-size: 28 / @rem;
+    color: #999999;
+  }
+}

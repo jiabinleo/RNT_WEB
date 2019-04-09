@@ -1,0 +1,104 @@
+@rem: 750/16rem;
+@import "../../../../css/reset.less";
+body {
+  background-color: #eeeeee;
+  header {
+    position: relative;
+    height: 88 / @rem;
+    background-color: #1c9ee1;
+    div {
+      line-height: 88 / @rem;
+      &.left {
+        padding-left: 35 / @rem;
+        width: 20%;
+        float: left;
+        img {
+          width: 19 / @rem;
+          height: 35 / @rem;
+        }
+      }
+      &.center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 32 / @rem;
+        color: #ffffff;
+      }
+    }
+  }
+  section {
+    padding: 20 / @rem;
+    ul {
+      background: #fff;
+      padding: 0 20 / @rem 20 / @rem 20 / @rem;
+      border-radius: 10 / @rem;
+      li {
+        padding: 20 / @rem 0;
+        border-bottom: solid 2 / @rem #eee;
+        &:last-of-type {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+        p {
+          font-size: 26 / @rem;
+          color: #333;
+        }
+        .bottom {
+          padding-top: 20 / @rem;
+          overflow: hidden;
+          font-size: 26 / @rem;
+          color: #999;
+          input {
+            float: left;
+            color: #999;
+            &::placeholder {
+              color: #999;
+            }
+          }
+          span {
+            color: #1c9ee1;
+            float: right;
+            padding-left: 10 / @rem;
+            text-align: right;
+            border-left: solid 2 / @rem #eee;
+            &.wait {
+              color: #999;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    margin: 35 / @rem;
+    input {
+      width: 100%;
+      line-height: 60 / @rem;
+      background: #1c9ee1;
+      color: #fff;
+      font-size: 28 / @rem;
+      border-radius: 10 / @rem;
+    }
+  }
+  .mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.1);
+    .msg {
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%, -50%);
+      color: #666;
+      background: #fff;
+      font-size: 26 / @rem;
+      padding: 20 / @rem;
+      border-radius: 10 / @rem;
+    }
+  }
+}

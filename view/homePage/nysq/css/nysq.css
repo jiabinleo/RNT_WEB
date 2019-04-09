@@ -1,0 +1,504 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  outline: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+.header-bg {
+  position: absolute;
+  width: 16rem;
+  height: 1.87733333rem;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #1c9ee1;
+  opacity: 0;
+}
+header {
+  position: absolute;
+  width: 16rem;
+  height: 1.87733333rem;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+header div {
+  float: left;
+  height: 1.87733333rem;
+}
+header div.left {
+  width: 1.6rem;
+  line-height: 1.87733333rem;
+}
+header div.left a {
+  display: inline-block;
+}
+header div.left a .sweep {
+  width: 1.6rem;
+  margin-left: 0.74666667rem;
+}
+header div.left a .sweep img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+  vertical-align: -0.08533333rem;
+}
+header div.center {
+  width: 12.8rem;
+  height: 1.87733333rem;
+  line-height: 1.87733333rem;
+  position: relative;
+}
+header div.center img {
+  position: absolute;
+  width: 0.66133333rem;
+  height: 0.66133333rem;
+  left: 1.17333333rem;
+  top: 0.64rem;
+}
+header div.center input {
+  width: 11.52rem;
+  height: 1.19466667rem;
+  margin: 0 0.64rem;
+  color: #ffffff;
+  font-size: 0.59733333rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 0.59733333rem;
+  text-indent: 1.49333333rem;
+  outline: none;
+  vertical-align: 0.128rem;
+}
+header div.center input::placeholder {
+  color: #ffffff;
+  font-size: 0.59733333rem;
+  line-height: 1.19466667rem;
+}
+header div.right {
+  float: right;
+  width: 1.6rem;
+  line-height: 1.87733333rem;
+}
+header div.right .msg {
+  margin-right: 0.74666667rem;
+  float: right;
+  width: 0.85333333rem;
+  height: 0.85333333rem;
+}
+header div.right .msg img {
+  width: 100%;
+  vertical-align: -0.08533333rem;
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 0rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#wrapper #scroller {
+  padding-bottom: 3.02933333rem;
+}
+#wrapper #scroller section .banner .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+#wrapper #scroller section .menu {
+  padding: 0.384rem 0rem;
+  background-color: #ffffff;
+  margin-top: -0.08533333rem;
+}
+#wrapper #scroller section .menu ul {
+  overflow: hidden;
+}
+#wrapper #scroller section .menu ul li {
+  float: left;
+  width: 20%;
+}
+#wrapper #scroller section .menu ul li a div {
+  text-align: center;
+}
+#wrapper #scroller section .menu ul li a div img {
+  width: 1.70666667rem;
+  height: 1.70666667rem;
+}
+#wrapper #scroller section .menu ul li a div p {
+  font-size: 0.512rem;
+  color: #666666;
+}
+#wrapper #scroller section .line {
+  height: 0.42666667rem;
+}
+#wrapper #scroller section .recommendData {
+  background-color: #ffffff;
+}
+#wrapper #scroller section .recommendData .top {
+  margin: 0 0.74666667rem;
+  height: 1.83466667rem;
+  line-height: 1.83466667rem;
+  border-bottom: solid 0.02133333rem #eeeeee;
+}
+#wrapper #scroller section .recommendData .top div {
+  font-size: 0.59733333rem;
+}
+#wrapper #scroller section .recommendData .top div.title {
+  float: left;
+  color: #333333;
+}
+#wrapper #scroller section .recommendData .top div.title img {
+  width: 0.08533333rem;
+  height: 0.55466667rem;
+  vertical-align: -0.08533333rem;
+  margin-left: -0.74666667rem;
+  margin-right: 0.66133333rem;
+}
+#wrapper #scroller section .recommendData .top div.right {
+  float: right;
+  color: #999999;
+}
+#wrapper #scroller section .recommendData .top div.right img {
+  width: 0.256rem;
+  height: 0.46933333rem;
+}
+#wrapper #scroller section .recommendData .bottom .swiper-menu {
+  padding: 0.64rem 0.74666667rem 1.06666667rem;
+}
+#wrapper #scroller section .recommendData .bottom .swiper-menu .swiper-wrapper .swiper-slide a .img-wrap {
+  width: 5.54666667rem;
+  height: 3.712rem;
+  overflow: hidden;
+  position: relative;
+}
+#wrapper #scroller section .recommendData .bottom .swiper-menu .swiper-wrapper .swiper-slide a .img-wrap img {
+  width: 100%;
+  border-radius: 0.21333333rem;
+}
+#wrapper #scroller section .recommendData .bottom .swiper-menu .swiper-wrapper .swiper-slide a .img-wrap p {
+  position: absolute;
+  bottom: 0%;
+  z-index: 10;
+  font-size: 0.42666667rem;
+  color: #ffffff;
+  padding: 0.29866667rem;
+}
+#wrapper #scroller section .enterprise {
+  background-color: #ffffff;
+}
+#wrapper #scroller section .enterprise .top {
+  margin: 0 0.74666667rem;
+  height: 1.83466667rem;
+  line-height: 1.83466667rem;
+  border-bottom: solid 0.04266667rem #eeeeee;
+}
+#wrapper #scroller section .enterprise .top div {
+  font-size: 0.59733333rem;
+}
+#wrapper #scroller section .enterprise .top div.title {
+  float: left;
+  color: #333333;
+}
+#wrapper #scroller section .enterprise .top div.title img {
+  width: 0.08533333rem;
+  height: 0.55466667rem;
+  vertical-align: -0.08533333rem;
+  margin-left: -0.74666667rem;
+  margin-right: 0.66133333rem;
+}
+#wrapper #scroller section .enterprise .top div.right {
+  float: right;
+  color: #999999;
+}
+#wrapper #scroller section .enterprise .top div.right img {
+  width: 0.256rem;
+  height: 0.46933333rem;
+}
+#wrapper #scroller section .enterprise .bottom ul {
+  margin-bottom: 0.21333333rem;
+  padding: 0 0.74666667rem;
+}
+#wrapper #scroller section .enterprise .bottom ul li {
+  padding: 0.74666667rem 0;
+  border-bottom: solid 0.02133333rem #eeeeee;
+}
+#wrapper #scroller section .enterprise .bottom ul li:nth-of-type(odd) a .newList .img {
+  float: left;
+}
+#wrapper #scroller section .enterprise .bottom ul li:nth-of-type(odd) a .newList .text {
+  float: right;
+}
+#wrapper #scroller section .enterprise .bottom ul li:nth-of-type(even) a .newList .img {
+  float: right;
+}
+#wrapper #scroller section .enterprise .bottom ul li:nth-of-type(even) a .newList .text {
+  float: left;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList {
+  overflow: hidden;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .img {
+  width: 5.54666667rem;
+  height: 3.66933333rem;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .img img {
+  width: 100%;
+  border-radius: 0.10666667rem;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .text {
+  width: 8.14933333rem;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .text h2 {
+  font-size: 0.59733333rem;
+  color: #333333;
+  font-weight: 700;
+  padding-bottom: 0.21333333rem;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .text p {
+  font-size: 0.512rem;
+  color: #747474;
+  line-height: 0.81066667rem;
+  overflow: hidden;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .text p:first-of-type {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  letter-spacing: 0px;
+  text-align: justify;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .text p:last-of-type {
+  font-size: 0.42666667rem;
+  color: #999999;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .text p:last-of-type span.time {
+  float: left;
+}
+#wrapper #scroller section .enterprise .bottom ul li a .newList .text p:last-of-type span.read {
+  float: right;
+}
+#wrapper .iScrollVerticalScrollbar .iScrollIndicator {
+  opacity: 0;
+}
+footer {
+  height: 3.02933333rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 666;
+  width: 100%;
+  overflow: hidden;
+}
+footer .menu {
+  height: 2.09066667rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-top: solid 0.02133333rem #d3d3d3;
+  background-color: #ffffff;
+  padding: 0 0.64rem;
+}
+footer .menu div {
+  float: left;
+  font-size: 0.42666667rem;
+  color: #1ea0e3;
+}
+footer .menu div.left {
+  width: 6.12266667rem;
+}
+footer .menu div.left div {
+  width: 50%;
+  text-align: center;
+  margin-top: 0.42666667rem;
+}
+footer .menu div.left div img {
+  width: 0.832rem;
+  height: 0.832rem;
+}
+footer .menu div.center {
+  width: 2.432rem;
+  height: 2.432rem;
+}
+footer .menu div.right {
+  width: 6.12266667rem;
+}
+footer .menu div.right div {
+  width: 50%;
+  text-align: center;
+  margin-top: 0.42666667rem;
+}
+footer .menu div.right div img {
+  width: 0.832rem;
+  height: 0.832rem;
+}
+footer .center-add {
+  position: absolute;
+  left: 50%;
+  bottom: 0.192rem;
+  transform: translate(-50%, 0);
+  text-align: center;
+  font-size: 0.42666667rem;
+  color: #999999;
+}
+footer .center-add img {
+  width: 2.432rem;
+  height: 2.432rem;
+}

@@ -1,0 +1,308 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  outline: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+  overflow: hidden;
+}
+body {
+  background-color: #eeeeee;
+  overflow: hidden;
+}
+body header {
+  height: 1.87733333rem;
+  background-color: #1c9ee1;
+}
+body header div {
+  line-height: 1.87733333rem;
+}
+body header div.left {
+  padding-left: 0.74666667rem;
+  width: 20%;
+  float: left;
+}
+body header div.left img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+body header div.center {
+  margin-left: -0.74666667rem;
+  float: left;
+  width: 60%;
+  font-size: 0.68266667rem;
+  text-align: center;
+  color: #ffffff;
+}
+body header div.right {
+  width: 20%;
+  float: left;
+  text-align: right;
+}
+body header a {
+  overflow: hidden;
+}
+body menu {
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+body menu ul {
+  background-color: #ffffff;
+  padding: 0.64rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  box-shadow: 0.08533333rem 0.08533333rem 0.42666667rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.21333333rem;
+}
+body menu ul li {
+  overflow: hidden;
+  width: 100%;
+  line-height: 1.70666667rem;
+  border-bottom: solid 0.04266667rem #eeeeee;
+}
+body menu ul li:last-of-type {
+  border: none;
+}
+body menu ul li div.left {
+  float: left;
+}
+body menu ul li div.left span {
+  font-size: 0.55466667rem;
+  color: #666666;
+}
+body menu ul li div.right {
+  float: right;
+}
+body menu ul li div.right img {
+  width: 0.64rem;
+  vertical-align: middle;
+}
+body #wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 1.92rem;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+body #wrapper #scroller {
+  padding-bottom: 2.13333333rem;
+}
+body #wrapper #scroller section {
+  width: 100%;
+}
+body #wrapper #scroller section ul {
+  margin-top: 0.42666667rem;
+  padding: 0 0.74666667rem;
+  background-color: #ffffff;
+}
+body #wrapper #scroller section ul li {
+  height: 1.81333333rem;
+  line-height: 1.81333333rem;
+  border-bottom: solid 0.04266667rem #eeeeee;
+}
+body #wrapper #scroller section ul li:last-of-type {
+  border: none;
+}
+body #wrapper #scroller section ul li .msg {
+  overflow: hidden;
+}
+body #wrapper #scroller section ul li .msg div {
+  font-size: 0.55466667rem;
+}
+body #wrapper #scroller section ul li .msg div.left {
+  float: left;
+  color: #666666;
+}
+body #wrapper #scroller section ul li .msg div.right {
+  float: right;
+  width: 60%;
+}
+body #wrapper #scroller section ul li .msg div.right input {
+  text-align: right;
+  width: 100%;
+  color: #999999;
+}
+body #wrapper #scroller section ul li .msg div.right input::placeholder {
+  color: #999999;
+}
+body #wrapper #scroller footer {
+  margin-top: 2.13333333rem;
+  padding: 0.64rem 0.74666667rem;
+}
+body #wrapper #scroller footer input {
+  background-color: #1c9ee1;
+  width: 100%;
+  font-size: 0.768rem;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.32rem 0;
+  border-radius: 0.128rem;
+  box-shadow: 0.08533333rem 0.08533333rem 0.42666667rem rgba(0, 0, 0, 0.1);
+}

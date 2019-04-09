@@ -1,0 +1,259 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  outline: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+header {
+  width: 16rem;
+  height: 1.87733333rem;
+  background: linear-gradient(29deg, #1b9de1, #3fbef1);
+}
+header div {
+  float: left;
+  height: 1.87733333rem;
+}
+header div.left {
+  width: 1.6rem;
+  line-height: 1.87733333rem;
+}
+header div.left a {
+  display: inline-block;
+}
+header div.left a .sweep {
+  width: 1.6rem;
+  margin-left: 0.74666667rem;
+}
+header div.left a .sweep img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+header div.center {
+  text-align: center;
+  width: 12.8rem;
+}
+header div.center h1 {
+  width: 12.8rem;
+  color: #ffffff;
+  font-size: 0.64rem;
+  line-height: 1.87733333rem;
+  text-align: center;
+}
+header div.right {
+  float: right;
+}
+section h1 {
+  text-align: center;
+  padding-top: 1.68533333rem;
+}
+section h1 img {
+  width: 3.60533333rem;
+  height: 3.648rem;
+}
+section .phone {
+  margin: 1.06666667rem 1.17333333rem 0 1.17333333rem;
+  border: solid 0.04266667rem #d3d3d3;
+  width: 13.44rem;
+  height: 1.74933333rem;
+  padding-left: 0.21333333rem;
+  border-radius: 0.21333333rem;
+}
+section .phone img {
+  width: 0.85333333rem;
+  height: 0.85333333rem;
+  vertical-align: -0.21333333rem;
+}
+section .phone input {
+  width: 10.66666667rem;
+  height: 1.70666667rem;
+  font-size: 0.512rem;
+  color: #999999;
+  line-height: 1.70666667rem;
+}
+section .phone input::placeholder {
+  color: #999999;
+}
+section p {
+  padding: 0 1.17333333rem;
+  font-size: 0.512rem;
+  line-height: 1.28rem;
+  height: 1.28rem;
+  text-align: center;
+}
+section .save {
+  width: 13.65333333rem;
+  margin: 0 1.17333333rem;
+}
+section .save input {
+  box-sizing: content-box;
+  width: 13.65333333rem;
+  height: 1.70666667rem;
+  font-size: 0.59733333rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #34b8ef;
+  border-radius: 0.21333333rem;
+}
+section .read p {
+  color: #333333;
+  font-size: 0.42666667rem;
+  line-height: 1.70666667rem;
+  text-align: center;
+}
+section .read p a {
+  color: #34b8ef;
+}

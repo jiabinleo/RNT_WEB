@@ -1,0 +1,45 @@
+@rem: 750/16rem;
+@import "../../../../css/reset.less";
+body {
+  background-color: #ffffff;
+  header {
+    height: 88 / @rem;
+    background-color: #1c9ee1;
+    div {
+      line-height: 88 / @rem;
+      &.left {
+        padding-left: 35 / @rem;
+        width: 10%;
+        float: left;
+        img {
+          width: 19 / @rem;
+          height: 35 / @rem;
+        }
+      }
+      &.center {
+        margin-left: -35 / @rem;
+        float: left;
+        width: 80%;
+        font-size: 32 / @rem;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+    a {
+      overflow: hidden;
+    }
+  }
+  #wrapper {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 88 / @rem;
+    overflow: hidden;
+    padding: 0 35 / @rem;
+    #scroller {
+      padding-bottom: 100 / @rem;
+    }
+  }
+}

@@ -1,0 +1,211 @@
+@rem: 750/16rem;
+@import '../../../../css/reset.less';
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+header {
+  width: 750 / @rem;
+  height: 88 / @rem;
+  background: linear-gradient(
+    29deg,
+    rgba(27, 157, 225, 1),
+    rgba(63, 190, 241, 1)
+  );
+  overflow: hidden;
+  div {
+    float: left;
+    height: 88 / @rem;
+    &.left {
+      width: 75 / @rem;
+      line-height: 88 / @rem;
+      a {
+        display: inline-block;
+        .sweep {
+          width: 75 / @rem;
+          margin-left: 35 / @rem;
+          img {
+            width: 19 / @rem;
+            height: 35 / @rem;
+          }
+        }
+      }
+    }
+    &.center {
+      text-align: center;
+      width: 600 / @rem;
+      h1 {
+        width: 600 / @rem;
+        color: #ffffff;
+        font-size: 30 / @rem;
+        line-height: 88 / @rem;
+        text-align: center;
+      }
+    }
+  }
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 88 / @rem;
+  bottom: 0 / @rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  #scroller {
+    transition: 0s;
+    overflow: hidden;
+    padding-bottom: 30 / @rem;
+    section {
+      width: 750 / @rem;
+      float: left;
+      .banner {
+        padding: 35 / @rem;
+        .swiper-container {
+          border-radius: 10 / @rem 10 / @rem 15 / @rem 15 / @rem;
+          .swiper-wrapper {
+            .swiper-slide {
+              position: relative;
+              img {
+                width: 100%;
+              }
+              .banner-msg {
+                position: absolute;
+                z-index: 666;
+                bottom: 20 / @rem;
+                right: 20 / @rem;
+                span {
+                  font-size: 22 / @rem;
+                  border-radius: 50%;
+                  color: #ffffff;
+                  line-height: 40 / @rem;
+                  background: RGBA(0, 0, 0, 0.3);
+                  padding: 10 / @rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .content {
+        padding: 0 35 / @rem;
+        h2 {
+          font-size: 28 / @rem;
+          color: #333333;
+          border-bottom: solid 2 / @rem #eeeeee;
+          line-height: 70 / @rem;
+          font-weight: 700;
+        }
+        p {
+          &.detial {
+            padding: 30 / @rem 0;
+            font-size: 26 / @rem;
+            color: #666666;
+            line-height: 30 / @rem;
+          }
+        }
+
+        ul {
+          li {
+            border-bottom: solid 1 / @rem rgba(238, 238, 238, 1);
+            padding-bottom: 10 / @rem;
+            &:last-of-type {
+              border-bottom: none;
+            }
+            .title {
+              padding: 30 / @rem 0;
+              overflow: hidden;
+              .userLogo {
+                float: left;
+                width: 90 / @rem;
+                height: 90 / @rem;
+                border-radius: 50%;
+                img {
+                  width: 100%;
+                }
+              }
+              .userMsg {
+                float: left;
+                padding: 8 / @rem 0 8 / @rem 20 / @rem;
+                p {
+                  line-height: 40 / @rem;
+                  padding: 0;
+                  font-size: 26 / @rem;
+                  color: #666666;
+                  span {
+                    font-size: 20 / @rem;
+                    padding: 0 6 / @rem;
+                    color: #ffffff;
+                    background: linear-gradient(
+                      29deg,
+                      rgba(27, 157, 225, 1),
+                      rgba(63, 190, 241, 1)
+                    );
+                    border-radius: 5px;
+                  }
+                }
+              }
+            }
+            .text {
+              p {
+                font-size: 24 / @rem;
+                color: #999999;
+                padding-bottom: 20 / @rem;
+              }
+            }
+            .count {
+              overflow: hidden;
+              // border-bottom: solid rgba(238, 238, 238, 1) 1 / @rem;
+              // padding-bottom: 20/@rem;
+              p {
+                float: left;
+                font-size: 24 / @rem;
+                line-height: 36 / @rem;
+                &:last-of-type {
+                  float: right;
+                  font-weight: 500;
+                  color: rgba(102, 102, 102, 1);
+                }
+                img {
+                  width: 26 / @rem;
+                  vertical-align: -4 / @rem;
+                }
+                span {
+                  color: #999999;
+                  font-size: 22 / @rem;
+                  padding: 0 29 / @rem 0 11 / @rem;
+                }
+              }
+            }
+            ul {
+              padding: 10 / @rem 0;
+              li {
+                border-bottom: none;
+                margin-bottom: 0;
+                span {
+                  font-size: 24 / @rem;
+                  &.name {
+                    color: rgba(102, 102, 102, 1);
+                    font-weight: 500;
+                  }
+                  &.reply {
+                    font-weight: 500;
+                    color: rgba(153, 153, 153, 1);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .iScrollVerticalScrollbar {
+    .iScrollIndicator {
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no" />
+  <title>悦农通</title>
+  <link rel="Shortcut Icon" href="../../../img/icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/swiper.3.4.2.min.css" />
+  <link rel="stylesheet" href="../../../plugin/css/mobiscroll.custom.min.css">
+  <link rel="stylesheet" type="text/css" href="../../../plugin/css/mobileSelect.css">
+  <link rel="stylesheet" type="text/css" href="../../../plugin/css/tpyepublic.css">
+  <link rel="stylesheet" href="css/nqsbUp.css" />
+  <script>
+    (function() {
+        var width = document.documentElement.clientWidth;
+        var style = document.createElement("style");
+        style.innerHTML = "html{font-size: " + width / 16 + "px !important;}";
+        document.head.appendChild(style);
+      })();
+    </script>
+</head>
+
+<body>
+  <header>
+    <div class="left">
+      <a href="#" onclick="history.back(-1);">
+        <div class="sweep">
+          <img src="../../../img/return.png" alt="sweep" />
+        </div>
+      </a>
+    </div>
+    <div class="center">
+      <h1>农情上报</h1>
+    </div>
+    <div class="right"></div>
+  </header>
+  <section id="view">
+    <ul>
+      <li>
+        <div class="left">所在区域</div>
+        <div class="right">
+          <span class="r" id="area">请选择区域</span>
+        </div>
+      </li>
+      <li>
+        <div class="left">详细地址</div>
+        <div class="right">
+          <input type="text" id="detailAddress" placeholder="请输入详细地址" />
+        </div>
+      </li>
+      <li>
+        <div class="left">灾害类型</div>
+        <div class="right">
+          <span class="r" id="disaster">请选择灾害类型</span>
+        </div>
+      </li>
+      <li>
+        <div class="left">作物类型</div>
+        <div class="right">
+          <span class="r" id="type">请选择作物类型</span>
+        </div>
+      </li>
+      <li>
+        <div class="left">灾情描述<span id="surplus"></span></div>
+      </li>
+    </ul>
+    <textarea class="spxq" name="" id="detail" width="100%" placeholder="请输入灾情描述"></textarea>
+    <div class="bottom">
+      <p>现场照片</p>
+      <div class="container">
+        <div class="z_photo">
+          <div class="z_file">
+            <input type="file" name="file" id="file" value="" accept="image/*" />
+          </div>
+        </div>
+        <div class="z_mask">
+          <div class="z_alert">
+            <p>确定要删除这张图片吗？</p>
+            <p>
+              <span class="z_cancel">取消</span>
+              <span class="z_sure">确定</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <input id="save" type="button" value="确认信息" />
+    </div>
+  </section>
+</body>
+<script type="text/javascript" src="../../../js/jquery.js"></script>
+<script type="text/javascript" src="../../../js/swiper.3.4.2.min.js"></script>
+<script type="text/javascript" src="../../../plugin/js/mobiscroll.custom.min.js"></script>
+<script type="text/javascript" src="../../../js/tool.js"></script>
+<script type="text/javascript" src="js/typeSelect.js"></script>
+<script type="text/javascript" src="js/citySelect.js"></script>
+<script type="text/javascript" src="js/nqsbUp.js"></script>
+
+</html>

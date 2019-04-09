@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>悦农通</title>
+    <link rel="Shortcut Icon" href="../../../img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/swiper.3.4.2.min.css">
+    <link rel="stylesheet" href="../../../plugin/css/mobiscroll.custom.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../plugin/css/tpyepublic.css">
+    <link rel="stylesheet" type="text/css" href="../../../plugin/css/mobileSelect.css">
+    <link rel="stylesheet" href="css/jgcj.css">
+    <script>
+        (function () {
+            var width = document.documentElement.clientWidth;
+            var style = document.createElement("style");
+            style.innerHTML = "html{font-size: " + width / 16 + "px !important;}";
+            document.head.appendChild(style);
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <a href="#" onclick="history.back(-1);">
+                <div class="sweep">
+                    <img src="../../../img/return.png" alt="sweep" />
+                </div>
+            </a>
+        </div>
+        <div class="center">
+            <h1>价格信息采集</h1>
+        </div>
+        <div class="right">
+        </div>
+    </header>
+    <menu>
+        <div ids="1" id="sc" class="left active">
+            <span>
+                市场价格采集
+            </span>
+        </div>
+        <div ids="2" id="cd" class="right">
+            <span>
+                产地价格采集
+            </span>
+        </div>
+    </menu>
+    <section id="view">
+        <ul>
+            <li>
+                <div class="left">
+                    选择区域
+                </div>
+                <div class="right">
+                    <span class="r" id="area">请输入</span>
+                </div>
+            </li>
+            <li id="sz">
+                <div class="left">
+                    所在市场
+                </div>
+                <div class="right">
+                    <input id="market" type="text" placeholder="请输入市场名称" />
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    产品类别
+                </div>
+                <div class="right">
+                    <span class="r" id="type">请输入</span>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    实时价格
+                </div>
+                <div class="right">
+                    <input id="price" type="number" placeholder="请输入实时价格" />
+                </div>
+            </li>
+        </ul>
+        <div class="bottom">
+            <p>图片上传</p>
+            <div class="container">
+                <!--    照片添加    -->
+                <div class="z_photo">
+                    <div class="z_file">
+                        <input type="file" name="file" id="file" value="" accept="image/*" />
+                    </div>
+
+                </div>
+
+                <!--遮罩层-->
+                <div class="z_mask">
+                    <!--弹出框-->
+                    <div class="z_alert">
+                        <p>确定要删除这张图片吗？</p>
+                        <p>
+                            <span class="z_cancel">取消</span>
+                            <span class="z_sure">确定</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <input id="save" type="button" value="确认信息" />
+        </div>
+    </section>
+    <div id="mask" class="mask">
+        <span id="msg" class="msg">
+        </span>
+    </div>
+</body>
+<script type="text/javascript" src="../../../js/jquery.js"></script>
+<script type="text/javascript" src="../../../js/swiper.3.4.2.min.js"></script>
+<script type="text/javascript" src="../../../plugin/js/mobiscroll.custom.min.js"></script>
+<script type="text/javascript" src="../../../js/tool.js"></script>
+<script type="text/javascript" src="js/typeSelect.js"></script>
+<script type="text/javascript" src="js/citySelect.js"></script>
+<script type="text/javascript" src="js/jgcj.js"></script>
+
+</html>

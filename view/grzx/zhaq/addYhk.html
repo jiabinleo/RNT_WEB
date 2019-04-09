@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>悦农通</title>
+    <link rel="Shortcut Icon" href="../../../img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/addYhk.css">
+    <script>
+        (function () {
+                var width = document.documentElement.clientWidth;
+                var style = document.createElement("style");
+                style.innerHTML = "html{font-size: " + width / 16 + "px !important;}";
+                document.head.appendChild(style);
+            })();
+        </script>
+</head>
+
+<body>
+    <header>
+        <a href="#" onclick="history.back(-1);">
+            <div class="left">
+                <img src="../../../img/return.png" alt="jt"/>
+            </div>
+        </a>
+        <div class="center">
+            新增银行卡
+        </div>
+        <div class="right">
+        </div>
+    </header>
+    <menu id="wrap">
+        <ul id="bankList"></ul>
+    </menu>
+    <div id="wrapper">
+        <div id="scroller">
+            <section>
+                <ul>
+                    <li>
+                        <div class="msg">
+                            <div class="left">
+                                银行卡号
+                            </div>
+                            <div class="right">
+                                <input type="text" name="" id="cardNumber" placeholder="请输入银行卡号">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="kh" class="msg">
+                            <div class="left">
+                                发卡银行
+                            </div>
+                            <div class="right">
+                                <input type="text" name="" id="bankCode" placeholder="请选择发卡银行">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="msg">
+                            <div class="left">
+                                持卡人
+                            </div>
+                            <div class="right">
+                                <input type="text" name="" id="owner" placeholder="请输入持卡人姓名">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <footer>
+                <input id="save" type="text" value="提交">
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../../js/iscroll.js"></script>
+    <script type="text/javascript" src="../../../js/loaded_iscroll.js"></script>
+    <script type="text/javascript" src="../../../js/tool.js"></script>
+    <script type="text/javascript" src="js/addYhk.js"></script>
+</body>
+
+</html>

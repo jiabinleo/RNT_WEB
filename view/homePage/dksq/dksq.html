@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>悦农通</title>
+    <link rel="Shortcut Icon" href="../../../img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../plugin/css/mobiscroll.custom.min.css">
+    <link rel="stylesheet" href="css/dksq.css">
+    <script>
+        (function () {
+                var width = document.documentElement.clientWidth;
+                var style = document.createElement("style");
+                style.innerHTML = "html{font-size: " + width / 16 + "px !important;}";
+                document.head.appendChild(style);
+            })();
+        </script>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <a href="#" onclick="history.back(-1);">
+                <div class="sweep">
+                    <img src="../../../img/return.png" alt="sweep" />
+                </div>
+            </a>
+        </div>
+        <div class="center">
+            <h1>贷款申请</h1>
+        </div>
+        <div class="right">
+        </div>
+    </header>
+    <div class="marquee">
+        <a id="tel" href="">
+            <marquee id="marquee"></marquee>
+        </a>
+        <div class="closeMarquee"><img src="../../../img/closeMarquee.png" alt="" /></div>
+    </div>
+    <div id="wrapper">
+        <div id="scroller">
+            <section>
+                <div class="forms1 forms">
+                    <form>
+                        <div class="jigou_leixing optionCode form_radius">
+                            <div class="form_radius_box">
+                                <div class="form_radius_left">
+                                    机构类型
+                                </div>
+                                <div id="jigou_leixing" class="radius form_radius_right">
+                                    <span data-id="0" class="status"><img src="../../../img/radio-no.png" alt="" />企业</span>
+                                    <span data-id="1" class="status"><img src="../../../img/radio-no.png" alt="" />个人</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jigou_mingcheng optionCode form_input">
+                            <div class="form_input_box">
+                                <div class="form_input_left">
+                                    机构名称
+                                </div>
+                                <div class="form_input_right">
+                                    <input class="input_click" id="jigou_mingcheng" type="text" placeholder="请输入机构名称或借款人姓名"
+                                        readonly="readonly" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="diqu optionCode form_input">
+                            <div class="form_input_box">
+                                <div class="form_input_left">
+                                    所在地区<img id="dw" src="../../../img/dingwei.svg" alt="" />
+                                </div>
+                                <div class="form_input_right">
+                                    <input class="input_click" id="diqu" type="text" placeholder="请输入地址" readonly="readonly" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tudi_mianji optionCode form_input">
+                            <div class="form_input_box">
+                                <div class="form_input_left">
+                                    土地面积
+                                </div>
+                                <div class="form_input_right">
+                                    <input class="input_click" id="tudi_mianji" type="text" placeholder="请输入土地面积" readonly="readonly" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tudi_jingyingquan optionCode form_radius">
+                            <div class="form_radius_box">
+                                <div class="form_radius_left">
+                                    土地经营权
+                                </div>
+                                <div id="tudi_jingyingquan" class="radius form_radius_right">
+                                    <span data-id="0" class="status"><img src="../../../img/radio-no.png" alt="" />没有</span>
+                                    <span data-id="1" class="status"><img src="../../../img/radio-no.png" alt="" />有</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hunyin_zhuangkuang optionCode form_radius">
+                            <div class="form_radius_box">
+                                <div class="form_radius_left">
+                                    婚姻状况
+                                </div>
+                                <div id="hunyin_zhuangkuang" class="radius form_radius_right">
+                                    <span data-id="0" class="status"><img src="../../../img/radio-no.png" alt="" />单身</span>
+                                    <span data-id="1" class="status"><img src="../../../img/radio-no.png" alt="" />已婚</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qita_daikuan optionCode form_radius">
+                            <div class="form_radius_box">
+                                <div class="form_radius_left">
+                                    是否有其他贷款
+                                </div>
+                                <div id="qita_daikuan" class="radius form_radius_right">
+                                    <span data-id="0" class="status"><img src="../../../img/radio-no.png" alt="" />没有</span>
+                                    <span data-id="1" class="status"><img src="../../../img/radio-no.png" alt="" />有</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qita_diyawu optionCode form_input">
+                            <div class="form_input_box">
+                                <div class="form_input_left">
+                                    其他抵押物
+                                </div>
+                                <div class="form_input_right">
+                                    <input class="input_click" id="qita_diyawu" type="text" placeholder="请输入其他抵押物" readonly="readonly" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lianxi_ren optionCode form_input">
+                            <div class="form_input_box">
+                                <div class="form_input_left">
+                                    联系人
+                                </div>
+                                <div class="form_input_right">
+                                    <input class="input_click" id="lianxi_ren" type="text" placeholder="请输入联系人" readonly="readonly" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lianxi_dianhua optionCode form_input">
+                            <div class="form_input_box">
+                                <div class="form_input_left">
+                                    联系电话
+                                </div>
+                                <div class="form_input_right">
+                                    <input class="input_click" id="lianxi_dianhua" type="text" placeholder="请输入联系电话" readonly="readonly" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="daikuan_jine optionCode form_input">
+                            <div class="form_input_box">
+                                <div class="form_input_left">
+                                    贷款金额
+                                </div>
+                                <div class="form_input_right">
+                                    <input class="input_click" id="daikuan_jine" type="text" placeholder="请输入贷款金额" readonly="readonly" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="daikuai_yongtu optionCode form_input">
+                            <div class="form_input_box">
+                                <div class="form_input_left">
+                                    贷款用途
+                                </div>
+                                <div class="form_input_right">
+                                    <input class="input_click" id="daikuai_yongtu" type="text" placeholder="请输入贷款用途" readonly="readonly" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kaishi_riqi optionCode form_input">
+                            <div class="form_input_box">
+                                <div class="form_input_left">
+                                    开始日期
+                                </div>
+                                <div class="form_input_right">
+                                    <input type="text" id="kaishi_riqi" class="mbsc-comp" readonly="" placeholder="请选择开始日期"
+                                        value="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jieshu_riqi optionCode form_input form_end">
+                            <div class="form_input_box">
+                                <div class="form_input_left">
+                                    结束日期
+                                </div>
+                                <div class="form_input_right">
+                                    <input type="text" id="jieshu_riqi" class="mbsc-comp" readonly="" placeholder="请选择结束日期"
+                                        value="" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="insure_footer">
+            <input id="playFooter" type="button" value="确认信息" />
+        </div>
+    </footer>
+    <div id="lMask" class="lMask">
+        <div class="msg">
+            <div class="top">
+                <img src="../../../img/save.png" />
+                <div class="topTip">
+                    <p>是否提交</p>
+                    <p>Whether to submit</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <input id="y" type="button" value="确认提交" />
+                <input id="n" type="button" value="取消" />
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.10&key=465c831c8323875841cda920ae24fd7b"></script>
+<script type="text/javascript" src="../../../js/jquery.js"></script>
+<!-- <script type="text/javascript" src="../../../plugin/js/lCalendar.js"></script> -->
+<script type="text/javascript" src="../../../plugin/js/mobiscroll.custom.min.js"></script>
+<script type="text/javascript" src="../../../js/iscroll.js"></script>
+<script type="text/javascript" src="../../../js/loaded_iscroll.js"></script>
+<script type="text/javascript" src="../../../js/tool.js"></script>
+<script type="text/javascript" src="js/dksq.js"></script>
+
+</html>

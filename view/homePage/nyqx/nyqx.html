@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>悦农通</title>
+    <link rel="Shortcut Icon" href="../../../img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/swiper.3.4.2.min.css">
+    <link rel="stylesheet" href="css/nyqx.css">
+    <script>
+        (function () {
+            var width = document.documentElement.clientWidth;
+            var style = document.createElement("style");
+            style.innerHTML = "html{font-size: " + width / 16 + "px !important;}";
+            document.head.appendChild(style);
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <a href="#" onclick="history.back(-1);">
+                <div class="sweep">
+                    <img src="../../../img/return.png" alt="sweep" />
+                </div>
+            </a>
+        </div>
+        <div class="center">
+        </div>
+        <div class="right">
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="scroller">
+            <section>
+                <div class="top">
+                    <h1 id="city">-</h1>
+                    <h3 id="weather">-</h3>
+                    <h2 id="temp">-</h2>
+                    <p id="ymd">数据更新中</p>
+                    <div class="details">
+                        <p class="humidity-wind">
+                            <span id="humidity" class="left">
+                                相对湿度:-
+                            </span>
+                            <span id="windDirection" class="right">
+                                -
+                            </span>
+                        </p>
+                        <p class="rain-visibility">
+                            <span id="rain" class="left">
+                                1小时降雨：-
+                            </span>
+                            <span id="visibility" class="right">
+                                能见度：-
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="weatherAI">
+                    <div>
+                        <img id="icon" src="../../../img/weather/weather.svg" alt="" />
+                    </div>
+                    <div>
+                        <p>
+                            <span class="left">智能天气推荐<img src="../../../img/dz.png" alt="" /></span>
+                            <span style="display:none;" class="left">详细天气<img src="../../../img/right_white.png" alt="" /></span>
+                        </p>
+                        <p id="description">--</p>
+                    </div>
+                </div>
+                <menu>
+                    <ul>
+                        <li>
+                            <a href="zhjc.html">
+                                <img src="../../../img/nyqx-zhjc.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dlyb.html">
+                                <img src="../../../img/nyqx-dlyb.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nytj.html">
+                                <img src="../../../img/nyqx-nytj.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nqsb.html">
+                                <img src="../../../img/nyqx-nqsb.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="qxzb.html">
+                                <img src="../../../img/nyqx-qxzb.png" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </menu>
+                <div class="message">
+                    <div class="title">
+                        气象预警和农事建议
+                    </div>
+                    <div>
+                        <p>气象预警：</p>
+                        <p>预计8月份我县降水偏少，月降水量60毫米左右；8月份气温偏高,月平均气温23.5℃左右。主要降水过程为：4日左右中到大雨，南部雨量偏大；</p>
+                    </div>
+                    <div>
+                        <p>农事建议：</p>
+                        <p>
+                            (1)8月上旬应继续做好防汛工作；
+                            (2)8月中下旬降水偏少，将有“秋吊”天气发生，应提前做好预防，并做好人工增雨防雹工作；
+                            (3)做好酒葡萄病害防治。（以上仅供参考）
+                        </p>
+                    </div>
+                </div>
+                <div class="weather">
+                    <p class="title">
+                        五天天气预报
+                    </p>
+                    <ul id="forecast">
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.10&key=465c831c8323875841cda920ae24fd7b"></script>
+<script type="text/javascript" src="../../../js/jquery.js"></script>
+<script type="text/javascript" src="../../../js/swiper.3.4.2.min.js"></script>
+<script type="text/javascript" src="../../../js/iscroll.js"></script>
+<script type="text/javascript" src="../../../js/loaded_iscroll.js"></script>
+<script type="text/javascript" src="../../../js/tool.js"></script>
+<script type="text/javascript" src="js/nyqx.js"></script>
+
+</html>

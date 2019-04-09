@@ -1,0 +1,95 @@
+@rem: 750/16rem;
+@import "../../../../css/reset.less";
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+header {
+  height: 88 / @rem;
+  background-color: #1c9ee1;
+  position: relative;
+  div {
+    line-height: 88 / @rem;
+    &.left {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding-left: 35 / @rem;
+      img {
+        width: 19 / @rem;
+        height: 35 / @rem;
+      }
+    }
+    &.center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 32 / @rem;
+      color: #ffffff;
+    }
+  }
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 88 / @rem;
+  bottom: 0 / @rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  #scroller {
+    padding-bottom: 66 / @rem;
+    color: #666;
+    section {
+      h1 {
+        text-align: center;
+        padding-top: 35 / @rem;
+        img {
+          width: 160 / @rem;
+        }
+      }
+      ul {
+        padding: 35 / @rem;
+        li {
+          overflow: hidden;
+          position: relative;
+          font-size: 24 / @rem;
+          line-height: 80 / @rem;
+          border-bottom: solid 2 / @rem #eee;
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 26 / @rem;
+            width: 14 / @rem;
+            height: 26 / @rem;
+            background-image: url(../../../../img/arrow-right-blue.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+          &:last-of-type {
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              right: 0;
+              top: 26 / @rem;
+              width: 14 / @rem;
+              height: 26 / @rem;
+              background: none;
+            }
+          }
+          p {
+            color: #666;
+            span {
+              color: #999;
+              float: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}

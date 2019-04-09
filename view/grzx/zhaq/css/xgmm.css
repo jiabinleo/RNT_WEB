@@ -1,0 +1,248 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  outline: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  background-color: #eeeeee;
+}
+body header {
+  height: 1.87733333rem;
+  background-color: #1c9ee1;
+}
+body header div {
+  line-height: 1.87733333rem;
+}
+body header div.left {
+  padding-left: 0.74666667rem;
+  width: 20%;
+  float: left;
+}
+body header div.left img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+body header div.center {
+  margin-left: -0.74666667rem;
+  float: left;
+  width: 60%;
+  font-size: 0.68266667rem;
+  text-align: center;
+  color: #ffffff;
+}
+body header div.right {
+  float: right;
+  font-size: 0.68266667rem;
+  color: #ffffff;
+  margin-right: 0.74666667rem;
+}
+body header a {
+  overflow: hidden;
+}
+body section {
+  margin-top: 0.42666667rem;
+}
+body section ul li {
+  background-color: #ffffff;
+  padding: 0 0.74666667rem;
+}
+body section ul li:last-of-type p {
+  border-bottom: none;
+}
+body section ul li p {
+  overflow: hidden;
+  height: 1.856rem;
+  line-height: 1.856rem;
+  border-bottom: solid 1px #eeeeee;
+  font-size: 0.59733333rem;
+  color: #666666;
+}
+body section ul li p input {
+  font-size: 0.59733333rem;
+  color: #999999;
+  text-align: right;
+  float: right;
+  height: 1.856rem;
+  line-height: 1.856rem;
+  outline: none;
+}
+body section ul li p input::placeholder {
+  font-size: 0.59733333rem;
+  color: #999999;
+}
+body .mask {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 101;
+}
+body .mask .msg {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.59733333rem;
+  background: #d3d3d3;
+  padding: 0.21333333rem 0.42666667rem;
+  border-radius: 0.21333333rem;
+  color: #333333;
+}

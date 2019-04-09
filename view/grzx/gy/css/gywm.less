@@ -1,0 +1,70 @@
+@rem: 750/16rem;
+@import "../../../../css/reset.less";
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+header {
+  height: 88 / @rem;
+  background-color: #1c9ee1;
+  position: relative;
+  div {
+    line-height: 88 / @rem;
+    &.left {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding-left: 35 / @rem;
+      img {
+        width: 19 / @rem;
+        height: 35 / @rem;
+      }
+    }
+    &.center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 32 / @rem;
+      color: #ffffff;
+    }
+  }
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 88 / @rem;
+  bottom: 0 / @rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  #scroller {
+    padding-bottom: 66 / @rem;
+    color: #666;
+    section {
+      h1 {
+        text-align: center;
+        padding-top: 35 / @rem;
+        img {
+          width: 160 / @rem;
+        }
+      }
+      ul {
+        padding: 35 / @rem;
+        li {
+          p {
+            color: #999;
+            line-height: 60 / @rem;
+            font-size: 24 / @rem;
+            &:first-of-type {
+              font-size: 26 / @rem;
+              font-weight: bold;
+              color: #666;
+              border-bottom: solid 2 / @rem #eee;
+            }
+          }
+        }
+      }
+    }
+  }
+}

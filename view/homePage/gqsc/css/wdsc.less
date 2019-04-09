@@ -1,0 +1,175 @@
+@rem: 750/16rem;
+@import "../../../../css/reset.less";
+@import "../../../../css/public.less";
+body {
+  background-color: #eeeeee;
+  header {
+    height: 88 / @rem;
+    background-color: #1c9ee1;
+    div {
+      line-height: 88 / @rem;
+      &.left {
+        padding-left: 35 / @rem;
+        width: 10%;
+        float: left;
+        img {
+          width: 19 / @rem;
+          height: 35 / @rem;
+        }
+      }
+      &.center {
+        margin-left: -35 / @rem;
+        float: left;
+        width: 80%;
+        font-size: 32 / @rem;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+    a {
+      // display: inline-block;
+      overflow: hidden;
+    }
+  }
+  menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.6);
+    .inner {
+      user-select: none;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ffffff;
+      padding: 20 / @rem;
+      box-shadow: 4 / @rem 4 / @rem 20 / @rem rgba(0, 0, 0, 0.1);
+      border-radius: 8 / @rem;
+      min-width: 50%;
+      p {
+        text-align: center;
+        font-size: 28 / @rem;
+        color: #666666;
+        line-height: 2;
+        input {
+          width: 50%;
+          text-align: center;
+          background: none;
+        }
+      }
+    }
+  }
+  #wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 88 / @rem;
+    bottom: 0 / @rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    #scroller {
+      padding-bottom: 50 / @rem;
+      section {
+        .bottom {
+          .line {
+            width: 100%;
+            height: 20 / @rem;
+          }
+          .lis {
+            background-color: #ffffff;
+            padding: 0 35 / @rem;
+            height: 174 / @rem;
+            overflow: hidden;
+            padding: 30 / @rem 35 / @rem;
+            .left {
+              float: left;
+              width: 260 / @rem;
+              height: 174 / @rem;
+              overflow: hidden;
+              img {
+                width: 100%;
+              }
+            }
+            .right {
+              width: 56%;
+              margin-left: 30 / @rem;
+              float: left;
+              h2 {
+                font-size: 28 / @rem;
+                position: relative;
+                span {
+                  position: absolute;
+                  right: 0;
+                  top: 0;
+                }
+              }
+              p {
+                width: 100%;
+                font-size: 22 / @rem;
+                color: #999999;
+                line-height: 36 / @rem;
+                overflow: hidden;
+                &:first-of-type {
+                  display: -webkit-box;
+                  -webkit-box-orient: vertical;
+                  -webkit-line-clamp: 3;
+                  overflow: hidden;
+                  letter-spacing: 0px;
+                  text-align: justify;
+                  height: 110 / @rem;
+                }
+                &:last-of-type {
+                  span {
+                    display: inline-block;
+                    width: 50%;
+                    overflow: hidden;
+                    &:last-of-type {
+                      text-align: right;
+                    }
+                  }
+                }
+                // &.maxRight {
+                //   text-align: right;
+                //   font-size: 24 / @rem;
+                //   span {
+                //     font-size: 30 / @rem;
+                //     color: #ff0000;
+                //   }
+                // }
+                // span {
+                //   &.minRight {
+                //     float: right;
+                //     font-size: 24 / @rem;
+                //   }
+                //   &.blue {
+                //     color: #1d9fe2;
+                //   }
+                //   &.gray {
+                //     color: #999999;
+                //   }
+                //   &.red {
+                //     color: #ff4e00;
+                //   }
+                // }
+              }
+            }
+          }
+        }
+        p {
+          &.loadingTxt {
+            font-size: 28 / @rem;
+            text-align: center;
+            color: #666666;
+            line-height: 2;
+            // background-color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

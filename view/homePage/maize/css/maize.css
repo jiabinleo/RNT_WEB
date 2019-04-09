@@ -1,0 +1,439 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  outline: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.loginPrompt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.2);
+}
+.loginPrompt .pro {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10.66666667rem;
+  height: 6.82666667rem;
+  background: #fff;
+  border-radius: 0.21333333rem;
+  overflow: hidden;
+  box-shadow: 0px 0.04266667rem 0.34133333rem 0.08533333rem rgba(51, 51, 51, 0.2);
+}
+.loginPrompt .pro p {
+  text-align: center;
+  line-height: 1.49333333rem;
+}
+.loginPrompt .pro p:first-of-type {
+  padding-top: 0.85333333rem;
+  font-size: 0.59733333rem;
+  color: #333;
+}
+.loginPrompt .pro p:last-of-type {
+  font-size: 0.55466667rem;
+  color: #666;
+}
+.loginPrompt .pro .bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.92rem;
+  line-height: 1.92rem;
+  border-top: solid 0.04266667rem #eee;
+  font-size: 0.55466667rem;
+}
+.loginPrompt .pro .bottom div {
+  float: left;
+  width: 50%;
+  text-align: center;
+  height: 1.92rem;
+  box-sizing: border-box;
+}
+.loginPrompt .pro .bottom div.left {
+  color: #999;
+}
+.loginPrompt .pro .bottom div.right {
+  color: #fff;
+  background: #27a6e6;
+}
+.ljb-tip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+.ljb-tip span {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  padding: 0.42666667rem;
+  background: #999;
+  font-size: 0.59733333rem;
+  border-radius: 0.21333333rem;
+  color: #fff;
+}
+html,
+body {
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+header {
+  width: 16rem;
+  height: 1.87733333rem;
+  background: #1c9ee1;
+}
+header div {
+  float: left;
+  height: 1.87733333rem;
+}
+header div.left {
+  width: 1.6rem;
+  line-height: 1.87733333rem;
+}
+header div.left a .sweep {
+  width: 1.6rem;
+  margin-left: 0.74666667rem;
+}
+header div.left a .sweep img {
+  width: 0.40533333rem;
+  height: 0.74666667rem;
+}
+header div.center {
+  text-align: center;
+  width: 12.8rem;
+}
+header div.center h1 {
+  width: 12.8rem;
+  color: #ffffff;
+  font-size: 0.68266667rem;
+  line-height: 1.87733333rem;
+  text-align: center;
+}
+header div.right {
+  float: right;
+  width: 1.6rem;
+  line-height: 1.87733333rem;
+}
+header div.right .alarm {
+  margin-right: 0.74666667rem;
+  float: right;
+  width: 0.61866667rem;
+  height: 0.74666667rem;
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 1.87733333rem;
+  bottom: 2.13333333rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#wrapper #scroller {
+  position: absolute;
+  z-index: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none;
+}
+#wrapper #scroller section .line {
+  width: 100%;
+  height: 0.42666667rem;
+}
+#wrapper #scroller section .banner {
+  width: 16rem;
+  height: 5.504rem;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+#wrapper #scroller section .banner img {
+  width: 100%;
+}
+#wrapper #scroller section .insurance1 {
+  padding: 0.64rem 0.74666667rem;
+  background-color: #ffffff;
+}
+#wrapper #scroller section .insurance1 .insurance_title h3 {
+  font-size: 0.59733333rem;
+  color: #333333;
+}
+#wrapper #scroller section .insurance1 .insurance_title h3 img {
+  width: 1.06666667rem;
+  height: 0.53333333rem;
+  vertical-align: top;
+  margin-left: 0.32rem;
+}
+#wrapper #scroller section .insurance1 .insurance_title h3 a {
+  color: #999999;
+}
+#wrapper #scroller section .insurance1 .insurance_title h4 {
+  font-size: 0.55466667rem;
+  color: #666666;
+  padding-top: 0.64rem;
+}
+#wrapper #scroller section .insurance1 .insurance_title .list p {
+  font-size: 0.55466667rem;
+  color: #999999;
+  line-height: 0.85333333rem;
+  padding-top: 0.21333333rem;
+}
+#wrapper #scroller section .insurance2 {
+  padding: 0 0.74666667rem 0.64rem 0.74666667rem;
+  background-color: #ffffff;
+}
+#wrapper #scroller section .insurance2 .insurance_title p {
+  font-size: 0.55466667rem;
+  line-height: 0.85333333rem;
+  color: #666666;
+  padding-top: 0.64rem;
+}
+#wrapper #scroller section .insurance2 .insurance_title p span {
+  color: #999999;
+  float: right;
+}
+#wrapper #scroller section .insurance3 {
+  padding: 0.64rem 0.74666667rem;
+  background-color: #ffffff;
+}
+#wrapper #scroller section .insurance3 .insurance_title h3 {
+  font-size: 0.55466667rem;
+  line-height: 0.85333333rem;
+  color: #666666;
+}
+#wrapper #scroller section .insurance3 .insurance_title p {
+  padding-top: -0.14933333rem;
+  font-size: 0.55466667rem;
+  line-height: 1.06666667rem;
+  color: #999999;
+}
+#wrapper #scroller section .insurance3 .insurance_title p span {
+  font-size: 0.59733333rem;
+  color: #999999;
+}
+#wrapper #scroller section .insurance3 .insurance_title p span:nth-of-type(1) {
+  font-size: 0.72533333rem;
+  color: #f70101;
+}
+#wrapper #scroller section .insurance3 .insurance_title p span:nth-of-type(2) {
+  font-size: 0.59733333rem;
+}
+#wrapper #scroller section .insurance3 .insurance_title p span:nth-of-type(3) {
+  font-size: 0.55466667rem;
+}
+#wrapper #scroller section .insurance3 .insurance_title p span:nth-of-type(4) {
+  font-size: 0.512rem;
+}
+footer {
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  border-top: solid #d3d3d3 1px;
+  width: 100%;
+  height: 2.09066667rem;
+  background-color: #ffffff;
+}
+footer .left {
+  padding-top: 0.21333333rem;
+  float: left;
+  width: 30%;
+  height: 1.6rem;
+  font-size: 0;
+}
+footer .left .img_right {
+  float: left;
+  margin-left: 1.74933333rem;
+  width: 2.13333333rem;
+  height: 1.6rem;
+}
+footer .left .img_right img {
+  width: 0.93866667rem;
+  height: 0.93866667rem;
+}
+footer .left .img_right p {
+  line-height: 0.85333333rem;
+  font-size: 0.512rem;
+  color: #999999;
+}
+footer .right {
+  background-color: #34baf0;
+  float: left;
+  width: 70%;
+  line-height: 2.09066667rem;
+  text-align: center;
+  font-size: 0.59733333rem;
+  color: #fefefe;
+}

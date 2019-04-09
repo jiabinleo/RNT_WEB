@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>悦农通</title>
+    <link rel="Shortcut Icon" href="../../../img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/ljhk.css">
+    <script>
+            (function () {
+                var width = document.documentElement.clientWidth;
+                var style = document.createElement("style");
+                style.innerHTML = "html{font-size: " + width / 16 + "px !important;}";
+                document.head.appendChild(style);
+            })();
+        </script>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <a href="#" onclick="history.back(-1);">
+                <img src="../../../img/return.png" alt="jt"/>
+            </a>
+        </div>
+        <div class="center">
+            立即还款
+        </div>
+        <div class="left">
+
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="scroller">
+            <section id="ImmSection">
+                <div class="ImWrap wrap1">
+                    <!-- <div class="ImquanL">
+
+                    </div>
+                    <div class="ImquanR">
+
+                    </div> -->
+                    <div class="ImInner">
+                        <div class="top">
+                            <div class="topLeft">
+                                <img src="../../../img/arrow-left-gray.png" alt="left"/>
+                                <span id="topLeft">11月</span>
+                            </div>
+                            <div id="topCenter" class="topCenter">
+
+                            </div>
+                            <div class="topRight ImNext">
+                                <span id="topRight">11月</span>
+                                <img src="../../../img/arrow-right-gray.png" alt="right"/>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <p>本月应还 （元）</p>
+                            <p id="sumPrice"></p>
+                            <p id="lastTime">最后还款日</p>
+                            <div class="button playButton">
+                                立即还款
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <h2 id="lisSum">入账金额4笔</h2>
+                            <ul id="listHTML">
+                                <!-- <li>
+                                    <div class="bottomLeft">
+                                        <p>[2/12]借款￥5000.00</p>
+                                        <p>2017-10-06</p>
+                                    </div>
+                                    <div class="bottomRight">
+                                        4000.00
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bottomLeft">
+                                        <p>[10/24]借款￥30000.00</p>
+                                        <p>2017-12-01</p>
+                                    </div>
+                                    <div class="bottomRight">
+                                        15000.00
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bottomLeft">
+                                        <p>[3/6]借款￥10000.00</p>
+                                        <p>2017-12-31</p>
+                                    </div>
+                                    <div class="bottomRight">
+                                        6000.00
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bottomLeft">
+                                        <p>[6/12]借款￥5000.00</p>
+                                        <p>2018-01-26</p>
+                                    </div>
+                                    <div class="bottomRight">
+                                        5000.00
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="ImWrap wrap2">
+                    <div class="ImquanL">
+
+                    </div>
+                    <div class="ImquanR">
+
+                    </div>
+                    <div class="ImInner">
+                        <div class="top">
+                            <div class="topLeft Impre">
+                                <img src="img/left.png" alt="left"/> 12月
+                            </div>
+                            <div class="topCenter">
+                                2018年1月
+                            </div>
+                            <div class="topRight ImNext">
+                                2月 <img src="../../../img/arrow-right-gray.png" alt="right"/>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <p>本月应还 （元）</p>
+                            <p>30000.00</p>
+                            <p>最后还款日1月18日</p>
+                            <div class="button playButton">
+                                立即还款
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <h2>入账金额4笔</h2>
+                            <ul>
+                                <li>
+                                    <div class="bottomLeft">
+                                        <p>[3/12]借款￥5000.00</p>
+                                        <p>2017-10-06</p>
+                                    </div>
+                                    <div class="bottomRight">
+                                        4000.00
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bottomLeft">
+                                        <p>[11/24]借款￥30000.00</p>
+                                        <p>2017-12-01</p>
+                                    </div>
+                                    <div class="bottomRight">
+                                        15000.00
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bottomLeft">
+                                        <p>[4/6]借款￥10000.00</p>
+                                        <p>2017-12-31</p>
+                                    </div>
+                                    <div class="bottomRight">
+                                        6000.00
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bottomLeft">
+                                        <p>[7/12]借款￥5000.00</p>
+                                        <p>2018-01-26</p>
+                                    </div>
+                                    <div class="bottomRight">
+                                        5000.00
+                                    </div>
+                                </li>
+                                <li>
+                                        <div class="bottomLeft">
+                                            <p>[11/24]借款￥30000.00</p>
+                                            <p>2017-12-01</p>
+                                        </div>
+                                        <div class="bottomRight">
+                                            15000.00
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bottomLeft">
+                                            <p>[4/6]借款￥10000.00</p>
+                                            <p>2017-12-31</p>
+                                        </div>
+                                        <div class="bottomRight">
+                                            6000.00
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bottomLeft">
+                                            <p>[7/12]借款￥5000.00</p>
+                                            <p>2018-01-26</p>
+                                        </div>
+                                        <div class="bottomRight">
+                                            5000.00
+                                        </div>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ImWrap wrap3">
+                    <div class="ImquanL">
+
+                    </div>
+                    <div class="ImquanR">
+
+                    </div>
+                    <div class="ImInner">
+                        <div class="top">
+                            <div class="topLeft Impre">
+                                <img src="img/left.png" alt="left"> 1月
+                            </div>
+                            <div class="topCenter">
+                                2018年2月
+                            </div>
+                            <div class="topRight">
+                                3月 <img src="../../../img/arrow-right-gray.png" alt="right">
+                            </div>
+                        </div>
+                        <div class="center">
+                            <p>本月应还 （元）</p>
+                            <p>30000.00</p>
+                            <p>最后还款日2月18日</p>
+                            <div class="button playButton">
+                                立即还款
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <h2>入账金额4笔</h2>
+                            <ul>
+                                <li>
+                                    <div class="bottomLeft">
+                                        <p>[4/12]借款￥5000.00</p>
+                                        <p>2017-10-06</p>
+                                    </div>
+                                    <div class="bottomRight">
+                                        4000.00
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bottomLeft">
+                                        <p>[12/24]借款￥30000.00</p>
+                                        <p>2017-12-01</p>
+                                    </div>
+                                    <div class="bottomRight">
+                                        15000.00
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bottomLeft">
+                                        <p>[5/6]借款￥10000.00</p>
+                                        <p>2017-12-31</p>
+                                    </div>
+                                    <div class="bottomRight">
+                                        6000.00
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bottomLeft">
+                                        <p>[8/12]借款￥5000.00</p>
+                                        <p>2018-01-26</p>
+                                    </div>
+                                    <div class="bottomRight">
+                                        5000.00
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+
+        </div>
+    </div>
+    <div id="insure_wrap">
+        <div id="insure_inner">
+            <div class="insure_play">
+                <span>请选择您的付款方式</span>
+                <span id="insureClose">
+                    <img src="../../../img/close-gray.png" alt="close">
+                </span>
+            </div>
+            <div class="insure_play_bottom">
+                <span>
+                    <img src="../../../img/weixin.png" alt="weixin">
+                </span>
+                <span>微信支付</span>
+            </div>
+            <div class="insure_play_bottom">
+                <span>
+                    <img src="../../../img/zhifubao.png" alt="zhifu">
+                </span>
+                <span>支付宝支付</span>
+            </div>
+            <div class="insure_play_bottom">
+                <span>
+                    <img src="../../../img/yinlian.png" alt="yinlian">
+                </span>
+                <span>银联支付</span>
+            </div>
+        </div>
+        <div id="insure_inner2">
+            <div class="zhifu">
+                请输入支付密码
+                <span><img id="insureClose2" src="../../../img/close-gray.png" alt="close"></span>
+            </div>
+            <div class="mess">
+                <div>喀左县玉米干旱指数保险</div>
+                <div>￥<span>900</span>元</div>
+            </div>
+            <div class="yinhangka">
+                <img src="../../../img/bank.png" alt="bank">
+                <span>
+                    光大银行储蓄卡(8596)
+                </span>
+                <img src="img/arrow-right-gray.png" alt="jiantou">
+            </div>
+            <div class="mima">
+                <input type="password">
+                <input type="password">
+                <input type="password">
+                <input type="password">
+                <input type="password">
+                <input type="password">
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../../../js/jquery.js"></script>
+<script type="text/javascript" src="../../../js/iscroll.js"></script>
+<script type="text/javascript" src="../../../js/loaded_iscroll.js"></script>
+<script type="text/javascript" src="../../../js/tool.js"></script>
+<script type="text/javascript" src="js/ljhk.js"></script>
+
+</html>
